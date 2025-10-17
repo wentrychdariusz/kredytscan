@@ -125,7 +125,7 @@ const AnalizaKredytowa = () => {
             </div>
 
             <p className="text-warm-neutral-700 leading-relaxed mb-3 text-center">
-              Za 29 zł dowiesz się prawdy o swojej sytuacji finansowej i unikniesz błędów, które eliminują Cię z systemu bankowego.
+              Dowiesz się prawdy o swojej sytuacji finansowej i unikniesz błędów, które eliminują Cię z systemu bankowego.
             </p>
             <p className="text-navy-900 font-semibold leading-relaxed text-center">
               Nawet jeśli masz chwilówki — pomożemy Ci uporządkować sytuację. <strong className="text-success-green-700">Jest rozwiązanie. Jest nadzieja.</strong>
@@ -135,7 +135,7 @@ const AnalizaKredytowa = () => {
           {/* Micro Summary - Co otrzymasz */}
           <div className="bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
             <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-5 text-center">
-              💼 Za 29 zł otrzymasz:
+              💼 Co otrzymasz:
             </h3>
             <div className="space-y-3">
               <div className="flex items-start gap-3">
@@ -164,7 +164,7 @@ const AnalizaKredytowa = () => {
             <a href="#formularz-zamowienia" className="block">
               <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
                 <span className="text-lg md:text-2xl leading-tight">Sprawdź swoją zdolność kredytową</span>
-                <span className="text-sm md:text-base font-normal opacity-90">Analiza za 29 zł</span>
+                <span className="text-sm md:text-base font-normal opacity-90">Zamów analizę</span>
               </Button>
             </a>
             <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
@@ -266,7 +266,7 @@ const AnalizaKredytowa = () => {
                         {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
-                        "Za 29 zł otrzymałam więcej informacji niż z trzech wizyt w banku. Profesjonalnie, konkretnie i skutecznie."
+                        "Otrzymałam więcej informacji niż z trzech wizyt w banku. Profesjonalnie, konkretnie i skutecznie."
                       </p>
                       <p className="text-sm font-semibold text-navy-900">— Anna M., Kraków</p>
                     </div>
@@ -434,7 +434,7 @@ const AnalizaKredytowa = () => {
             <div className="px-2">
               <a href="#formularz-zamowienia" className="block">
                 <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                  <span className="text-xl md:text-2xl leading-tight">Zamów analizę — 29 zł</span>
+                  <span className="text-xl md:text-2xl leading-tight">Zamów analizę</span>
                   <span className="text-sm md:text-base font-normal opacity-90">i poznaj prawdę o swojej zdolności</span>
                 </Button>
               </a>
@@ -458,7 +458,7 @@ const AnalizaKredytowa = () => {
             </div>
 
             <p className="text-center text-warm-neutral-700 text-lg leading-relaxed">
-              <strong className="text-navy-900">Za 29 zł</strong> otrzymujesz profesjonalną analizę PLUS dostęp do ekskluzywnej sieci prywatnych inwestorów i finansowania, które uporządkują Twoje finanse na najlepszych warunkach.
+              Otrzymujesz profesjonalną analizę PLUS dostęp do ekskluzywnej sieci prywatnych inwestorów i finansowania, które uporządkują Twoje finanse na najlepszych warunkach.
             </p>
           </div>
 
@@ -539,7 +539,7 @@ const AnalizaKredytowa = () => {
                 </div>
                 <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
                   <p className="text-xs md:text-sm font-semibold text-navy-900">
-                    ✅ Transparentna cena: tylko 29 zł
+                    ✅ Transparentna cena
                   </p>
                 </div>
 
@@ -623,7 +623,7 @@ const AnalizaKredytowa = () => {
             <div className="mt-6 md:mt-8 p-4 md:p-6 bg-alert-red-100 rounded-xl border-2 border-alert-red-300">
               <p className="text-center text-navy-900 font-bold text-lg leading-relaxed">
                 <strong className="text-alert-red-700">Nie ryzykuj swojej przyszłości finansowej.</strong><br />
-                Za 29 zł otrzymujesz pewność, profesjonalizm i dostęp do prawdziwych rozwiązań.
+                Otrzymujesz pewność, profesjonalizm i dostęp do prawdziwych rozwiązań.
               </p>
             </div>
 
@@ -631,7 +631,7 @@ const AnalizaKredytowa = () => {
             <div className="text-center mt-8 px-2">
               <a href="#formularz-zamowienia" className="block">
                 <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                  <span className="text-xl md:text-2xl leading-tight">Zamów teraz za 29 zł</span>
+                  <span className="text-xl md:text-2xl leading-tight">Zamów teraz</span>
                   <span className="text-sm md:text-base font-normal opacity-90">🔍 i sprawdź, co widzi o Tobie bank</span>
                 </Button>
               </a>
@@ -654,7 +654,7 @@ const AnalizaKredytowa = () => {
                 <span className="font-bold text-sm">ZRÓB PIERWSZY KROK TERAZ</span>
               </div>
               <h2 className="font-montserrat text-3xl font-bold text-navy-900 mb-3">
-                Zamów swoją analizę za 29 zł
+                Zamów swoją analizę
               </h2>
               <p className="text-warm-neutral-600">
                 Wypełnij formularz i opłać — analiza w ciągu 24h
@@ -713,7 +713,7 @@ const AnalizaKredytowa = () => {
               {/* Submit Button */}
               <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 px-4 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4">
                 {isSubmitting ? 'Przechodzę do płatności...' : <>
-                    Zamawiam analizę — 29 zł
+                    Zamawiam analizę
                     <ArrowRight className="inline-block ml-2 w-5 h-5" />
                   </>}
               </Button>
