@@ -89,9 +89,11 @@ const AnalizaKredytowa = () => {
           {/* Benefit Headline */}
           <div className="text-center mb-6">
             <h1 className="font-montserrat text-2xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-3 leading-tight">
-              Nie ryzykuj kolejnej odmowy.<br />
-              <span className="text-prestige-gold-600">Zobacz, co banki i firmy pożyczkowe wiedzą o Tobie — zanim podejmiesz decyzję.</span>
+              Nie ryzykuj kolejnej odmowy.
             </h1>
+            <p className="text-lg md:text-2xl text-warm-neutral-700 leading-relaxed">
+              Zobacz, co <span className="text-prestige-gold-600 font-bold">banki i firmy pożyczkowe</span> wiedzą o Tobie<br className="hidden md:block" /> — zanim podejmiesz decyzję.
+            </p>
           </div>
 
           {/* Problem Statement */}
