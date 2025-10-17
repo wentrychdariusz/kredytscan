@@ -173,6 +173,66 @@ const AnalizaKredytowa = () => {
           <h2 className="font-montserrat text-3xl font-bold text-navy-900 mb-8 text-center">
             Co otrzymasz w ramach analizy?
           </h2>
+
+          {/* Secret Knowledge Section */}
+          <div className="bg-gradient-to-br from-prestige-gold-50 to-business-blue-50 rounded-2xl shadow-xl p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
+            <div className="text-center mb-6">
+              <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-3">
+                🔐 Odkryj tajemnice, które znają tylko nieliczni
+              </h3>
+              <p className="text-warm-neutral-700 text-lg">
+                Jako jedni z niewielu w Polsce pokażemy Ci <strong className="text-navy-900">dokładnie, jak naprawić swoją sytuację</strong> — nawet jeśli masz złą historię w BIK
+              </p>
+            </div>
+
+            <div className="space-y-4">
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-prestige-gold-500">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🔍</span>
+                  <div>
+                    <h4 className="font-bold text-navy-900 mb-1">Co o Tobie zapisano w BIK, BIG i InfoMonitorze</h4>
+                    <p className="text-warm-neutral-700">Dokładnie przeanalizujemy wszystkie wpisy i pokażemy, co widzą banki, zanim podejmą decyzję</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-business-blue-500">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">📊</span>
+                  <div>
+                    <h4 className="font-bold text-navy-900 mb-1">Jak wygląda Twoja zdolność kredytowa w oczach banku</h4>
+                    <p className="text-warm-neutral-700">Zobaczyjesz swoją sytuację oczami kredytodawców i zrozumiesz, dlaczego dostajesz odmowy</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-alert-red-500">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">⚠️</span>
+                  <div>
+                    <h4 className="font-bold text-navy-900 mb-1">Jakie błędy i zaległości blokują decyzję</h4>
+                    <p className="text-warm-neutral-700">Wskażemy konkretne punkty, które eliminują Cię z możliwości kredytu bankowego</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-success-green-500">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">🧩</span>
+                  <div>
+                    <h4 className="font-bold text-navy-900 mb-1">Jak możesz to naprawić i poprawić ocenę kredytową</h4>
+                    <p className="text-warm-neutral-700"><strong className="text-success-green-700">To jest kluczowa wiedza</strong>, której nie dostaniesz nigdzie indziej — pokażemy Ci krok po kroku, co zrobić, aby banki zaczęły mówić "TAK"</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 p-5 bg-navy-900 rounded-xl text-center">
+              <p className="text-white text-lg font-semibold">
+                💎 <strong className="text-prestige-gold-400">To wiedza warta znacznie więcej niż 29 zł</strong> — ale chcemy, aby była dostępna dla każdego, kto potrzebuje prawdziwej pomocy
+              </p>
+            </div>
+          </div>
           
           <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
             <div className="space-y-4">
