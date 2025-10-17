@@ -7,10 +7,11 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Shield, CheckCircle, AlertCircle, FileText, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-
 const AnalizaKredytowa = () => {
   const navigate = useNavigate();
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,10 +19,8 @@ const AnalizaKredytowa = () => {
     consent: false
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!formData.consent) {
       toast({
         title: "Wymagana zgoda",
@@ -30,9 +29,7 @@ const AnalizaKredytowa = () => {
       });
       return;
     }
-
     setIsSubmitting(true);
-
     try {
       const params = new URLSearchParams({
         name: formData.name,
@@ -41,7 +38,6 @@ const AnalizaKredytowa = () => {
         amount: '29',
         service: 'Profesjonalna Analiza Kredytowa'
       });
-
       navigate(`/payment-express?${params.toString()}`);
     } catch (error) {
       console.error('Error:', error);
@@ -53,28 +49,24 @@ const AnalizaKredytowa = () => {
       setIsSubmitting(false);
     }
   };
-
-  const benefits = [
-    "Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej",
-    "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność",
-    "Przeanalizujemy informacje z BIK, BIG i InfoMonitora",
-    "Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie",
-    "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku",
-    "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów",
-    "Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach",
-    "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"
-  ];
-
-  const premiumAdvantages = [
-    { label: "Obsługa indywidualna", icon: CheckCircle },
-    { label: "Dostęp do finansowania do 200 000 zł", icon: CheckCircle },
-    { label: "Najlepsze know-how finansowe w Polsce", icon: CheckCircle },
-    { label: "Zaufanie ponad 15 000 osób", icon: CheckCircle },
-    { label: "Setki pozytywnych opinii i historii", icon: CheckCircle }
-  ];
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
+  const benefits = ["Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej", "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność", "Przeanalizujemy informacje z BIK, BIG i InfoMonitora", "Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie", "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku", "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów", "Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach", "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"];
+  const premiumAdvantages = [{
+    label: "Obsługa indywidualna",
+    icon: CheckCircle
+  }, {
+    label: "Dostęp do finansowania do 200 000 zł",
+    icon: CheckCircle
+  }, {
+    label: "Najlepsze know-how finansowe w Polsce",
+    icon: CheckCircle
+  }, {
+    label: "Zaufanie ponad 15 000 osób",
+    icon: CheckCircle
+  }, {
+    label: "Setki pozytywnych opinii i historii",
+    icon: CheckCircle
+  }];
+  return <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
       
       {/* Hero Section */}
       <section className="pt-8 pb-12 px-4">
@@ -108,11 +100,7 @@ const AnalizaKredytowa = () => {
           <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border-2 border-alert-red-200">
             <div className="flex flex-col md:flex-row items-start gap-5">
               <Avatar className="w-20 h-20 md:w-24 md:h-24 border-3 border-alert-red-400 flex-shrink-0">
-                <AvatarImage 
-                  src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" 
-                  alt="Dariusz Wentrych"
-                  className="object-cover"
-                />
+                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
                 <AvatarFallback className="text-xl font-bold">DW</AvatarFallback>
               </Avatar>
               <div className="flex-1">
@@ -145,11 +133,7 @@ const AnalizaKredytowa = () => {
             {/* Expert Header */}
             <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
               <Avatar className="w-24 h-24 md:w-32 md:h-32 border-4 border-prestige-gold-400">
-                <AvatarImage 
-                  src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" 
-                  alt="Dariusz Wentrych"
-                  className="object-cover"
-                />
+                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
                 <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
               </Avatar>
               <div className="text-center md:text-left">
@@ -189,12 +173,10 @@ const AnalizaKredytowa = () => {
           
           <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
             <div className="space-y-4">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-3">
+              {benefits.map((benefit, index) => <div key={index} className="flex items-start gap-3">
                   <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                   <p className="text-warm-neutral-700 text-lg">{benefit}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="mt-8 p-6 bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl border border-prestige-gold-200">
@@ -214,12 +196,10 @@ const AnalizaKredytowa = () => {
             </h3>
             
             <div className="grid md:grid-cols-2 gap-4 mb-6">
-              {premiumAdvantages.map((advantage, index) => (
-                <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+              {premiumAdvantages.map((advantage, index) => <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
                   <advantage.icon className="w-5 h-5 text-success-green-600 flex-shrink-0" />
                   <span className="text-navy-900 font-semibold">{advantage.label}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <p className="text-center text-warm-neutral-700 text-lg leading-relaxed">
@@ -266,13 +246,7 @@ const AnalizaKredytowa = () => {
                 </div>
               </div>
 
-              <div className="flex items-start gap-2 bg-white p-3 md:p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
-                <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-alert-red-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-navy-900 font-bold mb-1 text-sm md:text-base">Tracisz zaufanie 15 000 zadowolonych klientów</p>
-                  <p className="text-warm-neutral-600 text-xs md:text-sm">Nasi klienci wiedzą, że płacąc 29 zł, dostają realną wartość i prawdziwą pomoc — nie obietnice.</p>
-                </div>
-              </div>
+              
             </div>
 
             <div className="mt-6 md:mt-8 p-4 md:p-6 bg-alert-red-100 rounded-xl border-2 border-alert-red-300">
@@ -309,54 +283,37 @@ const AnalizaKredytowa = () => {
                 <Label htmlFor="name" className="text-navy-900 font-semibold mb-2 block">
                   Imię i nazwisko *
                 </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="Jan Kowalski"
-                  className="h-12"
-                />
+                <Input id="name" type="text" required value={formData.name} onChange={e => setFormData({
+                ...formData,
+                name: e.target.value
+              })} placeholder="Jan Kowalski" className="h-12" />
               </div>
 
               <div>
                 <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block">
                   Email *
                 </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  placeholder="jan.kowalski@example.com"
-                  className="h-12"
-                />
+                <Input id="email" type="email" required value={formData.email} onChange={e => setFormData({
+                ...formData,
+                email: e.target.value
+              })} placeholder="jan.kowalski@example.com" className="h-12" />
               </div>
 
               <div>
                 <Label htmlFor="phone" className="text-navy-900 font-semibold mb-2 block">
                   Numer telefonu *
                 </Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  required
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="+48 123 456 789"
-                  className="h-12"
-                />
+                <Input id="phone" type="tel" required value={formData.phone} onChange={e => setFormData({
+                ...formData,
+                phone: e.target.value
+              })} placeholder="+48 123 456 789" className="h-12" />
               </div>
 
               <div className="flex items-start gap-3 pt-2">
-                <Checkbox
-                  id="consent"
-                  checked={formData.consent}
-                  onCheckedChange={(checked) => setFormData({ ...formData, consent: checked as boolean })}
-                  className="mt-1"
-                />
+                <Checkbox id="consent" checked={formData.consent} onCheckedChange={checked => setFormData({
+                ...formData,
+                consent: checked as boolean
+              })} className="mt-1" />
                 <Label htmlFor="consent" className="text-sm text-warm-neutral-700 cursor-pointer leading-relaxed">
                   Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji usługi analizy kredytowej *
                 </Label>
@@ -370,19 +327,11 @@ const AnalizaKredytowa = () => {
               </div>
 
               {/* Submit Button */}
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105"
-              >
-                {isSubmitting ? (
-                  'Przechodzę do płatności...'
-                ) : (
-                  <>
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                {isSubmitting ? 'Przechodzę do płatności...' : <>
                     Zamawiam analizę — 29 zł
                     <ArrowRight className="inline-block ml-2 w-5 h-5" />
-                  </>
-                )}
+                  </>}
               </Button>
 
               <p className="text-center text-sm text-warm-neutral-600 pt-2">
@@ -406,8 +355,6 @@ const AnalizaKredytowa = () => {
         </div>
       </section>
 
-    </div>
-  );
+    </div>;
 };
-
 export default AnalizaKredytowa;
