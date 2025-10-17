@@ -735,10 +735,10 @@ const AnalizaKredytowa = () => {
               </div>
 
               {/* Submit Button */}
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-8 text-xl rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 px-4 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4">
                 {isSubmitting ? 'Przechodzę do płatności...' : <>
                     Zamawiam analizę — 29 zł
-                    <ArrowRight className="inline-block ml-2 w-6 h-6" />
+                    <ArrowRight className="inline-block ml-2 w-5 h-5" />
                   </>}
               </Button>
 
