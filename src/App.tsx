@@ -14,6 +14,7 @@ import Gratulacje4000_6000 from "./pages/Gratulacje4000_6000";
 import Calculator from "./pages/Calculator";
 import CalculatorBeta from "./pages/CalculatorBeta";
 import Analiza from "./pages/Analiza";
+import AnalizaKredytowa from "./pages/AnalizaKredytowa";
 import SuspiciousAnalysis from "./pages/SuspiciousAnalysis";
 import ThankYou from "./pages/ThankYou";
 import PodziękowanieBezVIP from "./pages/PodziękowanieBezVIP";
@@ -51,6 +52,7 @@ const App = () => (
           <Route path="/kalkulator" element={<Calculator />} />
           <Route path="/kalkulator-beta" element={<CalculatorBeta />} />
           <Route path="/analiza" element={<Analiza />} />
+          <Route path="/analiza-kredytowa" element={<AnalizaKredytowa />} />
           <Route path="/formularz" element={<ThankYou />} />
           <Route path="/sms-verification" element={<SmsVerification />} />
           <Route path="/sms-verification-a" element={<SmsVerificationA />} />
