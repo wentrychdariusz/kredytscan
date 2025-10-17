@@ -556,7 +556,84 @@ const AnalizaKredytowa = () => {
               </div>
             </div>
 
-            <div className="space-y-3">
+            {/* Sekcja rozszerzonej interpretacji */}
+            <div className="mt-8 space-y-5">
+              <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
+                🔍 Co to oznacza w praktyce:
+              </h4>
+
+              {/* Punkt 1 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-alert-red-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Darmowe usługi — brzmi dobrze, ale...
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  Często są tylko przynętą. Po zebraniu Twoich danych kontaktowych sprzedawcy oferują „produkty partnerskie" z wysokimi prowizjami. W Kredyt Scan płacisz raz — i dostajesz konkretną analizę, bez ukrytych kosztów.
+                </p>
+              </div>
+
+              {/* Punkt 2 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-prestige-gold-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Ogólnikowe porady vs ✅ Indywidualna analiza
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  W internecie znajdziesz tysiące porad, które nie mają nic wspólnego z Twoją sytuacją. My patrzymy na Twoje dane, Twoje zobowiązania i Twoje możliwości — dlatego każda analiza jest unikalna.
+                </p>
+              </div>
+
+              {/* Punkt 3 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-business-blue-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Brak analizy BIK vs ✅ Pełna analiza BIK, BIG, InfoMonitor
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  Darmowe firmy nie mają dostępu do systemów oceny bankowej. My współpracujemy z ekspertami, którzy potrafią czytać raporty tak, jak robią to banki.
+                </p>
+              </div>
+
+              {/* Punkt 4 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-alert-red-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Ryzyko złych rad vs ✅ 15 lat doświadczenia
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  Błędy doradców często kosztują ludzi utratę zdolności kredytowej na lata. Nasze rekomendacje opierają się na realnych przypadkach i wieloletniej praktyce.
+                </p>
+              </div>
+
+              {/* Punkt 5 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-success-green-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Brak dostępu do inwestorów vs ✅ Dostęp do prywatnego finansowania
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  Żadne darmowe rozwiązanie nie zapewni Ci kontaktu z realnym źródłem pieniędzy. My mamy własną bazę inwestorów, którzy mogą pomóc Ci wyjść z zadłużenia lub spiąć brakującą kwotę do kredytu.
+                </p>
+              </div>
+
+              {/* Punkt 6 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-prestige-gold-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Ukryte koszty prowizji vs ✅ Transparentna cena: 29 zł
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  Darmowe oferty często kończą się płatnymi produktami lub wysoką prowizją „po fakcie". U nas wiesz od początku — 29 zł i koniec historii.
+                </p>
+              </div>
+
+              {/* Punkt 7 */}
+              <div className="bg-white p-5 rounded-lg border-l-4 border-business-blue-400 shadow-sm">
+                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
+                  ❌ Brak planu działania vs ✅ Plan krok po kroku
+                </h5>
+                <p className="text-warm-neutral-700 text-sm leading-relaxed">
+                  Nikt nie powie Ci, co dokładnie zrobić dalej. My dajemy Ci mapę: jak poprawić dane w BIK, kiedy złożyć wniosek, co zmienić w historii spłat.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-3 mt-8">
               <div className="flex items-start gap-2 bg-white p-3 md:p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
                 <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-alert-red-600 flex-shrink-0 mt-0.5" />
                 <div>
