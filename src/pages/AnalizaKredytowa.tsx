@@ -61,7 +61,16 @@ const AnalizaKredytowa = () => {
     "Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie",
     "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku",
     "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów",
+    "Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach",
     "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"
+  ];
+
+  const premiumAdvantages = [
+    { label: "Obsługa indywidualna", icon: CheckCircle },
+    { label: "Dostęp do finansowania do 200 000 zł", icon: CheckCircle },
+    { label: "Najlepsze know-how finansowe w Polsce", icon: CheckCircle },
+    { label: "Zaufanie ponad 15 000 osób", icon: CheckCircle },
+    { label: "Setki pozytywnych opinii i historii", icon: CheckCircle }
   ];
 
   return (
@@ -196,6 +205,26 @@ const AnalizaKredytowa = () => {
                 A jeśli sytuacja pozwoli, pomożemy Ci uzyskać dostęp do prywatnych inwestorów, którzy mogą wspomóc Twoją drogę do finansowej stabilności.
               </p>
             </div>
+          </div>
+
+          {/* What You DON'T Get with Free Services */}
+          <div className="bg-gradient-to-br from-alert-red-50 to-warm-neutral-50 rounded-2xl shadow-lg p-8 border-2 border-alert-red-200">
+            <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-4 text-center">
+              Czego NIE masz w darmowych usługach innych firm:
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-4 mb-6">
+              {premiumAdvantages.map((advantage, index) => (
+                <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+                  <advantage.icon className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-navy-900 font-semibold">{advantage.label}</span>
+                </div>
+              ))}
+            </div>
+
+            <p className="text-center text-warm-neutral-700 text-lg leading-relaxed">
+              <strong className="text-navy-900">Za 29 zł</strong> otrzymujesz profesjonalną analizę PLUS dostęp do ekskluzywnej sieci prywatnych inwestorów i finansowania, które uporządkują Twoje finanse na najlepszych warunkach.
+            </p>
           </div>
         </div>
       </section>
