@@ -4,7 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Shield, CheckCircle, AlertCircle, TrendingUp, FileText, Users } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Shield, CheckCircle, AlertCircle, FileText, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const AnalizaKredytowa = () => {
@@ -33,7 +34,6 @@ const AnalizaKredytowa = () => {
     setIsSubmitting(true);
 
     try {
-      // Przekierowanie do płatności z danymi
       const params = new URLSearchParams({
         name: formData.name,
         email: formData.email,
@@ -56,66 +56,89 @@ const AnalizaKredytowa = () => {
 
   const benefits = [
     "Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej",
-    "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność kredytową",
+    "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność",
     "Przeanalizujemy informacje z BIK, BIG i InfoMonitora",
     "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt",
     "Zaproponujemy kierunek działania dopasowany do Twojej sytuacji"
   ];
 
-  const stats = [
-    { icon: Users, value: "2500+", label: "Zadowolonych klientów" },
-    { icon: FileText, value: "98%", label: "Skuteczność analiz" },
-    { icon: TrendingUp, value: "15 lat", label: "Doświadczenia" }
-  ];
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-warm-neutral-50 via-white to-business-blue-50">
+    <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
+      
       {/* Hero Section */}
-      <section className="pt-12 pb-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-prestige-gold-100 text-prestige-gold-700 px-4 py-2 rounded-full mb-6">
-            <Shield className="w-4 h-4" />
-            <span className="text-sm font-semibold">Profesjonalna Analiza</span>
-          </div>
+      <section className="pt-8 pb-12 px-4">
+        <div className="max-w-4xl mx-auto">
           
-          <h1 className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-6 leading-tight">
-            Profesjonalna Analiza<br />
-            <span className="text-prestige-gold-500">Kredytowa — 29 zł</span>
-          </h1>
-
-          <div className="bg-warm-neutral-100 border-l-4 border-business-blue-500 p-6 rounded-lg mb-8 text-left max-w-2xl mx-auto">
-            <div className="flex items-start gap-3">
-              <AlertCircle className="w-6 h-6 text-business-blue-500 flex-shrink-0 mt-1" />
-              <div>
-                <p className="text-lg font-semibold text-navy-900 mb-2">
-                  Masz problem z BIK? Bank odmówił Ci kredytu?
-                </p>
-                <p className="text-warm-neutral-700">
-                  Nie działaj po omacku — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek.
-                </p>
-              </div>
+          {/* Alert Badge */}
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center gap-2 bg-alert-red-100 text-alert-red-700 px-5 py-2 rounded-full animate-pulse">
+              <AlertCircle className="w-4 h-4" />
+              <span className="text-sm font-bold">BANK ODMÓWIŁ CI KREDYTU?</span>
             </div>
           </div>
 
-          <p className="text-xl text-warm-neutral-600 mb-8 max-w-2xl mx-auto">
-            Za jedyne <span className="font-bold text-prestige-gold-600">29 zł</span> otrzymasz pełną analizę swojej sytuacji kredytowej, przygotowaną przez ekspertów z doświadczeniem w finansach bankowych.
+          {/* Main Headline */}
+          <h1 className="font-montserrat text-3xl md:text-5xl font-bold text-navy-900 mb-6 leading-tight text-center">
+            Profesjonalna Analiza Kredytowa<br />
+            <span className="text-prestige-gold-600">— tylko 29 zł</span>
+          </h1>
+
+          {/* Problem Statement */}
+          <div className="bg-warm-neutral-100 border-l-4 border-alert-red-500 p-6 rounded-lg mb-8">
+            <p className="text-lg font-semibold text-navy-900 mb-3">
+              Masz problem z BIK? Bank odmówił Ci kredytu?
+            </p>
+            <p className="text-warm-neutral-700 leading-relaxed">
+              <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek.
+            </p>
+          </div>
+
+          {/* Value Proposition */}
+          <p className="text-xl text-center text-warm-neutral-700 mb-8">
+            Za jedyne <span className="font-bold text-prestige-gold-600 text-2xl">29 zł</span> otrzymasz pełną analizę swojej sytuacji kredytowej, przygotowaną przez <strong>ekspertów z wieloletnim doświadczeniem</strong> w finansach bankowych.
           </p>
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-8 px-4 bg-white/50">
+      {/* Expert Section - Dariusz */}
+      <section className="py-12 px-4 bg-gradient-to-br from-navy-900 to-business-blue-900">
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-3 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-prestige-gold-100 rounded-full mb-3">
-                  <stat.icon className="w-6 h-6 text-prestige-gold-600" />
-                </div>
-                <div className="font-bold text-2xl text-navy-900">{stat.value}</div>
-                <div className="text-sm text-warm-neutral-600">{stat.label}</div>
+          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+            
+            {/* Expert Header */}
+            <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
+              <Avatar className="w-24 h-24 md:w-32 md:h-32 border-4 border-prestige-gold-400">
+                <AvatarImage 
+                  src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" 
+                  alt="Dariusz Wentrych"
+                  className="object-cover"
+                />
+                <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
+              </Avatar>
+              <div className="text-center md:text-left">
+                <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-2">
+                  Dariusz Wentrych
+                </h3>
+                <p className="text-warm-neutral-600 text-lg">
+                  Ekspert finansowy z 15-letnim doświadczeniem
+                </p>
               </div>
-            ))}
+            </div>
+
+            {/* Expert Message */}
+            <div className="space-y-4 text-warm-neutral-700">
+              <p className="text-lg leading-relaxed">
+                <strong className="text-navy-900">Tysiące osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Teraz czas na Ciebie!
+              </p>
+              <p className="text-lg leading-relaxed">
+                Czy wyobrażasz sobie życie, w którym <strong className="text-navy-900">nie musisz bać się kolejnego telefonu od wierzycieli?</strong> Życie, w którym Twoje pieniądze należą do Ciebie, a nie do banku?
+              </p>
+              <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-6 rounded-lg mt-6">
+                <p className="text-xl font-semibold text-navy-900 italic">
+                  "Jeśli nigdy nie miałeś wsparcia i pomocy od nikogo, to ja Ci pomogę. Nie czekaj, aż sytuacja wymknie się spod kontroli."
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -127,21 +150,19 @@ const AnalizaKredytowa = () => {
             Co otrzymasz w ramach analizy?
           </h2>
           
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
+          <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-6 h-6 bg-success-green-100 rounded-full flex items-center justify-center">
-                    <CheckCircle className="w-4 h-4 text-success-green-600" />
-                  </div>
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                   <p className="text-warm-neutral-700 text-lg">{benefit}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl">
-              <p className="text-navy-900 font-semibold text-center text-lg">
-                To profesjonalna analiza, dzięki której zrozumiesz, jak widzą Cię banki – i co zrobić, by wreszcie usłyszeć „tak".
+            <div className="mt-8 p-6 bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl border border-prestige-gold-200">
+              <p className="text-navy-900 font-bold text-center text-lg">
+                Zrozumiesz, jak widzą Cię banki – i co zrobić, by wreszcie usłyszeć „tak"
               </p>
             </div>
           </div>
@@ -149,21 +170,27 @@ const AnalizaKredytowa = () => {
       </section>
 
       {/* Order Form Section */}
-      <section className="py-12 px-4 bg-gradient-to-br from-navy-900 to-business-blue-900">
+      <section className="py-16 px-4 bg-gradient-to-br from-navy-900 via-business-blue-900 to-navy-900">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl p-8">
+          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10">
+            
+            {/* Form Header */}
             <div className="text-center mb-8">
+              <div className="inline-block bg-alert-red-100 text-alert-red-700 px-4 py-2 rounded-full mb-4">
+                <span className="font-bold text-sm">ZRÓB PIERWSZY KROK TERAZ</span>
+              </div>
               <h2 className="font-montserrat text-3xl font-bold text-navy-900 mb-3">
-                Zamów swoją analizę już teraz
+                Zamów swoją analizę
               </h2>
               <p className="text-warm-neutral-600">
-                Wypełnij formularz i przejdź do płatności — analiza zostanie przygotowana w ciągu 24h
+                Wypełnij formularz i opłać — analiza w ciągu 24h
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Form */}
+            <form onSubmit={handleSubmit} className="space-y-5">
               <div>
-                <Label htmlFor="name" className="text-navy-900 font-semibold">
+                <Label htmlFor="name" className="text-navy-900 font-semibold mb-2 block">
                   Imię i nazwisko *
                 </Label>
                 <Input
@@ -172,13 +199,13 @@ const AnalizaKredytowa = () => {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="mt-2"
                   placeholder="Jan Kowalski"
+                  className="h-12"
                 />
               </div>
 
               <div>
-                <Label htmlFor="email" className="text-navy-900 font-semibold">
+                <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block">
                   Email *
                 </Label>
                 <Input
@@ -187,13 +214,13 @@ const AnalizaKredytowa = () => {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="mt-2"
                   placeholder="jan.kowalski@example.com"
+                  className="h-12"
                 />
               </div>
 
               <div>
-                <Label htmlFor="phone" className="text-navy-900 font-semibold">
+                <Label htmlFor="phone" className="text-navy-900 font-semibold mb-2 block">
                   Numer telefonu *
                 </Label>
                 <Input
@@ -202,39 +229,48 @@ const AnalizaKredytowa = () => {
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="mt-2"
                   placeholder="+48 123 456 789"
+                  className="h-12"
                 />
               </div>
 
-              <div className="flex items-start gap-3">
+              <div className="flex items-start gap-3 pt-2">
                 <Checkbox
                   id="consent"
                   checked={formData.consent}
                   onCheckedChange={(checked) => setFormData({ ...formData, consent: checked as boolean })}
                   className="mt-1"
                 />
-                <Label htmlFor="consent" className="text-sm text-warm-neutral-700 cursor-pointer">
+                <Label htmlFor="consent" className="text-sm text-warm-neutral-700 cursor-pointer leading-relaxed">
                   Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji usługi analizy kredytowej *
                 </Label>
               </div>
 
-              <div className="bg-prestige-gold-50 border border-prestige-gold-200 rounded-lg p-6 text-center">
-                <div className="text-sm text-warm-neutral-600 mb-2">Koszt analizy:</div>
-                <div className="text-4xl font-bold text-prestige-gold-600 mb-1">29 zł</div>
-                <div className="text-sm text-warm-neutral-600">Płatność BLIK</div>
+              {/* Price Box */}
+              <div className="bg-prestige-gold-50 border-2 border-prestige-gold-300 rounded-xl p-6 text-center">
+                <div className="text-sm text-warm-neutral-600 mb-1">Koszt analizy:</div>
+                <div className="text-5xl font-bold text-prestige-gold-600 mb-2">29 zł</div>
+                <div className="text-sm text-warm-neutral-600">Płatność BLIK • Błyskawiczna realizacja</div>
               </div>
 
+              {/* Submit Button */}
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl"
+                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105"
               >
-                {isSubmitting ? 'Przechodzę do płatności...' : 'Zamawiam analizę — 29 zł'}
+                {isSubmitting ? (
+                  'Przechodzę do płatności...'
+                ) : (
+                  <>
+                    Zamawiam analizę — 29 zł
+                    <ArrowRight className="inline-block ml-2 w-5 h-5" />
+                  </>
+                )}
               </Button>
 
-              <p className="text-center text-sm text-warm-neutral-600">
-                Po opłaceniu zamówienia skontaktujemy się z Tobą w ciągu 24h z gotową analizą
+              <p className="text-center text-sm text-warm-neutral-600 pt-2">
+                🔒 Bezpieczna płatność przez TPay • ⚡ Analiza gotowa w 24h
               </p>
             </form>
           </div>
@@ -243,16 +279,17 @@ const AnalizaKredytowa = () => {
 
       {/* Trust Section */}
       <section className="py-12 px-4 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <Shield className="w-16 h-16 text-prestige-gold-500 mx-auto mb-6" />
+        <div className="max-w-3xl mx-auto text-center">
+          <Shield className="w-16 h-16 text-prestige-gold-500 mx-auto mb-4" />
           <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-4">
             Bezpieczna płatność i gwarancja jakości
           </h3>
-          <p className="text-warm-neutral-600 max-w-2xl mx-auto">
-            Twoje dane są bezpieczne. Płatność realizowana jest przez TPay — jednego z największych operatorów płatności w Polsce. Gwarantujemy profesjonalną analizę przygotowaną przez ekspertów z wieloletnim doświadczeniem.
+          <p className="text-warm-neutral-600 text-lg leading-relaxed">
+            Twoje dane są bezpieczne. Płatność realizowana przez <strong>TPay</strong> — jednego z największych operatorów płatności w Polsce. Gwarantujemy profesjonalną analizę przez ekspertów z <strong>wieloletnim doświadczeniem</strong>.
           </p>
         </div>
       </section>
+
     </div>
   );
 };
