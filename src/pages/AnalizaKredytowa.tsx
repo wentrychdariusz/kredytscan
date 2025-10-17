@@ -250,6 +250,9 @@ const AnalizaKredytowa = () => {
               <p className="text-lg leading-relaxed">
                 My pomagamy Ci <strong className="text-prestige-gold-400">zobaczyć tę drugą stronę lustra</strong> — i zrozumieć, dlaczego decyzja była taka, a nie inna.
               </p>
+              <p className="text-lg leading-relaxed border-t border-white/20 pt-4 mt-4">
+                <strong className="text-alert-red-300">A najgorsze w co możesz brnąć bez tej wiedzy, którą Ci powiemy?</strong> To iść do innego banku lub firmy po pożyczkę! <span className="text-white">Każda kolejna odmowa pogarsza Twoją sytuację i zamyka drzwi do taniego finansowania.</span>
+              </p>
             </div>
 
             <div className="mt-6 p-5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
