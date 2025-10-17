@@ -167,10 +167,10 @@ const AnalizaKredytowa = () => {
             <a href="#formularz-zamowienia" className="block">
               <Button 
                 size="lg" 
-                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
+                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
               >
-                <span className="text-xl md:text-2xl leading-tight">🔍 Sprawdź, co widzi o Tobie bank</span>
-                <span className="text-sm md:text-base font-normal opacity-90">— analiza za 29 zł</span>
+                <span className="text-lg md:text-2xl leading-tight">Sprawdź swoją zdolność kredytową</span>
+                <span className="text-sm md:text-base font-normal opacity-90">Analiza za 29 zł</span>
               </Button>
             </a>
             <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
