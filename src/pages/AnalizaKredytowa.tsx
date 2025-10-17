@@ -233,6 +233,31 @@ const AnalizaKredytowa = () => {
               </p>
             </div>
           </div>
+
+          {/* Bank Secrets Section */}
+          <div className="bg-gradient-to-br from-navy-900 to-business-blue-900 rounded-2xl shadow-2xl p-6 md:p-10 mb-8 border border-prestige-gold-400">
+            <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              🔓 To, czego bank Ci nie powie
+            </h3>
+            
+            <div className="space-y-4 text-warm-neutral-100">
+              <p className="text-lg leading-relaxed">
+                <strong className="text-prestige-gold-400">Każdy wniosek o kredyt to więcej niż cyferki.</strong>
+              </p>
+              <p className="text-lg leading-relaxed">
+                Banki korzystają z <strong className="text-white">algorytmów i scoringów</strong>, które oceniają Cię zanim ktokolwiek z Tobą porozmawia.
+              </p>
+              <p className="text-lg leading-relaxed">
+                My pomagamy Ci <strong className="text-prestige-gold-400">zobaczyć tę drugą stronę lustra</strong> — i zrozumieć, dlaczego decyzja była taka, a nie inna.
+              </p>
+            </div>
+
+            <div className="mt-6 p-5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
+              <p className="text-white text-center text-lg font-semibold">
+                Poznaj zasady gry, które znają tylko wtajemniczeni — <span className="text-prestige-gold-400">za jedyne 29 zł</span>
+              </p>
+            </div>
+          </div>
           
           <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
             <div className="space-y-4">
