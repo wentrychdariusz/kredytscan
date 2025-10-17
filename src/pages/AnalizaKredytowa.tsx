@@ -730,19 +730,18 @@ const AnalizaKredytowa = () => {
       </section>
 
       {/* Trust Section */}
-      <section className="py-12 px-4 bg-white">
+      <section className="py-8 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <Shield className="w-16 h-16 text-prestige-gold-500 mx-auto mb-4" />
-          <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-4">
+          <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-3">
             🔒 Bezpieczna płatność i gwarancja jakości
           </h3>
-          <p className="text-warm-neutral-600 text-lg leading-relaxed mb-6">
-            Twoje dane są bezpieczne. Płatność przez <strong>TPay</strong> — jednego z największych operatorów płatności w Polsce. Gwarantujemy profesjonalną analizę przez ekspertów z wieloletnim doświadczeniem.
+          <p className="text-warm-neutral-600 text-base md:text-lg mb-6">
+            Twoje dane są bezpieczne.
           </p>
           <img 
             src="/logos/tpay-payment-methods.jpg" 
-            alt="TPay - Dostępne metody płatności: VISA, Mastercard, BLIK, PayPal i inne" 
-            className="max-w-md mx-auto rounded-lg shadow-md"
+            alt="TPay - Dostępne metody płatności" 
+            className="max-w-xs md:max-w-md mx-auto rounded-lg shadow-md"
             loading="lazy"
           />
         </div>
