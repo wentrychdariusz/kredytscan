@@ -86,48 +86,81 @@ const AnalizaKredytowa = () => {
       <section className="pt-4 pb-12 px-4">
         <div className="max-w-4xl mx-auto">
           
-          {/* Main Headline */}
-          <h1 className="font-montserrat text-3xl md:text-5xl font-bold text-navy-900 mb-6 leading-tight text-center">
-            Profesjonalna Analiza Kredytowa<br />
-            <span className="text-prestige-gold-600">— tylko 29 zł</span>
-          </h1>
+          {/* Benefit Headline */}
+          <div className="text-center mb-6">
+            <h1 className="font-montserrat text-2xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-3 leading-tight">
+              💡 Dowiedz się, dlaczego bank mówi „nie"<br />
+              <span className="text-prestige-gold-600">— zanim złożysz kolejny wniosek</span>
+            </h1>
+          </div>
 
           {/* Problem Statement */}
           <div className="bg-warm-neutral-100 border-l-4 border-alert-red-500 p-6 rounded-lg mb-8">
             <p className="text-lg font-semibold text-navy-900 mb-3">
-              Bank odmówił Ci kredyt? Chcesz zamienić pożyczki, aby dostać finansowanie w banku?
+              Bank odmówił Ci kredytu?<br />
+              Chcesz zamienić pożyczki, aby dostać finansowanie w banku?
             </p>
             <p className="text-warm-neutral-700 leading-relaxed">
-              <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek i <strong className="text-alert-red-700">na wiele lat popsujesz sobie finansowanie</strong>. A to odcina Cię od taniej gotówki.
+              <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek i <strong className="text-alert-red-700">na lata zablokujesz sobie dostęp do korzystnych ofert bankowych</strong>.
             </p>
           </div>
 
-          {/* Warning from Dariusz */}
-          <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border-2 border-alert-red-200">
+          {/* Expert Section */}
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-200">
             <div className="flex flex-col md:flex-row items-start gap-5">
-              <Avatar className="w-20 h-20 md:w-24 md:h-24 border-3 border-alert-red-400 flex-shrink-0">
+              <Avatar className="w-20 h-20 md:w-24 md:h-24 border-4 border-prestige-gold-400 flex-shrink-0">
                 <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
                 <AvatarFallback className="text-xl font-bold">DW</AvatarFallback>
               </Avatar>
               <div className="flex-1">
+                <div className="mb-4">
+                  <p className="font-bold text-navy-900 text-lg">👤 Dariusz Wentrych</p>
+                  <p className="text-warm-neutral-600">Ekspert finansowy z 15-letnim doświadczeniem</p>
+                  <p className="text-prestige-gold-600 font-semibold">Autor książki „Nowe życie bez długów"</p>
+                </div>
+                
+                <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-4 rounded-r-lg mb-4">
+                  <p className="text-warm-neutral-700 leading-relaxed italic">
+                    „Widziałem setki przypadków, gdzie ludzie mieli złych doradców i popełnili błędy, które kosztowały ich utratę finansowania w banku — bo korzystali z darmowych porad w internecie."
+                  </p>
+                </div>
+
                 <p className="text-warm-neutral-700 leading-relaxed mb-3">
-                  <strong className="text-navy-900">Widziałem setki przypadków</strong>, gdzie ludzie mieli złych doradców i popełnili błędy, które kosztowały ich <strong className="text-alert-red-700">utratę taniego finansowania w banku</strong> — bo korzystali z darmowej pomocy firm z internetu.
-                </p>
-                <p className="text-warm-neutral-700 leading-relaxed mb-3">
-                  Za 29 zł dowiesz się prawdy o swojej sytuacji i unikniesz kosztownych błędów, które <strong className="text-alert-red-700">eliminują Cię z systemu bankowego</strong>.
+                  Za 29 zł dowiesz się prawdy o swojej sytuacji finansowej i unikniesz błędów, które eliminują Cię z systemu bankowego.
                 </p>
                 <p className="text-navy-900 font-semibold leading-relaxed">
-                  Nawet jeśli masz tzw. chwilówki czy pożyczki — <strong className="text-success-green-700">potrafimy uporządkować Twoją sytuację</strong>. Jest nadzieja i jest rozwiązanie. Pomożemy Ci.
+                  Nawet jeśli masz chwilówki — pomożemy Ci uporządkować sytuację. <strong className="text-success-green-700">Jest rozwiązanie. Jest nadzieja.</strong>
                 </p>
-                <p className="text-sm text-warm-neutral-500 mt-3 italic">— Dariusz Wentrych, ekspert finansowy</p>
               </div>
             </div>
           </div>
 
-          {/* Value Proposition */}
-          <p className="text-xl text-center text-warm-neutral-700 mb-8">
-            Za jedyne <span className="font-bold text-prestige-gold-600 text-2xl">29 zł</span> otrzymasz pełną analizę swojej sytuacji kredytowej, przygotowaną przez <strong>ekspertów z wieloletnim doświadczeniem</strong> w finansach bankowych.
-          </p>
+          {/* Micro Summary - Co otrzymasz */}
+          <div className="bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
+            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-5 text-center">
+              💼 Za 29 zł otrzymasz:
+            </h3>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  <strong>Analizę swojej sytuacji kredytowej</strong> — zobaczysz, jak oceniają Cię banki
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  <strong>Wskazanie błędów w BIK, BIG i InfoMonitorze</strong> — dowiesz się, co Cię blokuje
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  <strong>Konkretny plan krok po kroku</strong>, jak poprawić zdolność i zwiększyć szanse na kredyt
+                </p>
+              </div>
+            </div>
+          </div>
 
           {/* CTA #1 - Hero Section */}
           <div className="text-center px-2">
@@ -136,8 +169,8 @@ const AnalizaKredytowa = () => {
                 size="lg" 
                 className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
               >
-                <span className="text-xl md:text-2xl leading-tight">Zamów analizę za 29 zł</span>
-                <span className="text-sm md:text-base font-normal opacity-90">i dowiedz się, co widzi o Tobie bank</span>
+                <span className="text-xl md:text-2xl leading-tight">🔍 Sprawdź, co widzi o Tobie bank</span>
+                <span className="text-sm md:text-base font-normal opacity-90">— analiza za 29 zł</span>
               </Button>
             </a>
             <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
