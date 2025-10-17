@@ -82,14 +82,9 @@ const AnalizaKredytowa = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="pt-8 pb-12 px-4">
+      <section className="pt-4 pb-12 px-4">
         <div className="max-w-4xl mx-auto">
           
-          {/* Alert Badge */}
-          <div className="text-center mb-6">
-            
-          </div>
-
           {/* Main Headline */}
           <h1 className="font-montserrat text-3xl md:text-5xl font-bold text-navy-900 mb-6 leading-tight text-center">
             Profesjonalna Analiza Kredytowa<br />
