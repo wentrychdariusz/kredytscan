@@ -137,25 +137,36 @@ const AnalizaKredytowa = () => {
             
             {/* Expert Header */}
             <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-              <Avatar className="w-24 h-24 md:w-32 md:h-32 border-4 border-prestige-gold-400">
-                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-prestige-gold-400 shadow-xl">
+                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych - Ekspert Finansowy" className="object-cover" />
                 <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
               </Avatar>
-              <div className="text-center md:text-left">
+              <div className="text-center md:text-left flex-1">
                 <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-2">
                   Dariusz Wentrych
                 </h3>
                 <p className="text-warm-neutral-600 text-lg mb-1">
                   Ekspert finansowy z 15-letnim doświadczeniem
                 </p>
-                <p className="text-prestige-gold-600 font-semibold text-base">
+                <p className="text-prestige-gold-600 font-semibold text-base mb-3">
                   Autor bestsellerowej książki "Nowe życie bez długów"
                 </p>
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-sm text-warm-neutral-600">
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-success-green-600" />
+                    15 lat doświadczenia
+                  </span>
+                  <span>•</span>
+                  <span className="flex items-center gap-1">
+                    <CheckCircle className="w-4 h-4 text-success-green-600" />
+                    15 000+ klientów
+                  </span>
+                </div>
               </div>
             </div>
 
             {/* Expert Message */}
-            <div className="space-y-4 text-warm-neutral-700">
+            <div className="space-y-4 text-warm-neutral-700 mb-8">
               <p className="text-lg leading-relaxed">
                 <strong className="text-navy-900">Ponad 15 000 osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Pomogłem tysiącom rodzin wyjść z długów i zbudować stabilną przyszłość finansową.
               </p>
@@ -166,6 +177,95 @@ const AnalizaKredytowa = () => {
                 <p className="text-xl font-semibold text-navy-900 italic">
                   "Jeśli nigdy nie miałeś wsparcia i pomocy od nikogo, to ja Ci pomogę. Nie czekaj, aż sytuacja wymknie się spod kontroli."
                 </p>
+              </div>
+            </div>
+
+            {/* Social Proof - Zaufali mi */}
+            <div className="border-t border-warm-neutral-200 pt-8 mb-8">
+              <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-4 text-center">
+                Zaufali mi i współpracują ze mną:
+              </h4>
+              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 mb-6">
+                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
+                  <p className="text-sm font-semibold text-warm-neutral-700">Biura Informacji Kredytowej</p>
+                </div>
+                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
+                  <p className="text-sm font-semibold text-warm-neutral-700">Biura Informacji Gospodarczej</p>
+                </div>
+                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
+                  <p className="text-sm font-semibold text-warm-neutral-700">InfoMonitor</p>
+                </div>
+                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
+                  <p className="text-sm font-semibold text-warm-neutral-700">Prywatni Inwestorzy</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Opinie klientów */}
+            <div className="border-t border-warm-neutral-200 pt-8">
+              <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
+                Co mówią klienci:
+              </h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
+                  <div className="flex gap-1 mb-3">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                    ))}
+                  </div>
+                  <p className="text-warm-neutral-700 mb-3 italic">
+                    "Dzięki analizie Dariusza dowiedziałem się, co naprawdę blokuje mi dostęp do kredytu. Uporządkowałem swoje finanse i dostałem kredyt na mieszkanie!"
+                  </p>
+                  <p className="text-sm font-semibold text-navy-900">— Tomasz K., Warszawa</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
+                  <div className="flex gap-1 mb-3">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                    ))}
+                  </div>
+                  <p className="text-warm-neutral-700 mb-3 italic">
+                    "Za 29 zł otrzymałam więcej informacji niż z trzech wizyt w banku. Profesjonalnie, konkretnie i skutecznie."
+                  </p>
+                  <p className="text-sm font-semibold text-navy-900">— Anna M., Kraków</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
+                  <div className="flex gap-1 mb-3">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                    ))}
+                  </div>
+                  <p className="text-warm-neutral-700 mb-3 italic">
+                    "Myślałem, że mam brudny BIK i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu BIK dostałem finansowanie na rozwój firmy."
+                  </p>
+                  <p className="text-sm font-semibold text-navy-900">— Marcin P., Gdańsk</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
+                  <div className="flex gap-1 mb-3">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                    ))}
+                  </div>
+                  <p className="text-warm-neutral-700 mb-3 italic">
+                    "Najlepsza inwestycja w swoje finanse! Dariusz pokazał mi błędy, których sam bym nigdy nie zauważył."
+                  </p>
+                  <p className="text-sm font-semibold text-navy-900">— Katarzyna S., Wrocław</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-prestige-gold-50 to-white p-5 rounded-lg border-2 border-prestige-gold-300 shadow-md md:col-span-2">
+                  <div className="flex gap-1 mb-3">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                    ))}
+                  </div>
+                  <p className="text-warm-neutral-700 mb-3 italic text-lg">
+                    "Miałem chwilówki i myślałem, że to koniec. Pan Dariusz pokazał mi plan wyjścia z długów. Dziś mam kredyt konsolidacyjny z banku i oddycham z ulgą."
+                  </p>
+                  <p className="text-sm font-semibold text-navy-900">— Robert D., Poznań</p>
+                </div>
               </div>
             </div>
           </div>
