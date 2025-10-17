@@ -72,7 +72,7 @@ const AnalizaKredytowa = () => {
       <header className="pt-6 pb-4 px-4 bg-white border-b border-warm-neutral-200">
         <div className="max-w-4xl mx-auto text-center">
           <img 
-            src="/logos/kredyt-scan-logo.png" 
+            src="/logos/kredyt-scan-logo.jpg" 
             alt="Kredyt Scan - Profesjonalna Analiza Kredytowa" 
             className="h-28 md:h-32 mx-auto"
           />
