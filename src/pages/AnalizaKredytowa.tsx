@@ -207,10 +207,16 @@ const AnalizaKredytowa = () => {
               <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
                 Co mówią klienci:
               </h4>
-              <Carousel className="w-full max-w-3xl mx-auto">
+              <Carousel 
+                className="w-full max-w-3xl mx-auto"
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+              >
                 <CarouselContent>
                   <CarouselItem>
-                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <span key={star} className="text-prestige-gold-500 text-lg">★</span>
@@ -224,7 +230,7 @@ const AnalizaKredytowa = () => {
                   </CarouselItem>
 
                   <CarouselItem>
-                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <span key={star} className="text-prestige-gold-500 text-lg">★</span>
@@ -238,7 +244,7 @@ const AnalizaKredytowa = () => {
                   </CarouselItem>
 
                   <CarouselItem>
-                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <span key={star} className="text-prestige-gold-500 text-lg">★</span>
@@ -252,7 +258,7 @@ const AnalizaKredytowa = () => {
                   </CarouselItem>
 
                   <CarouselItem>
-                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <span key={star} className="text-prestige-gold-500 text-lg">★</span>
@@ -266,7 +272,7 @@ const AnalizaKredytowa = () => {
                   </CarouselItem>
 
                   <CarouselItem>
-                    <div className="bg-gradient-to-br from-prestige-gold-50 to-white p-6 md:p-8 rounded-lg border-2 border-prestige-gold-300 shadow-md">
+                    <div className="bg-gradient-to-br from-prestige-gold-50 to-white p-6 md:p-8 rounded-lg border-2 border-prestige-gold-300 shadow-md mx-2">
                       <div className="flex gap-1 mb-3">
                         {[1, 2, 3, 4, 5].map((star) => (
                           <span key={star} className="text-prestige-gold-500 text-lg">★</span>
@@ -279,9 +285,14 @@ const AnalizaKredytowa = () => {
                     </div>
                   </CarouselItem>
                 </CarouselContent>
-                <CarouselPrevious className="hidden md:flex" />
-                <CarouselNext className="hidden md:flex" />
+                <CarouselPrevious className="left-0 md:left-2" />
+                <CarouselNext className="right-0 md:right-2" />
               </Carousel>
+              
+              {/* Wskaźnik - przewiń dla więcej */}
+              <p className="text-center text-sm text-warm-neutral-500 mt-4 md:hidden">
+                ← Przesuń palcem, aby zobaczyć więcej opinii →
+              </p>
             </div>
           </div>
         </div>
