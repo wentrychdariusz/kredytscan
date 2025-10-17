@@ -88,11 +88,34 @@ const AnalizaKredytowa = () => {
           {/* Problem Statement */}
           <div className="bg-warm-neutral-100 border-l-4 border-alert-red-500 p-6 rounded-lg mb-8">
             <p className="text-lg font-semibold text-navy-900 mb-3">
-              Bank odmówił Ci kredytu? Chcesz zamienić pożyczki, aby dostać finansowanie w banku?
+              Bank odmówił Ci kredyt? Chcesz zamienić pożyczki, aby dostać finansowanie w banku?
             </p>
             <p className="text-warm-neutral-700 leading-relaxed">
               <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek.
             </p>
+          </div>
+
+          {/* Warning from Dariusz */}
+          <div className="bg-white rounded-xl shadow-lg p-6 mb-8 border-2 border-alert-red-200">
+            <div className="flex flex-col md:flex-row items-start gap-5">
+              <Avatar className="w-20 h-20 md:w-24 md:h-24 border-3 border-alert-red-400 flex-shrink-0">
+                <AvatarImage 
+                  src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" 
+                  alt="Dariusz Wentrych"
+                  className="object-cover"
+                />
+                <AvatarFallback className="text-xl font-bold">DW</AvatarFallback>
+              </Avatar>
+              <div className="flex-1">
+                <p className="text-warm-neutral-700 leading-relaxed mb-3">
+                  <strong className="text-navy-900">Widziałem setki przypadków</strong>, gdzie ludzie mieli złych doradców i popełnili błędy, które kosztowały ich <strong className="text-alert-red-700">utratę taniego finansowania w banku</strong> — bo korzystali z darmowej pomocy firm z internetu.
+                </p>
+                <p className="text-warm-neutral-700 leading-relaxed">
+                  Za 29 zł dowiesz się prawdy o swojej sytuacji i unikniesz kosztownych błędów.
+                </p>
+                <p className="text-sm text-warm-neutral-500 mt-2 italic">— Dariusz Wentrych, ekspert finansowy</p>
+              </div>
+            </div>
           </div>
 
           {/* Value Proposition */}
