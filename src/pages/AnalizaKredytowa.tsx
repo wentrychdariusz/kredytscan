@@ -128,6 +128,22 @@ const AnalizaKredytowa = () => {
           <p className="text-xl text-center text-warm-neutral-700 mb-8">
             Za jedyne <span className="font-bold text-prestige-gold-600 text-2xl">29 zł</span> otrzymasz pełną analizę swojej sytuacji kredytowej, przygotowaną przez <strong>ekspertów z wieloletnim doświadczeniem</strong> w finansach bankowych.
           </p>
+
+          {/* CTA #1 - Hero Section */}
+          <div className="text-center">
+            <a href="#formularz-zamowienia" className="inline-block">
+              <Button 
+                size="lg" 
+                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                <ArrowRight className="mr-2 h-6 w-6" />
+                Dowiedz się, co naprawdę widzi o Tobie bank
+              </Button>
+            </a>
+            <p className="mt-4 text-sm text-warm-neutral-600">
+              💳 Bezpieczna płatność • ⚡ Natychmiastowy dostęp
+            </p>
+          </div>
         </div>
       </section>
 
@@ -409,6 +425,22 @@ const AnalizaKredytowa = () => {
                 A jeśli sytuacja pozwoli, pomożemy Ci uzyskać dostęp do prywatnych inwestorów, którzy mogą wspomóc Twoją drogę do finansowej stabilności.
               </p>
             </div>
+
+            {/* CTA #2 - Po sekcji co otrzymasz */}
+            <div className="text-center mt-8">
+              <a href="#formularz-zamowienia" className="inline-block">
+                <Button 
+                  size="lg" 
+                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                >
+                  <ArrowRight className="mr-2 h-6 w-6" />
+                  Zamów analizę i poznaj prawdę o swojej zdolności
+                </Button>
+              </a>
+              <p className="mt-4 text-sm text-warm-neutral-600">
+                ✅ Tylko 29 zł • 🔒 Bezpieczna płatność
+              </p>
+            </div>
           </div>
 
           {/* Premium Benefits - What You GET */}
@@ -566,12 +598,27 @@ const AnalizaKredytowa = () => {
                 Za 29 zł otrzymujesz pewność, profesjonalizm i dostęp do prawdziwych rozwiązań.
               </p>
             </div>
+
+            {/* CTA #3 - Po sekcji co NIE dostaniesz za darmo */}
+            <div className="text-center mt-8">
+              <a href="#formularz-zamowienia" className="inline-block">
+                <Button 
+                  size="lg" 
+                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl px-8 md:px-12 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
+                >
+                  🔍 Dowiedz się, co naprawdę widzi o Tobie bank
+                </Button>
+              </a>
+              <p className="mt-4 text-sm text-warm-neutral-600">
+                ⚡ Natychmiastowy dostęp po płatności
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Order Form Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-navy-900 via-business-blue-900 to-navy-900">
+      <section id="formularz-zamowienia" className="py-16 px-4 bg-gradient-to-br from-navy-900 via-business-blue-900 to-navy-900">
         <div className="max-w-2xl mx-auto">
           <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10">
             
@@ -581,7 +628,7 @@ const AnalizaKredytowa = () => {
                 <span className="font-bold text-sm">ZRÓB PIERWSZY KROK TERAZ</span>
               </div>
               <h2 className="font-montserrat text-3xl font-bold text-navy-900 mb-3">
-                Zamów swoją analizę
+                Zamów swoją analizę za 29 zł
               </h2>
               <p className="text-warm-neutral-600">
                 Wypełnij formularz i opłać — analiza w ciągu 24h
