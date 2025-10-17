@@ -317,128 +317,125 @@ const AnalizaKredytowa = () => {
       {/* Benefits Section */}
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-montserrat text-3xl font-bold text-navy-900 mb-8 text-center">
-            Co otrzymasz w ramach analizy?
+          <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-navy-900 mb-3 text-center">
+            Co zrobimy dla Ciebie w ramach analizy
           </h2>
+          <p className="text-center text-warm-neutral-600 text-lg mb-12">
+            Zobacz, co sprawdzimy i poprawimy w Twojej sytuacji
+          </p>
 
-          {/* Secret Knowledge Section */}
-          <div className="bg-gradient-to-br from-prestige-gold-50 to-business-blue-50 rounded-2xl shadow-xl p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
-            <div className="text-center mb-6">
-              <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-3">
-                🔐 Odkryj tajemnice, które znają tylko nieliczni
+          {/* Sekcja 1: Analiza Twojej sytuacji */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-6 border-l-4 border-business-blue-500">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-3xl">🧩</span>
+              <h3 className="font-montserrat text-2xl font-bold text-navy-900">
+                1. Analiza Twojej sytuacji
               </h3>
-              <p className="text-warm-neutral-700 text-lg">
-                Jako jedni z niewielu w Polsce pokażemy Ci <strong className="text-navy-900">dokładnie, jak naprawić swoją sytuację</strong> — nawet jeśli masz złą historię w BIK
-              </p>
             </div>
-
             <div className="space-y-4">
-              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-prestige-gold-500">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🔍</span>
-                  <div>
-                    <h4 className="font-bold text-navy-900 mb-1">Co o Tobie zapisano w BIK, BIG i InfoMonitorze</h4>
-                    <p className="text-warm-neutral-700">Dokładnie przeanalizujemy wszystkie wpisy i pokażemy, co widzą banki, zanim podejmą decyzję</p>
-                  </div>
-                </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-business-blue-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej
+                </p>
               </div>
-
-              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-business-blue-500">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📊</span>
-                  <div>
-                    <h4 className="font-bold text-navy-900 mb-1">Jak wygląda Twoja zdolność kredytowa w oczach banku</h4>
-                    <p className="text-warm-neutral-700">Zobaczyjesz swoją sytuację oczami kredytodawców i zrozumiesz, dlaczego dostajesz odmowy</p>
-                  </div>
-                </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-business-blue-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność
+                </p>
               </div>
-
-              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-alert-red-500">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">⚠️</span>
-                  <div>
-                    <h4 className="font-bold text-navy-900 mb-1">Jakie błędy i zaległości blokują decyzję</h4>
-                    <p className="text-warm-neutral-700">Wskażemy konkretne punkty, które eliminują Cię z możliwości kredytu bankowego</p>
-                  </div>
-                </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-business-blue-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Przeanalizujemy informacje z BIK, BIG i InfoMonitora
+                </p>
               </div>
-
-              <div className="bg-white rounded-xl p-5 shadow-sm border-l-4 border-success-green-500">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🧩</span>
-                  <div>
-                    <h4 className="font-bold text-navy-900 mb-1">Jak możesz to naprawić i poprawić ocenę kredytową</h4>
-                    <p className="text-warm-neutral-700"><strong className="text-success-green-700">To jest kluczowa wiedza</strong>, której nie dostaniesz nigdzie indziej — pokażemy Ci krok po kroku, co zrobić, aby banki zaczęły mówić "TAK"</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 p-5 bg-navy-900 rounded-xl text-center">
-              <p className="text-white text-lg font-semibold">
-                💎 <strong className="text-prestige-gold-400">To wiedza warta znacznie więcej niż 29 zł</strong> — ale chcemy, aby była dostępna dla każdego, kto potrzebuje prawdziwej pomocy
-              </p>
             </div>
           </div>
 
-          {/* Bank Secrets Section */}
-          <div className="bg-gradient-to-br from-navy-900 to-business-blue-900 rounded-2xl shadow-2xl p-6 md:p-10 mb-8 border border-prestige-gold-400">
-            <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-6 text-center">
-              🔓 To, czego bank Ci nie powie
+          {/* Sekcja 2: Poprawa i działania naprawcze */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-6 border-l-4 border-prestige-gold-500">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-3xl">💡</span>
+              <h3 className="font-montserrat text-2xl font-bold text-navy-900">
+                2. Poprawa i działania naprawcze
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Sekcja 3: Dodatkowe możliwości finansowania */}
+          <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 mb-8 border-l-4 border-success-green-500">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="text-3xl">💰</span>
+              <h3 className="font-montserrat text-2xl font-bold text-navy-900">
+                3. Dodatkowe możliwości finansowania
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach
+                </p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+                <p className="text-warm-neutral-700 text-base md:text-lg">
+                  Pomożemy Ci uzyskać dostęp do rozwiązań, które wspierają drogę do finansowej stabilności
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Emocjonalne zakończenie z CTA */}
+          <div className="bg-gradient-to-br from-navy-900 to-business-blue-900 rounded-2xl shadow-2xl p-8 md:p-10 text-center">
+            <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-4">
+              🔎 Poznaj prawdę o swojej zdolności kredytowej
             </h3>
-            
-            <div className="space-y-4 text-warm-neutral-100">
-              <p className="text-lg leading-relaxed">
-                <strong className="text-prestige-gold-400">Każdy wniosek o kredyt to więcej niż cyferki.</strong>
-              </p>
-              <p className="text-lg leading-relaxed">
-                Banki korzystają z <strong className="text-white">algorytmów i scoringów</strong>, które oceniają Cię zanim ktokolwiek z Tobą porozmawia.
-              </p>
-              <p className="text-lg leading-relaxed">
-                My pomagamy Ci <strong className="text-prestige-gold-400">zobaczyć tę drugą stronę lustra</strong> — i zrozumieć, dlaczego decyzja była taka, a nie inna.
-              </p>
-              <p className="text-lg leading-relaxed border-t border-white/20 pt-4 mt-4">
-                <strong className="text-alert-red-300">A najgorsze w co możesz brnąć bez tej wiedzy, którą Ci powiemy?</strong> To iść do innego banku lub firmy po pożyczkę! <span className="text-white">Każda kolejna odmowa pogarsza Twoją sytuację i zamyka drzwi do taniego finansowania.</span>
-              </p>
-            </div>
-
-            <div className="mt-6 p-5 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20">
-              <p className="text-white text-center text-lg font-semibold">
-                Poznaj zasady gry, które znają tylko wtajemniczeni — <span className="text-prestige-gold-400">za jedyne 29 zł</span>
-              </p>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
-            <div className="space-y-4">
-              {benefits.map((benefit, index) => <div key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
-                  <p className="text-warm-neutral-700 text-lg">{benefit}</p>
-                </div>)}
-            </div>
-
-            <div className="mt-8 p-6 bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl border border-prestige-gold-200">
-              <p className="text-navy-900 font-bold text-center text-lg mb-3">
-                Zrozumiesz, jak widzą Cię banki – i co zrobić, by wreszcie usłyszeć „tak"
-              </p>
-              <p className="text-warm-neutral-700 text-center">
-                A jeśli sytuacja pozwoli, pomożemy Ci uzyskać dostęp do prywatnych inwestorów, którzy mogą wspomóc Twoją drogę do finansowej stabilności.
-              </p>
-            </div>
+            <p className="text-warm-neutral-100 text-lg md:text-xl mb-8 leading-relaxed">
+              Dowiedz się, co widzą o Tobie banki — <strong className="text-prestige-gold-400">zanim złożysz kolejny wniosek</strong>
+            </p>
 
             {/* CTA #2 - Po sekcji co otrzymasz */}
-            <div className="text-center mt-8 px-2">
+            <div className="px-2">
               <a href="#formularz-zamowienia" className="block">
                 <Button 
                   size="lg" 
                   className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
                 >
-                  <span className="text-xl md:text-2xl leading-tight">Poznaj prawdę</span>
-                  <span className="text-sm md:text-base font-normal opacity-90">o swojej zdolności kredytowej</span>
+                  <span className="text-xl md:text-2xl leading-tight">Zamów analizę — 29 zł</span>
+                  <span className="text-sm md:text-base font-normal opacity-90">i poznaj prawdę o swojej zdolności</span>
                 </Button>
               </a>
-              <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
-                ✅ Tylko 29 zł • 🔒 Bezpieczna płatność
+              <p className="mt-4 text-xs md:text-sm text-warm-neutral-300">
+                ✅ Bezpieczna płatność • ⚡ Natychmiastowy dostęp
               </p>
             </div>
           </div>
