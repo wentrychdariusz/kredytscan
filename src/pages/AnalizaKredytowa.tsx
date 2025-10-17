@@ -238,6 +238,7 @@ const AnalizaKredytowa = () => {
               <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
                 <img src="/media-logos/logo1.png" alt="Media" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" />
                 <img src="/media-logos/logo-fakt.svg" alt="Fakt" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" />
+                <img src="/media-logos/logo-tvn.png" alt="TVN" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" />
                 <img src="/media-logos/logo-tvp.png" alt="TVP" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" />
                 <img src="/media-logos/logo-dziennik.png" alt="Dziennik Polski" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" />
               </div>
