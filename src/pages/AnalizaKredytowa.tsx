@@ -207,10 +207,10 @@ const AnalizaKredytowa = () => {
             </div>
           </div>
 
-          {/* What You DON'T Get with Free Services */}
-          <div className="bg-gradient-to-br from-alert-red-50 to-warm-neutral-50 rounded-2xl shadow-lg p-8 border-2 border-alert-red-200">
-            <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-4 text-center">
-              Co Cię omija, jeśli korzystasz z darmowego doradztwa:
+          {/* Premium Benefits - What You GET */}
+          <div className="bg-gradient-to-br from-success-green-50 to-prestige-gold-50 rounded-2xl shadow-lg p-8 border-2 border-success-green-200 mb-8">
+            <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-6 text-center">
+              ✅ Co otrzymujesz za 29 zł:
             </h3>
             
             <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -225,6 +225,62 @@ const AnalizaKredytowa = () => {
             <p className="text-center text-warm-neutral-700 text-lg leading-relaxed">
               <strong className="text-navy-900">Za 29 zł</strong> otrzymujesz profesjonalną analizę PLUS dostęp do ekskluzywnej sieci prywatnych inwestorów i finansowania, które uporządkują Twoje finanse na najlepszych warunkach.
             </p>
+          </div>
+
+          {/* Warning - What You MISS with Free Services */}
+          <div className="bg-gradient-to-br from-alert-red-50 to-warm-neutral-50 rounded-2xl shadow-lg p-8 border-2 border-alert-red-300">
+            <h3 className="font-montserrat text-2xl font-bold text-alert-red-700 mb-6 text-center">
+              ⚠️ Czego NIE DOSTANIESZ korzystając z darmowych usług:
+            </h3>
+            
+            <div className="space-y-4">
+              <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
+                <AlertCircle className="w-6 h-6 text-alert-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-bold mb-1">Zostajesz sam — bez indywidualnej opieki</p>
+                  <p className="text-warm-neutral-600 text-sm">Nikt nie zadba o Twoją sytuację. Otrzymasz ogólnikowe porady, które mogą NIE pasować do Twojego przypadku.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
+                <AlertCircle className="w-6 h-6 text-alert-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-bold mb-1">Brak dostępu do prywatnych inwestorów i taniego finansowania</p>
+                  <p className="text-warm-neutral-600 text-sm">Nie otrzymasz dostępu do ekskluzywnej sieci finansowania do 200 000 zł na najlepszych warunkach.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
+                <AlertCircle className="w-6 h-6 text-alert-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-bold mb-1">Ryzyko amatorskich porad — możesz stracić dostęp do banku na lata</p>
+                  <p className="text-warm-neutral-600 text-sm">Złe decyzje mogą <strong className="text-alert-red-700">na zawsze wykluczyć Cię z systemu bankowego</strong> i taniego kredytu.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
+                <AlertCircle className="w-6 h-6 text-alert-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-bold mb-1">Nie masz pewności, czy to naprawdę „za darmo"</p>
+                  <p className="text-warm-neutral-600 text-sm">Jeśli ktoś pracuje „za darmo", zastanów się — na czym zarobi? Często kończy się droższymi produktami i przekierowaniem do prowizyjnych partnerów.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 bg-white p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
+                <AlertCircle className="w-6 h-6 text-alert-red-600 flex-shrink-0 mt-1" />
+                <div>
+                  <p className="text-navy-900 font-bold mb-1">Tracisz zaufanie 15 000 zadowolonych klientów</p>
+                  <p className="text-warm-neutral-600 text-sm">Nasi klienci wiedzą, że płacąc 29 zł, dostają realną wartość i prawdziwą pomoc — nie obietnice.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 p-6 bg-alert-red-100 rounded-xl border-2 border-alert-red-300">
+              <p className="text-center text-navy-900 font-bold text-lg leading-relaxed">
+                <strong className="text-alert-red-700">Nie ryzykuj swojej przyszłości finansowej.</strong><br />
+                Za 29 zł otrzymujesz pewność, profesjonalizm i dostęp do prawdziwych rozwiązań.
+              </p>
+            </div>
           </div>
         </div>
       </section>
