@@ -70,12 +70,18 @@ const AnalizaKredytowa = () => {
       
       {/* Logo Header */}
       <header className="pt-6 pb-4 px-4 bg-white border-b border-warm-neutral-200">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <img 
             src="/logos/kredyt-scan-logo.jpg" 
             alt="Kredyt Scan - Profesjonalna Analiza Kredytowa" 
-            className="h-28 md:h-32 mx-auto"
+            className="h-24 md:h-28"
           />
+          <div className="text-center md:text-right">
+            <h2 className="font-montserrat text-xl md:text-2xl lg:text-3xl font-bold text-navy-900 leading-tight">
+              Bank odmówił Ci kredytu?<br />
+              <span className="text-prestige-gold-600">Sprawdź dlaczego!</span>
+            </h2>
+          </div>
         </div>
       </header>
 
