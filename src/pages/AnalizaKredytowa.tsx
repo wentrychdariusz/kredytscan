@@ -634,38 +634,6 @@ const AnalizaKredytowa = () => {
             </div>
 
             <div className="space-y-3 mt-8">
-              <div className="flex items-start gap-2 bg-white p-3 md:p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
-                <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-alert-red-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-navy-900 font-bold mb-1 text-sm md:text-base">Zostajesz sam — bez indywidualnej opieki</p>
-                  <p className="text-warm-neutral-600 text-xs md:text-sm">Nikt nie zadba o Twoją sytuację. Otrzymasz ogólnikowe porady, które mogą NIE pasować do Twojego przypadku.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2 bg-white p-3 md:p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
-                <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-alert-red-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-navy-900 font-bold mb-1 text-sm md:text-base">Brak dostępu do prywatnych inwestorów i taniego finansowania</p>
-                  <p className="text-warm-neutral-600 text-xs md:text-sm">Nie otrzymasz dostępu do ekskluzywnej sieci finansowania do 200 000 zł na najlepszych warunkach.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2 bg-white p-3 md:p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
-                <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-alert-red-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-navy-900 font-bold mb-1 text-sm md:text-base">Ryzyko amatorskich porad — możesz stracić dostęp do banku na lata</p>
-                  <p className="text-warm-neutral-600 text-xs md:text-sm">Złe decyzje mogą <strong className="text-alert-red-700">na zawsze wykluczyć Cię z systemu bankowego</strong> i taniego kredytu.</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-2 bg-white p-3 md:p-4 rounded-lg shadow-sm border-l-4 border-alert-red-400">
-                <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-alert-red-600 flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-navy-900 font-bold mb-1 text-sm md:text-base">Nie masz pewności, czy to naprawdę „za darmo"</p>
-                  <p className="text-warm-neutral-600 text-xs md:text-sm">Jeśli ktoś pracuje „za darmo", zastanów się — na czym zarobi? Często kończy się droższymi produktami i przekierowaniem do prowizyjnych partnerów.</p>
-                </div>
-              </div>
-
               
             </div>
 
