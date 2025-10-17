@@ -165,10 +165,7 @@ const AnalizaKredytowa = () => {
           {/* CTA #1 - Hero Section */}
           <div className="text-center px-2">
             <a href="#formularz-zamowienia" className="block">
-              <Button 
-                size="lg" 
-                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
-              >
+              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
                 <span className="text-lg md:text-2xl leading-tight">Sprawdź swoją zdolność kredytową</span>
                 <span className="text-sm md:text-base font-normal opacity-90">Analiza za 29 zł</span>
               </Button>
@@ -236,7 +233,7 @@ const AnalizaKredytowa = () => {
                 Mówili o mnie:
               </h4>
               <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
-                <img src="/media-logos/logo1.png" alt="Media" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" loading="lazy" />
+                
                 <img src="/media-logos/logo-fakt.svg" alt="Fakt" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" loading="lazy" />
                 <img src="/media-logos/logo-tvn.png?v=1" alt="TVN" className="h-12 md:h-16 object-contain transition-all" loading="lazy" />
                 <img src="/media-logos/logo-tvp.png" alt="TVP" className="h-12 md:h-16 object-contain grayscale hover:grayscale-0 transition-all" loading="lazy" />
@@ -249,20 +246,15 @@ const AnalizaKredytowa = () => {
               <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
                 Co mówią klienci:
               </h4>
-              <Carousel 
-                className="w-full max-w-3xl mx-auto"
-                opts={{
-                  align: "start",
-                  loop: true,
-                }}
-              >
+              <Carousel className="w-full max-w-3xl mx-auto" opts={{
+              align: "start",
+              loop: true
+            }}>
                 <CarouselContent>
                   <CarouselItem>
                     <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                        ))}
+                        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
                         "Dzięki analizie Dariusza dowiedziałem się, co naprawdę blokuje mi dostęp do kredytu. Uporządkowałem swoje finanse i dostałem kredyt na mieszkanie!"
@@ -274,9 +266,7 @@ const AnalizaKredytowa = () => {
                   <CarouselItem>
                     <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                        ))}
+                        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
                         "Za 29 zł otrzymałam więcej informacji niż z trzech wizyt w banku. Profesjonalnie, konkretnie i skutecznie."
@@ -288,9 +278,7 @@ const AnalizaKredytowa = () => {
                   <CarouselItem>
                     <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                        ))}
+                        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
                         "Myślałem, że mam brudny BIK i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu BIK dostałem finansowanie na rozwój firmy."
@@ -302,9 +290,7 @@ const AnalizaKredytowa = () => {
                   <CarouselItem>
                     <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm mx-2">
                       <div className="flex gap-1 mb-3">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                        ))}
+                        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
                         "Najlepsza inwestycja w swoje finanse! Dariusz pokazał mi błędy, których sam bym nigdy nie zauważył."
@@ -316,9 +302,7 @@ const AnalizaKredytowa = () => {
                   <CarouselItem>
                     <div className="bg-gradient-to-br from-prestige-gold-50 to-white p-6 md:p-8 rounded-lg border-2 border-prestige-gold-300 shadow-md mx-2">
                       <div className="flex gap-1 mb-3">
-                        {[1, 2, 3, 4, 5].map((star) => (
-                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                        ))}
+                        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
                         "Miałem chwilówki i myślałem, że to koniec. Pan Dariusz pokazał mi plan wyjścia z długów. Dziś mam kredyt konsolidacyjny z banku i oddycham z ulgą."
@@ -452,10 +436,7 @@ const AnalizaKredytowa = () => {
             {/* CTA #2 - Po sekcji co otrzymasz */}
             <div className="px-2">
               <a href="#formularz-zamowienia" className="block">
-                <Button 
-                  size="lg" 
-                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
-                >
+                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
                   <span className="text-xl md:text-2xl leading-tight">Zamów analizę — 29 zł</span>
                   <span className="text-sm md:text-base font-normal opacity-90">i poznaj prawdę o swojej zdolności</span>
                 </Button>
@@ -652,10 +633,7 @@ const AnalizaKredytowa = () => {
             {/* CTA #3 - Po sekcji co NIE dostaniesz za darmo */}
             <div className="text-center mt-8 px-2">
               <a href="#formularz-zamowienia" className="block">
-                <Button 
-                  size="lg" 
-                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1"
-                >
+                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
                   <span className="text-xl md:text-2xl leading-tight">Zamów teraz za 29 zł</span>
                   <span className="text-sm md:text-base font-normal opacity-90">🔍 i sprawdź, co widzi o Tobie bank</span>
                 </Button>
