@@ -210,7 +210,7 @@ const AnalizaKredytowa = () => {
           {/* What You DON'T Get with Free Services */}
           <div className="bg-gradient-to-br from-alert-red-50 to-warm-neutral-50 rounded-2xl shadow-lg p-8 border-2 border-alert-red-200">
             <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-4 text-center">
-              Czego NIE masz w darmowych usługach innych firm:
+              Nie masz obsługi • Nie masz finansowania • Nie masz know-how
             </h3>
             
             <div className="grid md:grid-cols-2 gap-4 mb-6">
