@@ -130,14 +130,14 @@ const AnalizaKredytowa = () => {
           </p>
 
           {/* CTA #1 - Hero Section */}
-          <div className="text-center">
-            <a href="#formularz-zamowienia" className="inline-block">
+          <div className="text-center px-2">
+            <a href="#formularz-zamowienia" className="block">
               <Button 
                 size="lg" 
-                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-base md:text-lg lg:text-xl px-6 md:px-8 lg:px-12 py-4 md:py-6 lg:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[4rem] md:min-h-0"
               >
-                <ArrowRight className="mr-2 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
-                <span className="text-sm md:text-base lg:text-lg">Dowiedz się, co widzi o Tobie bank</span>
+                <ArrowRight className="mr-2 h-6 w-6 flex-shrink-0" />
+                <span className="leading-tight">Dowiedz się, co widzi o Tobie bank</span>
               </Button>
             </a>
             <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
@@ -427,14 +427,14 @@ const AnalizaKredytowa = () => {
             </div>
 
             {/* CTA #2 - Po sekcji co otrzymasz */}
-            <div className="text-center mt-8">
-              <a href="#formularz-zamowienia" className="inline-block w-full md:w-auto">
+            <div className="text-center mt-8 px-2">
+              <a href="#formularz-zamowienia" className="block">
                 <Button 
                   size="lg" 
-                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-base md:text-lg lg:text-xl px-6 md:px-8 lg:px-12 py-4 md:py-6 lg:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[4rem] md:min-h-0"
                 >
-                  <ArrowRight className="mr-2 h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
-                  <span className="text-sm md:text-base lg:text-lg">Poznaj prawdę o swojej zdolności</span>
+                  <ArrowRight className="mr-2 h-6 w-6 flex-shrink-0" />
+                  <span className="leading-tight">Poznaj prawdę o swojej zdolności</span>
                 </Button>
               </a>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
@@ -600,13 +600,13 @@ const AnalizaKredytowa = () => {
             </div>
 
             {/* CTA #3 - Po sekcji co NIE dostaniesz za darmo */}
-            <div className="text-center mt-8">
-              <a href="#formularz-zamowienia" className="inline-block w-full md:w-auto">
+            <div className="text-center mt-8 px-2">
+              <a href="#formularz-zamowienia" className="block">
                 <Button 
                   size="lg" 
-                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-base md:text-lg lg:text-xl px-6 md:px-8 lg:px-12 py-4 md:py-6 lg:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[4rem] md:min-h-0"
                 >
-                  <span className="text-sm md:text-base lg:text-lg">🔍 Dowiedz się, co widzi o Tobie bank</span>
+                  <span className="leading-tight">🔍 Dowiedz się, co widzi o Tobie bank</span>
                 </Button>
               </a>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
