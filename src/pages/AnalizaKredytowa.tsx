@@ -75,7 +75,7 @@ const AnalizaKredytowa = () => {
           <div className="text-right flex-1">
             <h2 className="font-montserrat text-sm md:text-xl lg:text-2xl xl:text-3xl font-bold text-navy-900 leading-tight">
               Bank odmówił Ci kredytu?<br />
-              <span className="text-prestige-gold-600">Sprawdź dlaczego!</span>
+              <span className="text-prestige-gold-600">Dowiedz się, co Cię blokuje i jak to naprawić.</span>
             </h2>
           </div>
         </div>
