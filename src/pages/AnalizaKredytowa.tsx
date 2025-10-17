@@ -110,10 +110,13 @@ const AnalizaKredytowa = () => {
                 <p className="text-warm-neutral-700 leading-relaxed mb-3">
                   <strong className="text-navy-900">Widziałem setki przypadków</strong>, gdzie ludzie mieli złych doradców i popełnili błędy, które kosztowały ich <strong className="text-alert-red-700">utratę taniego finansowania w banku</strong> — bo korzystali z darmowej pomocy firm z internetu.
                 </p>
-                <p className="text-warm-neutral-700 leading-relaxed">
-                  Za 29 zł dowiesz się prawdy o swojej sytuacji i unikniesz kosztownych błędów.
+                <p className="text-warm-neutral-700 leading-relaxed mb-3">
+                  Za 29 zł dowiesz się prawdy o swojej sytuacji i unikniesz kosztownych błędów, które <strong className="text-alert-red-700">eliminują Cię z systemu bankowego</strong>.
                 </p>
-                <p className="text-sm text-warm-neutral-500 mt-2 italic">— Dariusz Wentrych, ekspert finansowy</p>
+                <p className="text-navy-900 font-semibold leading-relaxed">
+                  Nawet jeśli masz tzw. chwilówki czy pożyczki — <strong className="text-success-green-700">potrafimy uporządkować Twoją sytuację</strong>. Jest nadzieja i jest rozwiązanie. Pomożemy Ci.
+                </p>
+                <p className="text-sm text-warm-neutral-500 mt-3 italic">— Dariusz Wentrych, ekspert finansowy</p>
               </div>
             </div>
           </div>
