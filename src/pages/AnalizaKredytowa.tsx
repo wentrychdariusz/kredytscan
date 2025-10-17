@@ -58,8 +58,10 @@ const AnalizaKredytowa = () => {
     "Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej",
     "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność",
     "Przeanalizujemy informacje z BIK, BIG i InfoMonitora",
-    "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt",
-    "Zaproponujemy kierunek działania dopasowany do Twojej sytuacji"
+    "Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie",
+    "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku",
+    "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów",
+    "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"
   ];
 
   return (
@@ -86,7 +88,7 @@ const AnalizaKredytowa = () => {
           {/* Problem Statement */}
           <div className="bg-warm-neutral-100 border-l-4 border-alert-red-500 p-6 rounded-lg mb-8">
             <p className="text-lg font-semibold text-navy-900 mb-3">
-              Masz problem z BIK? Bank odmówił Ci kredytu?
+              Bank odmówił Ci kredytu? Chcesz zamienić pożyczki, aby dostać finansowanie w banku?
             </p>
             <p className="text-warm-neutral-700 leading-relaxed">
               <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek.
@@ -161,8 +163,11 @@ const AnalizaKredytowa = () => {
             </div>
 
             <div className="mt-8 p-6 bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl border border-prestige-gold-200">
-              <p className="text-navy-900 font-bold text-center text-lg">
+              <p className="text-navy-900 font-bold text-center text-lg mb-3">
                 Zrozumiesz, jak widzą Cię banki – i co zrobić, by wreszcie usłyszeć „tak"
+              </p>
+              <p className="text-warm-neutral-700 text-center">
+                A jeśli sytuacja pozwoli, pomożemy Ci uzyskać dostęp do prywatnych inwestorów, którzy mogą wspomóc Twoją drogę do finansowej stabilności.
               </p>
             </div>
           </div>
