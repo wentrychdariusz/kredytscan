@@ -230,27 +230,9 @@ const AnalizaKredytowa = () => {
               </div>
             </div>
 
-            {/* Social Proof - Zaufali mi */}
+            {/* Social Proof - Media */}
             <div className="border-t border-warm-neutral-200 pt-8 mb-8">
               <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-4 text-center">
-                Zaufali mi i współpracują ze mną:
-              </h4>
-              <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8 mb-6">
-                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
-                  <p className="text-sm font-semibold text-warm-neutral-700">Biura Informacji Kredytowej</p>
-                </div>
-                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
-                  <p className="text-sm font-semibold text-warm-neutral-700">Biura Informacji Gospodarczej</p>
-                </div>
-                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
-                  <p className="text-sm font-semibold text-warm-neutral-700">InfoMonitor</p>
-                </div>
-                <div className="bg-warm-neutral-50 px-6 py-3 rounded-lg border border-warm-neutral-200">
-                  <p className="text-sm font-semibold text-warm-neutral-700">Prywatni Inwestorzy</p>
-                </div>
-              </div>
-              
-              <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-4 text-center mt-8">
                 Mówili o mnie:
               </h4>
               <div className="flex flex-wrap items-center justify-center gap-6 md:gap-8">
