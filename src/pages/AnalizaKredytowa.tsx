@@ -91,7 +91,7 @@ const AnalizaKredytowa = () => {
               Bank odmówił Ci kredyt? Chcesz zamienić pożyczki, aby dostać finansowanie w banku?
             </p>
             <p className="text-warm-neutral-700 leading-relaxed">
-              <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek.
+              <strong>Nie działaj po omacku</strong> — najpierw dowiedz się, co naprawdę wpływa na Twoją zdolność kredytową i co możesz poprawić, zanim złożysz kolejny wniosek i <strong className="text-alert-red-700">na wiele lat popsujesz sobie finansowanie</strong>. A to odcina Cię od taniej gotówki.
             </p>
           </div>
 
