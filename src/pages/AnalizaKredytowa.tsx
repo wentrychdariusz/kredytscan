@@ -140,8 +140,11 @@ const AnalizaKredytowa = () => {
                 <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-2">
                   Dariusz Wentrych
                 </h3>
-                <p className="text-warm-neutral-600 text-lg">
+                <p className="text-warm-neutral-600 text-lg mb-1">
                   Ekspert finansowy z 15-letnim doświadczeniem
+                </p>
+                <p className="text-prestige-gold-600 font-semibold text-base">
+                  Autor bestsellerowej książki "Nowe życie bez długów"
                 </p>
               </div>
             </div>
@@ -149,7 +152,7 @@ const AnalizaKredytowa = () => {
             {/* Expert Message */}
             <div className="space-y-4 text-warm-neutral-700">
               <p className="text-lg leading-relaxed">
-                <strong className="text-navy-900">Tysiące osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Teraz czas na Ciebie!
+                <strong className="text-navy-900">Ponad 15 000 osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Pomogłem tysiącom rodzin wyjść z długów i zbudować stabilną przyszłość finansową.
               </p>
               <p className="text-lg leading-relaxed">
                 Czy wyobrażasz sobie życie, w którym <strong className="text-navy-900">nie musisz bać się kolejnego telefonu od wierzycieli?</strong> Życie, w którym Twoje pieniądze należą do Ciebie, a nie do banku?
