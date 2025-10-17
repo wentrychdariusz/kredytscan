@@ -68,6 +68,17 @@ const AnalizaKredytowa = () => {
   }];
   return <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
       
+      {/* Logo Header */}
+      <header className="pt-6 pb-4 px-4 bg-white border-b border-warm-neutral-200">
+        <div className="max-w-4xl mx-auto text-center">
+          <img 
+            src="/logos/kredyt-scan-logo.png" 
+            alt="Kredyt Scan - Profesjonalna Analiza Kredytowa" 
+            className="h-20 md:h-24 mx-auto"
+          />
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="pt-8 pb-12 px-4">
         <div className="max-w-4xl mx-auto">
