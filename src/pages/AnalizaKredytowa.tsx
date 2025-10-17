@@ -107,32 +107,30 @@ const AnalizaKredytowa = () => {
 
           {/* Expert Section */}
           <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-200">
-            <div className="flex flex-col md:flex-row items-start gap-5">
-              <Avatar className="w-20 h-20 md:w-24 md:h-24 border-4 border-prestige-gold-400 flex-shrink-0">
+            <div className="flex flex-col items-center text-center mb-6">
+              <Avatar className="w-28 h-28 md:w-32 md:h-32 border-4 border-prestige-gold-400 mb-4 shadow-xl">
                 <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
-                <AvatarFallback className="text-xl font-bold">DW</AvatarFallback>
+                <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
               </Avatar>
-              <div className="flex-1">
-                <div className="mb-4">
-                  <p className="font-bold text-navy-900 text-lg">👤 Dariusz Wentrych</p>
-                  <p className="text-warm-neutral-600">Ekspert finansowy z 15-letnim doświadczeniem</p>
-                  <p className="text-prestige-gold-600 font-semibold">Autor książki „Nowe życie bez długów"</p>
-                </div>
-                
-                <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-4 rounded-r-lg mb-4">
-                  <p className="text-warm-neutral-700 leading-relaxed italic">
-                    „Widziałem setki przypadków, gdzie ludzie mieli złych doradców i popełnili błędy, które kosztowały ich utratę finansowania w banku — bo korzystali z darmowych porad w internecie."
-                  </p>
-                </div>
-
-                <p className="text-warm-neutral-700 leading-relaxed mb-3">
-                  Za 29 zł dowiesz się prawdy o swojej sytuacji finansowej i unikniesz błędów, które eliminują Cię z systemu bankowego.
-                </p>
-                <p className="text-navy-900 font-semibold leading-relaxed">
-                  Nawet jeśli masz chwilówki — pomożemy Ci uporządkować sytuację. <strong className="text-success-green-700">Jest rozwiązanie. Jest nadzieja.</strong>
-                </p>
+              <div>
+                <p className="font-bold text-navy-900 text-xl mb-1">👤 Dariusz Wentrych</p>
+                <p className="text-warm-neutral-600 mb-1">Ekspert finansowy z 15-letnim doświadczeniem</p>
+                <p className="text-prestige-gold-600 font-semibold">Autor książki „Nowe życie bez długów"</p>
               </div>
             </div>
+            
+            <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-5 rounded-r-lg mb-5">
+              <p className="text-warm-neutral-700 leading-relaxed italic text-base md:text-lg">
+                „Widziałem setki przypadków, gdzie ludzie mieli złych doradców i popełnili błędy, które kosztowały ich utratę finansowania w banku — bo korzystali z darmowych porad w internecie."
+              </p>
+            </div>
+
+            <p className="text-warm-neutral-700 leading-relaxed mb-3 text-center">
+              Za 29 zł dowiesz się prawdy o swojej sytuacji finansowej i unikniesz błędów, które eliminują Cię z systemu bankowego.
+            </p>
+            <p className="text-navy-900 font-semibold leading-relaxed text-center">
+              Nawet jeśli masz chwilówki — pomożemy Ci uporządkować sytuację. <strong className="text-success-green-700">Jest rozwiązanie. Jest nadzieja.</strong>
+            </p>
           </div>
 
           {/* Micro Summary - Co otrzymasz */}
