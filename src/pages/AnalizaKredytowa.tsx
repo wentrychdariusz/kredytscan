@@ -568,10 +568,10 @@ const AnalizaKredytowa = () => {
                   ❌ Darmowe usługi — brzmi dobrze, ale...
                 </h5>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
-                  To często przynęta. Po zebraniu danych dostajesz reklamy zamiast realnej pomocy.
+                  Po zebraniu danych dostajesz reklamy zamiast pomocy.
                 </p>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed font-semibold">
-                  U nas płacisz raz – i masz konkretną analizę, bez ukrytych kosztów.
+                  U nas płacisz raz – i masz konkretną analizę.
                 </p>
               </div>
 
@@ -581,10 +581,10 @@ const AnalizaKredytowa = () => {
                   ❌ Ogólnikowe porady vs ✅ Indywidualna analiza
                 </h5>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
-                  Porady z internetu nie mają nic wspólnego z Twoją sytuacją.
+                  Porady z internetu nie dotyczą Ciebie.
                 </p>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed font-semibold">
-                  My analizujemy Twoje realne dane i zobowiązania.
+                  My analizujemy Twoją faktyczną sytuację.
                 </p>
               </div>
 
@@ -604,26 +604,13 @@ const AnalizaKredytowa = () => {
               {/* Punkt 4 */}
               <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-alert-red-400 shadow-sm">
                 <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
-                  ❌ Ryzyko złych rad vs ✅ 15 lat doświadczenia
+                  ❌ Ryzyko złych rad vs ✅ 20 lat doświadczenia
                 </h5>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
-                  Błędy doradców mogą kosztować lata bez kredytu.
+                  Złe decyzje mogą Cię kosztować lata.
                 </p>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed font-semibold">
-                  U nas analizę robią doświadczeni eksperci.
-                </p>
-              </div>
-
-              {/* Punkt 5 */}
-              <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-success-green-400 shadow-sm">
-                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
-                  ❌ Brak planu działania vs ✅ Krok po kroku plan
-                </h5>
-                <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
-                  Nikt nie powie Ci, co dalej.
-                </p>
-                <p className="text-warm-neutral-700 text-sm leading-relaxed font-semibold">
-                  My damy Ci mapę, jak wyjść z błędów i odbudować zdolność.
+                  U nas analizę wykonują eksperci.
                 </p>
               </div>
             </div>
