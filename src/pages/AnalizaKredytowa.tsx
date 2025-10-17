@@ -74,7 +74,7 @@ const AnalizaKredytowa = () => {
           <img 
             src="/logos/kredyt-scan-logo.png" 
             alt="Kredyt Scan - Profesjonalna Analiza Kredytowa" 
-            className="h-20 md:h-24 mx-auto"
+            className="h-28 md:h-32 mx-auto"
           />
         </div>
       </header>
