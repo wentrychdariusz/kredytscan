@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Shield, CheckCircle, AlertCircle, FileText, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 const AnalizaKredytowa = () => {
@@ -201,72 +202,86 @@ const AnalizaKredytowa = () => {
               </div>
             </div>
 
-            {/* Opinie klientów */}
+            {/* Opinie klientów - Carousel */}
             <div className="border-t border-warm-neutral-200 pt-8">
               <h4 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
                 Co mówią klienci:
               </h4>
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
-                  <div className="flex gap-1 mb-3">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                    ))}
-                  </div>
-                  <p className="text-warm-neutral-700 mb-3 italic">
-                    "Dzięki analizie Dariusza dowiedziałem się, co naprawdę blokuje mi dostęp do kredytu. Uporządkowałem swoje finanse i dostałem kredyt na mieszkanie!"
-                  </p>
-                  <p className="text-sm font-semibold text-navy-900">— Tomasz K., Warszawa</p>
-                </div>
+              <Carousel className="w-full max-w-3xl mx-auto">
+                <CarouselContent>
+                  <CarouselItem>
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                      <div className="flex gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                        ))}
+                      </div>
+                      <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
+                        "Dzięki analizie Dariusza dowiedziałem się, co naprawdę blokuje mi dostęp do kredytu. Uporządkowałem swoje finanse i dostałem kredyt na mieszkanie!"
+                      </p>
+                      <p className="text-sm font-semibold text-navy-900">— Tomasz K., Warszawa</p>
+                    </div>
+                  </CarouselItem>
 
-                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
-                  <div className="flex gap-1 mb-3">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                    ))}
-                  </div>
-                  <p className="text-warm-neutral-700 mb-3 italic">
-                    "Za 29 zł otrzymałam więcej informacji niż z trzech wizyt w banku. Profesjonalnie, konkretnie i skutecznie."
-                  </p>
-                  <p className="text-sm font-semibold text-navy-900">— Anna M., Kraków</p>
-                </div>
+                  <CarouselItem>
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                      <div className="flex gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                        ))}
+                      </div>
+                      <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
+                        "Za 29 zł otrzymałam więcej informacji niż z trzech wizyt w banku. Profesjonalnie, konkretnie i skutecznie."
+                      </p>
+                      <p className="text-sm font-semibold text-navy-900">— Anna M., Kraków</p>
+                    </div>
+                  </CarouselItem>
 
-                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
-                  <div className="flex gap-1 mb-3">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                    ))}
-                  </div>
-                  <p className="text-warm-neutral-700 mb-3 italic">
-                    "Myślałem, że mam brudny BIK i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu BIK dostałem finansowanie na rozwój firmy."
-                  </p>
-                  <p className="text-sm font-semibold text-navy-900">— Marcin P., Gdańsk</p>
-                </div>
+                  <CarouselItem>
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                      <div className="flex gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                        ))}
+                      </div>
+                      <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
+                        "Myślałem, że mam brudny BIK i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu BIK dostałem finansowanie na rozwój firmy."
+                      </p>
+                      <p className="text-sm font-semibold text-navy-900">— Marcin P., Gdańsk</p>
+                    </div>
+                  </CarouselItem>
 
-                <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-5 rounded-lg border border-warm-neutral-200 shadow-sm">
-                  <div className="flex gap-1 mb-3">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                    ))}
-                  </div>
-                  <p className="text-warm-neutral-700 mb-3 italic">
-                    "Najlepsza inwestycja w swoje finanse! Dariusz pokazał mi błędy, których sam bym nigdy nie zauważył."
-                  </p>
-                  <p className="text-sm font-semibold text-navy-900">— Katarzyna S., Wrocław</p>
-                </div>
+                  <CarouselItem>
+                    <div className="bg-gradient-to-br from-warm-neutral-50 to-white p-6 md:p-8 rounded-lg border border-warm-neutral-200 shadow-sm">
+                      <div className="flex gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                        ))}
+                      </div>
+                      <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
+                        "Najlepsza inwestycja w swoje finanse! Dariusz pokazał mi błędy, których sam bym nigdy nie zauważył."
+                      </p>
+                      <p className="text-sm font-semibold text-navy-900">— Katarzyna S., Wrocław</p>
+                    </div>
+                  </CarouselItem>
 
-                <div className="bg-gradient-to-br from-prestige-gold-50 to-white p-5 rounded-lg border-2 border-prestige-gold-300 shadow-md md:col-span-2">
-                  <div className="flex gap-1 mb-3">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <span key={star} className="text-prestige-gold-500 text-lg">★</span>
-                    ))}
-                  </div>
-                  <p className="text-warm-neutral-700 mb-3 italic text-lg">
-                    "Miałem chwilówki i myślałem, że to koniec. Pan Dariusz pokazał mi plan wyjścia z długów. Dziś mam kredyt konsolidacyjny z banku i oddycham z ulgą."
-                  </p>
-                  <p className="text-sm font-semibold text-navy-900">— Robert D., Poznań</p>
-                </div>
-              </div>
+                  <CarouselItem>
+                    <div className="bg-gradient-to-br from-prestige-gold-50 to-white p-6 md:p-8 rounded-lg border-2 border-prestige-gold-300 shadow-md">
+                      <div className="flex gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <span key={star} className="text-prestige-gold-500 text-lg">★</span>
+                        ))}
+                      </div>
+                      <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
+                        "Miałem chwilówki i myślałem, że to koniec. Pan Dariusz pokazał mi plan wyjścia z długów. Dziś mam kredyt konsolidacyjny z banku i oddycham z ulgą."
+                      </p>
+                      <p className="text-sm font-semibold text-navy-900">— Robert D., Poznań</p>
+                    </div>
+                  </CarouselItem>
+                </CarouselContent>
+                <CarouselPrevious className="hidden md:flex" />
+                <CarouselNext className="hidden md:flex" />
+              </Carousel>
             </div>
           </div>
         </div>
