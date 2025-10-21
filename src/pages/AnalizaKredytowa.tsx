@@ -89,7 +89,7 @@ const AnalizaKredytowa = () => {
           {/* Benefit Headline */}
           <div className="text-center mb-6">
             <h1 className="font-montserrat text-2xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-3 leading-tight">
-              Zobacz, co banki i firmy pożyczkowe wiedzą o Tobie — zanim dostaniesz decyzję.
+              Dowiedz się, dlaczego bank lub firma pożyczkowa mówi „nie" — i co zrobić, żeby następnym razem powiedziała „tak".
             </h1>
           </div>
 
