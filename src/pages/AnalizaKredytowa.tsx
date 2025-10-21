@@ -162,9 +162,12 @@ const AnalizaKredytowa = () => {
           {/* CTA #1 - Hero Section */}
           <div className="text-center px-2">
             <a href="#formularz-zamowienia" className="block">
-              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-4 md:px-6 md:py-5 lg:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto">
-                <span className="text-base sm:text-lg md:text-2xl leading-snug text-center break-words">
-                  Sprawdź swoją analizę kredytową – tylko <span className="text-success-green-400 font-extrabold whitespace-nowrap">29 zł</span>
+              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
+                  Sprawdź swoją analizę kredytową
+                </span>
+                <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
+                  – tylko <span className="text-success-green-400 font-extrabold">29 zł</span>
                 </span>
               </Button>
             </a>
@@ -434,9 +437,12 @@ const AnalizaKredytowa = () => {
             {/* CTA #2 - Po sekcji co otrzymasz */}
             <div className="px-2">
               <a href="#formularz-zamowienia" className="block">
-                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-4 md:px-6 md:py-6 lg:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto">
-                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-snug text-center break-words">
-                    Zobacz, co widzi o Tobie bank — wynik w 24h
+                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
+                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
+                    Zobacz, co widzi o Tobie bank
+                  </span>
+                  <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
+                    wynik w 24h
                   </span>
                 </Button>
               </a>
@@ -632,9 +638,12 @@ const AnalizaKredytowa = () => {
             {/* CTA #3 - Po sekcji co NIE dostaniesz za darmo */}
             <div className="text-center mt-8 px-2">
               <a href="#formularz-zamowienia" className="block">
-                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-4 md:px-6 md:py-6 lg:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto">
-                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-snug text-center break-words">
-                    Sprawdź bez ryzyka – analiza tylko <span className="text-success-green-400 font-extrabold whitespace-nowrap">29 zł</span>
+                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
+                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
+                    Sprawdź bez ryzyka
+                  </span>
+                  <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
+                    analiza tylko <span className="text-success-green-400 font-extrabold">29 zł</span>
                   </span>
                 </Button>
               </a>
@@ -714,12 +723,15 @@ const AnalizaKredytowa = () => {
               </div>
 
               {/* Submit Button */}
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-5 px-3 text-base sm:text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4">
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-5 px-3 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 flex flex-col items-center gap-1">
                 {isSubmitting ? 'Przechodzę do płatności...' : <>
-                    <span className="break-words text-center leading-snug">
-                      Zamawiam analizę – chcę poznać prawdę o swojej zdolności
+                    <span className="text-base sm:text-lg md:text-xl leading-tight text-center">
+                      Zamawiam analizę
                     </span>
-                    <ArrowRight className="inline-block ml-2 w-5 h-5 flex-shrink-0" />
+                    <span className="text-sm sm:text-base font-normal opacity-90 text-center flex items-center gap-1">
+                      chcę poznać prawdę o swojej zdolności
+                      <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                    </span>
                   </>}
               </Button>
 
