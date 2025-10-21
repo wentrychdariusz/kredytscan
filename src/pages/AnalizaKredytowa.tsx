@@ -163,8 +163,7 @@ const AnalizaKredytowa = () => {
           <div className="text-center px-2">
             <a href="#formularz-zamowienia" className="block">
               <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                <span className="text-lg md:text-2xl leading-tight">Sprawdź swoją zdolność kredytową</span>
-                <span className="text-sm md:text-base font-normal opacity-90">Zamów analizę</span>
+                <span className="text-lg md:text-2xl leading-tight">Sprawdź swoją analizę kredytową za 29 zł</span>
               </Button>
             </a>
             <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
@@ -434,8 +433,7 @@ const AnalizaKredytowa = () => {
             <div className="px-2">
               <a href="#formularz-zamowienia" className="block">
                 <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                  <span className="text-xl md:text-2xl leading-tight">Zamów analizę</span>
-                  <span className="text-sm md:text-base font-normal opacity-90">i poznaj prawdę o swojej zdolności</span>
+                  <span className="text-xl md:text-2xl leading-tight">Zobacz, co widzi o Tobie bank — wynik w 24h</span>
                 </Button>
               </a>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-300">
@@ -631,8 +629,7 @@ const AnalizaKredytowa = () => {
             <div className="text-center mt-8 px-2">
               <a href="#formularz-zamowienia" className="block">
                 <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                  <span className="text-xl md:text-2xl leading-tight">Zamów teraz</span>
-                  <span className="text-sm md:text-base font-normal opacity-90">🔍 i sprawdź, co widzi o Tobie bank</span>
+                  <span className="text-xl md:text-2xl leading-tight">Sprawdź bez ryzyka – analiza tylko 29 zł</span>
                 </Button>
               </a>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
@@ -713,7 +710,7 @@ const AnalizaKredytowa = () => {
               {/* Submit Button */}
               <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 px-4 text-lg rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4">
                 {isSubmitting ? 'Przechodzę do płatności...' : <>
-                    Zamawiam analizę
+                    Zamawiam analizę – chcę poznać prawdę o swojej zdolności
                     <ArrowRight className="inline-block ml-2 w-5 h-5" />
                   </>}
               </Button>
