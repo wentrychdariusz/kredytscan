@@ -162,8 +162,13 @@ const AnalizaKredytowa = () => {
           {/* CTA #1 - Hero Section */}
           <div className="text-center px-2">
             <a href="#formularz-zamowienia" className="block">
-              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                <span className="text-lg md:text-2xl leading-tight">Sprawdź swoją analizę kredytową za 29 zł</span>
+              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-2">
+                <span className="text-lg md:text-2xl leading-tight">
+                  Sprawdź swoją analizę kredytową
+                </span>
+                <span className="inline-block bg-white text-prestige-gold-700 px-4 py-1 rounded-lg font-bold text-xl md:text-2xl">
+                  29 zł
+                </span>
               </Button>
             </a>
             <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
