@@ -243,6 +243,94 @@ const AnalizaKredytowa = () => {
                 Pon-Pt: 9:00-18:00 | Oddzwonimy w 24h
               </p>
             </div>
+
+            {/* Mini-testimonials Carousel - After Hero CTA */}
+            <div className="mt-8 bg-white rounded-xl p-5 md:p-6 shadow-xl border-2 border-prestige-gold-200">
+              <p className="text-xs md:text-sm text-warm-neutral-600 text-center mb-5 flex items-center justify-center gap-2">
+                <span className="text-prestige-gold-500 text-lg">⭐⭐⭐⭐⭐</span>
+                <span className="font-semibold">Prawdziwe historie naszych klientów:</span>
+              </p>
+              
+              <div className="space-y-5">
+                {/* Opinia 1: BNPL Problem */}
+                <div className="bg-gradient-to-br from-warm-neutral-50 to-prestige-gold-50 rounded-lg p-4 border-l-4 border-prestige-gold-500">
+                  <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
+                    "Korzystałam z odroczonych płatności i nie wiedziałam, że opóźnienia zablokują mi dostęp do banków. <strong>Dzięki Panu Dariuszowi i jego zespołowi udało mi się uzyskać kredyt w banku</strong> mimo wcześniejszych odmów."
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-prestige-gold-400 flex items-center justify-center text-white font-bold text-sm">
+                      J
+                    </div>
+                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Joanna M., Poznań</p>
+                  </div>
+                </div>
+
+                {/* Opinia 2: Biznes */}
+                <div className="bg-gradient-to-br from-business-blue-50 to-warm-neutral-50 rounded-lg p-4 border-l-4 border-business-blue-500">
+                  <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
+                    "Miałem <strong className="text-alert-red-600">3 odmowy kredytu firmowego</strong>. Po analizie Pana Dariusza dowiedziałem się o błędach w BIK, które łatwo naprawić. <strong className="text-success-green-700">2 miesiące później dostałem 250 tys. zł</strong> na rozwój firmy."
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-business-blue-500 flex items-center justify-center text-white font-bold text-sm">
+                      M
+                    </div>
+                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Marcin K., przedsiębiorca, Gdańsk</p>
+                  </div>
+                </div>
+
+                {/* Opinia 3: Młody klient */}
+                <div className="bg-gradient-to-br from-success-green-50 to-warm-neutral-50 rounded-lg p-4 border-l-4 border-success-green-500">
+                  <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
+                    "Bank odmówił mi kredytu na mieszkanie i byłem zdruzgotany. Pan Dariusz pokazał mi konkretnie co poprawić. <strong className="text-success-green-700">Po 4 miesiącach kupiłem swoje pierwsze M.</strong> Najlepsza decyzja!"
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-success-green-500 flex items-center justify-center text-white font-bold text-sm">
+                      T
+                    </div>
+                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Tomasz R., 28 lat, Kraków</p>
+                  </div>
+                </div>
+
+                {/* Opinia 4: Po rozwodzie */}
+                <div className="bg-gradient-to-br from-warm-neutral-50 to-prestige-gold-50 rounded-lg p-4 border-l-4 border-prestige-gold-500 hidden lg:block">
+                  <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
+                    "Po rozwodzie zostałam z długami męża w BIK. Myślałam, że już nigdy nie dostanę kredytu. <strong>Zespół Kredyt Studio pokazał mi krok po kroku co zrobić.</strong> Dzisiaj mam własne mieszkanie."
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-prestige-gold-400 flex items-center justify-center text-white font-bold text-sm">
+                      K
+                    </div>
+                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Katarzyna S., Wrocław</p>
+                  </div>
+                </div>
+
+                {/* Opinia 5: Starszy klient */}
+                <div className="bg-gradient-to-br from-business-blue-50 to-warm-neutral-50 rounded-lg p-4 border-l-4 border-business-blue-500 hidden lg:block">
+                  <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
+                    "W wieku 56 lat myślałem, że to koniec z kredytami. Pan Dariusz udowodnił, że się myliłem. <strong className="text-success-green-700">Refinansowałem hipotekę i oszczędzam 800 zł miesięcznie.</strong>"
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-business-blue-500 flex items-center justify-center text-white font-bold text-sm">
+                      A
+                    </div>
+                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Andrzej P., Warszawa</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* CTA w testimonials */}
+              <div className="mt-6 text-center">
+                <p className="text-xs text-warm-neutral-600 mb-3">
+                  👆 <strong>Dołącz do ponad 15 000 zadowolonych klientów</strong>
+                </p>
+                <Button 
+                  onClick={() => document.getElementById('formularz-zamowienia')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
+                >
+                  Zamów swoją analizę za 29 zł
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
