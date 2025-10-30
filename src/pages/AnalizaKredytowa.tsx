@@ -753,10 +753,10 @@ const AnalizaKredytowa = () => {
             {/* Micro-Incentive */}
             <div className="bg-gradient-to-r from-prestige-gold-50 to-success-green-50 border-2 border-prestige-gold-400 rounded-xl p-4 mb-6 text-center">
               <p className="text-sm md:text-base font-bold text-navy-900 mb-1">
-                🎁 BONUS: Darmowy E-book przy zamówieniu!
+                🎁 BONUS: Dostęp do prywatnego klubu inwestorów Kredyt Studio
               </p>
               <p className="text-xs md:text-sm text-warm-neutral-700">
-                "5 błędów, które rujnują Twoją zdolność kredytową" (wartość 47 zł)
+                i dostęp do prywatnego finansowania na najlepszych warunkach
               </p>
             </div>
 
