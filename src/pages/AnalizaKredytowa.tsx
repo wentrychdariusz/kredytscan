@@ -370,17 +370,32 @@ const AnalizaKredytowa = () => {
               </div>
             </div>
 
-            {/* Expert Message */}
-            <div className="space-y-4 text-warm-neutral-700 mb-8">
-              <p className="text-lg leading-relaxed">
-                <strong className="text-navy-900">Ponad 15.000 osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Pomogłem tysiącom rodzin wyjść z długów i zbudować stabilną przyszłość finansową.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Czy wyobrażasz sobie życie, w którym <strong className="text-navy-900">nie musisz bać się kolejnego telefonu od wierzycieli?</strong> Życie, w którym Twoje pieniądze należą do Ciebie, a nie do banku?
-              </p>
-              <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-6 rounded-lg mt-6">
-                <p className="text-xl font-semibold text-navy-900 italic">
-                  "Jeśli nigdy nie miałeś wsparcia i pomocy od nikogo, to ja Ci pomogę. Nie czekaj, aż sytuacja wymknie się spod kontroli."
+            {/* Expert Message - Problem-Solution Focused */}
+            <div className="space-y-5 mb-8">
+              <div className="bg-alert-red-50 border-l-4 border-alert-red-500 p-5 rounded-r-lg">
+                <p className="text-lg font-semibold text-navy-900 mb-2">
+                  🚨 Problem: Każda odmowa banku obniża Twoją punktację
+                </p>
+                <p className="text-warm-neutral-700 leading-relaxed">
+                  Większość osób składa kolejne wnioski kredytowe na ślepo, nie wiedząc, że każda odmowa <strong className="text-alert-red-700">obniża ich zdolność kredytową na lata</strong>. To błędne koło.
+                </p>
+              </div>
+
+              <div className="bg-success-green-50 border-l-4 border-success-green-500 p-5 rounded-r-lg">
+                <p className="text-lg font-semibold text-navy-900 mb-2">
+                  ✅ Rozwiązanie: Analiza PRZED kolejnym wnioskiem
+                </p>
+                <p className="text-warm-neutral-700 leading-relaxed">
+                  Za 29 zł dowiesz się <strong className="text-success-green-700">dokładnie co Cię blokuje i jak to naprawić</strong>, zanim złożysz kolejny wniosek. To może zaoszczędzić Ci lat czekania i tysięcy złotych.
+                </p>
+              </div>
+
+              <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-6 rounded-r-lg">
+                <p className="text-xl font-bold text-navy-900 mb-3 italic">
+                  "Widziałem setki osób, które popełniły ten sam błąd — działały bez planu. Nie popełnij go i Ty."
+                </p>
+                <p className="text-base text-warm-neutral-700">
+                  — Dariusz Wentrych
                 </p>
               </div>
             </div>
