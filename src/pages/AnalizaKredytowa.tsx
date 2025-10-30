@@ -23,16 +23,8 @@ const AnalizaKredytowa = () => {
   const [filledFields, setFilledFields] = useState(0);
   const [showSticky, setShowSticky] = useState(false);
   
-  // A/B Test CTA variants
-  const ctaVariants = [
-    "💳 Zapłać BLIK - tylko 29 zł",
-    "🚀 Zamów analizę za 29 zł",
-    "✅ Sprawdź swoją zdolność - 29 zł",
-    "💰 Odkryj swoją zdolność - 29 zł"
-  ];
-  const [ctaText] = useState(() => 
-    ctaVariants[Math.floor(Math.random() * ctaVariants.length)]
-  );
+  // Main CTA text
+  const ctaText = "Sprawdź swoją zdolność - 29 zł";
   
   // Countdown timer (12 hours)
   const { formattedTime, timeLeft } = useCountdown({
