@@ -468,6 +468,18 @@ const AnalizaKredytowa = () => {
                       <p className="text-sm font-semibold text-navy-900">— Robert D., Poznań</p>
                     </div>
                   </CarouselItem>
+
+                  <CarouselItem>
+                    <div className="bg-gradient-to-br from-business-blue-50 to-white p-6 md:p-8 rounded-lg border-2 border-business-blue-400 shadow-md mx-2">
+                      <div className="flex gap-1 mb-3">
+                        {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
+                      </div>
+                      <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
+                        "Byłam w różnych firmach doradczych, ale słabo się zajęli moją sprawą. <strong className="text-business-blue-700">Pan Dariusz i Pani Ania zajęli się mną tak jak nikt inny</strong> — odpowiadali na każde pytanie i prowadzili mnie krok po kroku."
+                      </p>
+                      <p className="text-sm font-semibold text-navy-900">— Magdalena W., Katowice</p>
+                    </div>
+                  </CarouselItem>
                 </CarouselContent>
                 <CarouselPrevious className="left-0 md:left-2" />
                 <CarouselNext className="right-0 md:right-2" />
