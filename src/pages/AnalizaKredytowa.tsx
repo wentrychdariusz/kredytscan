@@ -27,7 +27,7 @@ const AnalizaKredytowa = () => {
   const ctaVariants = [
     "💳 Zapłać BLIK - tylko 29 zł",
     "🚀 Zamów analizę za 29 zł",
-    "✅ Sprawdź swój BIK - 29 zł",
+    "✅ Sprawdź swoją zdolność - 29 zł",
     "💰 Odkryj swoją zdolność - 29 zł"
   ];
   const [ctaText] = useState(() => 
@@ -88,7 +88,7 @@ const AnalizaKredytowa = () => {
       setIsSubmitting(false);
     }
   };
-  const benefits = ["Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej", "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność", "Przeanalizujemy informacje z BIK, BIG i InfoMonitora", "Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie", "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku", "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów", "Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach", "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"];
+  const benefits = ["Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej", "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność", "Przeanalizujemy informacje ze wszystkich rejestrów kredytowych i baz danych", "Zaproponujemy czyszczenie rejestrów — największe know-how w Polsce w tej dziedzinie", "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku", "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów", "Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach", "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"];
   const premiumAdvantages = [{
     label: "Obsługa indywidualna",
     icon: CheckCircle
@@ -200,7 +200,7 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  <strong>Wskazanie błędów w BIK, BIG i InfoMonitorze</strong> — dowiesz się, co Cię blokuje
+                  <strong>Wskazanie błędów we wszystkich rejestrach kredytowych</strong> — dowiesz się, co Cię blokuje
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -294,7 +294,7 @@ const AnalizaKredytowa = () => {
                 {/* Opinia 4: Po rozwodzie */}
                 <div className="bg-gradient-to-br from-warm-neutral-50 to-prestige-gold-50 rounded-lg p-4 border-l-4 border-prestige-gold-500 hidden lg:block">
                   <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
-                    "Po rozwodzie zostałam z długami męża w BIK. Myślałam, że już nigdy nie dostanę kredytu. <strong>Zespół Kredyt Studio pokazał mi krok po kroku co zrobić.</strong> Dzisiaj mam własne mieszkanie."
+                    "Po rozwodzie zostałam z długami męża w rejestrach. Myślałam, że już nigdy nie dostanę kredytu. <strong>Zespół Kredyt Studio pokazał mi krok po kroku co zrobić.</strong> Dzisiaj mam własne mieszkanie."
                   </p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-prestige-gold-400 flex items-center justify-center text-white font-bold text-sm">
@@ -478,7 +478,7 @@ const AnalizaKredytowa = () => {
                         {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
-                        "Myślałem, że mam brudny BIK i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu BIK dostałem finansowanie na rozwój firmy."
+                        "Myślałem, że mam negatywną historię i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu rejestrów dostałem finansowanie na rozwój firmy."
                       </p>
                       <p className="text-sm font-semibold text-navy-900">— Marcin P., Gdańsk</p>
                     </div>
@@ -567,7 +567,7 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-business-blue-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  Przeanalizujemy informacje z BIK, BIG i InfoMonitora
+                  Przeanalizujemy informacje ze wszystkich rejestrów kredytowych i baz danych
                 </p>
               </div>
             </div>
@@ -585,7 +585,7 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  Zaproponujemy czyszczenie BIK — największe know-how w Polsce w tej dziedzinie
+                  Zaproponujemy czyszczenie rejestrów — największe know-how w Polsce w tej dziedzinie
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -714,12 +714,12 @@ const AnalizaKredytowa = () => {
                 {/* Wiersz 2 */}
                 <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
                   <p className="text-xs md:text-sm text-warm-neutral-700">
-                    ❌ Brak analizy BIK
+                    ❌ Brak analizy rejestrów
                   </p>
                 </div>
                 <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
                   <p className="text-xs md:text-sm font-semibold text-navy-900">
-                    ✅ Pełna analiza BIK, BIG, InfoMonitor
+                    ✅ Pełna analiza wszystkich rejestrów kredytowych
                   </p>
                 </div>
 
@@ -808,7 +808,7 @@ const AnalizaKredytowa = () => {
               {/* Punkt 3 */}
               <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-business-blue-400 shadow-sm">
                 <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
-                  ❌ Brak analizy BIK vs ✅ Pełna analiza BIK, BIG, InfoMonitor
+                  ❌ Brak analizy rejestrów vs ✅ Pełna analiza wszystkich rejestrów kredytowych
                 </h5>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
                   Darmowe firmy tego nie robią.
