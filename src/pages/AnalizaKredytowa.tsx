@@ -372,30 +372,77 @@ const AnalizaKredytowa = () => {
 
             {/* Expert Message - Problem-Solution Focused */}
             <div className="space-y-5 mb-8">
-              <div className="bg-alert-red-50 border-l-4 border-alert-red-500 p-5 rounded-r-lg">
-                <p className="text-lg font-semibold text-navy-900 mb-2">
-                  🚨 Problem: Każda odmowa banku obniża Twoją punktację
+              {/* Box 1 - Problem (czerwony alert) */}
+              <div className="bg-alert-red-50 border-l-4 border-alert-red-500 p-6 rounded-r-lg">
+                <p className="text-lg font-bold text-navy-900 mb-3">
+                  🚨 Jedna błędna decyzja = lata skazania na DROGIE parabanki
                 </p>
-                <p className="text-warm-neutral-700 leading-relaxed">
-                  Większość osób składa kolejne wnioski kredytowe na ślepo, nie wiedząc, że każda odmowa <strong className="text-alert-red-700">obniża ich zdolność kredytową na lata</strong>. To błędne koło.
+                <p className="text-base font-semibold text-alert-red-800 mb-3">
+                  ❌ Co się dzieje gdy działasz SAM lub z firmą, która nie zna tematu:
+                </p>
+                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed">
+                  <p>→ Składasz wnioski na ślepo → kolejne odmowy banków</p>
+                  <p>→ Każda odmowa <strong className="text-alert-red-700">ISTOTNIE OBNIŻA</strong> Twój scoring kredytowy</p>
+                  <p>→ Twoja zdolność kredytowa spada drastycznie</p>
+                  <p>→ Odbudowa trwa <strong className="text-alert-red-700">LATA</strong> (nie tygodnie, nie miesiące)</p>
+                  <p>→ Banki automatycznie Cię odrzucają przez cały ten czas</p>
+                  <p>→ Zostają Ci <strong className="text-alert-red-700">TYLKO</strong> drogie firmy parabankowe z odsetkami nawet 10x wyższymi niż w banku</p>
+                </div>
+              </div>
+
+              {/* Box 2 - Co to znaczy w praktyce (pomarańczowy) */}
+              <div className="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-lg">
+                <p className="text-lg font-bold text-navy-900 mb-3">
+                  ⚠️ CO TO OZNACZA W PRAKTYCE?
+                </p>
+                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed mb-4">
+                  <p>→ Kredyt konsolidacyjny z banku po 6-12%? <strong className="text-orange-700">Zapomnij.</strong></p>
+                  <p>→ Kredyt hipoteczny? <strong className="text-orange-700">Niemożliwy przez najbliższe lata.</strong></p>
+                  <p>→ Zostaje Ci <strong className="text-orange-700">TYLKO</strong> pożyczka pozabankowa po 60-120% w skali roku.</p>
+                </div>
+                <p className="text-base font-semibold text-navy-900">
+                  💰 Różnica? <strong className="text-orange-700">DZIESIĄTKI TYSIĘCY ZŁOTYCH</strong> przepalonych na odsetkach zamiast na spłacie długu i budowaniu swojej przyszłości.
                 </p>
               </div>
 
-              <div className="bg-success-green-50 border-l-4 border-success-green-500 p-5 rounded-r-lg">
-                <p className="text-lg font-semibold text-navy-900 mb-2">
-                  ✅ Rozwiązanie: Analiza PRZED kolejnym wnioskiem
+              {/* Box 3 - Nasze rozwiązanie (zielony) */}
+              <div className="bg-success-green-50 border-l-4 border-success-green-500 p-6 rounded-r-lg">
+                <p className="text-lg font-bold text-navy-900 mb-3">
+                  💡 My wiemy JAK banki oceniają wnioski - znamy systemy od środka
                 </p>
-                <p className="text-warm-neutral-700 leading-relaxed">
-                  Za 29 zł dowiesz się <strong className="text-success-green-700">dokładnie co Cię blokuje i jak to naprawić</strong>, zanim złożysz kolejny wniosek. To może zaoszczędzić Ci lat czekania i tysięcy złotych.
+                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed mb-4">
+                  <p>→ <strong className="text-success-green-700">20 lat doświadczenia</strong> w analizie kredytowej</p>
+                  <p>→ <strong className="text-success-green-700">15.000+ osób</strong> uratowanych przed takimi błędami</p>
+                  <p>→ Wiemy co banki <strong className="text-success-green-700">NAPRAWDĘ</strong> sprawdzają w każdym wniosku</p>
+                </div>
+                <p className="text-base font-semibold text-navy-900 mb-2">
+                  ✅ Za 29 zł otrzymasz:
                 </p>
+                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed">
+                  <p>• Raport PDF: co dokładnie blokuje Twój wniosek</p>
+                  <p>• Plan naprawy w 3 konkretnych krokach</p>
+                  <p>• Listę banków gotowych rozważyć Twój wniosek JUŻ TERAZ</p>
+                  <p>• Ochronę przed błędami kosztującymi lata i dziesiątki tysięcy złotych</p>
+                </div>
               </div>
 
+              {/* Box 4 - Quote od Dariusza (złoty) */}
               <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-6 rounded-r-lg">
                 <p className="text-xl font-bold text-navy-900 mb-3 italic">
                   "Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie."
                 </p>
                 <p className="text-base text-warm-neutral-700">
                   — Dariusz Wentrych
+                </p>
+              </div>
+
+              {/* Box 5 - Pytanie retoryczne (szary/neutralny) */}
+              <div className="bg-warm-neutral-100 border-l-4 border-navy-900 p-6 rounded-r-lg">
+                <p className="text-xl font-bold text-navy-900 leading-relaxed">
+                  ⏰ Pytanie nie brzmi <span className="text-warm-neutral-600">"czy warto za 29 zł"</span>
+                </p>
+                <p className="text-xl font-bold text-navy-900 mt-2">
+                  Pytanie brzmi: <span className="text-alert-red-700">"czy stać Cię na kolejne lata przepalania pieniędzy w parabankach?"</span>
                 </p>
               </div>
             </div>
