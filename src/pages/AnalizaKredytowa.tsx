@@ -243,21 +243,6 @@ const AnalizaKredytowa = () => {
               </p>
             </div>
 
-            {/* Click-to-Call Button - Mobile Only */}
-            <div className="mt-4 md:hidden">
-              <a href="tel:+48123456789" className="block">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="w-full border-2 border-prestige-gold-400 text-prestige-gold-700 hover:bg-prestige-gold-50 font-semibold h-14"
-                >
-                  📞 Zadzwoń teraz - bezpłatna konsultacja
-                </Button>
-              </a>
-              <p className="text-xs text-center text-warm-neutral-600 mt-2">
-                Pon-Pt: 9:00-18:00 | Oddzwonimy w 24h
-              </p>
-            </div>
 
             {/* Mini-testimonials Carousel - After Hero CTA */}
             <div className="mt-8 bg-white rounded-xl p-5 md:p-6 shadow-xl border-2 border-prestige-gold-200">
