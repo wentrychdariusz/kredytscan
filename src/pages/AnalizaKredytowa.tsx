@@ -152,7 +152,7 @@ const AnalizaKredytowa = () => {
               <div>
                 <p className="font-bold text-navy-900 text-xl md:text-2xl mb-2">👤 Dariusz Wentrych</p>
                 <p className="text-warm-neutral-700 mb-2 text-base md:text-lg font-semibold">
-                  Ekspert finansowy z <span className="text-prestige-gold-600">15-letnim doświadczeniem</span>
+                  Ekspert finansowy z <span className="text-prestige-gold-600">20-letnim doświadczeniem</span>
                 </p>
                 <p className="text-prestige-gold-600 font-bold text-base md:text-lg mb-3">
                   Autor bestsellera „Nowe życie bez długów"
@@ -160,7 +160,7 @@ const AnalizaKredytowa = () => {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm md:text-base text-navy-900 font-semibold">
                   <span className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-success-green-600" />
-                    15 lat doświadczenia
+                    20 lat doświadczenia
                   </span>
                   <span className="hidden sm:inline text-warm-neutral-400">•</span>
                   <span className="flex items-center gap-2">
@@ -366,7 +366,7 @@ const AnalizaKredytowa = () => {
                   Dariusz Wentrych
                 </h3>
                 <p className="text-warm-neutral-600 text-lg mb-1">
-                  Ekspert finansowy z 15-letnim doświadczeniem
+                  Ekspert finansowy z 20-letnim doświadczeniem
                 </p>
                 <p className="text-prestige-gold-600 font-semibold text-base mb-3">
                   Autor bestsellerowej książki "Nowe życie bez długów"
@@ -374,7 +374,7 @@ const AnalizaKredytowa = () => {
                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-sm text-warm-neutral-600">
                   <span className="flex items-center gap-1">
                     <CheckCircle className="w-4 h-4 text-success-green-600" />
-                    15 lat doświadczenia
+                    20 lat doświadczenia
                   </span>
                   <span>•</span>
                   <span className="flex items-center gap-1">
@@ -707,7 +707,7 @@ const AnalizaKredytowa = () => {
                 </div>
                 <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
                   <p className="text-xs md:text-sm font-semibold text-navy-900">
-                    ✅ 15 lat doświadczenia
+                    ✅ 20 lat doświadczenia
                   </p>
                 </div>
 
@@ -797,7 +797,7 @@ const AnalizaKredytowa = () => {
               {/* Punkt 4 */}
               <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-alert-red-400 shadow-sm">
                 <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
-                  ❌ Ryzyko złych rad vs ✅ 15 lat doświadczenia
+                  ❌ Ryzyko złych rad vs ✅ 20 lat doświadczenia
                 </h5>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
                   Złe decyzje mogą Cię kosztować lata.
