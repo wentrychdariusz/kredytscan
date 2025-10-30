@@ -265,16 +265,16 @@ const AnalizaKredytowa = () => {
                   </div>
                 </div>
 
-                {/* Opinia 2: Biznes */}
+                {/* Opinia 2: Konsolidacja długów */}
                 <div className="bg-gradient-to-br from-business-blue-50 to-warm-neutral-50 rounded-lg p-4 border-l-4 border-business-blue-500">
                   <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
-                    "Miałem <strong className="text-alert-red-600">3 odmowy kredytu firmowego</strong>. Po analizie Pana Dariusza dowiedziałem się o błędach w BIK, które łatwo naprawić. <strong className="text-success-green-700">2 miesiące później dostałem 250 tys. zł</strong> na rozwój firmy."
+                    {"Miałam 5 chwilówek i nie wiedziałam jak z tego wyjść. "}<strong className="text-alert-red-600">{"Spłacałam 2000 zł odsetek miesięcznie"}</strong>{". Po analizie Pan Dariusz pokazał mi jak skonsolidować wszystko w jeden kredyt. "}<strong className="text-success-green-700">{"Teraz płacę 600 zł i mam spokój."}</strong>
                   </p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-business-blue-500 flex items-center justify-center text-white font-bold text-sm">
-                      M
+                      A
                     </div>
-                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Marcin K., przedsiębiorca, Gdańsk</p>
+                    <p className="text-xs md:text-sm text-warm-neutral-600 font-semibold">Anna W., Łódź</p>
                   </div>
                 </div>
 
