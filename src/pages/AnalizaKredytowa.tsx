@@ -372,49 +372,51 @@ const AnalizaKredytowa = () => {
 
             {/* Expert Message - Problem-Solution Focused */}
             <div className="space-y-5 mb-8">
-              {/* Box 1 - Problem + Konsekwencje (czerwony) */}
+              {/* Box 1 - Problem (czerwony) */}
               <div className="bg-alert-red-50 border-l-4 border-alert-red-500 p-6 rounded-r-lg">
                 <p className="text-lg font-bold text-navy-900 mb-3">
-                  🚨 Jedna błędna decyzja = lata skazania na DROGIE parabanki
+                  Jedna błędna decyzja = lata skazania na drogie parabanki
                 </p>
-                <div className="text-warm-neutral-700 space-y-1 leading-relaxed mb-3">
-                  <p>→ Składasz wnioski na ślepo → <strong className="text-alert-red-700">scoring spada drastycznie</strong></p>
-                  <p>→ Odbudowa trwa <strong className="text-alert-red-700">LATA</strong>, nie miesiące</p>
-                  <p>→ Zostają Ci tylko parabanki z odsetkami <strong className="text-alert-red-700">10x wyższymi</strong></p>
+                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed">
+                  <p>Składasz wnioski na ślepo → kolejne odmowy</p>
+                  <p>Każda odmowa istotnie obniża Twój scoring kredytowy</p>
+                  <p>Odbudowa trwa lata, nie miesiące</p>
+                  <p>Banki odrzucają Cię automatycznie</p>
+                  <p>Zostają tylko parabanki z odsetkami 10x wyższymi</p>
+                  <p className="pt-2 border-t border-alert-red-200 font-semibold">
+                    Różnica to dziesiątki tysięcy złotych przepalonych na odsetkach.
+                  </p>
                 </div>
-                <p className="text-base font-semibold text-navy-900 border-t border-alert-red-200 pt-3">
-                  💰 Różnica? <strong className="text-alert-red-700">DZIESIĄTKI TYSIĘCY ZŁOTYCH</strong> przepalonych na odsetkach zamiast spłaty długu.
-                </p>
               </div>
 
-              {/* Box 2 - Nasze rozwiązanie (zielony) */}
+              {/* Box 2 - Rozwiązanie (zielony) */}
               <div className="bg-success-green-50 border-l-4 border-success-green-500 p-6 rounded-r-lg">
                 <p className="text-lg font-bold text-navy-900 mb-3">
-                  ✅ Za 29 zł otrzymasz:
+                  Za 29 zł otrzymasz:
                 </p>
-                <div className="text-warm-neutral-700 space-y-1 leading-relaxed">
-                  <p>• Raport PDF: co dokładnie blokuje Twój wniosek</p>
-                  <p>• Plan naprawy w 3 konkretnych krokach</p>
-                  <p>• Listę banków gotowych Cię rozważyć JUŻ TERAZ</p>
-                  <p>• Ochronę przed błędami kosztującymi dziesiątki tysięcy złotych</p>
+                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed">
+                  <p>Raport PDF: co dokładnie blokuje Twój wniosek</p>
+                  <p>Plan naprawy w 3 konkretnych krokach</p>
+                  <p>Listę banków gotowych Cię rozważyć już teraz</p>
+                  <p>Ochronę przed błędami kosztującymi dziesiątki tysięcy złotych</p>
                 </div>
               </div>
 
-              {/* Box 3 - Quote od Dariusza (złoty) */}
-              <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-6 rounded-r-lg">
-                <p className="text-xl font-bold text-navy-900 mb-3 italic">
-                  "Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie."
+              {/* Box 3 - Dariusz (złoty, mniejszy) */}
+              <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-5 rounded-r-lg">
+                <p className="text-base font-semibold text-navy-900 mb-2 italic">
+                  Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
                 </p>
-                <p className="text-base text-warm-neutral-700">
-                  — Dariusz Wentrych
+                <p className="text-sm text-warm-neutral-700">
+                  — Dariusz Wentrych, 20 lat doświadczenia
                 </p>
               </div>
 
-              {/* Box 4 - Pytanie retoryczne (szary) */}
+              {/* Box 4 - CTA (szary) */}
               <div className="bg-warm-neutral-100 border-l-4 border-navy-900 p-5 rounded-r-lg">
-                <p className="text-lg font-bold text-navy-900 leading-relaxed">
-                  ⏰ Pytanie nie brzmi <span className="text-warm-neutral-600">"czy warto za 29 zł"</span><br />
-                  Pytanie brzmi: <span className="text-alert-red-700">"czy stać Cię na kolejne lata w parabankach?"</span>
+                <p className="text-base font-bold text-navy-900 leading-relaxed">
+                  Pytanie nie brzmi "czy warto za 29 zł"<br />
+                  Pytanie brzmi: czy stać Cię na kolejne lata w parabankach?
                 </p>
               </div>
             </div>
