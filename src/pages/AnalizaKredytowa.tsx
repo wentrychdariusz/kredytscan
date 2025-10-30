@@ -99,7 +99,7 @@ const AnalizaKredytowa = () => {
     label: "Najlepsze know-how finansowe w Polsce",
     icon: CheckCircle
   }, {
-    label: "Zaufanie ponad 15 000 osób",
+    label: "Zaufanie ponad 15.000 osób",
     icon: CheckCircle
   }, {
     label: "Setki pozytywnych opinii i historii",
@@ -155,17 +155,17 @@ const AnalizaKredytowa = () => {
                   Ekspert finansowy z <span className="text-prestige-gold-600">15-letnim doświadczeniem</span>
                 </p>
                 <p className="text-prestige-gold-600 font-bold text-base md:text-lg mb-3">
-                  Autor bestsellerowej książki „Nowe życie bez długów"
+                  Autor bestsellera „Nowe życie bez długów"
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm md:text-base text-navy-900 font-semibold">
                   <span className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-success-green-600" />
-                    20 lat doświadczenia
+                    15 lat doświadczenia
                   </span>
                   <span className="hidden sm:inline text-warm-neutral-400">•</span>
                   <span className="flex items-center gap-2">
                     <CheckCircle className="w-5 h-5 text-success-green-600" />
-                    15 000+ klientów
+                    15.000+ klientów
                   </span>
                 </div>
               </div>
@@ -336,7 +336,7 @@ const AnalizaKredytowa = () => {
               {/* CTA w testimonials */}
               <div className="mt-6 text-center">
                 <p className="text-xs text-warm-neutral-600 mb-3">
-                  👆 <strong>Dołącz do ponad 15 000 zadowolonych klientów</strong>
+                  👆 <strong>Dołącz do ponad 15.000 zadowolonych klientów</strong>
                 </p>
                 <Button 
                   onClick={() => document.getElementById('formularz-zamowienia')?.scrollIntoView({ behavior: 'smooth' })}
@@ -379,7 +379,7 @@ const AnalizaKredytowa = () => {
                   <span>•</span>
                   <span className="flex items-center gap-1">
                     <CheckCircle className="w-4 h-4 text-success-green-600" />
-                    15 000+ klientów
+                    15.000+ klientów
                   </span>
                 </div>
               </div>
@@ -388,7 +388,7 @@ const AnalizaKredytowa = () => {
             {/* Expert Message */}
             <div className="space-y-4 text-warm-neutral-700 mb-8">
               <p className="text-lg leading-relaxed">
-                <strong className="text-navy-900">Ponad 15 000 osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Pomogłem tysiącom rodzin wyjść z długów i zbudować stabilną przyszłość finansową.
+                <strong className="text-navy-900">Ponad 15.000 osób</strong> już skorzystało z mojej pomocy i odzyskało kontrolę nad swoimi finansami. Pomogłem tysiącom rodzin wyjść z długów i zbudować stabilną przyszłość finansową.
               </p>
               <p className="text-lg leading-relaxed">
                 Czy wyobrażasz sobie życie, w którym <strong className="text-navy-900">nie musisz bać się kolejnego telefonu od wierzycieli?</strong> Życie, w którym Twoje pieniądze należą do Ciebie, a nie do banku?
@@ -797,7 +797,7 @@ const AnalizaKredytowa = () => {
               {/* Punkt 4 */}
               <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-alert-red-400 shadow-sm">
                 <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
-                  ❌ Ryzyko złych rad vs ✅ 20 lat doświadczenia
+                  ❌ Ryzyko złych rad vs ✅ 15 lat doświadczenia
                 </h5>
                 <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
                   Złe decyzje mogą Cię kosztować lata.
