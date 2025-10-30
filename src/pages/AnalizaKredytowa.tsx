@@ -20,6 +20,19 @@ const AnalizaKredytowa = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [ordersToday, setOrdersToday] = useState(47);
+  const [filledFields, setFilledFields] = useState(0);
+  const [showSticky, setShowSticky] = useState(false);
+  
+  // A/B Test CTA variants
+  const ctaVariants = [
+    "💳 Zapłać BLIK - tylko 29 zł",
+    "🚀 Zamów analizę za 29 zł",
+    "✅ Sprawdź swój BIK - 29 zł",
+    "💰 Odkryj swoją zdolność - 29 zł"
+  ];
+  const [ctaText] = useState(() => 
+    ctaVariants[Math.floor(Math.random() * ctaVariants.length)]
+  );
   
   // Countdown timer (12 hours)
   const { formattedTime, timeLeft } = useCountdown({
@@ -34,6 +47,24 @@ const AnalizaKredytowa = () => {
     }, Math.random() * 180000 + 120000); // Random between 2-5 minutes
     
     return () => clearInterval(interval);
+  }, []);
+
+  // Track filled fields for progress bar
+  useEffect(() => {
+    let count = 0;
+    if (formData.email.trim()) count++;
+    if (formData.phone.trim()) count++;
+    if (formData.name.trim()) count++;
+    setFilledFields(count);
+  }, [formData]);
+
+  // Sticky CTA scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowSticky(window.scrollY > 600);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -194,6 +225,22 @@ const AnalizaKredytowa = () => {
               </p>
               <p className="text-xs md:text-sm text-warm-neutral-600">
                 💳 Bezpieczna płatność • ⚡ Natychmiastowy dostęp
+              </p>
+            </div>
+
+            {/* Click-to-Call Button - Mobile Only */}
+            <div className="mt-4 md:hidden">
+              <a href="tel:+48123456789" className="block">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="w-full border-2 border-prestige-gold-400 text-prestige-gold-700 hover:bg-prestige-gold-50 font-semibold h-14"
+                >
+                  📞 Zadzwoń teraz - bezpłatna konsultacja
+                </Button>
+              </a>
+              <p className="text-xs text-center text-warm-neutral-600 mt-2">
+                Pon-Pt: 9:00-18:00 | Oddzwonimy w 24h
               </p>
             </div>
           </div>
@@ -695,8 +742,40 @@ const AnalizaKredytowa = () => {
               </p>
             </div>
 
+            {/* Social Proof Above Form */}
+            <div className="bg-gradient-to-r from-success-green-50 to-business-blue-50 border-2 border-success-green-300 rounded-xl p-4 mb-6 text-center">
+              <p className="text-sm md:text-base font-bold text-navy-900 flex items-center justify-center gap-2">
+                <CheckCircle className="w-5 h-5 text-success-green-600" />
+                Zaufało nam już <span className="text-prestige-gold-700 text-lg md:text-xl">15 247 klientów</span>
+              </p>
+            </div>
+
+            {/* Micro-Incentive */}
+            <div className="bg-gradient-to-r from-prestige-gold-50 to-success-green-50 border-2 border-prestige-gold-400 rounded-xl p-4 mb-6 text-center">
+              <p className="text-sm md:text-base font-bold text-navy-900 mb-1">
+                🎁 BONUS: Darmowy E-book przy zamówieniu!
+              </p>
+              <p className="text-xs md:text-sm text-warm-neutral-700">
+                "5 błędów, które rujnują Twoją zdolność kredytową" (wartość 47 zł)
+              </p>
+            </div>
+
             {/* Form */}
             <form onSubmit={handleSubmit} className="space-y-5 max-w-md mx-auto">
+              
+              {/* Progress Bar */}
+              <div className="mb-6">
+                <div className="flex justify-between text-xs text-warm-neutral-600 mb-2">
+                  <span>Krok {filledFields} z 3</span>
+                  <span>{Math.round((filledFields / 3) * 100)}% ukończono</span>
+                </div>
+                <div className="w-full bg-warm-neutral-200 h-2.5 rounded-full overflow-hidden">
+                  <div 
+                    className="bg-prestige-gold-500 h-2.5 rounded-full transition-all duration-500 ease-out"
+                    style={{width: `${(filledFields / 3) * 100}%`}}
+                  />
+                </div>
+              </div>
               {/* Email - PIERWSZE (łatwe, autofill, auto-focus) */}
               <div>
                 <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block text-base">
@@ -713,6 +792,20 @@ const AnalizaKredytowa = () => {
                   placeholder="twoj@email.pl" 
                   className="h-14 text-lg" 
                 />
+                {/* Inline Validation - Email */}
+                {formData.email && (
+                  <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${
+                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
+                      ? 'text-success-green-600'
+                      : 'text-alert-red-600'
+                  }`}>
+                    {/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ? (
+                      <><CheckCircle className="w-3 h-3" /> Poprawny email ✓</>
+                    ) : (
+                      <><AlertCircle className="w-3 h-3" /> Niepoprawny format email</>
+                    )}
+                  </p>
+                )}
               </div>
 
               {/* Telefon - DRUGIE (numeric keyboard) */}
@@ -732,6 +825,20 @@ const AnalizaKredytowa = () => {
                   placeholder="123 456 789" 
                   className="h-14 text-lg" 
                 />
+                {/* Inline Validation - Phone */}
+                {formData.phone && (
+                  <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${
+                    /^[0-9]{9,}$/.test(formData.phone)
+                      ? 'text-success-green-600'
+                      : 'text-alert-red-600'
+                  }`}>
+                    {/^[0-9]{9,}$/.test(formData.phone) ? (
+                      <><CheckCircle className="w-3 h-3" /> Poprawny numer ✓</>
+                    ) : (
+                      <><AlertCircle className="w-3 h-3" /> Minimum 9 cyfr</>
+                    )}
+                  </p>
+                )}
               </div>
 
               {/* Imię i nazwisko - TRZECIE (ostatnie) */}
@@ -751,14 +858,32 @@ const AnalizaKredytowa = () => {
                 />
               </div>
 
-              {/* Submit Button */}
+              {/* Submit Button with A/B Test and Animation */}
               <Button 
                 type="submit" 
                 disabled={isSubmitting} 
-                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-7 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-xl md:text-2xl"
+                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-7 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-xl md:text-2xl animate-pulse-subtle"
               >
-                {isSubmitting ? '💳 Przekierowuję...' : '💳 Zapłać BLIK - tylko 29 zł'}
+                {isSubmitting ? '💳 Przekierowuję...' : ctaText}
               </Button>
+
+              {/* Trust Badges Below CTA */}
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-3 md:gap-4 text-xs text-warm-neutral-600">
+                <div className="flex items-center gap-1">
+                  <Shield className="w-4 h-4 text-success-green-600" />
+                  <span>Bezpieczna płatność</span>
+                </div>
+                <span className="hidden md:inline">•</span>
+                <div className="flex items-center gap-1">
+                  <CheckCircle className="w-4 h-4 text-success-green-600" />
+                  <span>Dane zaszyfrowane SSL</span>
+                </div>
+                <span className="hidden md:inline">•</span>
+                <div className="flex items-center gap-1">
+                  <Shield className="w-4 h-4 text-success-green-600" />
+                  <span>RODO zgodność</span>
+                </div>
+              </div>
 
               {/* Risk Reversal */}
               <div className="text-center space-y-2 mt-4">
@@ -801,14 +926,16 @@ const AnalizaKredytowa = () => {
         </div>
       </section>
 
-      {/* Sticky CTA - Mobile Only */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t-2 border-prestige-gold-300 p-3 md:hidden z-50">
-        <a href="#formularz-zamowienia">
-          <Button className="w-full h-14 bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold text-base rounded-xl shadow-lg">
-            💳 Zapłać BLIK - 29 zł
-          </Button>
-        </a>
-      </div>
+      {/* Sticky CTA - Mobile Only (Scroll-Activated) */}
+      {showSticky && (
+        <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t-2 border-prestige-gold-300 p-3 md:hidden z-50 animate-slide-up">
+          <a href="#formularz-zamowienia">
+            <Button className="w-full h-14 bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold text-base rounded-xl shadow-lg">
+              {ctaText}
+            </Button>
+          </a>
+        </div>
+      )}
 
     </div>;
 };
