@@ -150,9 +150,24 @@ const AnalizaKredytowa = () => {
                 <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
               </Avatar>
               <div>
-                <p className="font-bold text-navy-900 text-xl mb-1">👤 Dariusz Wentrych</p>
-                <p className="text-warm-neutral-600 mb-1">Ekspert finansowy z 15-letnim doświadczeniem</p>
-                <p className="text-prestige-gold-600 font-semibold">Autor książki „Nowe życie bez długów"</p>
+                <p className="font-bold text-navy-900 text-xl md:text-2xl mb-2">👤 Dariusz Wentrych</p>
+                <p className="text-warm-neutral-700 mb-2 text-base md:text-lg font-semibold">
+                  Ekspert finansowy z <span className="text-prestige-gold-600">15-letnim doświadczeniem</span>
+                </p>
+                <p className="text-prestige-gold-600 font-bold text-base md:text-lg mb-3">
+                  Autor bestsellerowej książki „Nowe życie bez długów"
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-sm md:text-base text-navy-900 font-semibold">
+                  <span className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-success-green-600" />
+                    20 lat doświadczenia
+                  </span>
+                  <span className="hidden sm:inline text-warm-neutral-400">•</span>
+                  <span className="flex items-center gap-2">
+                    <CheckCircle className="w-5 h-5 text-success-green-600" />
+                    15 000+ klientów
+                  </span>
+                </div>
               </div>
             </div>
             
