@@ -392,7 +392,7 @@ const AnalizaKredytowa = () => {
 
               <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-6 rounded-r-lg">
                 <p className="text-xl font-bold text-navy-900 mb-3 italic">
-                  "Widziałem setki osób, które popełniły ten sam błąd — działały bez planu. Nie popełnij go i Ty."
+                  "Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie."
                 </p>
                 <p className="text-base text-warm-neutral-700">
                   — Dariusz Wentrych
