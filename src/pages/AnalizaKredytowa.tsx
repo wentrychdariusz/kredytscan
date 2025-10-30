@@ -1,13 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { Shield, CheckCircle, AlertCircle, FileText, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { useCountdown } from '@/hooks/useCountdown';
 const AnalizaKredytowa = () => {
   const navigate = useNavigate();
   const {
@@ -16,20 +16,27 @@ const AnalizaKredytowa = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    phone: '',
-    consent: false
+    phone: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [ordersToday, setOrdersToday] = useState(47);
+  
+  // Countdown timer (12 hours)
+  const { formattedTime, timeLeft } = useCountdown({
+    initialTime: 12 * 60 * 60, // 12 hours in seconds
+    storageKey: 'analiza_kredytowa_timer'
+  });
+
+  // Live social proof simulation
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setOrdersToday(prev => Math.min(prev + 1, 99));
+    }, Math.random() * 180000 + 120000); // Random between 2-5 minutes
+    
+    return () => clearInterval(interval);
+  }, []);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.consent) {
-      toast({
-        title: "Wymagana zgoda",
-        description: "Musisz zaakceptować zgodę na przetwarzanie danych",
-        variant: "destructive"
-      });
-      return;
-    }
     setIsSubmitting(true);
     try {
       const params = new URLSearchParams({
@@ -159,21 +166,36 @@ const AnalizaKredytowa = () => {
             </div>
           </div>
 
+          {/* Urgency & Scarcity */}
+          <div className="bg-gradient-to-r from-alert-red-50 to-prestige-gold-50 border-2 border-alert-red-300 rounded-xl p-4 mb-6 text-center">
+            <p className="text-sm md:text-base font-semibold text-navy-900 mb-2">
+              ⏰ Oferta ważna przez kolejne: <span className="text-alert-red-700 font-bold text-lg md:text-xl">{Math.floor(timeLeft / 3600)}:{Math.floor((timeLeft % 3600) / 60).toString().padStart(2, '0')}:{(timeLeft % 60).toString().padStart(2, '0')}</span>
+            </p>
+            <p className="text-xs md:text-sm text-warm-neutral-700">
+              🔥 Dziś zamówiono już <span className="font-bold text-prestige-gold-700">{ordersToday} analiz</span>
+            </p>
+          </div>
+
           {/* CTA #1 - Hero Section */}
           <div className="text-center px-2">
             <a href="#formularz-zamowienia" className="block">
-              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
+              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-6 md:px-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[64px] md:min-h-[72px] flex flex-col items-center gap-1">
                 <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
-                  Sprawdź swoją analizę kredytową
-                </span>
-                <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
-                  – tylko <span className="text-success-green-400 font-extrabold">29 zł</span>
+                  💳 Zapłać BLIK - tylko 29 zł
                 </span>
               </Button>
             </a>
-            <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
-              💳 Bezpieczna płatność • ⚡ Natychmiastowy dostęp
-            </p>
+            <div className="mt-4 space-y-2">
+              <p className="text-sm md:text-base font-semibold text-success-green-700">
+                💯 Gwarancja zwrotu w 14 dni
+              </p>
+              <p className="text-sm md:text-base text-navy-900">
+                🎁 Zwrot 29 zł przy rozpoczęciu współpracy
+              </p>
+              <p className="text-xs md:text-sm text-warm-neutral-600">
+                💳 Bezpieczna płatność • ⚡ Natychmiastowy dostęp
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -674,68 +696,86 @@ const AnalizaKredytowa = () => {
             </div>
 
             {/* Form */}
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form onSubmit={handleSubmit} className="space-y-5 max-w-md mx-auto">
+              {/* Email - PIERWSZE (łatwe, autofill, auto-focus) */}
               <div>
-                <Label htmlFor="name" className="text-navy-900 font-semibold mb-2 block">
-                  Imię i nazwisko *
-                </Label>
-                <Input id="name" type="text" required value={formData.name} onChange={e => setFormData({
-                ...formData,
-                name: e.target.value
-              })} placeholder="Jan Kowalski" className="h-12" />
-              </div>
-
-              <div>
-                <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block">
+                <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block text-base">
                   Email *
                 </Label>
-                <Input id="email" type="email" required value={formData.email} onChange={e => setFormData({
-                ...formData,
-                email: e.target.value
-              })} placeholder="jan.kowalski@example.com" className="h-12" />
+                <Input 
+                  id="email" 
+                  type="email" 
+                  autoFocus
+                  autoComplete="email"
+                  required 
+                  value={formData.email} 
+                  onChange={e => setFormData({...formData, email: e.target.value})} 
+                  placeholder="twoj@email.pl" 
+                  className="h-14 text-lg" 
+                />
               </div>
 
+              {/* Telefon - DRUGIE (numeric keyboard) */}
               <div>
-                <Label htmlFor="phone" className="text-navy-900 font-semibold mb-2 block">
-                  Numer telefonu *
+                <Label htmlFor="phone" className="text-navy-900 font-semibold mb-2 block text-base">
+                  Telefon *
                 </Label>
-                <Input id="phone" type="tel" required value={formData.phone} onChange={e => setFormData({
-                ...formData,
-                phone: e.target.value
-              })} placeholder="+48 123 456 789" className="h-12" />
+                <Input 
+                  id="phone" 
+                  type="tel" 
+                  inputMode="tel"
+                  autoComplete="tel"
+                  required 
+                  pattern="[0-9]{9,}"
+                  value={formData.phone} 
+                  onChange={e => setFormData({...formData, phone: e.target.value})} 
+                  placeholder="123 456 789" 
+                  className="h-14 text-lg" 
+                />
               </div>
 
-              <div className="flex items-start gap-3 pt-2">
-                <Checkbox id="consent" checked={formData.consent} onCheckedChange={checked => setFormData({
-                ...formData,
-                consent: checked as boolean
-              })} className="mt-1" />
-                <Label htmlFor="consent" className="text-sm text-warm-neutral-700 cursor-pointer leading-relaxed">
-                  Wyrażam zgodę na przetwarzanie moich danych osobowych w celu realizacji usługi analizy kredytowej *
+              {/* Imię i nazwisko - TRZECIE (ostatnie) */}
+              <div>
+                <Label htmlFor="name" className="text-navy-900 font-semibold mb-2 block text-base">
+                  Imię i nazwisko *
                 </Label>
-              </div>
-
-              {/* Price Box */}
-              <div className="bg-prestige-gold-50 border-2 border-prestige-gold-300 rounded-xl p-6 text-center">
-                <div className="text-sm text-warm-neutral-600 mb-1">Koszt analizy:</div>
-                <div className="text-5xl font-bold text-prestige-gold-600 mb-2">29 zł</div>
-                <div className="text-sm text-warm-neutral-600">Płatność BLIK • Błyskawiczna realizacja</div>
+                <Input 
+                  id="name" 
+                  type="text" 
+                  autoComplete="name"
+                  required 
+                  value={formData.name} 
+                  onChange={e => setFormData({...formData, name: e.target.value})} 
+                  placeholder="Jan Kowalski" 
+                  className="h-14 text-lg" 
+                />
               </div>
 
               {/* Submit Button */}
-              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-5 px-3 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 flex flex-col items-center gap-1">
-                {isSubmitting ? 'Przechodzę do płatności...' : <>
-                    <span className="text-base sm:text-lg md:text-xl leading-tight text-center">
-                      Zamawiam analizę
-                    </span>
-                    <span className="text-sm sm:text-base font-normal opacity-90 text-center flex items-center gap-1">
-                      chcę poznać prawdę o swojej zdolności
-                      <ArrowRight className="w-4 h-4 flex-shrink-0" />
-                    </span>
-                  </>}
+              <Button 
+                type="submit" 
+                disabled={isSubmitting} 
+                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-7 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-xl md:text-2xl"
+              >
+                {isSubmitting ? '💳 Przekierowuję...' : '💳 Zapłać BLIK - tylko 29 zł'}
               </Button>
 
-              <p className="text-center text-sm text-warm-neutral-600 pt-2">
+              {/* Risk Reversal */}
+              <div className="text-center space-y-2 mt-4">
+                <p className="text-sm md:text-base font-semibold text-success-green-700">
+                  💯 Gwarancja zwrotu w 14 dni
+                </p>
+                <p className="text-sm md:text-base text-navy-900">
+                  🎁 Zwrot 29 zł przy rozpoczęciu współpracy
+                </p>
+              </div>
+
+              {/* Legal micro-copy (zamiast checkboxa) */}
+              <p className="text-xs md:text-sm text-warm-neutral-600 text-center leading-relaxed pt-2">
+                Klikając, akceptujesz <a href="/polityka-prywatnosci" className="underline font-medium hover:text-navy-900">Politykę Prywatności</a> i wyrażasz zgodę na kontakt w sprawie analizy kredytowej.
+              </p>
+
+              <p className="text-center text-xs md:text-sm text-warm-neutral-600 pt-2">
                 🔒 Bezpieczna płatność przez TPay • ⚡ Analiza gotowa w 24h
               </p>
             </form>
@@ -760,6 +800,15 @@ const AnalizaKredytowa = () => {
           />
         </div>
       </section>
+
+      {/* Sticky CTA - Mobile Only */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t-2 border-prestige-gold-300 p-3 md:hidden z-50">
+        <a href="#formularz-zamowienia">
+          <Button className="w-full h-14 bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold text-base rounded-xl shadow-lg">
+            💳 Zapłać BLIK - 29 zł
+          </Button>
+        </a>
+      </div>
 
     </div>;
 };
