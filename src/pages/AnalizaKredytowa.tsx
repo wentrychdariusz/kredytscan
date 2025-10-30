@@ -389,22 +389,6 @@ const AnalizaKredytowa = () => {
                 </div>
               </div>
 
-              {/* Box 2 - Rozwiązanie (zielony) */}
-              <div className="bg-success-green-50 border-l-4 border-success-green-500 p-6 rounded-r-lg">
-                <p className="text-lg font-bold text-navy-900 mb-3">
-                  Za 29 zł otrzymasz:
-                </p>
-                <p className="text-base font-semibold text-navy-900 mb-2">
-                  Kompleksową konsultację i analizę Twojej sytuacji kredytowej
-                </p>
-                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed text-sm">
-                  <p>• Raport PDF: co dokładnie blokuje Twój wniosek</p>
-                  <p>• Plan naprawy w 3 konkretnych krokach</p>
-                  <p>• Lista banków gotowych Cię rozważyć już teraz</p>
-                  <p>• Ochrona przed błędami kosztującymi dziesiątki tysięcy złotych</p>
-                </div>
-              </div>
-
               {/* Box 3 - Dariusz (złoty, mniejszy) */}
               <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-5 rounded-r-lg">
                 <p className="text-base font-semibold text-navy-900 mb-2 italic">
