@@ -977,7 +977,7 @@ const AnalizaKredytowa = () => {
               <Button 
                 type="submit" 
                 disabled={isSubmitting} 
-                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-7 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-xl md:text-2xl animate-pulse-subtle"
+                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-4 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-base md:text-2xl leading-tight whitespace-normal"
               >
                 {isSubmitting ? '💳 Przekierowuję...' : ctaText}
               </Button>
