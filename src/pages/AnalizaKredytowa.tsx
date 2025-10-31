@@ -693,85 +693,85 @@ const AnalizaKredytowa = () => {
             <div className="mb-8 overflow-hidden rounded-xl border-2 border-warm-neutral-300 bg-white">
               <div className="grid grid-cols-2">
                 {/* Nagłówki */}
-                <div className="bg-alert-red-100 p-4 md:p-5 border-r border-warm-neutral-300">
+                <div className="bg-alert-red-100 p-3 md:p-4 border-r border-warm-neutral-300">
                   <h4 className="font-montserrat font-bold text-center text-alert-red-700 text-sm md:text-base">
                     ❌ Darmowe usługi
                   </h4>
                 </div>
-                <div className="bg-success-green-100 p-4 md:p-5">
+                <div className="bg-success-green-100 p-3 md:p-4">
                   <h4 className="font-montserrat font-bold text-center text-success-green-700 text-sm md:text-base">
                     ✅ Kredyt Scan
                   </h4>
                 </div>
 
                 {/* Wiersz 1 */}
-                <div className="p-4 md:p-5 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
-                  <p className="text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
+                  <p className="text-xs md:text-sm text-warm-neutral-700">
                     ❌ Ogólnikowe porady
                   </p>
                 </div>
-                <div className="p-4 md:p-5 border-t border-warm-neutral-300 bg-success-green-50/30">
-                  <p className="text-xs md:text-sm font-semibold text-navy-900 leading-relaxed">
+                <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
+                  <p className="text-xs md:text-sm font-semibold text-navy-900">
                     ✅ Indywidualna analiza
                   </p>
                 </div>
 
                 {/* Wiersz 2 */}
-                <div className="p-4 md:p-5 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
-                  <p className="text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
+                  <p className="text-xs md:text-sm text-warm-neutral-700">
                     ❌ Brak analizy rejestrów
                   </p>
                 </div>
-                <div className="p-4 md:p-5 border-t border-warm-neutral-300 bg-success-green-50/30">
-                  <p className="text-xs md:text-sm font-semibold text-navy-900 leading-relaxed">
+                <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
+                  <p className="text-xs md:text-sm font-semibold text-navy-900">
                     ✅ Pełna analiza wszystkich rejestrów kredytowych
                   </p>
                 </div>
 
                 {/* Wiersz 3 */}
-                <div className="p-4 md:p-5 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
-                  <p className="text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
+                  <p className="text-xs md:text-sm text-warm-neutral-700">
                     ❌ Ryzyko złych rad
                   </p>
                 </div>
-                <div className="p-4 md:p-5 border-t border-warm-neutral-300 bg-success-green-50/30">
-                  <p className="text-xs md:text-sm font-semibold text-navy-900 leading-relaxed">
+                <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
+                  <p className="text-xs md:text-sm font-semibold text-navy-900">
                     ✅ 20 lat doświadczenia
                   </p>
                 </div>
 
                 {/* Wiersz 4 */}
-                <div className="p-4 md:p-5 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
-                  <p className="text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
+                  <p className="text-xs md:text-sm text-warm-neutral-700">
                     ❌ Brak dostępu do inwestorów
                   </p>
                 </div>
-                <div className="p-4 md:p-5 border-t border-warm-neutral-300 bg-success-green-50/30">
-                  <p className="text-xs md:text-sm font-semibold text-navy-900 leading-relaxed">
+                <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
+                  <p className="text-xs md:text-sm font-semibold text-navy-900">
                     ✅ Dostęp do prywatnych inwestorów
                   </p>
                 </div>
 
                 {/* Wiersz 5 */}
-                <div className="p-4 md:p-5 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
-                  <p className="text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
+                  <p className="text-xs md:text-sm text-warm-neutral-700">
                     ❌ Ukryte koszty prowizji
                   </p>
                 </div>
-                <div className="p-4 md:p-5 border-t border-warm-neutral-300 bg-success-green-50/30">
-                  <p className="text-xs md:text-sm font-semibold text-navy-900 leading-relaxed">
+                <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
+                  <p className="text-xs md:text-sm font-semibold text-navy-900">
                     ✅ Transparentna cena
                   </p>
                 </div>
 
                 {/* Wiersz 6 */}
-                <div className="p-4 md:p-5 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
-                  <p className="text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <div className="p-3 md:p-4 border-r border-t border-warm-neutral-300 bg-alert-red-50/30">
+                  <p className="text-xs md:text-sm text-warm-neutral-700">
                     ❌ Brak konkretnego planu
                   </p>
                 </div>
-                <div className="p-4 md:p-5 border-t border-warm-neutral-300 bg-success-green-50/30">
-                  <p className="text-xs md:text-sm font-semibold text-navy-900 leading-relaxed">
+                <div className="p-3 md:p-4 border-t border-warm-neutral-300 bg-success-green-50/30">
+                  <p className="text-xs md:text-sm font-semibold text-navy-900">
                     ✅ Krok po kroku plan działania
                   </p>
                 </div>
