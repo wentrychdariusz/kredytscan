@@ -7,14 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import AnalizaKredytowa from "./pages/AnalizaKredytowa";
 import SuspiciousAnalysis from "./pages/SuspiciousAnalysis";
-import PodziękowanieBezVIP from "./pages/PodziękowanieBezVIP";
-import SmsVerification from "./pages/SmsVerification";
-import SmsVerificationA from "./pages/SmsVerificationA";
-import SmsVerificationB from "./pages/SmsVerificationB";
-import ContactForm from "./pages/ContactForm";
-import ContactFormA from "./pages/ContactFormA";
-import ContactFormB from "./pages/ContactFormB";
 import Podziekowania from "./pages/Podziekowania";
+import PodziękowanieBezVIP from "./pages/PodziękowanieBezVIP";
 import ABTestStats from "./pages/ABTestStats";
 import AdminLogin from "./pages/AdminLogin";
 import AdminLogout from "./pages/AdminLogout";
@@ -34,12 +28,6 @@ const App = () => (
         <Routes>
           <Route path="/" element={<AnalizaKredytowa />} />
           <Route path="/analiza-kredytowa" element={<AnalizaKredytowa />} />
-          <Route path="/sms-verification" element={<SmsVerification />} />
-          <Route path="/sms-verification-a" element={<SmsVerificationA />} />
-          <Route path="/sms-verification-b" element={<SmsVerificationB />} />
-          <Route path="/kontakt" element={<ContactForm />} />
-          <Route path="/kontakt-a" element={<ContactFormA />} />
-          <Route path="/kontakt-b" element={<ContactFormB />} />
           <Route path="/podziekowania" element={<Podziekowania />} />
           <Route path="/podziekowaniebezvip" element={<PodziękowanieBezVIP />} />
           <Route path="/payment" element={<PaymentTest />} />
