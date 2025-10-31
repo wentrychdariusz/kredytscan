@@ -354,14 +354,14 @@ const AnalizaKredytowa = () => {
             {/* Ostrzeżenie - zmodernizowany layout */}
             <div className="space-y-6 mb-8">
               {/* Główne ostrzeżenie */}
-              <div className="bg-gradient-to-br from-alert-red-700 via-alert-red-800 to-alert-red-900 p-8 rounded-2xl shadow-2xl text-white">
-                <h4 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+              <div className="bg-gradient-to-br from-alert-red-50 via-alert-red-100 to-alert-red-200 p-8 rounded-2xl shadow-2xl text-navy-900">
+                <h4 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-6 text-center">
                   ⚠️ Jedna błędna decyzja = lata skazania na drogie parabanki
                 </h4>
                 
                 <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
-                    <div className="space-y-3 text-white">
+                  <div className="bg-white rounded-xl p-5 border border-warm-neutral-200 shadow-sm">
+                    <div className="space-y-3 text-navy-900">
                       <div className="flex items-start gap-3">
                         <span className="text-xl">✘</span>
                         <p className="text-sm md:text-base">Składasz wnioski na ślepo → kolejne odmowy</p>
@@ -377,8 +377,8 @@ const AnalizaKredytowa = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
-                    <div className="space-y-3 text-white">
+                  <div className="bg-white rounded-xl p-5 border border-warm-neutral-200 shadow-sm">
+                    <div className="space-y-3 text-navy-900">
                       <div className="flex items-start gap-3">
                         <span className="text-xl">→</span>
                         <p className="text-sm md:text-base">Banki odrzucają Cię automatycznie</p>
@@ -387,8 +387,8 @@ const AnalizaKredytowa = () => {
                         <span className="text-xl">→</span>
                         <p className="text-sm md:text-base">Zostają tylko parabanki z odsetkami 10x wyższymi</p>
                       </div>
-                      <div className="pt-2 border-t border-white/30">
-                        <p className="text-sm md:text-base font-bold">💰 Dziesiątki tysięcy złotych przepalonych na odsetkach</p>
+                      <div className="pt-2 border-t border-warm-neutral-300">
+                        <p className="text-sm md:text-base font-bold text-navy-900">💰 Dziesiątki tysięcy złotych przepalonych na odsetkach</p>
                       </div>
                     </div>
                   </div>
