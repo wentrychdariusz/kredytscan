@@ -333,19 +333,19 @@ const AnalizaKredytowa = () => {
           <div className="bg-gradient-to-br from-white to-prestige-gold-50/30 rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-prestige-gold-300">
             
             {/* Expert Header */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
+            <div className="flex flex-col md:flex-row items-center gap-4 mb-6 p-5 rounded-xl bg-gradient-to-br from-business-blue-700 via-business-blue-800 to-navy-900 text-white shadow-xl">
               <Avatar className="w-20 h-20 md:w-24 md:h-24 border-4 border-business-blue-500 shadow-xl ring-4 ring-prestige-gold-200">
                 <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych - Ekspert Finansowy" className="object-cover" />
                 <AvatarFallback className="text-xl font-bold bg-business-blue-500 text-white">DW</AvatarFallback>
               </Avatar>
               <div className="text-center md:text-left flex-1">
-                <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-1">
+                <h3 className="font-montserrat text-xl md:text-2xl font-bold text-white mb-1">
                   Dariusz Wentrych
                 </h3>
-                <p className="text-warm-neutral-600 text-sm md:text-base mb-1">
+                <p className="text-white text-sm md:text-base mb-1">
                   Ekspert finansowy • 20 lat doświadczenia • 15.000+ klientów
                 </p>
-                <p className="text-prestige-gold-600 font-semibold text-sm md:text-base">
+                <p className="text-white font-semibold text-sm md:text-base">
                   Autor "Nowe życie bez długów"
                 </p>
               </div>
