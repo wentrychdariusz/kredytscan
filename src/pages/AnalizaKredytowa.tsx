@@ -80,7 +80,7 @@ const AnalizaKredytowa = () => {
       setIsSubmitting(false);
     }
   };
-  const benefits = ["Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej", "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność", "Przeanalizujemy informacje ze wszystkich rejestrów kredytowych i baz danych", "Zaproponujemy czyszczenie rejestrów — największe know-how w Polsce w tej dziedzinie", "Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku", "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów", "Dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach", "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"];
+  const benefits = ["Przeanalizujemy Twoje możliwości kredytowania na podstawie danych i historii płatniczej", "Wskażemy błędy i czynniki ryzyka, które obniżają Twoją wiarygodność", "Sprawdzimy informacje we wszystkich rejestrach kredytowych i bazach danych", "Poinformujemy Cię o możliwościach czyszczenia rejestrów — największe know-how w Polsce", "Podpowiemy, co możesz poprawić, by zwiększyć szanse na kredyt w banku", "Jeśli będzie to możliwe, skontaktujemy Cię z naszą bazą prywatnych inwestorów", "Damy Ci dostęp do prywatnego finansowania do poziomu 200 000 zł na najlepszych warunkach", "Zaproponujemy najlepszy kierunek działania dopasowany do Twojej sytuacji"];
   const premiumAdvantages = [{
     label: "Obsługa indywidualna",
     icon: CheckCircle
@@ -119,7 +119,7 @@ const AnalizaKredytowa = () => {
           {/* Benefit Headline */}
           <div className="text-center mb-6">
             <h1 className="font-montserrat text-2xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-3 leading-tight">
-              Dowiedz się, dlaczego bank lub firma pożyczkowa mówi „nie" i co zrobić, żeby następnym razem powiedziała „tak".
+              Przeanalizujemy, dlaczego bank lub firma pożyczkowa mówi „nie" i podpowiemy Ci, co zrobić, żeby następnym razem powiedziała „tak".
             </h1>
           </div>
 
@@ -170,7 +170,7 @@ const AnalizaKredytowa = () => {
             </div>
 
             <p className="text-warm-neutral-700 leading-relaxed mb-3 text-center">
-              Dowiesz się prawdy o swojej sytuacji finansowej i unikniesz błędów, które eliminują Cię z systemu bankowego.
+              Przeanalizujemy Twoją sytuację finansową i podpowiemy, jak uniknąć błędów, które eliminują Cię z systemu bankowego.
             </p>
             <p className="text-navy-900 font-semibold leading-relaxed text-center">
               Nawet jeśli masz chwilówki — pomożemy Ci uporządkować sytuację. <strong className="text-success-green-700">Jest rozwiązanie. Jest nadzieja.</strong>
@@ -186,19 +186,19 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  <strong>Analizę swojej sytuacji kredytowej</strong> — zobaczysz, jak oceniają Cię banki
+                  <strong>Analizę Twojej sytuacji kredytowej</strong> — pokażemy Ci, jak oceniają Cię banki
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  <strong>Wskazanie błędów we wszystkich rejestrach kredytowych</strong> — dowiesz się, co Cię blokuje
+                  <strong>Wskazanie błędów we wszystkich rejestrach kredytowych</strong> — damy Ci znać, co Cię blokuje
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  <strong>Konkretny plan krok po kroku</strong>, jak poprawić zdolność i zwiększyć szanse na kredyt
+                  <strong>Konkretny plan krok po kroku</strong>, jak możesz poprawić zdolność i zwiększyć szanse na kredyt
                 </p>
               </div>
             </div>
@@ -402,7 +402,7 @@ const AnalizaKredytowa = () => {
                   <div className="flex items-start gap-4 mb-4">
                     <span className="text-6xl text-prestige-gold-400 leading-none font-serif">"</span>
                     <p className="text-base md:text-lg text-navy-900 italic leading-relaxed pt-4">
-                      Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
+                      Przeanalizujemy Twoją sytuację i podpowiemy, jak uniknąć błędów innych ludzi. Bez naszej pomocy możesz zostać skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
                     </p>
                   </div>
                   <div className="flex items-center gap-3 pl-12">
@@ -459,7 +459,7 @@ const AnalizaKredytowa = () => {
                         {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
-                        "Dzięki analizie Dariusza dowiedziałem się, co naprawdę blokuje mi dostęp do kredytu. Uporządkowałem swoje finanse i dostałem kredyt na mieszkanie!"
+                        "Dzięki analizie Dariusza dowiedziałem się, co naprawdę blokuje mi dostęp do kredytu. Podpowiedzieli mi krok po kroku co zrobić i dostałem kredyt na mieszkanie!"
                       </p>
                       <p className="text-sm font-semibold text-navy-900">— Tomasz K., Warszawa</p>
                     </div>
@@ -483,7 +483,7 @@ const AnalizaKredytowa = () => {
                         {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
-                        "Myślałem, że mam negatywną historię i już nigdy nie dostanę kredytu. Po analizie i czyszczeniu rejestrów dostałem finansowanie na rozwój firmy."
+                        "Myślałem, że mam negatywną historię i już nigdy nie dostanę kredytu. Przeanalizowali moją sytuację, powiedzieli mi co mogę poprawić i po czyszczeniu rejestrów dostałem finansowanie na rozwój firmy."
                       </p>
                       <p className="text-sm font-semibold text-navy-900">— Marcin P., Gdańsk</p>
                     </div>
@@ -495,7 +495,7 @@ const AnalizaKredytowa = () => {
                         {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
-                        "Najlepsza inwestycja w swoje finanse! Dariusz pokazał mi błędy, których sam bym nigdy nie zauważył."
+                        "Najlepsza inwestycja w swoje finanse! Dariusz przeanalizował moją sytuację i wskazał błędy, których sam bym nigdy nie zauważył."
                       </p>
                       <p className="text-sm font-semibold text-navy-900">— Katarzyna S., Wrocław</p>
                     </div>
@@ -507,7 +507,7 @@ const AnalizaKredytowa = () => {
                         {[1, 2, 3, 4, 5].map(star => <span key={star} className="text-prestige-gold-500 text-lg">★</span>)}
                       </div>
                       <p className="text-warm-neutral-700 mb-3 italic text-lg leading-relaxed">
-                        "Miałem chwilówki i myślałem, że to koniec. Pan Dariusz pokazał mi plan wyjścia z długów. Dziś mam kredyt konsolidacyjny z banku i oddycham z ulgą."
+                        "Miałem chwilówki i myślałem, że to koniec. Pan Dariusz przeanalizował moją sytuację i podpowiedział mi plan wyjścia z długów. Dziś mam kredyt konsolidacyjny z banku i oddycham z ulgą."
                       </p>
                       <p className="text-sm font-semibold text-navy-900">— Robert D., Poznań</p>
                     </div>
@@ -542,10 +542,10 @@ const AnalizaKredytowa = () => {
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold text-navy-900 mb-3 text-center">
-            Co zrobimy dla Ciebie w ramach analizy
+            Co przeanalizujemy i o czym Cię poinformujemy
           </h2>
           <p className="text-center text-warm-neutral-600 text-lg mb-12">
-            Zobacz, co sprawdzimy i poprawimy w Twojej sytuacji
+            Zobacz, co sprawdzimy w Twojej sytuacji i o czym Cię poinformujemy
           </p>
 
           {/* Sekcja 1: Analiza Twojej sytuacji */}
@@ -560,7 +560,7 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-business-blue-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  Ocenimy Twoje możliwości kredytowania na podstawie danych i historii płatniczej
+                  Przeanalizujemy Twoje możliwości kredytowania na podstawie danych i historii płatniczej
                 </p>
               </div>
               <div className="flex items-start gap-3">
@@ -572,7 +572,7 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-business-blue-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  Przeanalizujemy informacje ze wszystkich rejestrów kredytowych i baz danych
+                  Sprawdzimy informacje we wszystkich rejestrach kredytowych i bazach danych
                 </p>
               </div>
             </div>
@@ -590,13 +590,13 @@ const AnalizaKredytowa = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  Zaproponujemy czyszczenie rejestrów — największe know-how w Polsce w tej dziedzinie
+                  Poinformujemy Cię o możliwościach czyszczenia rejestrów — największe know-how w Polsce w tej dziedzinie
                 </p>
               </div>
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  Pokażemy, co można poprawić, by zwiększyć szanse na kredyt w banku
+                  Podpowiemy Ci, co możesz poprawić, by zwiększyć szanse na kredyt w banku
                 </p>
               </div>
               <div className="flex items-start gap-3">
