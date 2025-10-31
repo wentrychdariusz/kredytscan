@@ -97,11 +97,25 @@ const Podziekowania = () => {
           return str.trim().replace(/[\r\n\t]/g, ' ');
         };
 
+        // Zbierz dodatkowe dane z localStorage
+        const debtAmount = localStorage.getItem('debt_amount') || '';
+        const monthlyPayment = localStorage.getItem('monthly_payment') || '';
+        const variant = localStorage.getItem('ab_test_sms_verification') || '';
+        const sessionId = localStorage.getItem('session_id') || '';
+        const userAgent = navigator.userAgent || '';
+        
         const payload = {
           name: cleanString(effectiveName),
           phone: cleanString(effectivePhone),
           email: cleanString(effectiveEmail),
           payment_status: paymentStatusFromUrl,
+          debt_amount: debtAmount,
+          monthly_payment: monthlyPayment,
+          ab_test_variant: variant,
+          session_id: sessionId,
+          user_agent: userAgent,
+          timestamp: new Date().toISOString(),
+          page_url: window.location.href,
         };
 
         console.log('📤 Sending webhook from /podziekowania:');
