@@ -79,7 +79,7 @@ const PaymentExpress = () => {
           lastName,
           email,
           phone,
-          amount: 9.90
+          amount: 29
         }
       });
       if (functionError) throw new Error(functionError.message || 'Błąd tworzenia transakcji');
@@ -146,7 +146,7 @@ const PaymentExpress = () => {
               (window as any).fbq('track', 'Lead', {
                 content_name: 'Płatność potwierdzona',
                 content_category: 'Payment Confirmed',
-                value: 9.90,
+                value: 29,
                 currency: 'PLN'
               });
             }
@@ -155,7 +155,7 @@ const PaymentExpress = () => {
             if ((window as any).gtag) {
               (window as any).gtag('event', 'conversion', {
                 'send_to': 'AW-16741438120/5yX2CKmazt0ZEKil-K4-',
-                'value': 9.90,
+                'value': 29,
                 'currency': 'PLN',
                 'transaction_id': transactionId
               });
@@ -169,7 +169,7 @@ const PaymentExpress = () => {
                   name: fullName,
                   email,
                   phone,
-                  amount: 9.90,
+                  amount: 29,
                   service: 'Priorytetowa Obsługa VIP - Konsolidacja Długów',
                   transactionId,
                   paymentStatus: 'Opłacone'
@@ -183,7 +183,7 @@ const PaymentExpress = () => {
             localStorage.setItem('payment_status', 'Opłacone');
             const paymentData = {
               transaction_id: transactionId,
-              amount: 9.90,
+              amount: 29,
               currency: 'PLN',
               paid_at: new Date().toISOString()
             };
@@ -264,7 +264,7 @@ const PaymentExpress = () => {
           {/* Kwota */}
           <div className="text-center mb-6">
             <div className="inline-flex items-baseline gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl shadow-lg">
-              <span className="text-5xl font-black">9,90 zł</span>
+              <span className="text-5xl font-black">29 zł</span>
             </div>
             <p className="text-sm text-gray-500 mt-2">Jednorazowa opłata weryfikacyjna</p>
           </div>
