@@ -160,6 +160,26 @@ const PaymentExpress = () => {
                 'transaction_id': transactionId
               });
             }
+
+            // Send client data via email
+            try {
+              console.log('📧 Sending client data email...');
+              await supabase.functions.invoke('send-client-data-email', {
+                body: {
+                  name: fullName,
+                  email,
+                  phone,
+                  amount: 9.90,
+                  service: 'Priorytetowa Obsługa VIP - Konsolidacja Długów',
+                  transactionId,
+                  paymentStatus: 'Opłacone'
+                }
+              });
+              console.log('✅ Client data email sent');
+            } catch (emailError) {
+              console.error('⚠️ Email sending failed (non-critical):', emailError);
+              // Don't block the flow if email fails
+            }
             localStorage.setItem('payment_status', 'Opłacone');
             const paymentData = {
               transaction_id: transactionId,

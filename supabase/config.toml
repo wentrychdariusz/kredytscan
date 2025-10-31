@@ -17,3 +17,6 @@ verify_jwt = false
 
 [functions.send-to-make]
 verify_jwt = false
+
+[functions.send-client-data-email]
+verify_jwt = false
