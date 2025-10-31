@@ -246,138 +246,94 @@ const PaymentExpress = () => {
         {/* Main Card */}
         <div className="mt-16 bg-white rounded-2xl shadow-2xl border-0 p-8">
           
-          {/* Compact Header */}
+          {/* Header z Dariuszem */}
           <div className="text-center mb-6">
-            <img src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="w-16 h-16 rounded-full mx-auto mb-3 border-2 border-blue-400 shadow-lg object-cover" />
+            <img 
+              src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" 
+              alt="Dariusz Wentrych" 
+              className="w-20 h-20 rounded-full mx-auto mb-4 border-3 border-blue-500 shadow-xl object-cover" 
+            />
             <h1 className="text-2xl font-bold text-gray-900 mb-2">
-              ✅ Jeden krok do konsultacji
+              ✅ Potwierdź swoją analizę kredytową
             </h1>
-            <p className="text-gray-600 text-sm">
-              Dariusz Wentrych czeka na Twój sygnał
+            <p className="text-gray-600">
+              Dariusz Wentrych czeka na weryfikację
             </p>
-            <div className="mt-2 text-xs text-gray-500">
-              {fullName} • {phone}
-            </div>
           </div>
 
-          {/* Why Pay - Compact */}
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-5 mb-6 border border-blue-200">
-            {error}
-            <div className="flex flex-col md:flex-row items-start md:gap-3 mb-4">
-              <Shield className="w-6 h-6 text-blue-600 flex-shrink-0 mb-2 md:mb-0 md:mt-0.5 mx-auto md:mx-0" />
-              <div className="w-full">
-                <p className="text-lg text-gray-900 font-bold mb-2">
-                  Dlaczego chcemy teraz pobrać od Ciebie 9,90 zł?
-                </p>
-                <div className="flex items-center gap-4 mb-3 text-xs text-gray-600">
-                  <div className="flex items-center gap-1">
-                    <Zap className="w-3.5 h-3.5 text-blue-600" />
-                    <span>BLIK 30 sekund</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <CheckCircle className="w-3.5 h-3.5 text-green-600" />
-                    <span>Przelew online</span>
-                  </div>
-                </div>
-                <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                  Codziennie wiele osób wypełnia formularz kontaktowy, ale część z nich nigdy nie odbiera telefonu. A my to nie przypadkowa infolinia – tylko zespół ludzi, którzy poświęcają swój czas, żeby realnie pomagać. Wśród nas są osoby, które po pracy wracają do rodzin, niektórzy mają dzieci – a mimo to znajdują czas, by wspierać innych.
-                </p>
-                <p className="text-sm text-gray-700 leading-relaxed mb-3">
-                  Symboliczna wpłata 9,90 zł to forma weryfikacji, która pozwala nam mieć pewność, że zgłasza się do nas osoba rzeczywiście zainteresowana rozmową i pomocą w sprawie finansowej. To proste zabezpieczenie przed przypadkowymi zgłoszeniami, które blokują czas naszych doradców.
-                </p>
-                <p className="text-sm text-gray-900 font-semibold mb-2">
-                  W ramach weryfikacji analizujemy Twoją sytuację kredytową, w tym:
-                </p>
-                <div className="space-y-2 mb-3">
-                  <div className="flex items-start gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>możliwości uzyskania finansowania na podstawie przedstawionych danych,</span>
-                  </div>
-                  <div className="flex items-start gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>błędy i nieprawidłowości widoczne w raportach BIK, BIG i InfoMonitora,</span>
-                  </div>
-                  <div className="flex items-start gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>czynniki obniżające zdolność kredytową oraz to, co można poprawić,</span>
-                  </div>
-                  <div className="flex items-start gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
-                    <span>potencjalne ścieżki rozwiązania problemu finansowego.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-2 gap-2 mt-3">
-              <div className="flex items-center gap-2 text-xs text-gray-700">
-                <CheckCircle className="w-4 h-4 text-green-600" />
-                <span>Zwrot przy współpracy</span>
-              </div>
-              <div className="flex items-center gap-2 text-xs text-gray-700">
-                <Zap className="w-4 h-4 text-orange-600" />
-                <span>Kontakt w 24h</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Price - Prominent */}
+          {/* Kwota */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-baseline gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full">
-              <span className="text-4xl font-black">9,90 zł</span>
-              <span className="text-sm opacity-90">jednorazowo</span>
+            <div className="inline-flex items-baseline gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl shadow-lg">
+              <span className="text-5xl font-black">9,90 zł</span>
             </div>
+            <p className="text-sm text-gray-500 mt-2">Jednorazowa opłata weryfikacyjna</p>
           </div>
+
+          {error && (
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm text-center">
+              {error}
+            </div>
+          )}
 
           {/* BLIK Payment Form */}
-          <form onSubmit={handleBlikPayment} className="space-y-4">
+          <form onSubmit={handleBlikPayment} className="space-y-6">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Kod BLIK z aplikacji bankowej
+              <label className="block text-center text-base font-semibold text-gray-800 mb-3">
+                Wpisz kod BLIK z aplikacji bankowej
               </label>
-              <Input type="text" inputMode="numeric" pattern="[0-9]*" maxLength={6} value={blikCode} onChange={e => setBlikCode(e.target.value.replace(/\D/g, ''))} placeholder="_ _ _ _ _ _" className="text-center text-2xl font-mono tracking-widest h-14" disabled={isProcessing || isWaitingForConfirmation} />
+              <Input 
+                type="text" 
+                inputMode="numeric" 
+                pattern="[0-9]*" 
+                maxLength={6} 
+                value={blikCode} 
+                onChange={e => setBlikCode(e.target.value.replace(/\D/g, ''))} 
+                placeholder="_ _ _ _ _ _" 
+                className="text-center text-3xl font-mono tracking-[0.5em] h-16 border-2 border-blue-300 focus:border-blue-500" 
+                disabled={isProcessing || isWaitingForConfirmation} 
+              />
             </div>
 
-            {isWaitingForConfirmation && <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 text-center">
-                <Loader2 className="w-6 h-6 animate-spin mx-auto mb-2 text-blue-600" />
-                <p className="text-sm text-blue-800 font-medium">
+            {isWaitingForConfirmation && (
+              <div className="bg-blue-50 border-2 border-blue-300 rounded-xl p-6 text-center animate-pulse">
+                <Loader2 className="w-8 h-8 animate-spin mx-auto mb-3 text-blue-600" />
+                <p className="text-base text-blue-900 font-semibold">
                   Potwierdź płatność w aplikacji bankowej
                 </p>
-              </div>}
+              </div>
+            )}
 
-            <Button type="submit" className="w-full h-14 text-lg font-bold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-lg" disabled={isProcessing || isWaitingForConfirmation || blikCode.length !== 6}>
-              {isProcessing ? <>
-                  <Loader2 className="w-5 h-5 animate-spin mr-2" />
+            <Button 
+              type="submit" 
+              className="w-full h-16 text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-xl transform transition hover:scale-105" 
+              disabled={isProcessing || isWaitingForConfirmation || blikCode.length !== 6}
+            >
+              {isProcessing ? (
+                <>
+                  <Loader2 className="w-6 h-6 animate-spin mr-2" />
                   Przetwarzanie...
-                </> : <>
-                  <Zap className="w-5 h-5 mr-2" />
-                  Zapłać BLIK
-                </>}
+                </>
+              ) : (
+                <>
+                  <Zap className="w-6 h-6 mr-2" />
+                  Zapłać i potwierdź analizę
+                </>
+              )}
             </Button>
           </form>
 
           {/* Trust Badges */}
           <div className="mt-6 pt-6 border-t border-gray-200">
-            <div className="flex items-center justify-center gap-4 text-xs text-gray-500">
-              <div className="flex items-center gap-1">
-                <Shield className="w-4 h-4" />
+            <div className="flex items-center justify-center gap-6 text-sm text-gray-600">
+              <div className="flex items-center gap-2">
+                <Shield className="w-5 h-5 text-green-600" />
                 <span>Bezpieczne</span>
               </div>
-              <div className="flex items-center gap-1">
-                <img src="/logos/blik-logo.png" alt="BLIK" className="h-4" />
-              </div>
-              <div className="flex items-center gap-1">
-                <CheckCircle className="w-4 h-4" />
-                <span>Szyfrowane</span>
+              <div className="flex items-center gap-2">
+                <img src="/logos/blik-logo.png" alt="BLIK" className="h-6" />
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Footer Benefits - Minimal */}
-        <div className="mt-4 text-center text-xs text-gray-500 space-y-1">
-          <p>💼 Status VIP • ⚡ Natychmiastowy kontakt</p>
-          <p>🎁 Zwrot 9,90 zł przy rozpoczęciu współpracy</p>
         </div>
       </div>
     </div>;
