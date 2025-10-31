@@ -333,32 +333,21 @@ const AnalizaKredytowa = () => {
           <div className="bg-gradient-to-br from-white to-prestige-gold-50/30 rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-prestige-gold-300">
             
             {/* Expert Header */}
-            <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-business-blue-500 shadow-xl ring-4 ring-prestige-gold-200">
+            <div className="flex flex-col md:flex-row items-center gap-4 mb-6">
+              <Avatar className="w-20 h-20 md:w-24 md:h-24 border-4 border-business-blue-500 shadow-xl ring-4 ring-prestige-gold-200">
                 <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych - Ekspert Finansowy" className="object-cover" />
-                <AvatarFallback className="text-2xl font-bold bg-business-blue-500 text-white">DW</AvatarFallback>
+                <AvatarFallback className="text-xl font-bold bg-business-blue-500 text-white">DW</AvatarFallback>
               </Avatar>
               <div className="text-center md:text-left flex-1">
-                <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-2">
+                <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-1">
                   Dariusz Wentrych
                 </h3>
-                <p className="text-warm-neutral-600 text-lg mb-1">
-                  Ekspert finansowy z 20-letnim doświadczeniem
+                <p className="text-warm-neutral-600 text-sm md:text-base mb-1">
+                  Ekspert finansowy • 20 lat doświadczenia • 15.000+ klientów
                 </p>
-                <p className="text-prestige-gold-600 font-semibold text-base mb-3">
-                  Autor bestsellerowej książki "Nowe życie bez długów"
+                <p className="text-prestige-gold-600 font-semibold text-sm md:text-base">
+                  Autor "Nowe życie bez długów"
                 </p>
-                <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 text-sm text-warm-neutral-600">
-                  <span className="flex items-center gap-1">
-                    <CheckCircle className="w-4 h-4 text-success-green-600" />
-                    20 lat doświadczenia
-                  </span>
-                  <span>•</span>
-                  <span className="flex items-center gap-1">
-                    <CheckCircle className="w-4 h-4 text-success-green-600" />
-                    15.000+ klientów
-                  </span>
-                </div>
               </div>
             </div>
 
