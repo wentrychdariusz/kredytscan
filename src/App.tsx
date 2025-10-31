@@ -11,6 +11,7 @@ import PodziękowanieBezVIP from "./pages/PodziękowanieBezVIP";
 import NotFound from "./pages/NotFound";
 import PaymentTest from "./pages/PaymentTest";
 import PaymentExpress from "./pages/PaymentExpress";
+import WebhookTest from "./pages/WebhookTest";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/podziekowaniebezvip" element={<PodziękowanieBezVIP />} />
           <Route path="/payment" element={<PaymentTest />} />
           <Route path="/payment-express" element={<PaymentExpress />} />
+          <Route path="/webhook-test" element={<WebhookTest />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
