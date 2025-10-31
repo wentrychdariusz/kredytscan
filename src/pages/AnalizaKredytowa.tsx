@@ -328,15 +328,15 @@ const AnalizaKredytowa = () => {
       </section>
 
       {/* Expert Section - Dariusz */}
-      <section className="py-12 px-4 bg-gradient-to-br from-navy-900 to-business-blue-900">
+      <section className="py-12 px-4 bg-gradient-to-br from-warm-neutral-50 to-prestige-gold-50">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+          <div className="bg-gradient-to-br from-white to-prestige-gold-50/30 rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-prestige-gold-300">
             
             {/* Expert Header */}
             <div className="flex flex-col md:flex-row items-center gap-6 mb-8">
-              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-prestige-gold-400 shadow-xl">
-                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych - Ekspert Finansowy" className="object-cover" />
-                <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-business-blue-500 shadow-xl ring-4 ring-prestige-gold-200">
+                <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych - Ekspert Finansowy" className="object-cover" />
+                <AvatarFallback className="text-2xl font-bold bg-business-blue-500 text-white">DW</AvatarFallback>
               </Avatar>
               <div className="text-center md:text-left flex-1">
                 <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-2">
