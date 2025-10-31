@@ -79,7 +79,7 @@ const Podziekowania = () => {
     // Wyślij webhook do Make.com
     const sendWebhook = async () => {
       try {
-        const webhookUrl = 'https://hook.eu2.make.com/mfcju39o4lmi5l4v16yj75ye4e997mz3';
+        const webhookUrl = 'https://hook.eu2.make.com/wt74o0rwyeq6nujxmy6bx38wpu2osua1';
 
         // Walidacja - NIE WYSYŁAJ jeśli brak kluczowych danych
         if (!effectiveName || !effectivePhone || !effectiveEmail) {
