@@ -351,39 +351,79 @@ const AnalizaKredytowa = () => {
               </div>
             </div>
 
-            {/* Expert Message - Problem-Solution Focused */}
-            <div className="space-y-5 mb-8">
-              {/* Box 1 - Problem (czerwony) */}
-              <div className="bg-alert-red-50 border-l-4 border-alert-red-500 p-6 rounded-r-lg">
-                <p className="text-lg font-bold text-navy-900 mb-3">
-                  Jedna błędna decyzja = lata skazania na drogie parabanki
-                </p>
-                <div className="text-warm-neutral-700 space-y-1.5 leading-relaxed">
-                  <p>Składasz wnioski na ślepo → kolejne odmowy</p>
-                  <p>Każda odmowa istotnie obniża Twój scoring kredytowy</p>
-                  <p>Odbudowa trwa lata, nie miesiące</p>
-                  <p>Banki odrzucają Cię automatycznie</p>
-                  <p>Zostają tylko parabanki z odsetkami 10x wyższymi</p>
-                  <p className="pt-2 border-t border-alert-red-200 font-semibold">
-                    Różnica to dziesiątki tysięcy złotych przepalonych na odsetkach.
-                  </p>
+            {/* Ostrzeżenie - zmodernizowany layout */}
+            <div className="space-y-6 mb-8">
+              {/* Główne ostrzeżenie */}
+              <div className="bg-gradient-to-br from-alert-red-500 via-alert-red-600 to-alert-red-700 p-8 rounded-2xl shadow-2xl">
+                <h4 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-6 text-center">
+                  ⚠️ Jedna błędna decyzja = lata skazania na drogie parabanki
+                </h4>
+                
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+                    <div className="space-y-3 text-white">
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl">✘</span>
+                        <p className="text-sm md:text-base">Składasz wnioski na ślepo → kolejne odmowy</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl">✘</span>
+                        <p className="text-sm md:text-base">Każda odmowa obniża scoring kredytowy</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl">✘</span>
+                        <p className="text-sm md:text-base">Odbudowa trwa lata, nie miesiące</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-5 border border-white/20">
+                    <div className="space-y-3 text-white">
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl">→</span>
+                        <p className="text-sm md:text-base">Banki odrzucają Cię automatycznie</p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <span className="text-xl">→</span>
+                        <p className="text-sm md:text-base">Zostają tylko parabanki z odsetkami 10x wyższymi</p>
+                      </div>
+                      <div className="pt-2 border-t border-white/30">
+                        <p className="text-sm md:text-base font-bold">💰 Dziesiątki tysięcy złotych przepalonych na odsetkach</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
-              {/* Box 3 - Dariusz (złoty, mniejszy) */}
-              <div className="bg-prestige-gold-50 border-l-4 border-prestige-gold-500 p-5 rounded-r-lg">
-                <p className="text-base font-semibold text-navy-900 mb-2 italic">
-                  Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
-                </p>
-                <p className="text-sm text-warm-neutral-700">
-                  — Dariusz Wentrych, 20 lat doświadczenia
-                </p>
+              {/* Cytat Dariusza - elegancki design */}
+              <div className="relative bg-gradient-to-br from-prestige-gold-50 to-white rounded-2xl shadow-xl overflow-hidden border-2 border-prestige-gold-300">
+                <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-prestige-gold-500 to-prestige-gold-600"></div>
+                <div className="p-6 md:p-8 pl-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <span className="text-6xl text-prestige-gold-400 leading-none font-serif">"</span>
+                    <p className="text-base md:text-lg text-navy-900 italic leading-relaxed pt-4">
+                      Nie popełniaj błędów innych ludzi. Bez analizy zostaniesz skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-3 pl-12">
+                    <Avatar className="w-12 h-12 border-2 border-prestige-gold-400">
+                      <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych" />
+                      <AvatarFallback className="bg-prestige-gold-500 text-white">DW</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-semibold text-navy-900">Dariusz Wentrych</p>
+                      <p className="text-sm text-warm-neutral-600">20 lat doświadczenia</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Box 4 - CTA (szary) */}
-              <div className="bg-warm-neutral-100 border-l-4 border-navy-900 p-5 rounded-r-lg">
-                <p className="text-base font-bold text-navy-900 leading-relaxed">
-                  Pytanie nie brzmi "czy warto za 29 zł"<br />
+              {/* Końcowe CTA */}
+              <div className="bg-gradient-to-r from-navy-900 to-business-blue-900 p-6 rounded-2xl shadow-xl text-center">
+                <p className="text-xl md:text-2xl font-bold text-white mb-2">
+                  Pytanie nie brzmi "czy warto za 29 zł"
+                </p>
+                <p className="text-lg md:text-xl text-prestige-gold-300 font-semibold">
                   Pytanie brzmi: czy stać Cię na kolejne lata w parabankach?
                 </p>
               </div>
