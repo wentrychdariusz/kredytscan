@@ -354,7 +354,7 @@ const AnalizaKredytowa = () => {
             {/* Ostrzeżenie - zmodernizowany layout */}
             <div className="space-y-6 mb-8">
               {/* Główne ostrzeżenie */}
-              <div className="bg-gradient-to-br from-alert-red-500 via-alert-red-600 to-alert-red-700 p-8 rounded-2xl shadow-2xl text-white">
+              <div className="bg-gradient-to-br from-alert-red-700 via-alert-red-800 to-alert-red-900 p-8 rounded-2xl shadow-2xl text-white">
                 <h4 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-6 text-center">
                   ⚠️ Jedna błędna decyzja = lata skazania na drogie parabanki
                 </h4>
