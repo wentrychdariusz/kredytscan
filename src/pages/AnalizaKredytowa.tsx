@@ -861,7 +861,7 @@ const AnalizaKredytowa = () => {
             <div className="bg-gradient-to-r from-success-green-50 to-business-blue-50 border-2 border-success-green-300 rounded-xl p-4 mb-6 text-center">
               <p className="text-sm md:text-base font-bold text-navy-900 flex items-center justify-center gap-2">
                 <CheckCircle className="w-5 h-5 text-success-green-600" />
-                Zaufało nam już <span className="text-navy-900 text-lg md:text-xl font-extrabold">15 247 klientów</span>
+                Zaufało nam już <span className="text-business-blue-700 text-lg md:text-xl font-extrabold">15 247 klientów</span>
               </p>
             </div>
 
