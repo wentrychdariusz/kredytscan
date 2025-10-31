@@ -34,12 +34,7 @@ const PaymentExpress = () => {
     initialTime: 660,
     storageKey: 'payment_express_timer',
     onComplete: () => {
-      const params = new URLSearchParams({
-        name: fullName,
-        email,
-        phone
-      });
-      navigate(`/podziekowaniebezvip?${params.toString()}`);
+      setError('Czas na płatność upłynął. Skontaktuj się z nami ponownie.');
     }
   });
   useEffect(() => {
