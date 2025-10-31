@@ -1,5 +1,4 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-import { Resend } from "npm:resend@4.0.0";
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -41,8 +40,6 @@ serve(async (req) => {
       email: clientData.email,
       service: clientData.service 
     });
-
-    const resend = new Resend(resendApiKey);
 
     // Email HTML template
     const emailHtml = `
@@ -119,18 +116,27 @@ serve(async (req) => {
       </html>
     `;
 
-    // Send email
-    const { data, error } = await resend.emails.send({
-      from: 'Kredyt Scan <onboarding@resend.dev>', // Zmień na swoją zweryfikowaną domenę
-      to: [recipientEmail],
-      subject: `🎯 Nowy Klient: ${clientData.name} - ${clientData.service}`,
-      html: emailHtml,
-      replyTo: clientData.email,
+    // Send email using Resend API
+    const response = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${resendApiKey}`,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        from: 'Kredyt Scan <onboarding@resend.dev>',
+        to: [recipientEmail],
+        subject: `🎯 Nowy Klient: ${clientData.name} - ${clientData.service}`,
+        html: emailHtml,
+        reply_to: clientData.email,
+      })
     });
 
-    if (error) {
-      console.error('❌ Resend error:', error);
-      throw error;
+    const data = await response.json();
+
+    if (!response.ok) {
+      console.error('❌ Resend API error:', data);
+      throw new Error(data.message || 'Failed to send email');
     }
 
     console.log('✅ Email sent successfully:', data);
