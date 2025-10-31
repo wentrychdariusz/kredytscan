@@ -887,10 +887,10 @@ const AnalizaKredytowa = () => {
             </div>
 
             {/* Social Proof Above Form */}
-            <div className="bg-gradient-to-r from-success-green-50 to-business-blue-50 border-2 border-success-green-300 rounded-xl p-4 mb-6 text-center">
-              <p className="text-sm md:text-base font-bold text-foreground flex items-center justify-center gap-2">
-                <CheckCircle className="w-5 h-5 text-success-green-600 dark:text-success-green-400" />
-                Zaufało nam już <span className="text-foreground text-lg md:text-xl font-extrabold">15 247 klientów</span>
+            <div className="bg-gradient-to-r from-success-green-600 to-business-blue-600 border-2 border-success-green-300 rounded-xl p-4 mb-6 text-center">
+              <p className="text-sm md:text-base font-bold text-white flex items-center justify-center gap-2">
+                <CheckCircle className="w-5 h-5 text-white" />
+                Zaufało nam już <span className="text-white text-lg md:text-xl font-extrabold">15 247 klientów</span>
               </p>
             </div>
 
