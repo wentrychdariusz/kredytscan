@@ -277,15 +277,6 @@ const PaymentExpress = () => {
 
           {/* BLIK Payment Form */}
           <form onSubmit={handleBlikPayment} className="space-y-6">
-            {/* Logo BLIK */}
-            <div className="flex justify-center mb-4">
-              <img 
-                src="/logos/blik-logo-new.png" 
-                alt="BLIK" 
-                className="h-16 w-auto"
-              />
-            </div>
-
             <div>
               <label className="block text-center text-base font-semibold text-gray-800 mb-3">
                 Wpisz kod BLIK z aplikacji bankowej
@@ -339,7 +330,7 @@ const PaymentExpress = () => {
                 <span>Bezpieczne</span>
               </div>
               <div className="flex items-center gap-2">
-                <img src="/logos/blik-logo.png" alt="BLIK" className="h-6" />
+                <img src="/logos/blik-logo-new.png" alt="BLIK" className="h-10" />
               </div>
             </div>
           </div>
