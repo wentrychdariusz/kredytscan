@@ -690,7 +690,7 @@ const AnalizaKredytowa = () => {
             </h3>
             
             {/* Tabela porównawcza */}
-            <div className="mb-8 overflow-hidden rounded-xl border-2 border-warm-neutral-300 bg-white">
+            <div className="mb-8 overflow-hidden rounded-xl border-2 border-warm-neutral-300 bg-white max-w-4xl mx-auto">
               <div className="grid grid-cols-2">
                 {/* Nagłówki */}
                 <div className="bg-alert-red-100 p-3 md:p-4 border-r border-warm-neutral-300">
