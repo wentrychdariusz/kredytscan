@@ -305,7 +305,7 @@ const PaymentExpress = () => {
 
             <Button 
               type="submit" 
-              className="w-full h-16 text-xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 shadow-xl transform transition hover:scale-105" 
+              className="w-full h-16 text-xl font-bold bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 shadow-xl transform transition hover:scale-105" 
               disabled={isProcessing || isWaitingForConfirmation || blikCode.length !== 6}
             >
               {isProcessing ? (
@@ -316,7 +316,7 @@ const PaymentExpress = () => {
               ) : (
                 <>
                   <Zap className="w-6 h-6 mr-2" />
-                  Zapłać i potwierdź analizę
+                  Zapłać
                 </>
               )}
             </Button>
