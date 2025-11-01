@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="font-montserrat text-xl font-bold mb-4 text-prestige-gold-400">
-              Wentrych.pl
+              SkanKredytowy.pl
             </h3>
             <p className="text-gray-300 mb-4 font-lato">
               Doradztwo finansowe i oddłużanie z 20-letnim doświadczeniem
@@ -60,7 +60,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 font-lato text-sm">
-              © 2024 Wentrych.pl. Wszystkie prawa zastrzeżone.
+              © 2024 SkanKredytowy.pl. Wszystkie prawa zastrzeżone.
             </div>
             <div className="text-gray-400 font-lato text-sm">
               Opieka marketingowa:{" "}
