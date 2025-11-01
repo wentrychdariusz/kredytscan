@@ -413,24 +413,21 @@ const AnalizaKredytowa = () => {
               </div>
 
               {/* Cytat Dariusza - elegancki design */}
-              <div className="relative bg-gradient-to-br from-prestige-gold-50 to-white overflow-hidden w-full">
-                <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-prestige-gold-500 to-prestige-gold-600"></div>
-                <div className="p-6 md:p-8 pl-8 w-full">
-                  <div className="flex items-start gap-4 mb-4">
-                    <span className="text-6xl text-prestige-gold-400 leading-none font-serif">"</span>
-                    <p className="text-base md:text-lg text-navy-900 italic leading-relaxed pt-4">
-                      Przeanalizujemy Twoją sytuację i podpowiemy, jak uniknąć błędów innych ludzi. Bez naszej pomocy możesz zostać skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-3 pl-12">
-                    <Avatar className="w-12 h-12 border-2 border-prestige-gold-400">
-                      <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych" />
-                      <AvatarFallback className="bg-prestige-gold-500 text-white">DW</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <p className="font-semibold text-navy-900">Dariusz Wentrych</p>
-                      <p className="text-sm text-warm-neutral-600">20 lat doświadczenia</p>
-                    </div>
+              <div className="w-full py-6 md:py-8">
+                <div className="flex items-start gap-4 mb-4">
+                  <span className="text-6xl text-prestige-gold-400 leading-none font-serif">"</span>
+                  <p className="text-base md:text-lg text-navy-900 italic leading-relaxed pt-4">
+                    Przeanalizujemy Twoją sytuację i podpowiemy, jak uniknąć błędów innych ludzi. Bez naszej pomocy możesz zostać skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 pl-12">
+                  <Avatar className="w-12 h-12 border-2 border-prestige-gold-400">
+                    <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych" />
+                    <AvatarFallback className="bg-prestige-gold-500 text-white">DW</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="font-semibold text-navy-900">Dariusz Wentrych</p>
+                    <p className="text-sm text-warm-neutral-600">20 lat doświadczenia</p>
                   </div>
                 </div>
               </div>
