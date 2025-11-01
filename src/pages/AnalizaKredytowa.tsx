@@ -942,7 +942,7 @@ const AnalizaKredytowa = () => {
                 <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block text-base">
                   Email *
                 </Label>
-                <Input id="email" type="email" autoFocus autoComplete="email" required value={formData.email} onChange={e => setFormData({
+                <Input id="email" type="email" autoComplete="email" required value={formData.email} onChange={e => setFormData({
                 ...formData,
                 email: e.target.value
               })} placeholder="twoj@email.pl" className="h-14 text-lg" />
