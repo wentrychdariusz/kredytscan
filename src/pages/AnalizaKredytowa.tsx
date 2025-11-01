@@ -700,7 +700,7 @@ const AnalizaKredytowa = () => {
                 </div>
                 <div className="bg-success-green-100 p-3 md:p-4">
                   <h4 className="font-montserrat font-bold text-center text-success-green-700 text-sm md:text-base">
-                    ✅ Kredyt Scan
+                    ✅ SkanKredytowy.pl
                   </h4>
                 </div>
 
