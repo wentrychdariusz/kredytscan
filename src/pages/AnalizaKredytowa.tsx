@@ -63,6 +63,13 @@ const AnalizaKredytowa = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  const scrollToForm = () => {
+    const formElement = document.getElementById('formularz-zamowienia');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -250,13 +257,11 @@ const AnalizaKredytowa = () => {
 
           {/* CTA #1 - Hero Section */}
           <div className="text-center px-2">
-            <a href="#formularz-zamowienia" className="block">
-              <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-6 md:px-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[64px] md:min-h-[72px] flex flex-col items-center gap-1">
-                <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
-                  💳 Zapłać BLIK - tylko 29 zł
-                </span>
-              </Button>
-            </a>
+            <Button size="lg" onClick={scrollToForm} className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-6 md:px-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[64px] md:min-h-[72px] flex flex-col items-center gap-1">
+              <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
+                💳 Zapłać BLIK - tylko 29 zł
+              </span>
+            </Button>
             <div className="mt-4 space-y-2">
               <p className="text-sm md:text-base font-semibold text-success-green-700">
                 💯 Gwarancja zwrotu w 14 dni
@@ -666,16 +671,14 @@ const AnalizaKredytowa = () => {
 
             {/* CTA #2 - Po sekcji co otrzymasz */}
             <div className="px-2">
-              <a href="#formularz-zamowienia" className="block">
-                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
-                    Zobacz jak widzi Cię bank
-                  </span>
-                  <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
-                    wynik w 24h
-                  </span>
-                </Button>
-              </a>
+              <Button size="lg" onClick={scrollToForm} className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
+                  Zobacz jak widzi Cię bank
+                </span>
+                <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
+                  wynik w 24h
+                </span>
+              </Button>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-300">
                 ✅ Bezpieczna płatność • ⚡ Natychmiastowy dostęp
               </p>
@@ -867,16 +870,14 @@ const AnalizaKredytowa = () => {
 
             {/* CTA #3 - Po sekcji co NIE dostaniesz za darmo */}
             <div className="text-center mt-8 px-2">
-              <a href="#formularz-zamowienia" className="block">
-                <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
-                  <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
-                    Sprawdź bez ryzyka
-                  </span>
-                  <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
-                    analiza tylko <span className="text-success-green-400 font-extrabold">29 zł</span>
-                  </span>
-                </Button>
-              </a>
+              <Button size="lg" onClick={scrollToForm} className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
+                <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
+                  Sprawdź bez ryzyka
+                </span>
+                <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
+                  analiza tylko <span className="text-success-green-400 font-extrabold">29 zł</span>
+                </span>
+              </Button>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
                 💬 To tylko 29 zł – bez ukrytych kosztów
               </p>
@@ -1038,11 +1039,9 @@ const AnalizaKredytowa = () => {
 
       {/* Sticky CTA - Mobile Only (Scroll-Activated) */}
       {showSticky && <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t-2 border-prestige-gold-300 p-3 md:hidden z-50 animate-slide-up">
-          <a href="#formularz-zamowienia">
-            <Button className="w-full h-14 bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold text-base rounded-xl shadow-lg">
-              {ctaText}
-            </Button>
-          </a>
+          <Button onClick={scrollToForm} className="w-full h-14 bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold text-base rounded-xl shadow-lg">
+            {ctaText}
+          </Button>
         </div>}
 
     </div>;
