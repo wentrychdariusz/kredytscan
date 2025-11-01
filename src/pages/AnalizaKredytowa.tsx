@@ -148,6 +148,11 @@ const AnalizaKredytowa = () => {
                 „TAK"
               </span>
             </h1>
+            
+            {/* Subnagłówek */}
+            <p className="text-base md:text-lg lg:text-xl text-warm-neutral-600 font-medium mt-6 max-w-3xl mx-auto">
+              Widzieliśmy już setki beznadziejnych przypadków. Dziś ci ludzie mają kredyty w bankach.
+            </p>
           </div>
 
           {/* Problem Statement */}
