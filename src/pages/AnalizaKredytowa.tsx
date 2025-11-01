@@ -140,7 +140,7 @@ const AnalizaKredytowa = () => {
               <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-warm-neutral-700 mb-3">
                 Przeanalizujemy, dlaczego bank lub firma pożyczkowa mówi
               </span>
-              <span className="block text-4xl md:text-5xl lg:text-6xl font-black text-destructive mb-4 drop-shadow-lg">
+              <span className="inline-block text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 drop-shadow-lg bg-destructive px-6 py-2 rounded-lg">
                 „NIE"
               </span>
               <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-warm-neutral-700 mb-3">
