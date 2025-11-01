@@ -8,6 +8,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Shield, CheckCircle, AlertCircle, FileText, ArrowRight } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useCountdown } from '@/hooks/useCountdown';
+import { supabase } from '@/integrations/supabase/client';
 const AnalizaKredytowa = () => {
   const navigate = useNavigate();
   const {
@@ -62,6 +63,23 @@ const AnalizaKredytowa = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
+      // Save to Supabase first
+      const { error: saveError } = await supabase
+        .from('leads')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          payment_status: 'Nieopłacone',
+          sms_verified: 'Niezweryfikowany',
+          service: 'Profesjonalna Analiza Kredytowa',
+          amount: 29
+        });
+
+      if (saveError) {
+        console.error('Error saving to Supabase:', saveError);
+      }
+
       const params = new URLSearchParams({
         name: formData.name,
         email: formData.email,
