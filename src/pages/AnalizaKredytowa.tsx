@@ -402,7 +402,7 @@ const AnalizaKredytowa = () => {
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="text-xl">→</span>
-                        <p className="text-sm md:text-base">Zostają tylko parabanki z odsetkami 10x wyższymi</p>
+                        <p className="text-sm md:text-base">Zostają tylko parabanki z odsetkami wielokrotnie wyższymi</p>
                       </div>
                       <div className="pt-2 border-t border-warm-neutral-300">
                         <p className="text-sm md:text-base font-bold text-navy-900">💰 Dziesiątki tysięcy złotych przepalonych na odsetkach</p>
