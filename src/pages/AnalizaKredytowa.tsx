@@ -134,22 +134,20 @@ const AnalizaKredytowa = () => {
           
           {/* Benefit Headline - Enhanced Visual Design */}
           <div className="text-center mb-6">
-            <div className="bg-gradient-to-br from-white via-warm-neutral-50 to-business-blue-50 border-2 border-business-blue-300 rounded-2xl shadow-xl p-6 md:p-8 max-w-4xl mx-auto">
-              <h1 className="font-montserrat leading-relaxed">
-                <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-warm-neutral-700 mb-3">
-                  Przeanalizujemy, dlaczego bank lub firma pożyczkowa mówi
-                </span>
-                <span className="block text-4xl md:text-5xl lg:text-6xl font-black text-destructive mb-4 drop-shadow-lg">
-                  „NIE"
-                </span>
-                <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-warm-neutral-700 mb-3">
-                  i podpowiemy Ci, co zrobić, żeby następnym razem powiedziała
-                </span>
-                <span className="block text-4xl md:text-5xl lg:text-6xl font-black text-success-600 drop-shadow-lg">
-                  „TAK"
-                </span>
-              </h1>
-            </div>
+            <h1 className="font-montserrat leading-relaxed max-w-4xl mx-auto">
+              <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-warm-neutral-700 mb-3">
+                Przeanalizujemy, dlaczego bank lub firma pożyczkowa mówi
+              </span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl font-black text-destructive mb-4 drop-shadow-lg">
+                „NIE"
+              </span>
+              <span className="block text-lg md:text-2xl lg:text-3xl font-semibold text-warm-neutral-700 mb-3">
+                i podpowiemy Ci, co zrobić, żeby następnym razem powiedziała
+              </span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl font-black text-success-600 drop-shadow-lg">
+                „TAK"
+              </span>
+            </h1>
           </div>
 
           {/* Problem Statement */}
