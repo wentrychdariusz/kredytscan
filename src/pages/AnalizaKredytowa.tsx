@@ -294,7 +294,7 @@ const AnalizaKredytowa = () => {
                 {/* Opinia 2: Konsolidacja długów */}
                 <div className="bg-gradient-to-br from-business-blue-50 to-warm-neutral-50 rounded-lg p-4 border-l-4 border-business-blue-500">
                   <p className="text-sm md:text-base text-navy-900 leading-relaxed mb-3">
-                    {"Miałam 5 chwilówek i nie wiedziałam jak z tego wyjść. "}<strong className="text-alert-red-600">{"Spłacałam 2000 zł odsetek miesięcznie"}</strong>{". Po analizie Pan Dariusz pokazał mi jak skonsolidować wszystko w jeden kredyt. "}<strong className="text-success-green-700">{"Teraz płacę 600 zł i mam spokój."}</strong>
+                    "Miałam 5 chwilówek i nie wiedziałam jak z tego wyjść. Po analizie Pan Dariusz pokazał mi jak skonsolidować wszystko w jeden kredyt. <strong className="text-success-green-700">Teraz mam spokój i płacę o wiele mniej.</strong>"
                   </p>
                   <div className="flex items-center gap-2">
                     <div className="w-8 h-8 rounded-full bg-business-blue-500 flex items-center justify-center text-white font-bold text-sm">
