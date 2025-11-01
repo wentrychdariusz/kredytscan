@@ -960,7 +960,7 @@ const AnalizaKredytowa = () => {
                 <Input id="phone" type="tel" inputMode="tel" autoComplete="tel" required pattern="[0-9]{9,}" value={formData.phone} onChange={e => setFormData({
                 ...formData,
                 phone: e.target.value
-              })} placeholder="123 456 789" className="h-14 text-lg" />
+              })} placeholder="600 123 456" className="h-14 text-lg" />
                 {/* Inline Validation - Phone */}
                 {formData.phone && <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${/^[0-9]{9,}$/.test(formData.phone) ? 'text-success-green-600' : 'text-alert-red-600'}`}>
                     {/^[0-9]{9,}$/.test(formData.phone) ? <><CheckCircle className="w-3 h-3" /> Poprawny numer ✓</> : <><AlertCircle className="w-3 h-3" /> Minimum 9 cyfr</>}
