@@ -422,7 +422,7 @@ const AnalizaKredytowa = () => {
                 </div>
                 <div className="flex items-center gap-3 pl-12 mb-6">
                   <Avatar className="w-12 h-12 border-2 border-prestige-gold-400">
-                    <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych" />
+                    <AvatarImage src="/src/assets/dariusz-avatar.jpg" alt="Dariusz Wentrych" />
                     <AvatarFallback className="bg-prestige-gold-500 text-white">DW</AvatarFallback>
                   </Avatar>
                   <div>
