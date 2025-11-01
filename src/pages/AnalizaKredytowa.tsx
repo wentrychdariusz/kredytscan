@@ -63,7 +63,7 @@ const AnalizaKredytowa = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      // Save to Supabase first
+      // Save to Supabase - only TPay related data
       const { error: saveError } = await supabase
         .from('leads')
         .insert({
@@ -71,8 +71,6 @@ const AnalizaKredytowa = () => {
           email: formData.email,
           phone: formData.phone,
           payment_status: 'Nieopłacone',
-          sms_verified: 'Niezweryfikowany',
-          service: 'Profesjonalna Analiza Kredytowa',
           amount: 29
         });
 
