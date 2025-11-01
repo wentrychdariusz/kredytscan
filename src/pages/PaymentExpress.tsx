@@ -284,7 +284,7 @@ const PaymentExpress = () => {
                 value={blikCode} 
                 onChange={e => setBlikCode(e.target.value.replace(/\D/g, ''))} 
                 placeholder="_ _ _ _ _ _" 
-                className="text-center text-3xl font-mono tracking-[0.5em] h-16 border-2 border-blue-300 focus:border-blue-500" 
+                className="text-center text-3xl md:text-5xl font-mono tracking-[0.5em] h-16 md:h-20 border-2 border-blue-300 focus:border-blue-500" 
                 disabled={isProcessing || isWaitingForConfirmation} 
               />
             </div>
