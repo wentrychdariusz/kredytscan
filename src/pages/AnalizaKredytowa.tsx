@@ -23,13 +23,17 @@ const AnalizaKredytowa = () => {
   const [ordersToday, setOrdersToday] = useState(47);
   const [filledFields, setFilledFields] = useState(0);
   const [showSticky, setShowSticky] = useState(false);
-  
+
   // Main CTA text
   const ctaText = "Sprawdź swoją zdolność - 29 zł";
-  
+
   // Countdown timer (12 hours)
-  const { formattedTime, timeLeft } = useCountdown({
-    initialTime: 12 * 60 * 60, // 12 hours in seconds
+  const {
+    formattedTime,
+    timeLeft
+  } = useCountdown({
+    initialTime: 12 * 60 * 60,
+    // 12 hours in seconds
     storageKey: 'analiza_kredytowa_timer'
   });
 
@@ -38,7 +42,7 @@ const AnalizaKredytowa = () => {
     const interval = setInterval(() => {
       setOrdersToday(prev => Math.min(prev + 1, 99));
     }, Math.random() * 180000 + 120000); // Random between 2-5 minutes
-    
+
     return () => clearInterval(interval);
   }, []);
 
@@ -64,20 +68,18 @@ const AnalizaKredytowa = () => {
     setIsSubmitting(true);
     try {
       // Save to Supabase - only TPay related data
-      const { error: saveError } = await supabase
-        .from('leads')
-        .insert({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          payment_status: 'Nieopłacone',
-          amount: 29
-        });
-
+      const {
+        error: saveError
+      } = await supabase.from('leads').insert({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        payment_status: 'Nieopłacone',
+        amount: 29
+      });
       if (saveError) {
         console.error('Error saving to Supabase:', saveError);
       }
-
       const params = new URLSearchParams({
         name: formData.name,
         email: formData.email,
@@ -239,7 +241,7 @@ const AnalizaKredytowa = () => {
           {/* Urgency & Scarcity */}
           <div className="bg-gradient-to-r from-alert-red-50 to-prestige-gold-50 border-2 border-alert-red-300 rounded-xl p-4 mb-6 text-center">
             <p className="text-sm md:text-base font-semibold text-navy-900 mb-2">
-              ⏰ Oferta ważna przez kolejne: <span className="text-alert-red-700 font-bold text-lg md:text-xl">{Math.floor(timeLeft / 3600)}:{Math.floor((timeLeft % 3600) / 60).toString().padStart(2, '0')}:{(timeLeft % 60).toString().padStart(2, '0')}</span>
+              ⏰ Oferta ważna przez kolejne: <span className="text-alert-red-700 font-bold text-lg md:text-xl">{Math.floor(timeLeft / 3600)}:{Math.floor(timeLeft % 3600 / 60).toString().padStart(2, '0')}:{(timeLeft % 60).toString().padStart(2, '0')}</span>
             </p>
             <p className="text-xs md:text-sm text-warm-neutral-700">
               🔥 Dziś zamówiono już <span className="font-bold text-prestige-gold-700">{ordersToday} analiz</span>
@@ -347,10 +349,9 @@ const AnalizaKredytowa = () => {
                 <p className="text-xs text-warm-neutral-600 mb-3">
                   👆 <strong>Dołącz do ponad 15.000 zadowolonych klientów</strong>
                 </p>
-                <Button 
-                  onClick={() => document.getElementById('formularz-zamowienia')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-semibold px-8 py-4 text-lg md:px-10 md:py-5 md:text-xl rounded-lg shadow-lg hover:shadow-xl transition-all w-full md:w-auto"
-                >
+                <Button onClick={() => document.getElementById('formularz-zamowienia')?.scrollIntoView({
+                behavior: 'smooth'
+              })} className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-semibold px-8 py-4 text-lg md:px-10 md:py-5 md:text-xl rounded-lg shadow-lg hover:shadow-xl transition-all w-full md:w-auto">
                   Zamów swoją analizę za 29 zł
                 </Button>
               </div>
@@ -365,23 +366,7 @@ const AnalizaKredytowa = () => {
           <div className="bg-gradient-to-br from-white to-prestige-gold-50/30 rounded-2xl shadow-2xl p-8 md:p-12 border-2 border-prestige-gold-300">
             
             {/* Expert Header */}
-            <div className="flex flex-col md:flex-row items-center gap-4 mb-6 p-5 rounded-xl bg-gradient-to-br from-business-blue-700 via-business-blue-800 to-navy-900 text-white shadow-xl">
-              <Avatar className="w-20 h-20 md:w-24 md:h-24 border-4 border-business-blue-500 shadow-xl ring-4 ring-prestige-gold-200">
-                <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych - Ekspert Finansowy" className="object-cover" />
-                <AvatarFallback className="text-xl font-bold bg-business-blue-500 text-white">DW</AvatarFallback>
-              </Avatar>
-              <div className="text-center md:text-left flex-1">
-                <h3 className="font-montserrat text-xl md:text-2xl font-bold text-white mb-1">
-                  Dariusz Wentrych
-                </h3>
-                <p className="text-white text-sm md:text-base mb-1">
-                  Ekspert finansowy • 20 lat doświadczenia • 15.000+ klientów
-                </p>
-                <p className="text-white font-semibold text-sm md:text-base">
-                  Autor "Nowe życie bez długów"
-                </p>
-              </div>
-            </div>
+            
 
             {/* Ostrzeżenie - zmodernizowany layout */}
             <div className="space-y-6 mb-8">
@@ -943,13 +928,12 @@ const AnalizaKredytowa = () => {
               <div className="mb-6">
                 <div className="flex justify-between text-xs text-warm-neutral-600 mb-2">
                   <span>Krok {filledFields} z 3</span>
-                  <span>{Math.round((filledFields / 3) * 100)}% ukończono</span>
+                  <span>{Math.round(filledFields / 3 * 100)}% ukończono</span>
                 </div>
                 <div className="w-full bg-warm-neutral-200 h-2.5 rounded-full overflow-hidden">
-                  <div 
-                    className="bg-prestige-gold-500 h-2.5 rounded-full transition-all duration-500 ease-out"
-                    style={{width: `${(filledFields / 3) * 100}%`}}
-                  />
+                  <div className="bg-prestige-gold-500 h-2.5 rounded-full transition-all duration-500 ease-out" style={{
+                  width: `${filledFields / 3 * 100}%`
+                }} />
                 </div>
               </div>
               {/* Email - PIERWSZE (łatwe, autofill, auto-focus) */}
@@ -957,31 +941,14 @@ const AnalizaKredytowa = () => {
                 <Label htmlFor="email" className="text-navy-900 font-semibold mb-2 block text-base">
                   Email *
                 </Label>
-                <Input 
-                  id="email" 
-                  type="email" 
-                  autoFocus
-                  autoComplete="email"
-                  required 
-                  value={formData.email} 
-                  onChange={e => setFormData({...formData, email: e.target.value})} 
-                  placeholder="twoj@email.pl" 
-                  className="h-14 text-lg" 
-                />
+                <Input id="email" type="email" autoFocus autoComplete="email" required value={formData.email} onChange={e => setFormData({
+                ...formData,
+                email: e.target.value
+              })} placeholder="twoj@email.pl" className="h-14 text-lg" />
                 {/* Inline Validation - Email */}
-                {formData.email && (
-                  <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${
-                    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
-                      ? 'text-success-green-600'
-                      : 'text-alert-red-600'
-                  }`}>
-                    {/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ? (
-                      <><CheckCircle className="w-3 h-3" /> Poprawny email ✓</>
-                    ) : (
-                      <><AlertCircle className="w-3 h-3" /> Niepoprawny format email</>
-                    )}
-                  </p>
-                )}
+                {formData.email && <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ? 'text-success-green-600' : 'text-alert-red-600'}`}>
+                    {/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ? <><CheckCircle className="w-3 h-3" /> Poprawny email ✓</> : <><AlertCircle className="w-3 h-3" /> Niepoprawny format email</>}
+                  </p>}
               </div>
 
               {/* Telefon - DRUGIE (numeric keyboard) */}
@@ -989,32 +956,14 @@ const AnalizaKredytowa = () => {
                 <Label htmlFor="phone" className="text-navy-900 font-semibold mb-2 block text-base">
                   Telefon *
                 </Label>
-                <Input 
-                  id="phone" 
-                  type="tel" 
-                  inputMode="tel"
-                  autoComplete="tel"
-                  required 
-                  pattern="[0-9]{9,}"
-                  value={formData.phone} 
-                  onChange={e => setFormData({...formData, phone: e.target.value})} 
-                  placeholder="123 456 789" 
-                  className="h-14 text-lg" 
-                />
+                <Input id="phone" type="tel" inputMode="tel" autoComplete="tel" required pattern="[0-9]{9,}" value={formData.phone} onChange={e => setFormData({
+                ...formData,
+                phone: e.target.value
+              })} placeholder="123 456 789" className="h-14 text-lg" />
                 {/* Inline Validation - Phone */}
-                {formData.phone && (
-                  <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${
-                    /^[0-9]{9,}$/.test(formData.phone)
-                      ? 'text-success-green-600'
-                      : 'text-alert-red-600'
-                  }`}>
-                    {/^[0-9]{9,}$/.test(formData.phone) ? (
-                      <><CheckCircle className="w-3 h-3" /> Poprawny numer ✓</>
-                    ) : (
-                      <><AlertCircle className="w-3 h-3" /> Minimum 9 cyfr</>
-                    )}
-                  </p>
-                )}
+                {formData.phone && <p className={`text-xs mt-1 flex items-center gap-1 transition-all ${/^[0-9]{9,}$/.test(formData.phone) ? 'text-success-green-600' : 'text-alert-red-600'}`}>
+                    {/^[0-9]{9,}$/.test(formData.phone) ? <><CheckCircle className="w-3 h-3" /> Poprawny numer ✓</> : <><AlertCircle className="w-3 h-3" /> Minimum 9 cyfr</>}
+                  </p>}
               </div>
 
               {/* Imię i nazwisko - TRZECIE (ostatnie) */}
@@ -1022,24 +971,14 @@ const AnalizaKredytowa = () => {
                 <Label htmlFor="name" className="text-navy-900 font-semibold mb-2 block text-base">
                   Imię i nazwisko *
                 </Label>
-                <Input 
-                  id="name" 
-                  type="text" 
-                  autoComplete="name"
-                  required 
-                  value={formData.name} 
-                  onChange={e => setFormData({...formData, name: e.target.value})} 
-                  placeholder="Jan Kowalski" 
-                  className="h-14 text-lg" 
-                />
+                <Input id="name" type="text" autoComplete="name" required value={formData.name} onChange={e => setFormData({
+                ...formData,
+                name: e.target.value
+              })} placeholder="Jan Kowalski" className="h-14 text-lg" />
               </div>
 
               {/* Submit Button with A/B Test and Animation */}
-              <Button 
-                type="submit" 
-                disabled={isSubmitting} 
-                className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-4 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-base md:text-2xl leading-tight whitespace-normal"
-              >
+              <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-4 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 mt-6 mb-4 min-h-[64px] md:min-h-[72px] text-base md:text-2xl leading-tight whitespace-normal">
                 {isSubmitting ? '💳 Przekierowuję...' : ctaText}
               </Button>
 
@@ -1093,25 +1032,18 @@ const AnalizaKredytowa = () => {
           <p className="text-warm-neutral-600 text-base md:text-lg mb-6">
             Twoje dane są bezpieczne.
           </p>
-          <img 
-            src="/logos/tpay-payment-methods.jpg" 
-            alt="TPay - Dostępne metody płatności" 
-            className="max-w-xs md:max-w-md mx-auto rounded-lg shadow-md"
-            loading="lazy"
-          />
+          <img src="/logos/tpay-payment-methods.jpg" alt="TPay - Dostępne metody płatności" className="max-w-xs md:max-w-md mx-auto rounded-lg shadow-md" loading="lazy" />
         </div>
       </section>
 
       {/* Sticky CTA - Mobile Only (Scroll-Activated) */}
-      {showSticky && (
-        <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t-2 border-prestige-gold-300 p-3 md:hidden z-50 animate-slide-up">
+      {showSticky && <div className="fixed bottom-0 left-0 right-0 bg-white shadow-2xl border-t-2 border-prestige-gold-300 p-3 md:hidden z-50 animate-slide-up">
           <a href="#formularz-zamowienia">
             <Button className="w-full h-14 bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold text-base rounded-xl shadow-lg">
               {ctaText}
             </Button>
           </a>
-        </div>
-      )}
+        </div>}
 
     </div>;
 };
