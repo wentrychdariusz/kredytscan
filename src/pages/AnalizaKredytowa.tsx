@@ -1024,7 +1024,7 @@ const AnalizaKredytowa = () => {
       </section>
 
       {/* Trust Section */}
-      <section className="py-8 px-4 bg-white">
+      <section className="py-8 px-4 pb-16 md:pb-20 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-3">
             🔒 Bezpieczna płatność i gwarancja jakości
