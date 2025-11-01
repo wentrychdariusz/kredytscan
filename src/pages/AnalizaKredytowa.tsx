@@ -804,18 +804,6 @@ const AnalizaKredytowa = () => {
                 🔍 Co to oznacza w praktyce:
               </h4>
 
-              {/* Punkt 1 */}
-              <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-alert-red-400 shadow-sm">
-                <h5 className="font-bold text-navy-900 mb-2 text-sm md:text-base">
-                  ❌ Darmowe usługi — brzmi dobrze, ale...
-                </h5>
-                <p className="text-warm-neutral-700 text-sm leading-relaxed mb-1">
-                  Po zebraniu danych dostajesz reklamy zamiast pomocy.
-                </p>
-                <p className="text-warm-neutral-700 text-sm leading-relaxed font-semibold">
-                  U nas płacisz raz – i masz konkretną analizę.
-                </p>
-              </div>
 
               {/* Punkt 2 */}
               <div className="bg-white p-4 md:p-5 rounded-lg border-l-4 border-prestige-gold-400 shadow-sm">
