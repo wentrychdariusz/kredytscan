@@ -67,13 +67,25 @@ const Podziekowania = () => {
     console.log(`🎯 Thank you page: tracked for variant ${variant}`);
     
     if (typeof window !== 'undefined' && window.fbq) {
+      // Event Lead dla wszystkich
       window.fbq('track', 'Lead', {
         content_name: 'Konsultacja umówiona',
         content_category: 'Lead Generation',
         value: 1,
         currency: 'PLN'
       });
-      console.log('🎯 Facebook Pixel: Lead conversion tracked for wentrych.pl/podziekowania');
+      console.log('🎯 Facebook Pixel: Lead conversion tracked');
+      
+      // Event Purchase tylko dla opłaconych
+      if (paymentStatusFromUrl === 'Opłacone') {
+        window.fbq('track', 'Purchase', {
+          content_name: 'VIP Analiza Kredytowa',
+          content_category: 'VIP Service',
+          value: 29,
+          currency: 'PLN'
+        });
+        console.log('🎯 Facebook Pixel: Purchase conversion tracked - 29 PLN');
+      }
     }
 
     // Wyślij webhook do Make.com
