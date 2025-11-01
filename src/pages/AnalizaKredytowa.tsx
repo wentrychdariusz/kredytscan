@@ -669,7 +669,7 @@ const AnalizaKredytowa = () => {
               <a href="#formularz-zamowienia" className="block">
                 <Button size="lg" className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-5 md:px-6 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto flex flex-col items-center gap-1">
                   <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
-                    Zobacz, co widzi o Tobie bank
+                    Zobacz jak widzi Cię bank
                   </span>
                   <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
                     wynik w 24h
