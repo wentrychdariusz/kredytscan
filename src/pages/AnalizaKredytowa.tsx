@@ -135,7 +135,7 @@ const AnalizaKredytowa = () => {
           {/* Benefit Headline */}
           <div className="text-center mb-6">
             <h1 className="font-montserrat text-2xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-3 leading-tight">
-              Przeanalizujemy, dlaczego bank lub firma pożyczkowa mówi <span className="text-alert-red-600">„nie"</span> i podpowiemy Ci, co zrobić, żeby następnym razem powiedziała <span className="text-success-green-600">„tak"</span>.
+              Przeanalizujemy, dlaczego bank lub firma pożyczkowa mówi <span className="text-destructive">„nie"</span> i podpowiemy Ci, co zrobić, żeby następnym razem powiedziała <span className="text-success-600">„tak"</span>.
             </h1>
           </div>
 
