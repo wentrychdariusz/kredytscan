@@ -431,11 +431,7 @@ const AnalizaKredytowa = () => {
                   </div>
                 </div>
                 <div className="mt-6">
-                  <img 
-                    src="/src/assets/dariusz-team-photo.jpg" 
-                    alt="Dariusz Wentrych z klientką" 
-                    className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
-                  />
+                  
                 </div>
               </div>
 
