@@ -413,9 +413,9 @@ const AnalizaKredytowa = () => {
               </div>
 
               {/* Cytat Dariusza - elegancki design */}
-              <div className="relative bg-gradient-to-br from-prestige-gold-50 to-white rounded-2xl shadow-xl overflow-hidden border-2 border-prestige-gold-300">
+              <div className="relative bg-gradient-to-br from-prestige-gold-50 to-white overflow-hidden w-full">
                 <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-prestige-gold-500 to-prestige-gold-600"></div>
-                <div className="p-6 md:p-8 pl-8">
+                <div className="p-6 md:p-8 pl-8 w-full">
                   <div className="flex items-start gap-4 mb-4">
                     <span className="text-6xl text-prestige-gold-400 leading-none font-serif">"</span>
                     <p className="text-base md:text-lg text-navy-900 italic leading-relaxed pt-4">
