@@ -317,7 +317,7 @@ const AnalizaKredytowa = () => {
                 </p>
                 <Button 
                   onClick={() => document.getElementById('formularz-zamowienia')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-all"
+                  className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-semibold px-6 py-3 md:px-10 md:py-5 md:text-xl rounded-lg shadow-lg hover:shadow-xl transition-all"
                 >
                   Zamów swoją analizę za 29 zł
                 </Button>
