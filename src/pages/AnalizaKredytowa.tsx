@@ -420,7 +420,7 @@ const AnalizaKredytowa = () => {
                     Przeanalizujemy Twoją sytuację i podpowiemy, jak uniknąć błędów innych ludzi. Bez naszej pomocy możesz zostać skazany tylko na drogie firmy parabankowe — a to kosztuje Cię tysiące złotych rocznie.
                   </p>
                 </div>
-                <div className="flex items-center gap-3 pl-12">
+                <div className="flex items-center gap-3 pl-12 mb-6">
                   <Avatar className="w-12 h-12 border-2 border-prestige-gold-400">
                     <AvatarImage src="/src/assets/dariusz-expert-portrait-2.jpg" alt="Dariusz Wentrych" />
                     <AvatarFallback className="bg-prestige-gold-500 text-white">DW</AvatarFallback>
@@ -429,6 +429,13 @@ const AnalizaKredytowa = () => {
                     <p className="font-semibold text-navy-900">Dariusz Wentrych</p>
                     <p className="text-sm text-warm-neutral-600">20 lat doświadczenia</p>
                   </div>
+                </div>
+                <div className="mt-6">
+                  <img 
+                    src="/src/assets/dariusz-team-photo.jpg" 
+                    alt="Dariusz Wentrych z klientką" 
+                    className="w-full max-w-2xl mx-auto rounded-lg shadow-lg"
+                  />
                 </div>
               </div>
 
