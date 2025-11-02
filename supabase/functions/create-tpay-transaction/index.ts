@@ -81,7 +81,7 @@ serve(async (req) => {
     console.log('💳 Creating transaction...');
     const transactionPayload = {
       amount: transactionData.amount,
-      description: 'skankredytowy.pl - Analiza Kredytowa VIP',
+      description: 'Priorytetowa Obsługa VIP - Analiza kredytowa',
       payer: {
         email: transactionData.email,
         name: `${transactionData.firstName} ${transactionData.lastName}`,
