@@ -1,5 +1,4 @@
 import React from 'react';
-import OptimizedImage from './OptimizedImage';
 import { CheckCircle2, TrendingUp } from 'lucide-react';
 
 const SuccessStoriesSection = () => {
@@ -56,13 +55,11 @@ const SuccessStoriesSection = () => {
               key={index} 
               className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
-              <OptimizedImage
+              <img
                 src={photo.src}
                 alt={photo.alt}
                 className="w-full h-64 md:h-80 object-cover"
-                priority={index < 2}
-                width={400}
-                height={320}
+                loading={index < 2 ? "eager" : "lazy"}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 via-navy-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
