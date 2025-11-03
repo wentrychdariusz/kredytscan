@@ -9,6 +9,7 @@ import { Shield, CheckCircle, AlertCircle, FileText, ArrowRight } from 'lucide-r
 import { useToast } from '@/hooks/use-toast';
 import { useCountdown } from '@/hooks/useCountdown';
 import { supabase } from '@/integrations/supabase/client';
+import SuccessStoriesSection from '../components/SuccessStoriesSection';
 const AnalizaKredytowa = () => {
   const navigate = useNavigate();
   const {
@@ -163,6 +164,9 @@ const AnalizaKredytowa = () => {
               Widzieliśmy już setki beznadziejnych przypadków. Dziś ci ludzie mają kredyty w bankach.
             </p>
           </div>
+
+          {/* Social Proof: Success Stories just below the hero message */}
+          <SuccessStoriesSection />
 
           {/* Problem Statement */}
           <div className="bg-warm-neutral-100 border-l-4 border-alert-red-500 p-6 rounded-lg mb-8">
