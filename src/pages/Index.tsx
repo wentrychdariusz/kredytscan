@@ -63,7 +63,7 @@ const Index = () => {
       <LoanAmountsBar />
       <TopHeader />
       <HeroSection />
-      <SuccessStoriesSection />
+      <SuccessStoriesSection key="success-stories-v1" />
       <TrustedClientsSection />
       <CalculatorSectionBeta />
       <VideoSection />
