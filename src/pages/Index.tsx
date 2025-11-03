@@ -13,6 +13,7 @@ import TrustedClientsSection from '../components/TrustedClientsSection';
 import HeroesSection from '../components/HeroesSection';
 import BookSection from '../components/BookSection';
 import TeamSection from '../components/TeamSection';
+import SuccessStoriesSection from '../components/SuccessStoriesSection';
 
 import CalculatorSectionBeta from '../components/CalculatorSectionBeta';
 import GuaranteeSection from '../components/GuaranteeSection';
@@ -62,6 +63,7 @@ const Index = () => {
       <LoanAmountsBar />
       <TopHeader />
       <HeroSection />
+      <SuccessStoriesSection />
       <TrustedClientsSection />
       <CalculatorSectionBeta />
       <VideoSection />
