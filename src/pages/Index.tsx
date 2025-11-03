@@ -31,8 +31,6 @@ const Index = () => {
   const isLoaded = true;
   const abTestLoaded = true;
   
-  const [showOfferModal, setShowOfferModal] = useState(false);
-
   useEffect(() => {
     console.log(`🏠 Index page: Using default variant B (no A/B test)`);
     trackPageView('glowna1_default', 'B', 'glowna1_default');
@@ -57,8 +55,6 @@ const Index = () => {
         console.log('✨ First time visitor');
         localStorage.setItem('last_index_visit', now.toString());
       }
-
-      setShowOfferModal(true);
   }, [trackPageView, behaviorDetection]);
 
   return (
@@ -66,28 +62,20 @@ const Index = () => {
       <LoanAmountsBar />
       <TopHeader />
       <HeroSection />
-      <ImagineSection />
+      <TrustedClientsSection />
+      <CalculatorSectionBeta />
       <VideoSection />
       <DariuszLetterSection />
-      <MentorSection />
+      <ImagineSection />
       <BeforeAfterSection />
       <ClientSection />
-      <TrustedClientsSection />
+      <MentorSection />
       <HeroesSection />
       <BookSection />
       <TeamSection />
-      
-      {/* Domyślnie używamy CalculatorSectionBeta */}
-      <CalculatorSectionBeta />
-      
       <GuaranteeSection />
       <FloatingAvatar />
       <Footer />
-      
-      <PersonalizedOfferModal 
-        isOpen={showOfferModal} 
-        onClose={() => setShowOfferModal(false)} 
-      />
     </div>
   );
 };
