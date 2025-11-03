@@ -59,7 +59,7 @@ const SuccessStoriesSection = () => {
                 <TrendingUp className="w-5 h-5 text-navy-900" />
               </div>
               <div>
-                <p className="text-prestige-gold-300 text-sm font-semibold mb-1">Prawdziwa wartość</p>
+                <p className="text-prestige-gold-300 text-sm font-semibold mb-1">Prawdziwa wartość naszej analizy</p>
                 <p className="text-white font-bold text-lg md:text-xl mb-1">~1000 zł</p>
                 <p className="text-warm-neutral-300 text-xs md:text-sm">Dziś tylko <span className="text-prestige-gold-400 font-bold">29 zł</span> — chcemy zacząć współpracę z nowymi klientami</p>
               </div>
