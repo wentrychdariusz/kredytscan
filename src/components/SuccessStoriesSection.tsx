@@ -80,9 +80,12 @@ const SuccessStoriesSection = () => {
               <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-white mb-3">
                 Wartość tej analizy: <span className="text-prestige-gold-400">kilka tysięcy złotych</span>
               </h3>
-              <p className="text-warm-neutral-200 text-base md:text-lg font-lato leading-relaxed">
+              <p className="text-warm-neutral-200 text-base md:text-lg font-lato leading-relaxed mb-4">
                 Otrzymujesz ekskluzywną wiedzę i doświadczenie, których <strong className="text-prestige-gold-300">nie znajdziesz w innych firmach</strong>. 
                 Nasze autorskie strategie oddłużeniowe to efekt 20 lat pracy z tysiącami klientów.
+              </p>
+              <p className="text-prestige-gold-200 text-lg md:text-xl font-lato font-semibold leading-relaxed">
+                Widzieliśmy już setki beznadziejnych przypadków. <span className="text-white">Dziś ci ludzie mają kredyty w bankach.</span>
               </p>
             </div>
           </div>
