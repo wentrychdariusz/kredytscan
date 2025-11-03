@@ -83,8 +83,11 @@ const SuccessStoriesSection = () => {
         </div>
 
         {/* Bottom statement */}
-        <p className="text-center text-prestige-gold-200 text-sm md:text-base font-lato font-semibold leading-relaxed">
-          Widzieliśmy już setki beznadziejnych przypadków. <span className="text-white">Dziś ci ludzie mają kredyty w bankach.</span>
+        <p className="text-center text-prestige-gold-200 text-sm md:text-base font-lato leading-relaxed">
+          Widzieliśmy już setki beznadziejnych przypadków. <span className="text-white font-semibold">Dziś ci ludzie mają kredyty w bankach. Ty też tak możesz.</span>
+        </p>
+        <p className="text-center text-warm-neutral-300 text-xs md:text-sm font-lato leading-relaxed mt-2">
+          Aby stać się naszym klientem jest tylko jedna droga — <span className="text-prestige-gold-300 font-semibold">zamówienie analizy</span>. Dopiero potem proponujemy dopasowane rozwiązania.
         </p>
       </div>
     </section>
