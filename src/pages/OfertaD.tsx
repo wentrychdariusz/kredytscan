@@ -196,7 +196,7 @@ const OfertaD = () => {
               <Button 
                 size="lg" 
                 onClick={scrollToForm}
-                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-4 md:py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full"
+                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full"
               >
                 <span className="text-sm md:text-lg lg:text-xl">
                   👉 SPRAWDŹ ZA 29 ZŁ
