@@ -152,7 +152,7 @@ const OfertaD = () => {
             </div>
 
             {/* Trust Triggers */}
-            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-xs md:text-sm text-warm-neutral-700">
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-xs md:text-sm text-warm-neutral-700 mb-10 md:mb-12">
               <div className="flex items-center gap-1">
                 <span className="text-prestige-gold-500">⭐⭐⭐⭐⭐</span>
                 <span className="font-semibold">15 000+ klientów</span>
