@@ -581,23 +581,33 @@ const OfertaD = () => {
               💡 Dlaczego warto to zrobić teraz
             </h3>
             
-            <div className="space-y-4 text-base md:text-lg text-navy-900">
-              <p className="leading-relaxed">
-                Konsultacja z nami kosztuje <strong className="text-prestige-gold-700">500 zł/h</strong>.
-              </p>
-              <p className="leading-relaxed">
-                Dzięki tej analizie otrzymujesz naszą wiedzę i plan działania<br />
-                za ułamek tej ceny — <strong className="text-success-green-700">tylko 29 zł</strong>.
-              </p>
-              <p className="leading-relaxed text-alert-red-700 font-semibold">
-                Możesz to odłożyć…<br />
-                ale jeśli dziś złożysz kolejny wniosek bez analizy,<br />
-                bank obniży Twój scoring nawet na 2 lata.
-              </p>
-              <p className="leading-relaxed font-bold text-navy-900 text-center text-lg md:text-xl">
-                Zrób analizę teraz — zanim system Cię „oznaczy"<br />
-                i zamknie drogę do finansowania.
-              </p>
+            <div className="space-y-6 text-base md:text-lg text-navy-900 text-center max-w-3xl mx-auto">
+              <div className="space-y-2">
+                <p className="leading-relaxed">
+                  Konsultacja z nami kosztuje <strong className="text-prestige-gold-700">500 zł/h</strong>.
+                </p>
+                <p className="leading-relaxed">
+                  Dzięki tej analizie otrzymujesz naszą wiedzę i plan działania<br />
+                  za ułamek tej ceny — <strong className="text-success-green-700">tylko 29 zł</strong>.
+                </p>
+              </div>
+
+              <div className="border-t-2 border-alert-red-200 pt-4 space-y-2">
+                <p className="leading-relaxed text-alert-red-700 font-semibold italic">
+                  Możesz to odłożyć…
+                </p>
+                <p className="leading-relaxed text-alert-red-700 font-semibold">
+                  ale jeśli dziś złożysz kolejny wniosek bez analizy,<br />
+                  bank obniży Twój scoring nawet na 2 lata.
+                </p>
+              </div>
+
+              <div className="bg-navy-900 text-white rounded-lg p-4 md:p-6 mt-6">
+                <p className="leading-relaxed font-bold text-lg md:text-xl">
+                  ⚡ Zrób analizę teraz — zanim system Cię „oznaczy"<br />
+                  i zamknie drogę do finansowania.
+                </p>
+              </div>
             </div>
 
             {/* FOMO Bar */}
