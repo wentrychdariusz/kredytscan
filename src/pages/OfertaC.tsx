@@ -659,6 +659,24 @@ const OfertaC = () => {
           </div>
         </section>
 
+        {/* Trust Section with TPay */}
+        <section className="mb-12">
+          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 text-center border-2 border-warm-neutral-200">
+            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-3">
+              🔒 Bezpieczna płatność i gwarancja jakości
+            </h3>
+            <p className="text-warm-neutral-600 text-base md:text-lg mb-6">
+              Twoje dane są bezpieczne.
+            </p>
+            <img 
+              src="/logos/tpay-payment-methods.jpg" 
+              alt="TPay - Dostępne metody płatności" 
+              className="max-w-xs md:max-w-md mx-auto rounded-lg shadow-md" 
+              loading="lazy" 
+            />
+          </div>
+        </section>
+
         {/* LEGAL & TRUST */}
         <section>
           <div className="bg-warm-neutral-100 rounded-lg p-6 border border-warm-neutral-300">
