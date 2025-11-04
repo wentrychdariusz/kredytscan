@@ -157,40 +157,51 @@ const OfertaD = () => {
               </Button>
             </div>
 
-            {/* Authority Section with Book */}
-            <div className="mb-8 md:mb-10 bg-gradient-to-br from-prestige-gold-50 to-white rounded-xl p-4 md:p-6 border-2 border-prestige-gold-300">
-              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-                <div className="w-32 md:w-40 flex-shrink-0">
+            {/* Authority & Trust Section */}
+            <div className="mb-10 md:mb-12 bg-white rounded-xl p-5 md:p-7 border-2 border-prestige-gold-400 shadow-lg">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-7 mb-5">
+                <div className="w-28 md:w-36 flex-shrink-0">
                   <img 
                     src={bookCover} 
                     alt="Bestseller - Nowe życie bez długów, Dariusz Wentrych"
-                    className="w-full h-auto rounded-lg shadow-lg"
+                    className="w-full h-auto rounded-lg shadow-xl border-2 border-prestige-gold-300"
                   />
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <p className="text-base md:text-lg font-bold text-navy-900 mb-2">
-                    Firma autora bestsellera
-                  </p>
-                  <p className="text-lg md:text-xl font-extrabold text-prestige-gold-700 mb-3">
+                  <div className="inline-block bg-prestige-gold-100 px-3 py-1 rounded-full mb-2">
+                    <p className="text-xs md:text-sm font-bold text-prestige-gold-800 uppercase tracking-wide">
+                      📚 Autor Bestsellera
+                    </p>
+                  </div>
+                  <p className="text-xl md:text-2xl font-extrabold text-navy-900 mb-1">
                     "Nowe życie bez długów"
                   </p>
-                  <p className="text-base md:text-lg font-semibold text-navy-900">
-                    Dariusza Wentrycha
+                  <p className="text-base md:text-lg font-semibold text-prestige-gold-700 mb-3">
+                    Dariusz Wentrych
+                  </p>
+                  <p className="text-sm md:text-base text-warm-neutral-700">
+                    Ekspert z wieloletnim doświadczeniem w pomocy klientom w odzyskaniu zdolności kredytowej
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* Micro Trust Bar */}
-            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-sm text-warm-neutral-700 mb-10 md:mb-12 bg-warm-neutral-50 py-3 px-4 rounded-lg border border-warm-neutral-200">
-              <div className="flex items-center gap-1">
-                <span className="text-prestige-gold-500">⭐⭐⭐⭐⭐</span>
-                <span className="font-semibold">15 000+ klientów</span>
+              
+              {/* Trust indicators */}
+              <div className="pt-4 border-t-2 border-warm-neutral-200">
+                <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5 text-sm md:text-base">
+                  <div className="flex items-center gap-2 bg-prestige-gold-50 px-3 py-2 rounded-lg">
+                    <span className="text-prestige-gold-500 text-base">⭐⭐⭐⭐⭐</span>
+                    <span className="font-bold text-navy-900">15 000+ klientów</span>
+                  </div>
+                  <div className="hidden md:block w-px h-6 bg-warm-neutral-300"></div>
+                  <div className="flex items-center gap-2 bg-business-blue-50 px-3 py-2 rounded-lg">
+                    <span className="font-bold text-navy-900">📊 Wynik w 24h</span>
+                  </div>
+                  <div className="hidden md:block w-px h-6 bg-warm-neutral-300"></div>
+                  <div className="flex items-center gap-2 bg-success-green-50 px-3 py-2 rounded-lg">
+                    <span className="font-bold text-navy-900">💯 Zwrot pieniędzy 14 dni</span>
+                  </div>
+                </div>
               </div>
-              <span>•</span>
-              <span className="font-semibold">📊 Wynik w 24h</span>
-              <span>•</span>
-              <span className="font-semibold">💯 Zwrot pieniędzy 14 dni</span>
             </div>
 
             {/* Wyobraź sobie moment */}
