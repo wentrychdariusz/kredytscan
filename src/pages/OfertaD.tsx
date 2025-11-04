@@ -266,11 +266,11 @@ const OfertaD = () => {
 
             <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-5 rounded-r-lg">
               <p className="text-warm-neutral-700 leading-relaxed italic text-base md:text-lg mb-3">
-                „Przez lata pracowałem po stronie banków.<br />
-                Teraz pokazuję ludziom, jak system naprawdę ocenia ich zdolność.
+                „Od ponad 20 lat pomagam ludziom odzyskać dostęp do finansowania.<br />
+                W moim zespole pracują byli analitycy bankowi i doradcy, którzy doskonale wiedzą, jak system ocenia klientów.
               </p>
               <p className="text-navy-900 font-semibold text-base md:text-lg">
-                Chcę Ci pomóc, żebyś nie był skazany na drogie pożyczki pozabankowe."
+                Naszym celem jest jedno: żebyś znowu mógł usłyszeć od banku słowo „TAK"."
               </p>
               <p className="text-right text-warm-neutral-600 font-semibold mt-3">
                 — Dariusz Wentrych
