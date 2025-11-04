@@ -149,8 +149,9 @@ const OfertaD = () => {
                 </p>
               </div>
               
-              {/* Authority - Subtle Background */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 opacity-90">
+              {/* Authority - Mobile Optimized */}
+              <div className="space-y-3">
+                {/* Row 1: Book + Bestseller + Rating */}
                 <div className="flex items-center gap-3">
                   <div className="w-16 md:w-20 flex-shrink-0">
                     <img 
@@ -159,25 +160,33 @@ const OfertaD = () => {
                       className="w-full h-auto rounded shadow-md"
                     />
                   </div>
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-2 py-0.5 rounded">BESTSELLER</span>
-                      <div className="flex items-center gap-1 bg-white px-2 py-0.5 rounded shadow-sm">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                      <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-2 py-0.5 rounded whitespace-nowrap">
+                        BESTSELLER
+                      </span>
+                      <div className="flex items-center gap-1 bg-white px-2 py-0.5 rounded shadow-sm whitespace-nowrap">
                         <span className="text-yellow-500 text-xs">★★★★★</span>
                         <span className="text-sm font-bold text-navy-900">4.9</span>
                       </div>
                     </div>
-                    <p className="text-xs md:text-sm font-semibold text-navy-900">
+                    <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">
                       Firma autora "Nowe życie bez długów"
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-wrap justify-center gap-2 text-xs text-warm-neutral-700">
-                  <span>✅ 15 000+ klientów</span>
-                  <span>•</span>
-                  <span>📊 Wynik w 24h</span>
-                  <span>•</span>
-                  <span>💯 Gwarancja 14 dni</span>
+                
+                {/* Row 2: Trust Indicators - Centered on Mobile */}
+                <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs font-medium text-warm-neutral-700 pt-2 border-t border-warm-neutral-300">
+                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
+                    ✅ 15 000+ klientów
+                  </div>
+                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
+                    📊 Wynik w 24h
+                  </div>
+                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
+                    💯 Gwarancja 14 dni
+                  </div>
                 </div>
               </div>
             </div>
