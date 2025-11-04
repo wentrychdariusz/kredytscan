@@ -271,7 +271,7 @@ const OfertaD = () => {
                 <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
-                    🪜 3. Plan krok po kroku, jak poprawić scoring <span className="text-prestige-gold-700">(wartość 1 500 zł)</span>
+                    🎯 3. Plan krok po kroku, jak poprawić scoring <span className="text-prestige-gold-700">(wartość 1 500 zł)</span>
                   </p>
                   <p className="text-warm-neutral-700">
                     Otrzymasz konkretny plan działań, żeby zwiększyć swoje szanse na kredyt.
@@ -288,9 +288,22 @@ const OfertaD = () => {
                   <p className="text-warm-neutral-700">
                     Finansowanie do 200 000 zł na korzystnych warunkach.
                   </p>
-                </div>
               </div>
             </div>
+
+            {/* CTA After Benefits */}
+            <div className="text-center mb-8">
+              <Button 
+                size="lg" 
+                onClick={scrollToForm}
+                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-8 py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+              >
+                <span className="text-base md:text-lg">
+                  ✅ ZAMÓW ANALIZĘ ZA 29 ZŁ
+                </span>
+              </Button>
+            </div>
+          </div>
           </div>
 
           {/* Comparison Table - Desktop */}
@@ -342,7 +355,7 @@ const OfertaD = () => {
                   </tr>
                   <tr className="bg-white">
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
-                      🪜 Plan poprawy scoringu
+                      🎯 Plan poprawy scoringu
                     </td>
                     <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
                       ✓
@@ -470,7 +483,7 @@ const OfertaD = () => {
                   🧾 Wskazanie błędów w rejestrach
                 </div>
                 <div className="text-sm text-navy-900">
-                  🪜 Plan poprawy scoringu
+                  🎯 Plan poprawy scoringu
                 </div>
                 <div className="text-sm text-navy-900">
                   🤝 Dostęp do sieci inwestorów
@@ -506,7 +519,7 @@ const OfertaD = () => {
                   🧾 Wskazanie błędów w rejestrach
                 </div>
                 <div className="text-sm text-navy-900">
-                  🪜 Plan poprawy scoringu
+                  🎯 Plan poprawy scoringu
                 </div>
                 <div className="text-sm text-navy-900">
                   🤝 Dostęp do sieci inwestorów
