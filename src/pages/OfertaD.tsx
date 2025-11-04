@@ -144,13 +144,13 @@ const OfertaD = () => {
             </div>
 
             {/* CTA Above the Fold */}
-            <div className="mb-4">
+            <div className="mb-4 px-2">
               <Button 
                 size="lg" 
                 onClick={scrollToForm}
-                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-4 md:py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full"
               >
-                <span className="text-base md:text-lg lg:text-xl">
+                <span className="text-sm md:text-lg lg:text-xl">
                   👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
               </Button>
@@ -289,13 +289,13 @@ const OfertaD = () => {
             </div>
 
             {/* CTA After Benefits */}
-            <div className="text-center mb-8">
+            <div className="text-center mb-8 px-2">
               <Button 
                 size="lg" 
                 onClick={scrollToForm}
-                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-8 py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-4 md:py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full"
               >
-                <span className="text-base md:text-lg">
+                <span className="text-sm md:text-base lg:text-lg">
                   ✅ ZAMÓW ANALIZĘ ZA 29 ZŁ
                 </span>
               </Button>
@@ -432,7 +432,7 @@ const OfertaD = () => {
                       <Button 
                         size="lg" 
                         onClick={scrollToForm}
-                        className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105"
+                        className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base"
                       >
                         👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
                       </Button>
@@ -486,7 +486,7 @@ const OfertaD = () => {
                 <Button 
                   size="lg" 
                   onClick={scrollToForm}
-                  className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all"
+                  className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-3 md:py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-sm md:text-base"
                 >
                   👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
                 </Button>
@@ -598,13 +598,13 @@ const OfertaD = () => {
           </div>
 
           {/* Main CTA */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-8 px-2">
             <Button 
               size="lg" 
               onClick={scrollToForm}
-              className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-8 py-7 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+              className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-5 md:py-7 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full"
             >
-              <span className="text-lg md:text-xl lg:text-2xl">
+              <span className="text-base md:text-lg lg:text-xl">
                 ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE – ZA 29 ZŁ
               </span>
             </Button>
@@ -683,12 +683,12 @@ const OfertaD = () => {
                 type="submit"
                 size="lg"
                 disabled={isSubmitting}
-                className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 py-5 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
               >
                 {isSubmitting ? (
                   "Przetwarzanie..."
                 ) : (
-                  <span className="text-lg md:text-xl">✅ Sprawdź swoją zdolność – za 29 zł</span>
+                  <span className="text-base md:text-lg lg:text-xl">✅ Sprawdź swoją zdolność – za 29 zł</span>
                 )}
               </Button>
 
@@ -757,13 +757,13 @@ const OfertaD = () => {
           </div>
 
           {/* Final CTA Button */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-12 px-2">
             <Button 
               size="lg" 
               onClick={scrollToForm}
-              className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-8 py-6 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+              className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-5 md:py-6 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full"
             >
-              <span className="text-lg md:text-xl">
+              <span className="text-base md:text-lg lg:text-xl">
                 ✅ ZAMÓW ANALIZĘ – ZA 29 ZŁ
               </span>
             </Button>
