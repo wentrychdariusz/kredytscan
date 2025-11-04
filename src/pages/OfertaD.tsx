@@ -118,44 +118,41 @@ const OfertaD = () => {
         <div className="max-w-4xl mx-auto">
           
           {/* Hook - Problem Statement */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-6 md:mb-8">
             <h1 className="font-montserrat leading-relaxed max-w-4xl mx-auto">
-              <span className="block text-2xl md:text-3xl lg:text-4xl font-bold text-navy-900 mb-4">
+              <span className="block text-xl md:text-3xl lg:text-4xl font-bold text-navy-900 mb-3 md:mb-4 px-2">
                 💥 Jak sprawić, by bank w końcu powiedział „TAK"
               </span>
-              <span className="block text-lg md:text-xl lg:text-2xl text-warm-neutral-700 mb-6">
+              <span className="block text-base md:text-xl lg:text-2xl text-warm-neutral-700 mb-4 md:mb-6 px-2">
                 …nawet jeśli wcześniej słyszałeś same odmowy
               </span>
             </h1>
             
-            <div className="bg-warm-neutral-100 border-l-4 border-prestige-gold-500 p-6 rounded-lg mb-6 text-left">
-              <p className="text-base md:text-lg text-navy-900 leading-relaxed mb-3">
-                <strong>To nie Twoja zdolność jest problemem</strong> —<br />
-                to coś, czego bank Ci nigdy nie pokaże.
+            <div className="bg-warm-neutral-100 border-l-4 border-prestige-gold-500 p-4 md:p-6 rounded-lg mb-4 md:mb-6 text-left">
+              <p className="text-sm md:text-lg text-navy-900 leading-relaxed mb-2 md:mb-3">
+                <strong>To nie Twoja zdolność jest problemem</strong> — to coś, czego bank Ci nigdy nie pokaże.
               </p>
-              <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
-                Na co dzień ludzie płacą <strong className="text-prestige-gold-700">500 zł za godzinę</strong>,<br />
-                żeby dowiedzieć się, co naprawdę blokuje ich kredyt.<br />
-                <span className="text-success-green-700 font-bold">Ty możesz mieć to samo — za 29 zł.</span>
+              <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
+                Na co dzień ludzie płacą <strong className="text-prestige-gold-700">500 zł za godzinę</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
+                <span className="block mt-2 text-success-green-700 font-bold">Ty możesz mieć to samo — za 29 zł.</span>
               </p>
             </div>
 
             {/* Wyobraź sobie moment */}
-            <div className="bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-6 md:p-8 mb-8 border-2 border-success-green-300">
-              <p className="text-lg md:text-xl font-semibold text-navy-900 mb-4">
+            <div className="bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-4 md:p-8 mb-6 md:mb-8 border-2 border-success-green-300">
+              <p className="text-base md:text-xl font-semibold text-navy-900 mb-3 md:mb-4">
                 Wyobraź sobie ten moment, gdy logujesz się do banku…
               </p>
-              <p className="text-base md:text-lg text-navy-900 mb-4">
-                i zamiast kolejnego <span className="bg-destructive text-white px-3 py-1 rounded font-bold">„Odmowa"</span> widzisz <span className="bg-success-green-500 text-white px-3 py-1 rounded font-bold">„Decyzja pozytywna"</span>.
+              <p className="text-sm md:text-lg text-navy-900 mb-3 md:mb-4">
+                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-xs md:text-base">„Odmowa"</span> widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-xs md:text-base">„Decyzja pozytywna"</span>.
               </p>
               
-              <div className="space-y-3 text-left mt-6">
-                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
+              <div className="space-y-2 md:space-y-3 text-left mt-4 md:mt-6">
+                <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
                   💭 Ulga. Spokój. W końcu możesz ruszyć z życiem.
                 </p>
-                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
-                  Raty są niższe, zobowiązania uporządkowane,<br />
-                  a z Twojej pensji wreszcie coś zostaje — na rodzinę, podróże, marzenia.
+                <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
+                  Raty są niższe, zobowiązania uporządkowane, a z Twojej pensji wreszcie coś zostaje — na rodzinę, podróże, marzenia.
                 </p>
               </div>
             </div>
@@ -264,8 +261,8 @@ const OfertaD = () => {
             </div>
           </div>
 
-          {/* Comparison Table */}
-          <div className="bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
+          {/* Comparison Table - Desktop */}
+          <div className="hidden md:block bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
             <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-6 text-center">
               💡 Wybierz swoją wersję
             </h3>
@@ -408,6 +405,105 @@ const OfertaD = () => {
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          {/* Comparison Cards - Mobile */}
+          <div className="md:hidden mb-8 space-y-4">
+            <h3 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
+              💡 Wybierz swoją wersję
+            </h3>
+
+            {/* ANALIZA KREDYTOWA 3K Card */}
+            <div className="bg-white rounded-xl shadow-lg border-2 border-success-green-300 overflow-hidden">
+              <div className="bg-gradient-to-r from-success-green-100 to-prestige-gold-100 p-4 text-center">
+                <h4 className="font-bold text-lg text-navy-900 mb-2">
+                  ANALIZA KREDYTOWA 3K™
+                </h4>
+                <p className="text-sm text-warm-neutral-700 line-through">Wartość: 2 750 zł</p>
+                <p className="text-3xl font-black text-success-green-700 mt-2">29 zł</p>
+              </div>
+              
+              <div className="p-4 space-y-3">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🔍 Analiza sytuacji kredytowej</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🧾 Wskazanie błędów w rejestrach</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🪜 Plan poprawy scoringu</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🤝 Dostęp do sieci inwestorów</span>
+                </div>
+              </div>
+
+              <div className="p-4">
+                <Button 
+                  size="lg" 
+                  onClick={scrollToForm}
+                  className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-4 rounded-xl shadow-lg"
+                >
+                  ✅ WYBIERAM ANALIZĘ ZA 29 ZŁ
+                </Button>
+              </div>
+            </div>
+
+            {/* LIMITOWANA EDYCJA VIP Card */}
+            <div className="bg-white rounded-xl shadow-lg border-2 border-warm-neutral-300 overflow-hidden opacity-75">
+              <div className="bg-gradient-to-r from-warm-neutral-100 to-prestige-gold-100 p-4 text-center">
+                <h4 className="font-bold text-lg text-navy-900 mb-2">
+                  LIMITOWANA EDYCJA VIP
+                </h4>
+                <p className="text-sm text-warm-neutral-700 line-through">Wartość: 3 750 zł</p>
+                <p className="text-3xl font-black text-prestige-gold-700 mt-2">199 zł</p>
+              </div>
+              
+              <div className="p-4 space-y-3">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🔍 Analiza sytuacji kredytowej</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🧾 Wskazanie błędów w rejestrach</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🪜 Plan poprawy scoringu</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900">🤝 Dostęp do sieci inwestorów</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-prestige-gold-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900 font-semibold">📘 Książka z autografem</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-prestige-gold-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900 font-semibold">🖋️ Imienna dedykacja</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-prestige-gold-600 flex-shrink-0" />
+                  <span className="text-sm text-navy-900 font-semibold">📸 Zdjęcie z Dariuszem</span>
+                </div>
+              </div>
+
+              <div className="p-4">
+                <Button 
+                  size="lg" 
+                  disabled
+                  className="w-full bg-warm-neutral-300 text-warm-neutral-600 font-bold py-4 rounded-xl cursor-not-allowed"
+                >
+                  VIP WYPRZEDANE
+                </Button>
+              </div>
             </div>
           </div>
 
