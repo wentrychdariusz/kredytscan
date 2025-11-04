@@ -143,10 +143,10 @@ const OfertaD = () => {
               <Button 
                 size="lg" 
                 onClick={scrollToForm}
-                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-8 py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
+                className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-6 py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full md:w-auto"
               >
                 <span className="text-base md:text-lg lg:text-xl">
-                  👉 SPRAWDŹ, CO BANK WIDZI O TOBIE – ZA 29 ZŁ
+                  👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
               </Button>
             </div>
@@ -210,12 +210,10 @@ const OfertaD = () => {
               </div>
               
               <div className="space-y-3">
-                <p className="text-base md:text-lg text-warm-neutral-700 flex items-center justify-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-prestige-gold-600" />
+                <p className="text-base md:text-lg text-warm-neutral-700">
                   💼 20 lat doświadczenia w bankowości i finansach
                 </p>
-                <p className="text-base md:text-lg text-warm-neutral-700 flex items-center justify-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-prestige-gold-600" />
+                <p className="text-base md:text-lg text-warm-neutral-700">
                   💬 Ponad 15 000 klientów, którzy odzyskali dostęp do kredytów
                 </p>
               </div>
@@ -324,44 +322,44 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🔍 Analiza Twojej sytuacji kredytowej
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-warm-neutral-50">
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🧾 Wskazanie błędów w rejestrach
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-white">
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🪜 Plan poprawy scoringu
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-warm-neutral-50">
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🤝 Dostęp do sieci inwestorów
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-white">
@@ -371,8 +369,8 @@ const OfertaD = () => {
                     <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400">
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-prestige-gold-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-warm-neutral-50">
@@ -382,8 +380,8 @@ const OfertaD = () => {
                     <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400">
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-prestige-gold-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-white">
@@ -393,8 +391,8 @@ const OfertaD = () => {
                     <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400">
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <CheckCircle className="w-5 h-5 text-success-green-600 mx-auto" />
+                    <td className="p-3 text-center border border-warm-neutral-300 text-prestige-gold-700 font-bold text-lg">
+                      ✓
                     </td>
                   </tr>
                   <tr className="bg-gradient-to-r from-warm-neutral-100 to-prestige-gold-100">
@@ -465,21 +463,17 @@ const OfertaD = () => {
               </div>
               
               <div className="p-4 space-y-3">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🔍 Analiza sytuacji kredytowej</span>
+                <div className="text-sm text-navy-900">
+                  🔍 Analiza sytuacji kredytowej
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🧾 Wskazanie błędów w rejestrach</span>
+                <div className="text-sm text-navy-900">
+                  🧾 Wskazanie błędów w rejestrach
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🪜 Plan poprawy scoringu</span>
+                <div className="text-sm text-navy-900">
+                  🪜 Plan poprawy scoringu
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🤝 Dostęp do sieci inwestorów</span>
+                <div className="text-sm text-navy-900">
+                  🤝 Dostęp do sieci inwestorów
                 </div>
               </div>
 
@@ -505,33 +499,26 @@ const OfertaD = () => {
               </div>
               
               <div className="p-4 space-y-3">
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🔍 Analiza sytuacji kredytowej</span>
+                <div className="text-sm text-navy-900">
+                  🔍 Analiza sytuacji kredytowej
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🧾 Wskazanie błędów w rejestrach</span>
+                <div className="text-sm text-navy-900">
+                  🧾 Wskazanie błędów w rejestrach
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🪜 Plan poprawy scoringu</span>
+                <div className="text-sm text-navy-900">
+                  🪜 Plan poprawy scoringu
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-success-green-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900">🤝 Dostęp do sieci inwestorów</span>
+                <div className="text-sm text-navy-900">
+                  🤝 Dostęp do sieci inwestorów
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-prestige-gold-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900 font-semibold">📘 Książka z autografem</span>
+                <div className="text-sm text-navy-900 font-semibold">
+                  📘 Książka z autografem
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-prestige-gold-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900 font-semibold">🖋️ Imienna dedykacja</span>
+                <div className="text-sm text-navy-900 font-semibold">
+                  🖋️ Imienna dedykacja
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-prestige-gold-600 flex-shrink-0" />
-                  <span className="text-sm text-navy-900 font-semibold">📸 Zdjęcie z Dariuszem</span>
+                <div className="text-sm text-navy-900 font-semibold">
+                  📸 Zdjęcie z Dariuszem
                 </div>
               </div>
 
