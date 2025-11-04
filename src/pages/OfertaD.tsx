@@ -437,15 +437,14 @@ const OfertaD = () => {
                         👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
                       </Button>
                     </td>
-                    <td className="p-4 text-center border border-warm-neutral-300 opacity-80 bg-warm-neutral-50">
-                      <div className="text-center">
-                        <p className="text-prestige-gold-700 font-bold text-base mb-1">
-                          ✅ Sprzedano 500 pakietów
-                        </p>
-                        <p className="text-warm-neutral-600 text-sm italic">
-                          Brak dostępności
-                        </p>
-                      </div>
+                    <td className="p-4 text-center border border-warm-neutral-300 bg-warm-neutral-50">
+                      <Button 
+                        size="lg" 
+                        disabled
+                        className="w-full bg-warm-neutral-200 text-warm-neutral-500 font-bold px-4 py-3 rounded-xl cursor-not-allowed opacity-60"
+                      >
+                        ✅ Sprzedano 500 pakietów
+                      </Button>
                     </td>
                   </tr>
                 </tbody>
@@ -533,14 +532,13 @@ const OfertaD = () => {
               </div>
 
               <div className="p-4 bg-warm-neutral-50">
-                <div className="text-center">
-                  <p className="text-prestige-gold-700 font-bold text-base mb-1">
-                    ✅ Sprzedano 500 pakietów VIP
-                  </p>
-                  <p className="text-warm-neutral-600 text-sm italic">
-                    Obecnie brak dostępności
-                  </p>
-                </div>
+                <Button 
+                  size="lg" 
+                  disabled
+                  className="w-full bg-warm-neutral-200 text-warm-neutral-500 font-bold py-3 rounded-xl cursor-not-allowed opacity-60 text-sm md:text-base"
+                >
+                  ✅ Sprzedano 500 pakietów VIP
+                </Button>
               </div>
             </div>
           </div>
