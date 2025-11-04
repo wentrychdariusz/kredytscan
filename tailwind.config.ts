@@ -64,77 +64,43 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'navy': {
-					50: '#f0f4ff',
-					100: '#e0eaff',
-					200: '#c7d8ff',
-					300: '#a5bdff',
-					400: '#8193ff',
-					500: '#6366f1',
-					600: '#4f46e5',
-					700: '#4338ca',
-					800: '#3730a3',
-					900: '#111827',
-					950: '#0a0d1a'
+					900: 'hsl(var(--navy-900))'
 				},
 				'business-blue': {
-					50: '#eff6ff',
-					100: '#dbeafe',
-					200: '#bfdbfe',
-					300: '#93c5fd',
-					400: '#60a5fa',
-					500: '#3B82F6',
-					600: '#2563eb',
-					700: '#1d4ed8',
-					800: '#1e40af',
-					900: '#1e3a8a'
+					50: 'hsl(var(--business-blue-50))'
 				},
 				'prestige-gold': {
-					50: '#fefce8',
-					100: '#fef9c3',
-					200: '#fef08a',
-					300: '#fde047',
-					400: '#FACC15',
-					500: '#eab308',
-					600: '#ca8a04',
-					700: '#a16207',
-					800: '#854d0e',
-					900: '#713f12'
+					50: 'hsl(var(--prestige-gold-50))',
+					100: 'hsl(var(--prestige-gold-100))',
+					200: 'hsl(var(--prestige-gold-200))',
+					300: 'hsl(var(--prestige-gold-300))',
+					400: 'hsl(var(--prestige-gold-400))',
+					500: 'hsl(var(--prestige-gold-500))',
+					600: 'hsl(var(--prestige-gold-600))',
+					700: 'hsl(var(--prestige-gold-700))'
 				},
 				'warm-neutral': {
-					50: '#fafaf9',
-					100: '#f5f5f4',
-					200: '#e7e5e4',
-					300: '#d6d3d1',
-					400: '#a8a29e',
-					500: '#78716c',
-					600: '#57534e',
-					700: '#44403c',
-					800: '#292524',
-					900: '#1c1917'
+					50: 'hsl(var(--warm-neutral-50))',
+					100: 'hsl(var(--warm-neutral-100))',
+					200: 'hsl(var(--warm-neutral-200))',
+					300: 'hsl(var(--warm-neutral-300))',
+					400: 'hsl(var(--warm-neutral-400))',
+					600: 'hsl(var(--warm-neutral-600))',
+					700: 'hsl(var(--warm-neutral-700))'
 				},
-				'success': {
-					50: '#f0fdf4',
-					100: '#dcfce7',
-					200: '#bbf7d0',
-					300: '#86efac',
-					400: '#4ade80',
-					500: '#22c55e',
-					600: '#16a34a',
-					700: '#15803d',
-					800: '#166534',
-					900: '#14532d'
+				'success-green': {
+					50: 'hsl(var(--success-green-50))',
+					100: 'hsl(var(--success-green-100))',
+					300: 'hsl(var(--success-green-300))',
+					400: 'hsl(var(--success-green-400))',
+					500: 'hsl(var(--success-green-500))',
+					600: 'hsl(var(--success-green-600))',
+					700: 'hsl(var(--success-green-700))'
 				},
-				'elegant-rose': {
-					50: '#fdf2f8',
-					100: '#fce7f3',
-					200: '#fbcfe8',
-					300: '#f9a8d4',
-					400: '#f472b6',
-					500: '#ec4899',
-					600: '#db2777',
-					700: '#be185d',
-					800: '#9d174d',
-					900: '#831843'
+				'alert-red': {
+					50: 'hsl(var(--alert-red-50))',
+					100: 'hsl(var(--alert-red-100))',
+					700: 'hsl(var(--alert-red-700))'
 				}
 			},
 			fontFamily: {

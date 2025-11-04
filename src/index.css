@@ -37,20 +37,42 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Custom Project Colors in HSL */
+    --navy-900: 220 40% 10%;
+    --business-blue-50: 214 100% 97%;
+    --prestige-gold-50: 55 92% 95%;
+    --prestige-gold-100: 55 97% 88%;
+    --prestige-gold-200: 53 98% 77%;
+    --prestige-gold-300: 50 98% 64%;
+    --prestige-gold-400: 48 96% 53%;
+    --prestige-gold-500: 45 93% 47%;
+    --prestige-gold-600: 41 96% 40%;
+    --prestige-gold-700: 36 77% 32%;
+    --warm-neutral-50: 60 9% 98%;
+    --warm-neutral-100: 60 5% 96%;
+    --warm-neutral-200: 20 6% 90%;
+    --warm-neutral-300: 24 6% 83%;
+    --warm-neutral-400: 24 5% 64%;
+    --warm-neutral-600: 33 5% 32%;
+    --warm-neutral-700: 30 6% 25%;
+    --success-green-50: 138 76% 97%;
+    --success-green-100: 141 84% 93%;
+    --success-green-300: 142 77% 73%;
+    --success-green-400: 142 69% 58%;
+    --success-green-500: 142 71% 45%;
+    --success-green-600: 142 76% 36%;
+    --success-green-700: 142 72% 29%;
+    --alert-red-50: 0 86% 97%;
+    --alert-red-100: 0 93% 94%;
+    --alert-red-700: 0 74% 42%;
   }
 
   .dark {
