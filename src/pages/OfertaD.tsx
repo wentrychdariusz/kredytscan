@@ -455,8 +455,8 @@ const OfertaD = () => {
             </h3>
 
             {/* ANALIZA KREDYTOWA 3K Card */}
-            <div className="bg-white rounded-xl shadow-2xl border-4 border-success-green-400 overflow-hidden relative">
-              <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-success-green-500 text-white px-4 py-1 rounded-full text-xs font-bold z-10 shadow-lg">
+            <div className="bg-white rounded-xl shadow-2xl border-4 border-success-green-400 overflow-hidden relative pt-6">
+              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-success-green-500 text-white px-5 py-2 rounded-full text-sm md:text-xs font-bold z-10 shadow-xl">
                 🟩 NAJCZĘŚCIEJ WYBIERANA
               </div>
               <div className="bg-gradient-to-r from-success-green-100 to-prestige-gold-100 p-4 text-center mt-4">
