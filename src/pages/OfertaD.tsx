@@ -148,8 +148,8 @@ const OfertaD = () => {
               </p>
               
               <div className="space-y-3 md:space-y-3 text-left mt-4 md:mt-6">
-                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
-                  💭 Ulga. Spokój. W końcu możesz ruszyć z życiem.
+                <p className="text-base md:text-lg text-success-green-700 leading-relaxed font-semibold">
+                  💭 <u>Ulga. Spokój. W końcu możesz ruszyć z życiem.</u>
                 </p>
                 <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
                   Raty są niższe, zobowiązania uporządkowane, a z Twojej pensji wreszcie coś zostaje — na rodzinę, podróże, marzenia.
