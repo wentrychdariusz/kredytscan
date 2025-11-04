@@ -613,8 +613,8 @@ const OfertaD = () => {
               onClick={scrollToForm}
               className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-5 md:py-7 rounded-xl shadow-2xl md:hover:shadow-3xl transition-all duration-300 md:hover:scale-105 w-full"
             >
-              <span className="text-base md:text-lg lg:text-xl break-words">
-                ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE – ZA 29 ZŁ
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl break-words whitespace-normal leading-snug">
+                ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 29 ZŁ
               </span>
             </Button>
           </div>
