@@ -726,16 +726,13 @@ const OfertaD = () => {
             </h3>
             
             <div className="space-y-3 mb-6">
-              <p className="text-sm md:text-lg text-navy-900 flex items-start gap-3">
-                <Shield className="w-5 h-5 md:w-6 md:h-6 text-success-green-600 flex-shrink-0 mt-1" />
+              <p className="text-sm md:text-lg text-navy-900">
                 ✅ Gwarancja zwrotu pieniędzy w 14 dni
               </p>
-              <p className="text-sm md:text-lg text-navy-900 flex items-start gap-3">
-                <Shield className="w-5 h-5 md:w-6 md:h-6 text-success-green-600 flex-shrink-0 mt-1" />
+              <p className="text-sm md:text-lg text-navy-900">
                 ✅ Dane szyfrowane SSL
               </p>
-              <p className="text-sm md:text-lg text-navy-900 flex items-start gap-3">
-                <Shield className="w-5 h-5 md:w-6 md:h-6 text-success-green-600 flex-shrink-0 mt-1" />
+              <p className="text-sm md:text-lg text-navy-900">
                 ✅ Zwrot 29 zł przy rozpoczęciu współpracy
               </p>
             </div>
