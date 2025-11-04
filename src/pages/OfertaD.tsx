@@ -133,7 +133,7 @@ const OfertaD = () => {
                 <strong>To nie Twoja zdolność jest problemem</strong> — to coś, czego bank Ci nigdy nie pokaże.
               </p>
               <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
-                Na co dzień ludzie płacą <strong className="text-prestige-gold-700">500 zł za godzinę</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
+                Na co dzień ludzie płacą nam <strong className="text-prestige-gold-700">500 zł za godzinę konsultacji</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
                 <span className="block mt-2 text-success-green-700 font-bold">Ty możesz mieć to samo — za 29 zł.</span>
               </p>
             </div>
@@ -541,10 +541,10 @@ const OfertaD = () => {
             
             <div className="space-y-4 text-base md:text-lg text-navy-900">
               <p className="leading-relaxed">
-                Konsultacja z Dariuszem kosztuje <strong className="text-prestige-gold-700">500 zł/h</strong>.
+                Konsultacja z nami kosztuje <strong className="text-prestige-gold-700">500 zł/h</strong>.
               </p>
               <p className="leading-relaxed">
-                Dzięki tej analizie otrzymujesz jego wiedzę i plan działania<br />
+                Dzięki tej analizie otrzymujesz naszą wiedzę i plan działania<br />
                 za ułamek tej ceny — <strong className="text-success-green-700">tylko 29 zł</strong>.
               </p>
               <p className="leading-relaxed text-alert-red-700 font-semibold">
