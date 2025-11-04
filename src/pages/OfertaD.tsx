@@ -243,51 +243,40 @@ const OfertaD = () => {
             </p>
             
             <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
-                    🔍 1. Analizę Twojej sytuacji kredytowej <span className="text-prestige-gold-700">(wartość 500 zł)</span>
-                  </p>
-                  <p className="text-warm-neutral-700">
-                    Dowiesz się, jak widzą Cię banki i co naprawdę wpływa na Twoją zdolność.
-                  </p>
-                </div>
+              <div>
+                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                  🔍 1. Analizę Twojej sytuacji kredytowej <span className="text-prestige-gold-700">(wartość 500 zł)</span>
+                </p>
+                <p className="text-warm-neutral-700">
+                  Dowiesz się, jak widzą Cię banki i co naprawdę wpływa na Twoją zdolność.
+                </p>
               </div>
 
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
-                    🧾 2. Wskazanie błędów w rejestrach (BIK, BIG, KRD, ERIF) <span className="text-prestige-gold-700">(wartość 300 zł)</span>
-                  </p>
-                  <p className="text-warm-neutral-700">
-                    Zobaczysz dokładnie, które wpisy Cię blokują.
-                  </p>
-                </div>
+              <div>
+                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                  🧾 2. Wskazanie błędów w rejestrach (BIK, BIG, KRD, ERIF) <span className="text-prestige-gold-700">(wartość 300 zł)</span>
+                </p>
+                <p className="text-warm-neutral-700">
+                  Zobaczysz dokładnie, które wpisy Cię blokują.
+                </p>
               </div>
 
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
-                    🎯 3. Plan krok po kroku, jak poprawić scoring <span className="text-prestige-gold-700">(wartość 1 500 zł)</span>
-                  </p>
-                  <p className="text-warm-neutral-700">
-                    Otrzymasz konkretny plan działań, żeby zwiększyć swoje szanse na kredyt.
-                  </p>
-                </div>
+              <div>
+                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                  🎯 3. Plan krok po kroku, jak poprawić scoring <span className="text-prestige-gold-700">(wartość 1 500 zł)</span>
+                </p>
+                <p className="text-warm-neutral-700">
+                  Otrzymasz konkretny plan działań, żeby zwiększyć swoje szanse na kredyt.
+                </p>
               </div>
 
-              <div className="flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
-                    🤝 4. Bonus: Dostęp do sieci prywatnych inwestorów <span className="text-prestige-gold-700">(wartość 450 zł)</span>
-                  </p>
-                  <p className="text-warm-neutral-700">
-                    Finansowanie do 200 000 zł na korzystnych warunkach.
-                  </p>
+              <div>
+                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                  🤝 4. Bonus: Dostęp do sieci prywatnych inwestorów <span className="text-prestige-gold-700">(wartość 450 zł)</span>
+                </p>
+                <p className="text-warm-neutral-700">
+                  Finansowanie do 200 000 zł na korzystnych warunkach.
+                </p>
               </div>
             </div>
 
@@ -303,7 +292,6 @@ const OfertaD = () => {
                 </span>
               </Button>
             </div>
-          </div>
           </div>
 
           {/* Comparison Table - Desktop */}
