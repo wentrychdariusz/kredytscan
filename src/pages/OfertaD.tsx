@@ -437,10 +437,15 @@ const OfertaD = () => {
                         👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
                       </Button>
                     </td>
-                    <td className="p-4 text-center border border-warm-neutral-300 opacity-80">
-                      <p className="text-warm-neutral-600 font-semibold italic text-sm mb-2">
-                        VIP wyprzedane
-                      </p>
+                    <td className="p-4 text-center border border-warm-neutral-300 opacity-80 bg-warm-neutral-50">
+                      <div className="text-center">
+                        <p className="text-prestige-gold-700 font-bold text-base mb-1">
+                          ✅ Sprzedano 500 pakietów
+                        </p>
+                        <p className="text-warm-neutral-600 text-sm italic">
+                          Brak dostępności
+                        </p>
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -527,10 +532,15 @@ const OfertaD = () => {
                 </div>
               </div>
 
-              <div className="p-4">
-                <p className="text-center text-warm-neutral-600 font-semibold italic">
-                  VIP wyprzedane
-                </p>
+              <div className="p-4 bg-warm-neutral-50">
+                <div className="text-center">
+                  <p className="text-prestige-gold-700 font-bold text-base mb-1">
+                    ✅ Sprzedano 500 pakietów VIP
+                  </p>
+                  <p className="text-warm-neutral-600 text-sm italic">
+                    Obecnie brak dostępności
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -556,9 +566,14 @@ const OfertaD = () => {
               </p>
             </div>
 
-            <p className="text-center text-base md:text-lg font-bold text-alert-red-700 mt-6">
-              💡 Edycja limitowana – aktualnie wyprzedana.
-            </p>
+            <div className="bg-gradient-to-r from-prestige-gold-50 to-warm-neutral-50 border-2 border-prestige-gold-300 rounded-lg p-5 text-center mt-6">
+              <p className="text-base md:text-lg font-bold text-prestige-gold-700 mb-2">
+                ✅ Sprzedano już 500 pakietów VIP
+              </p>
+              <p className="text-sm md:text-base text-warm-neutral-700">
+                Edycja limitowana – aktualnie brak dostępności
+              </p>
+            </div>
           </div>
 
           {/* Dlaczego warto to zrobić teraz */}
