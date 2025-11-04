@@ -531,9 +531,14 @@ const OfertaD = () => {
                 </div>
               </div>
 
-              <div className="p-4 bg-warm-neutral-100/50">
-                <div className="bg-warm-neutral-300/40 text-warm-neutral-600 font-bold py-3 px-4 rounded-xl text-center text-sm md:text-base border border-warm-neutral-300">
-                  ✅ Sprzedano 500 pakietów VIP
+              <div className="p-4 bg-warm-neutral-200/30">
+                <div className="bg-warm-neutral-400/50 text-warm-neutral-700 font-bold py-3 px-4 rounded-xl text-center text-sm md:text-base border-2 border-warm-neutral-400/60 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-warm-neutral-500/10 to-warm-neutral-600/10"></div>
+                  <div className="relative">
+                    <div className="text-red-600 font-extrabold text-xs uppercase tracking-wide mb-1">⛔ WYPRZEDANE</div>
+                    <div className="line-through opacity-75">Pakiet VIP</div>
+                    <div className="text-xs mt-1 opacity-60">Sprzedano wszystkie 500 pakietów</div>
+                  </div>
                 </div>
               </div>
             </div>
