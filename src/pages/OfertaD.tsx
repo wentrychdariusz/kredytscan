@@ -129,10 +129,10 @@ const OfertaD = () => {
             </h1>
             
             <div className="bg-warm-neutral-100 border-l-4 border-prestige-gold-500 p-4 md:p-6 rounded-lg mb-4 md:mb-6 text-left">
-              <p className="text-sm md:text-lg text-navy-900 leading-relaxed mb-2 md:mb-3">
+              <p className="text-base md:text-lg text-navy-900 leading-relaxed mb-3 md:mb-3">
                 <strong>To nie Twoja zdolność jest problemem</strong> — to coś, czego bank Ci nigdy nie pokaże.
               </p>
-              <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
+              <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
                 Na co dzień ludzie płacą nam <strong className="text-prestige-gold-700">500 zł za godzinę konsultacji</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
                 <span className="block mt-2 text-success-green-700 font-bold">Ty możesz mieć to samo — za 29 zł.</span>
               </p>
@@ -140,18 +140,18 @@ const OfertaD = () => {
 
             {/* Wyobraź sobie moment */}
             <div className="bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-4 md:p-8 mb-6 md:mb-8 border-2 border-success-green-300">
-              <p className="text-base md:text-xl font-semibold text-navy-900 mb-3 md:mb-4">
+              <p className="text-lg md:text-xl font-semibold text-navy-900 mb-3 md:mb-4">
                 Wyobraź sobie ten moment, gdy logujesz się do banku…
               </p>
-              <p className="text-sm md:text-lg text-navy-900 mb-3 md:mb-4">
-                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-xs md:text-base">„Odmowa"</span> widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-xs md:text-base">„Decyzja pozytywna"</span>.
+              <p className="text-base md:text-lg text-navy-900 mb-3 md:mb-4">
+                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-sm md:text-base">„Odmowa"</span> widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-sm md:text-base">„Decyzja pozytywna"</span>.
               </p>
               
-              <div className="space-y-2 md:space-y-3 text-left mt-4 md:mt-6">
-                <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
+              <div className="space-y-3 md:space-y-3 text-left mt-4 md:mt-6">
+                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
                   💭 Ulga. Spokój. W końcu możesz ruszyć z życiem.
                 </p>
-                <p className="text-sm md:text-lg text-warm-neutral-700 leading-relaxed">
+                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
                   Raty są niższe, zobowiązania uporządkowane, a z Twojej pensji wreszcie coś zostaje — na rodzinę, podróże, marzenia.
                 </p>
               </div>
