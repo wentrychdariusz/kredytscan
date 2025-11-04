@@ -174,7 +174,7 @@ const OfertaD = () => {
                 Wyobraź sobie ten moment, gdy logujesz się do banku…
               </p>
               <p className="text-base md:text-lg text-navy-900 mb-3 md:mb-4">
-                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-sm md:text-base">Odmowa</span> widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-sm md:text-base">Decyzja pozytywna</span>.
+                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-sm md:text-base inline-block">Odmowa</span> widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-sm md:text-base inline-block ml-1">Decyzja pozytywna</span>.
               </p>
               
               <div className="space-y-3 md:space-y-3 text-left mt-4 md:mt-6">
