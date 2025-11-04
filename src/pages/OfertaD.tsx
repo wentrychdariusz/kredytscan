@@ -602,13 +602,22 @@ const OfertaD = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-r from-prestige-gold-50 to-warm-neutral-50 border-2 border-prestige-gold-300 rounded-lg p-5 text-center mt-6">
-              <p className="text-base md:text-lg font-bold text-prestige-gold-700 mb-2">
-                ✅ Sprzedano już 500 pakietów VIP
-              </p>
-              <p className="text-sm md:text-base text-warm-neutral-700">
-                Edycja limitowana – aktualnie brak dostępności
-              </p>
+            <div className="bg-warm-neutral-200/60 border-2 border-warm-neutral-400/60 rounded-xl p-5 text-center mt-6 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-warm-neutral-500/10 to-warm-neutral-600/10"></div>
+              <div className="relative">
+                <div className="inline-block bg-red-600 text-white font-extrabold text-xs md:text-sm uppercase tracking-wider px-4 py-1.5 rounded-full mb-3 shadow-lg">
+                  ⛔ WYPRZEDANE
+                </div>
+                <p className="text-lg md:text-xl font-bold text-warm-neutral-700 line-through mb-2 opacity-75">
+                  Pakiet VIP
+                </p>
+                <p className="text-sm md:text-base text-warm-neutral-600 font-semibold">
+                  ✅ Sprzedano wszystkie 500 pakietów
+                </p>
+                <p className="text-xs md:text-sm text-warm-neutral-500 mt-2 italic">
+                  Edycja limitowana – obecnie niedostępna
+                </p>
+              </div>
             </div>
           </div>
 
