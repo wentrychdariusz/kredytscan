@@ -171,7 +171,7 @@ const OfertaD = () => {
                       </div>
                     </div>
                     <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">
-                      Firma autora "Nowe życie bez długów"
+                      Firma autora bestsellerowej książki "Nowe życie bez długów"
                     </p>
                   </div>
                 </div>
