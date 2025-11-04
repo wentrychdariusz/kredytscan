@@ -8,6 +8,7 @@ import { CheckCircle, Shield } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useCountdown } from '@/hooks/useCountdown';
 import { supabase } from '@/integrations/supabase/client';
+import bookCover from '@/assets/book-cover.png';
 
 const OfertaD = () => {
   const navigate = useNavigate();
@@ -154,6 +155,30 @@ const OfertaD = () => {
                   👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
               </Button>
+            </div>
+
+            {/* Authority Section with Book */}
+            <div className="mb-8 md:mb-10 bg-gradient-to-br from-prestige-gold-50 to-white rounded-xl p-4 md:p-6 border-2 border-prestige-gold-300">
+              <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+                <div className="w-32 md:w-40 flex-shrink-0">
+                  <img 
+                    src={bookCover} 
+                    alt="Bestseller - Nowe życie bez długów, Dariusz Wentrych"
+                    className="w-full h-auto rounded-lg shadow-lg"
+                  />
+                </div>
+                <div className="flex-1 text-center md:text-left">
+                  <p className="text-base md:text-lg font-bold text-navy-900 mb-2">
+                    Firma autora bestsellera
+                  </p>
+                  <p className="text-lg md:text-xl font-extrabold text-prestige-gold-700 mb-3">
+                    "Nowe życie bez długów"
+                  </p>
+                  <p className="text-base md:text-lg font-semibold text-navy-900">
+                    Dariusza Wentrycha
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Micro Trust Bar */}
