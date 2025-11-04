@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import AnalizaKredytowa from "./pages/AnalizaKredytowa";
 import OfertaB from "./pages/OfertaB";
 import OfertaC from "./pages/OfertaC";
+import OfertaD from "./pages/OfertaD";
 import Podziekowania from "./pages/Podziekowania";
 import PodziękowanieBezVIP from "./pages/PodziękowanieBezVIP";
 import NotFound from "./pages/NotFound";
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/analiza-kredytowa" element={<AnalizaKredytowa />} />
           <Route path="/ofertab" element={<OfertaB />} />
           <Route path="/ofertac" element={<OfertaC />} />
+          <Route path="/ofertad" element={<OfertaD />} />
           <Route path="/podziekowania" element={<Podziekowania />} />
           <Route path="/podziekowaniebezvip" element={<PodziękowanieBezVIP />} />
           <Route path="/payment" element={<PaymentTest />} />
