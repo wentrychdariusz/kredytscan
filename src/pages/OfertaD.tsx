@@ -671,26 +671,26 @@ const OfertaD = () => {
               🔒 Bezpieczeństwo
             </h3>
             
-            <div className="space-y-3">
-              <p className="text-base md:text-lg text-navy-900 flex items-start gap-3">
-                <Shield className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+            <div className="space-y-3 mb-6">
+              <p className="text-sm md:text-lg text-navy-900 flex items-start gap-3">
+                <Shield className="w-5 h-5 md:w-6 md:h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 ✅ Gwarancja zwrotu pieniędzy w 14 dni
               </p>
-              <p className="text-base md:text-lg text-navy-900 flex items-start gap-3">
-                <Shield className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+              <p className="text-sm md:text-lg text-navy-900 flex items-start gap-3">
+                <Shield className="w-5 h-5 md:w-6 md:h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 ✅ Dane szyfrowane SSL
               </p>
-              <p className="text-base md:text-lg text-navy-900 flex items-start gap-3">
-                <Shield className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
+              <p className="text-sm md:text-lg text-navy-900 flex items-start gap-3">
+                <Shield className="w-5 h-5 md:w-6 md:h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 ✅ Zwrot 29 zł przy rozpoczęciu współpracy
               </p>
             </div>
 
-            <div className="mt-6 text-center">
+            <div className="text-center">
               <img 
                 src="/logos/tpay-payment-methods.jpg" 
                 alt="TPay - Dostępne metody płatności" 
-                className="max-w-xs md:max-w-md mx-auto rounded-lg shadow-md" 
+                className="w-full max-w-[280px] md:max-w-md mx-auto rounded-lg shadow-md" 
                 loading="lazy" 
               />
             </div>
