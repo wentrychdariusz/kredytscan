@@ -158,47 +158,58 @@ const OfertaD = () => {
             </div>
 
             {/* Authority & Trust Section */}
-            <div className="mb-10 md:mb-12 bg-white rounded-xl p-5 md:p-7 border-2 border-prestige-gold-400 shadow-lg">
-              <div className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-7 mb-5">
+            <div className="mb-10 md:mb-12 bg-gradient-to-br from-white to-prestige-gold-50 rounded-xl p-5 md:p-7 border-2 border-prestige-gold-400 shadow-xl">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-7">
                 <div className="w-28 md:w-36 flex-shrink-0">
                   <img 
                     src={bookCover} 
                     alt="Bestseller - Nowe życie bez długów, Dariusz Wentrych"
-                    className="w-full h-auto rounded-lg shadow-xl border-2 border-prestige-gold-300"
+                    className="w-full h-auto rounded-lg shadow-2xl border-2 border-prestige-gold-400"
                   />
                 </div>
                 <div className="flex-1 text-center md:text-left">
-                  <div className="inline-block bg-prestige-gold-100 px-3 py-1 rounded-full mb-2">
-                    <p className="text-xs md:text-sm font-bold text-prestige-gold-800 uppercase tracking-wide">
-                      📚 Autor Bestsellera
+                  <div className="inline-flex items-center gap-2 bg-prestige-gold-600 text-white px-4 py-2 rounded-full mb-3 shadow-lg">
+                    <span className="text-2xl">⭐</span>
+                    <p className="text-sm md:text-base font-extrabold uppercase tracking-wide">
+                      Bestseller
                     </p>
                   </div>
-                  <p className="text-xl md:text-2xl font-extrabold text-navy-900 mb-1">
+                  <h2 className="text-lg md:text-xl font-bold text-navy-900 mb-2">
+                    Firma autora bestsellera
+                  </h2>
+                  <p className="text-xl md:text-2xl font-extrabold text-prestige-gold-700 mb-1 leading-tight">
                     "Nowe życie bez długów"
                   </p>
-                  <p className="text-base md:text-lg font-semibold text-prestige-gold-700 mb-3">
+                  <p className="text-base md:text-lg font-semibold text-navy-900 mb-4">
                     Dariusz Wentrych
                   </p>
-                  <p className="text-sm md:text-base text-warm-neutral-700">
-                    Ekspert z wieloletnim doświadczeniem w pomocy klientom w odzyskaniu zdolności kredytowej
-                  </p>
-                </div>
-              </div>
-              
-              {/* Trust indicators */}
-              <div className="pt-4 border-t-2 border-warm-neutral-200">
-                <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5 text-sm md:text-base">
-                  <div className="flex items-center gap-2 bg-prestige-gold-50 px-3 py-2 rounded-lg">
-                    <span className="text-prestige-gold-500 text-base">⭐⭐⭐⭐⭐</span>
-                    <span className="font-bold text-navy-900">15 000+ klientów</span>
+                  
+                  {/* Google Rating - Prominent */}
+                  <div className="inline-flex items-center gap-2 bg-white border-2 border-success-green-400 px-4 py-3 rounded-xl shadow-lg mb-3">
+                    <div className="flex flex-col items-start">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-yellow-500 text-lg">⭐⭐⭐⭐⭐</span>
+                        <span className="text-2xl md:text-3xl font-black text-navy-900">4.9</span>
+                      </div>
+                      <p className="text-xs md:text-sm font-bold text-warm-neutral-600">
+                        Ocena na Google
+                      </p>
+                    </div>
                   </div>
-                  <div className="hidden md:block w-px h-6 bg-warm-neutral-300"></div>
-                  <div className="flex items-center gap-2 bg-business-blue-50 px-3 py-2 rounded-lg">
-                    <span className="font-bold text-navy-900">📊 Wynik w 24h</span>
-                  </div>
-                  <div className="hidden md:block w-px h-6 bg-warm-neutral-300"></div>
-                  <div className="flex items-center gap-2 bg-success-green-50 px-3 py-2 rounded-lg">
-                    <span className="font-bold text-navy-900">💯 Zwrot pieniędzy 14 dni</span>
+                  
+                  <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 md:gap-4 text-xs md:text-sm font-semibold">
+                    <div className="flex items-center gap-1 text-navy-900">
+                      <span>✅</span>
+                      <span>15 000+ klientów</span>
+                    </div>
+                    <div className="flex items-center gap-1 text-navy-900">
+                      <span>📊</span>
+                      <span>Wynik w 24h</span>
+                    </div>
+                    <div className="flex items-center gap-1 text-navy-900">
+                      <span>💯</span>
+                      <span>Gwarancja zwrotu 14 dni</span>
+                    </div>
                   </div>
                 </div>
               </div>
