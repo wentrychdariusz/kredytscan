@@ -134,46 +134,51 @@ const OfertaD = () => {
               </span>
             </h1>
             
-            {/* Authority & Value Proposition Combined */}
-            <div className="bg-gradient-to-br from-white to-warm-neutral-50 border-2 border-prestige-gold-400 rounded-xl p-4 md:p-6 mb-4 md:mb-6 shadow-lg">
-              <div className="flex flex-col md:flex-row gap-4 md:gap-5 items-start md:items-center mb-4">
-                <div className="w-20 md:w-24 flex-shrink-0">
-                  <img 
-                    src={bookCover} 
-                    alt="Bestseller - Nowe życie bez długów"
-                    className="w-full h-auto rounded-md shadow-lg"
-                  />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-2 py-1 rounded">BESTSELLER</span>
-                    <div className="flex items-center gap-1 bg-success-green-50 px-2 py-1 rounded border border-success-green-300">
-                      <span className="text-yellow-500 text-xs">★★★★★</span>
-                      <span className="text-sm font-bold text-navy-900">4.9</span>
-                      <span className="text-xs text-warm-neutral-600">Google</span>
-                    </div>
-                  </div>
-                  <p className="text-sm md:text-base font-bold text-navy-900 mb-1">
-                    Firma autora "Nowe życie bez długów"
-                  </p>
-                  <div className="flex flex-wrap gap-2 text-xs text-warm-neutral-700">
-                    <span>✅ 15 000+ klientów</span>
-                    <span>•</span>
-                    <span>📊 Wynik w 24h</span>
-                    <span>•</span>
-                    <span>💯 Gwarancja 14 dni</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="border-t-2 border-warm-neutral-200 pt-4">
-                <p className="text-base md:text-lg text-navy-900 leading-relaxed mb-2">
+            {/* Value Proposition with Authority Background */}
+            <div className="bg-gradient-to-br from-prestige-gold-50 to-warm-neutral-100 rounded-xl p-5 md:p-7 mb-4 md:mb-6 shadow-lg border border-prestige-gold-200">
+              {/* Main Message - Prominent */}
+              <div className="bg-white rounded-lg p-4 md:p-5 mb-4 shadow-md border-l-4 border-prestige-gold-500">
+                <p className="text-lg md:text-xl text-navy-900 leading-relaxed mb-3 font-semibold">
                   <strong>To nie Twoja zdolność jest problemem</strong> — to coś, czego bank Ci nigdy nie pokaże.
                 </p>
-                <p className="text-sm md:text-base text-warm-neutral-700 leading-relaxed">
+                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed mb-2">
                   Na co dzień ludzie płacą nam <strong className="text-prestige-gold-700">500 zł za godzinę konsultacji</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
-                  <span className="block mt-1 text-success-green-700 font-bold text-base md:text-lg">Ty możesz mieć to samo — za 29 zł.</span>
                 </p>
+                <p className="text-success-green-700 font-bold text-lg md:text-xl">
+                  Ty możesz mieć to samo — za 29 zł.
+                </p>
+              </div>
+              
+              {/* Authority - Subtle Background */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 opacity-90">
+                <div className="flex items-center gap-3">
+                  <div className="w-16 md:w-20 flex-shrink-0">
+                    <img 
+                      src={bookCover} 
+                      alt="Bestseller"
+                      className="w-full h-auto rounded shadow-md"
+                    />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-2 py-0.5 rounded">BESTSELLER</span>
+                      <div className="flex items-center gap-1 bg-white px-2 py-0.5 rounded shadow-sm">
+                        <span className="text-yellow-500 text-xs">★★★★★</span>
+                        <span className="text-sm font-bold text-navy-900">4.9</span>
+                      </div>
+                    </div>
+                    <p className="text-xs md:text-sm font-semibold text-navy-900">
+                      Firma autora "Nowe życie bez długów"
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap justify-center gap-2 text-xs text-warm-neutral-700">
+                  <span>✅ 15 000+ klientów</span>
+                  <span>•</span>
+                  <span>📊 Wynik w 24h</span>
+                  <span>•</span>
+                  <span>💯 Gwarancja 14 dni</span>
+                </div>
               </div>
             </div>
 
