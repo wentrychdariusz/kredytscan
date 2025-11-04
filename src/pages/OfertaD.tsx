@@ -531,14 +531,10 @@ const OfertaD = () => {
                 </div>
               </div>
 
-              <div className="p-4 bg-warm-neutral-50">
-                <Button 
-                  size="lg" 
-                  disabled
-                  className="w-full bg-warm-neutral-200 text-warm-neutral-500 font-bold py-3 rounded-xl cursor-not-allowed opacity-60 text-sm md:text-base"
-                >
+              <div className="p-4 bg-warm-neutral-100/50">
+                <div className="bg-warm-neutral-300/40 text-warm-neutral-600 font-bold py-3 px-4 rounded-xl text-center text-sm md:text-base border border-warm-neutral-300">
                   ✅ Sprzedano 500 pakietów VIP
-                </Button>
+                </div>
               </div>
             </div>
           </div>
