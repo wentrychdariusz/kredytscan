@@ -104,14 +104,26 @@ const OfertaD = () => {
   };
   return <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
       {/* Logo Header */}
-      <header className="pt-4 pb-3 px-4 bg-gradient-to-b from-warm-neutral-50 via-warm-neutral-100 to-warm-neutral-50 border-b border-warm-neutral-200">
-        <div className="max-w-6xl mx-auto flex items-center justify-between gap-3 md:gap-6">
-          <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0" />
-          <div className="text-right flex-1">
-            <h2 className="font-montserrat text-xs md:text-lg lg:text-xl xl:text-2xl font-bold text-navy-900 leading-tight">
-              Jak sprawić, by bank w końcu powiedział<br />
-              <span className="text-prestige-gold-600">„TAK"</span>
-            </h2>
+      <header className="pt-4 pb-3 px-4 bg-gradient-to-b from-warm-neutral-50/95 via-warm-neutral-100/95 to-warm-neutral-50/95 backdrop-blur-sm border-b border-warm-neutral-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between gap-3 md:gap-6 mb-3">
+            <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0" />
+            <div className="text-right flex-1">
+              <div className="flex items-center justify-end gap-1 mb-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4 md:w-5 md:h-5 fill-yellow-400 text-yellow-400" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                ))}
+                <span className="ml-1 text-sm md:text-base font-bold text-navy-900">4.9</span>
+              </div>
+              <p className="text-[10px] md:text-xs text-warm-neutral-600 leading-tight">
+                firma autora bestsellerowej książki<br className="hidden md:block" /> 
+                <strong>"Nowe życie bez długów"</strong> oraz nowej książki<br className="hidden md:block" /> 
+                <strong>"Kredyt Zaufania. Jak odzyskać finansowanie w banku."</strong><br className="hidden md:block" /> 
+                <span className="text-prestige-gold-600">premiera 2026</span>
+              </p>
+            </div>
           </div>
         </div>
       </header>
