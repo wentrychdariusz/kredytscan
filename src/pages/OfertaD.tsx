@@ -167,7 +167,7 @@ const OfertaD = () => {
                       </span>
                     </div>
                     <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">
-                      Firma autora bestsellerowej książki "Nowe życie bez długów"
+                      Firma autora bestsellerowej książki &quot;Nowe życie bez długów&quot; oraz nowej książki &quot;Kredyt Zaufania. Jak odzyskać finansowania w banku.&quot; premiera 2026.
                     </p>
                   </div>
                 </div>
