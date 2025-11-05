@@ -645,10 +645,10 @@ const OfertaD = () => {
               {/* FOMO section */}
               <div className="mx-4 mb-4 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3">
                 <p className="text-xs text-center text-navy-900 font-semibold mb-1">
-                  ⏳ Zostało tylko 20 analiz dostępnych do końca roku.
+                  ⏳ Dostępnych tylko 20 analiz w tej cenie.
                 </p>
                 <p className="text-xs text-center text-alert-red-700 font-bold">
-                  🔥 Dziś zamówiono już 7 z 20.
+                  🔥 Dziś zamówiono już 7.
                 </p>
               </div>
             </div>
