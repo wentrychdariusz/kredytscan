@@ -613,7 +613,7 @@ const OfertaD = () => {
 
           {/* Main CTA */}
           <div className="text-center mb-8 overflow-hidden">
-            <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-6 md:py-7 rounded-xl shadow-2xl md:hover:shadow-3xl transition-all duration-300 md:hover:scale-105 w-full">
+            <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-8 md:py-10 rounded-xl shadow-2xl md:hover:shadow-3xl transition-all duration-300 md:hover:scale-105 w-full">
               <span className="text-sm sm:text-base md:text-lg lg:text-xl break-words whitespace-normal leading-snug">
                 ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 29 ZŁ
               </span>
