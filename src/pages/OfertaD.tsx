@@ -726,20 +726,7 @@ const OfertaD = () => {
           </div>
 
           {/* Ratings Section */}
-          <div className="bg-gradient-to-br from-prestige-gold-50 to-warm-neutral-100 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
-            <div className="text-center">
-              <div className="flex items-center justify-center gap-2 mb-3">
-                <span className="text-yellow-500 text-2xl md:text-3xl">★★★★★</span>
-              </div>
-              <p className="text-xl md:text-2xl font-bold text-navy-900 mb-2">
-                Ocena 4.9
-              </p>
-              <p className="text-base md:text-lg text-warm-neutral-700">
-                na podstawie 383 zweryfikowanych opinii<br />
-                <span className="font-semibold text-navy-900">GOOGLE i OFERTEO</span>
-              </p>
-            </div>
-          </div>
+          
 
           {/* Gwarancja */}
           <div className="bg-success-green-50 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-success-green-300">
