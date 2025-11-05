@@ -559,44 +559,7 @@ const OfertaD = () => {
           </div>
 
           {/* Co zawiera edycja VIP */}
-          <div className="bg-gradient-to-br from-prestige-gold-50 to-warm-neutral-50 rounded-xl p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
-            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-5 text-center">
-              🎁 Co zawiera edycja VIP
-            </h3>
-            
-            <div className="space-y-3">
-              <p className="text-base md:text-lg text-navy-900 flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
-                📘 Książka „Nowe życie bez długów" z autografem
-              </p>
-              <p className="text-base md:text-lg text-navy-900 flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
-                🖋️ Imienna dedykacja napisana przez Dariusza Wentrycha
-              </p>
-              <p className="text-base md:text-lg text-navy-900 flex items-start gap-3">
-                <CheckCircle className="w-6 h-6 text-prestige-gold-600 flex-shrink-0 mt-1" />
-                📸 Pamiątkowe zdjęcie z Dariuszem
-              </p>
-            </div>
-
-            <div className="bg-warm-neutral-200/60 border-2 border-warm-neutral-400/60 rounded-xl p-5 text-center mt-6 relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-transparent via-warm-neutral-500/10 to-warm-neutral-600/10"></div>
-              <div className="relative">
-                <div className="inline-block bg-red-600 text-white font-extrabold text-xs md:text-sm uppercase tracking-wider px-4 py-1.5 rounded-full mb-3 shadow-lg">
-                  ⛔ WYPRZEDANE
-                </div>
-                <p className="text-lg md:text-xl font-bold text-warm-neutral-700 line-through mb-2 opacity-75">
-                  Pakiet VIP
-                </p>
-                <p className="text-sm md:text-base text-warm-neutral-600 font-semibold">
-                  ✅ Sprzedano wszystkie 500 pakietów
-                </p>
-                <p className="text-xs md:text-sm text-warm-neutral-500 mt-2 italic">
-                  Edycja limitowana – obecnie niedostępna
-                </p>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Dlaczego warto to zrobić teraz */}
           <div className="bg-gradient-to-r from-alert-red-50 to-prestige-gold-50 border-2 border-alert-red-300 rounded-xl p-6 md:p-8 mb-8">
