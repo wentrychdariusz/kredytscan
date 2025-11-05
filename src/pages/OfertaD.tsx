@@ -741,10 +741,10 @@ const OfertaD = () => {
             {/* FOMO Bar */}
             <div className="mt-6 bg-gradient-to-r from-prestige-gold-100 to-alert-red-100 border-2 border-prestige-gold-500 rounded-lg p-5 text-center shadow-lg">
               <p className="text-lg md:text-xl font-black text-navy-900 mb-2">
-                ⏰ Zostało 37 z 100 analiz dostępnych w listopadzie
+                ⏳ Dostępnych tylko 20 analiz w tej cenie.
               </p>
               <p className="text-sm md:text-base text-alert-red-700 font-bold">
-                ⚡ Oferta znika po wyczerpaniu limitu
+                🔥 Dziś zamówiono już 7.
               </p>
             </div>
           </div>
