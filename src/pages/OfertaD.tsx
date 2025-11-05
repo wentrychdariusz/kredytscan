@@ -151,7 +151,7 @@ const OfertaD = () => {
               
               {/* Authority - Mobile Optimized */}
               <div className="space-y-3">
-                {/* Row 1: Book + Bestseller */}
+                {/* Row 1: Book + Description */}
                 <div className="flex items-center gap-3">
                   <div className="w-16 md:w-20 flex-shrink-0">
                     <img 
@@ -161,8 +161,8 @@ const OfertaD = () => {
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex flex-wrap items-center gap-2 mb-1.5">
-                      <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-2 py-0.5 rounded whitespace-nowrap">
+                    <div className="flex justify-center mb-2">
+                      <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-3 py-1 rounded">
                         BESTSELLER
                       </span>
                     </div>
