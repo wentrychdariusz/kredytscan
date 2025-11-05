@@ -700,7 +700,7 @@ const OfertaD = () => {
 
           {/* Client Testimonials Slider */}
           <div className="mb-12 bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-6 md:p-10 border-2 border-success-green-300 shadow-xl">
-            <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-8 text-center">
+            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-8 text-center">
               ⭐ Tym klientom pomogłem i chcę pomóc Tobie
             </h3>
             
@@ -720,7 +720,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "W końcu dostałam kredyt na mieszkanie!"
                         </p>
-                        <p className="text-lg font-semibold text-success-green-700">— Anna K.</p>
+                        <p className="text-lg font-semibold text-success-green-700">— Anna</p>
                       </div>
                     </div>
                   </div>
@@ -740,7 +740,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Za 29 zł dowiedziałem się więcej niż w banku!"
                         </p>
-                        <p className="text-lg font-semibold text-business-blue-700">— Tomasz R.</p>
+                        <p className="text-lg font-semibold text-business-blue-700">— Tomasz</p>
                       </div>
                     </div>
                   </div>
@@ -760,7 +760,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Teraz wiem, co poprawić!"
                         </p>
-                        <p className="text-lg font-semibold text-success-green-700">— Katarzyna S.</p>
+                        <p className="text-lg font-semibold text-success-green-700">— Katarzyna</p>
                       </div>
                     </div>
                   </div>
@@ -780,7 +780,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Szybko i profesjonalnie!"
                         </p>
-                        <p className="text-lg font-semibold text-business-blue-700">— Marek W.</p>
+                        <p className="text-lg font-semibold text-business-blue-700">— Marek</p>
                       </div>
                     </div>
                   </div>
@@ -800,7 +800,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Bank w końcu powiedział TAK!"
                         </p>
-                        <p className="text-lg font-semibold text-success-green-700">— Joanna M.</p>
+                        <p className="text-lg font-semibold text-success-green-700">— Joanna</p>
                       </div>
                     </div>
                   </div>
@@ -820,7 +820,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Najlepsza decyzja jaką podjąłem!"
                         </p>
-                        <p className="text-lg font-semibold text-business-blue-700">— Piotr K.</p>
+                        <p className="text-lg font-semibold text-business-blue-700">— Piotr</p>
                       </div>
                     </div>
                   </div>
@@ -840,7 +840,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Wreszcie mogę spokojnie spać!"
                         </p>
-                        <p className="text-lg font-semibold text-success-green-700">— Magdalena P.</p>
+                        <p className="text-lg font-semibold text-success-green-700">— Magdalena</p>
                       </div>
                     </div>
                   </div>
@@ -860,7 +860,7 @@ const OfertaD = () => {
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
                           "Polecam każdemu!"
                         </p>
-                        <p className="text-lg font-semibold text-business-blue-700">— Robert Z.</p>
+                        <p className="text-lg font-semibold text-business-blue-700">— Robert</p>
                       </div>
                     </div>
                   </div>
