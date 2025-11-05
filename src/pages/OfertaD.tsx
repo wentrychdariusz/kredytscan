@@ -168,14 +168,7 @@ const OfertaD = () => {
                 </div>
                 
                 {/* Row 2: Trust Indicators - Centered on Mobile */}
-                <div className="flex flex-wrap justify-center md:justify-start gap-2 text-xs font-medium text-warm-neutral-700 pt-2 border-t border-warm-neutral-300">
-                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
-                    ✅ 15 000+ klientów
-                  </div>
-                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
-                    📊 Wynik w 24h
-                  </div>
-                </div>
+                
                 
                 {/* Row 3: Rating - Full Width */}
                 <div className="bg-gradient-to-r from-prestige-gold-100 to-warm-neutral-100 px-3 py-2 rounded-lg shadow-sm border border-prestige-gold-300">
@@ -295,11 +288,7 @@ const OfertaD = () => {
 
               {/* Right: Photo with Client */}
               <div className="flex flex-col items-center justify-center">
-                <img 
-                  src="/lovable-uploads/d8efef9d-ca92-4814-9618-8b5105db9432.png" 
-                  alt="Dariusz Wentrych z klientem" 
-                  className="rounded-lg shadow-lg border-2 border-prestige-gold-300 w-full max-w-sm mb-3"
-                />
+                <img src="/lovable-uploads/d8efef9d-ca92-4814-9618-8b5105db9432.png" alt="Dariusz Wentrych z klientem" className="rounded-lg shadow-lg border-2 border-prestige-gold-300 w-full max-w-sm mb-3" />
                 <p className="text-xs md:text-sm text-warm-neutral-600 italic text-center">
                   Dariusz podczas konsultacji z klientem
                 </p>
