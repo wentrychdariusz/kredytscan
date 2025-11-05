@@ -545,20 +545,17 @@ const OfertaD = () => {
                 </div>
               </div>
 
-              <div className="p-4 bg-alert-red-100/50">
-                <div className="bg-alert-red-200 text-alert-red-900 font-bold py-4 px-4 rounded-xl text-center border-3 border-alert-red-600 relative overflow-hidden shadow-lg">
-                  <div className="absolute inset-0 bg-gradient-to-br from-alert-red-300/30 via-alert-red-400/20 to-alert-red-500/30"></div>
-                  <div className="relative">
-                    <div className="text-alert-red-900 font-extrabold text-lg md:text-xl uppercase tracking-wide mb-2 flex items-center justify-center gap-2">
-                      <span className="text-2xl">⛔</span> WYPRZEDANE <span className="text-2xl">⛔</span>
-                    </div>
-                    <div className="line-through opacity-90 text-base md:text-lg mb-2">Pakiet VIP</div>
-                    <div className="text-sm md:text-base font-bold bg-white/60 rounded-lg py-2 px-3 mt-2">
-                      ✅ Sprzedano wszystkie 500 pakietów
-                    </div>
-                    <div className="text-xs md:text-sm mt-2 opacity-80 italic">
-                      Edycja limitowana – obecnie niedostępna
-                    </div>
+              <div className="p-4 bg-muted/30">
+                <div className="bg-muted text-muted-foreground font-bold py-3 px-4 rounded-lg text-center border border-border">
+                  <div className="text-sm uppercase mb-1">
+                    ⛔ WYPRZEDANE
+                  </div>
+                  <div className="line-through text-sm mb-2">Pakiet VIP</div>
+                  <div className="text-xs">
+                    ✅ Sprzedano wszystkie 500 pakietów
+                  </div>
+                  <div className="text-xs mt-1 opacity-70 italic">
+                    Edycja limitowana – obecnie niedostępna
                   </div>
                 </div>
               </div>
