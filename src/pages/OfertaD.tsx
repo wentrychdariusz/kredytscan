@@ -386,7 +386,7 @@ const OfertaD = () => {
           {/* Comparison Table - Desktop */}
           <div className="hidden md:block bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
             <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-6 text-center">
-              💡 Wybierz swoją wersję
+              💡 Wybierz swoją wersję i zobacz, jak widzi Cię bank
             </h3>
 
             <div className="overflow-x-auto">
@@ -396,13 +396,14 @@ const OfertaD = () => {
                     <th className="p-3 text-left text-sm md:text-base font-semibold text-navy-900 border border-warm-neutral-300">
                       Zawartość
                     </th>
-                    <th className="p-3 text-center text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300 relative bg-success-green-50 shadow-lg">
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-success-green-500 text-white px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap shadow-lg">
+                    <th className="p-3 text-center text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300 relative shadow-lg" style={{ backgroundColor: '#ECFDF5' }}>
+                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-success-green-600 text-white px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap shadow-lg z-10">
                         🟩 NAJCZĘŚCIEJ WYBIERANA
                       </div>
-                      ANALIZA<br />KREDYTOWA 3K™
+                      ANALIZA<br />KREDYTOWA
                     </th>
-                    <th className="p-3 text-center text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300 opacity-80">
+                    <th className="p-3 text-center text-sm md:text-base font-bold border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB', color: '#6B7280', opacity: 0.8 }}>
+                      <div className="text-xs mb-1">💎 Limitowana edycja VIP — wyprzedana</div>
                       LIMITOWANA<br />EDYCJA VIP
                     </th>
                   </tr>
@@ -412,10 +413,10 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🔍 Analiza Twojej sytuacji kredytowej
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
                       ✓
                     </td>
                   </tr>
@@ -423,10 +424,10 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🧾 Wskazanie błędów w rejestrach
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
                       ✓
                     </td>
                   </tr>
@@ -434,10 +435,10 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🎯 Plan poprawy scoringu
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
                       ✓
                     </td>
                   </tr>
@@ -445,43 +446,32 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🤝 Dostęp do sieci inwestorów
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg">
-                      ✓
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                      🤝 Priorytetowa konsultacja VIP
                     </td>
                   </tr>
                   <tr className="bg-white">
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       📘 Książka „Nowe życie bez długów" z autografem
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400" style={{ backgroundColor: '#ECFDF5' }}>
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-prestige-gold-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-600 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
                       ✓
                     </td>
                   </tr>
                   <tr className="bg-warm-neutral-50">
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
-                      🖋️ Imienna dedykacja od Dariusza Wentrycha
-                    </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400">
-                      —
-                    </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-prestige-gold-700 font-bold text-lg">
-                      ✓
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
-                    <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       📸 Pamiątkowe zdjęcie z Dariuszem
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400" style={{ backgroundColor: '#ECFDF5' }}>
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-prestige-gold-700 font-bold text-lg">
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-600 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
                       ✓
                     </td>
                   </tr>
@@ -489,10 +479,10 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300">
                       💰 Łączna wartość
                     </td>
-                    <td className="p-3 text-center text-base md:text-lg font-bold text-navy-900 border border-warm-neutral-300">
+                    <td className="p-3 text-center text-base md:text-lg font-bold text-navy-900 border border-warm-neutral-300" style={{ backgroundColor: '#ECFDF5' }}>
                       2 750 zł
                     </td>
-                    <td className="p-3 text-center text-base md:text-lg font-bold text-navy-900 border border-warm-neutral-300">
+                    <td className="p-3 text-center text-base md:text-lg font-bold border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB', color: '#6B7280' }}>
                       3 750 zł
                     </td>
                   </tr>
@@ -500,24 +490,44 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300">
                       💳 Cena
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
+                    <td className="p-3 text-center border border-warm-neutral-300" style={{ backgroundColor: '#ECFDF5' }}>
                       <p className="text-2xl md:text-3xl font-black text-success-green-700">29 zł</p>
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300">
-                      <p className="text-2xl md:text-3xl font-black text-prestige-gold-700">199 zł</p>
+                    <td className="p-3 text-center border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB' }}>
+                      <p className="text-2xl md:text-3xl font-black text-warm-neutral-700">199 zł</p>
                     </td>
                   </tr>
                   <tr>
                     <td className="p-3 border border-warm-neutral-300"></td>
-                    <td className="p-4 text-center border border-warm-neutral-300 bg-success-green-50 shadow-xl">
-                      <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base">
-                        👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
+                    <td className="p-4 text-center border border-warm-neutral-300 shadow-xl" style={{ backgroundColor: '#ECFDF5', boxShadow: '0 2px 10px rgba(16,185,129,0.2)' }}>
+                      <Button 
+                        size="lg" 
+                        onClick={scrollToForm} 
+                        className="text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base"
+                        style={{ backgroundColor: '#10B981' }}
+                      >
+                        SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                       </Button>
+                      
+                      {/* Trust badges under button */}
+                      <div className="mt-3 text-xs text-warm-neutral-700">
+                        💬 Wynik w 24h • Zwrot pieniędzy w 14 dni • 15 000+ zadowolonych klientów
+                      </div>
+                      
+                      {/* FOMO section */}
+                      <div className="mt-4 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3">
+                        <p className="text-xs text-navy-900 font-semibold mb-1">
+                          ⏳ Zostało tylko 20 analiz dostępnych do końca roku.
+                        </p>
+                        <p className="text-xs text-alert-red-700 font-bold">
+                          🔥 Dziś zamówiono już 7 z 20.
+                        </p>
+                      </div>
                     </td>
-                    <td className="p-4 text-center border border-warm-neutral-300 bg-warm-neutral-50">
-                      <Button size="lg" disabled className="w-full bg-warm-neutral-200 text-warm-neutral-500 font-bold px-4 py-3 rounded-xl cursor-not-allowed opacity-60">
-                        ✅ Sprzedano 500 pakietów
-                      </Button>
+                    <td className="p-4 text-center border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB' }}>
+                      <div className="bg-warm-neutral-300 text-warm-neutral-600 font-bold px-4 py-3 rounded-xl cursor-not-allowed border border-warm-neutral-400">
+                        🔒 Wyprzedane — powiadom mnie o nowej edycji
+                      </div>
                     </td>
                   </tr>
                 </tbody>
@@ -528,17 +538,17 @@ const OfertaD = () => {
           {/* Comparison Cards - Mobile */}
           <div className="md:hidden mb-8 space-y-4">
             <h3 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
-              💡 Wybierz swoją wersję
+              💡 Wybierz swoją wersję i zobacz, jak widzi Cię bank
             </h3>
 
-            {/* ANALIZA KREDYTOWA 3K Card */}
-            <div className="bg-white rounded-xl shadow-2xl border-4 border-success-green-400 overflow-visible relative mt-6">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-success-green-600 text-white px-3 py-1 rounded-full text-[10px] md:text-xs font-extrabold tracking-wide uppercase whitespace-nowrap z-20 shadow-2xl">
+            {/* ANALIZA KREDYTOWA Card */}
+            <div className="rounded-xl shadow-2xl border-4 border-success-green-400 overflow-visible relative mt-6" style={{ backgroundColor: '#ECFDF5' }}>
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-success-green-600 text-white px-4 py-2 rounded-full text-xs font-extrabold tracking-wide uppercase whitespace-nowrap z-20 shadow-2xl">
                 🟩 NAJCZĘŚCIEJ WYBIERANA
               </div>
               <div className="bg-gradient-to-r from-success-green-100 to-prestige-gold-100 p-4 text-center mt-3">
-                <h4 className="font-bold text-lg text-navy-900 mb-2">
-                  ANALIZA KREDYTOWA 3K™
+                <h4 className="font-bold text-xl text-navy-900 mb-2">
+                  ANALIZA KREDYTOWA
                 </h4>
                 <p className="text-sm text-warm-neutral-700 line-through">Wartość: 2 750 zł</p>
                 <p className="text-3xl font-black text-success-green-700 mt-2">29 zł</p>
@@ -560,58 +570,70 @@ const OfertaD = () => {
               </div>
 
               <div className="p-4">
-                <Button size="lg" onClick={scrollToForm} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-3 md:py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-sm md:text-base">
-                  👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
+                <Button 
+                  size="lg" 
+                  onClick={scrollToForm} 
+                  className="w-full text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-base"
+                  style={{ backgroundColor: '#10B981' }}
+                >
+                  SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                 </Button>
+                
+                {/* Trust badges under button */}
+                <div className="mt-3 text-center text-xs text-warm-neutral-700">
+                  💬 Wynik w 24h • Zwrot pieniędzy w 14 dni • 15 000+ zadowolonych klientów
+                </div>
+              </div>
+
+              {/* FOMO section */}
+              <div className="mx-4 mb-4 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3">
+                <p className="text-xs text-center text-navy-900 font-semibold mb-1">
+                  ⏳ Zostało tylko 20 analiz dostępnych do końca roku.
+                </p>
+                <p className="text-xs text-center text-alert-red-700 font-bold">
+                  🔥 Dziś zamówiono już 7 z 20.
+                </p>
               </div>
             </div>
 
             {/* LIMITOWANA EDYCJA VIP Card */}
-            <div className="bg-white rounded-xl shadow-lg border-2 border-warm-neutral-300 overflow-hidden opacity-75">
+            <div className="rounded-xl shadow-lg border-2 border-warm-neutral-300 overflow-hidden" style={{ backgroundColor: '#F9FAFB', opacity: 0.8 }}>
+              <div className="text-center pt-3 pb-2">
+                <p className="text-xs text-warm-neutral-600 mb-1">💎 Limitowana edycja VIP — wyprzedana</p>
+              </div>
+              
               <div className="bg-gradient-to-r from-warm-neutral-100 to-prestige-gold-100 p-4 text-center">
-                <h4 className="font-bold text-lg text-navy-900 mb-2">
+                <h4 className="font-bold text-lg text-warm-neutral-700 mb-2">
                   LIMITOWANA EDYCJA VIP
                 </h4>
-                <p className="text-sm text-warm-neutral-700 line-through">Wartość: 3 750 zł</p>
-                <p className="text-3xl font-black text-prestige-gold-700 mt-2">199 zł</p>
+                <p className="text-sm text-warm-neutral-600 line-through">Wartość: 3 750 zł</p>
+                <p className="text-3xl font-black text-warm-neutral-700 mt-2">199 zł</p>
               </div>
               
               <div className="p-4 space-y-3">
-                <div className="text-sm text-navy-900">
+                <div className="text-sm text-warm-neutral-600">
                   🔍 Analiza sytuacji kredytowej
                 </div>
-                <div className="text-sm text-navy-900">
+                <div className="text-sm text-warm-neutral-600">
                   🧾 Wskazanie błędów w rejestrach
                 </div>
-                <div className="text-sm text-navy-900">
+                <div className="text-sm text-warm-neutral-600">
                   🎯 Plan poprawy scoringu
                 </div>
-                <div className="text-sm text-navy-900 font-bold text-base bg-prestige-gold-50 p-2 rounded-lg border border-prestige-gold-300">
-                  💎 Dostęp do prywatnych inwestorów VIP
+                <div className="text-sm text-warm-neutral-600">
+                  🤝 Priorytetowa konsultacja VIP
                 </div>
-                <div className="text-sm text-navy-900 font-semibold">
+                <div className="text-sm text-warm-neutral-700 font-semibold border-t pt-2 mt-2">
                   📘 Książka „Nowe życie bez długów" z autografem
                 </div>
-                <div className="text-sm text-navy-900 font-semibold">
-                  🖋️ Imienna dedykacja napisana przez Dariusza Wentrycha
-                </div>
-                <div className="text-sm text-navy-900 font-semibold">
+                <div className="text-sm text-warm-neutral-700 font-semibold">
                   📸 Pamiątkowe zdjęcie z Dariuszem
                 </div>
               </div>
 
-              <div className="p-4 bg-muted/30">
-                <div className="bg-muted text-muted-foreground font-bold py-3 px-4 rounded-lg text-center border border-border">
-                  <div className="text-sm uppercase mb-1">
-                    ⛔ WYPRZEDANE
-                  </div>
-                  <div className="line-through text-sm mb-2">Pakiet VIP</div>
-                  <div className="text-xs">
-                    ✅ Sprzedano wszystkie 500 pakietów
-                  </div>
-                  <div className="text-xs mt-1 opacity-70 italic">
-                    Edycja limitowana – obecnie niedostępna
-                  </div>
+              <div className="p-4">
+                <div className="bg-warm-neutral-300 text-warm-neutral-600 font-bold py-3 px-4 rounded-lg text-center border border-warm-neutral-400 cursor-not-allowed">
+                  🔒 Wyprzedane — powiadom mnie o nowej edycji
                 </div>
               </div>
             </div>
