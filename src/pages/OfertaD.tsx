@@ -758,7 +758,7 @@ const OfertaD = () => {
       </section>
 
       {/* Sticky Mobile CTA */}
-      {showSticky && <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t-2 border-prestige-gold-400 shadow-2xl p-3">
+      {showSticky && <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-navy-900 border-t-2 border-prestige-gold-400 shadow-2xl p-3">
           <Button size="lg" onClick={scrollToForm} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-4 rounded-xl shadow-xl">
             <span className="text-base">✅ ZAMÓW ZA 29 ZŁ</span>
           </Button>
