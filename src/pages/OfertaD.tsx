@@ -107,7 +107,7 @@ const OfertaD = () => {
       <header className="pt-4 pb-3 px-4 bg-gradient-to-b from-slate-700 via-slate-600 to-slate-700 border-b border-slate-500">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-between gap-3 md:gap-6 mb-3">
-            <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0" />
+            <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0 rounded-lg" />
             <div className="text-right flex-1">
               <div className="flex items-center justify-end gap-1 mb-1">
                 {[...Array(5)].map((_, i) => (
