@@ -764,7 +764,7 @@ const OfertaD = () => {
 
           {/* Client Testimonials Slider */}
           <div className="mb-12 bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-6 md:p-10 border-2 border-success-green-300 shadow-xl">
-            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-8 text-center">
+            <h3 className="font-montserrat text-lg md:text-xl font-bold text-navy-900 mb-6 text-center">
               ⭐ Tym klientom pomogłem i chcę pomóc Tobie
             </h3>
             
@@ -776,8 +776,8 @@ const OfertaD = () => {
                     <div className="flex flex-col items-center gap-6">
                       <img src="/lovable-uploads/client-success-1.jpg" alt="Anna K." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
                       <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
+                        <div className="text-yellow-500 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <p className="text-base md:text-lg font-bold text-navy-900 italic">
                           "W końcu dostałam kredyt na mieszkanie!"
                         </p>
                       </div>
@@ -791,8 +791,8 @@ const OfertaD = () => {
                     <div className="flex flex-col items-center gap-6">
                       <img src="/lovable-uploads/client-success-2.jpg" alt="Tomasz R." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
+                        <div className="text-yellow-500 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <p className="text-base md:text-lg font-bold text-navy-900 italic">
                           "Za 29 zł dowiedziałem się więcej niż w banku!"
                         </p>
                       </div>
@@ -806,8 +806,8 @@ const OfertaD = () => {
                     <div className="flex flex-col items-center gap-6">
                       <img src="/lovable-uploads/client-success-3.jpg" alt="Katarzyna S." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
                       <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
+                        <div className="text-yellow-500 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <p className="text-base md:text-lg font-bold text-navy-900 italic">
                           "Teraz wiem, co poprawić!"
                         </p>
                       </div>
@@ -821,8 +821,8 @@ const OfertaD = () => {
                     <div className="flex flex-col items-center gap-6">
                       <img src="/lovable-uploads/client-success-4.jpg" alt="Marek W." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
+                        <div className="text-yellow-500 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <p className="text-base md:text-lg font-bold text-navy-900 italic">
                           "Szybko i profesjonalnie!"
                         </p>
                       </div>
@@ -836,8 +836,8 @@ const OfertaD = () => {
                     <div className="flex flex-col items-center gap-6">
                       <img src="/lovable-uploads/d4784a58-cbb3-4dfe-9f16-12f748e1bb90.png" alt="Robert Z." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
+                        <div className="text-yellow-500 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+                        <p className="text-base md:text-lg font-bold text-navy-900 italic">
                           "Polecam każdemu!"
                         </p>
                       </div>
