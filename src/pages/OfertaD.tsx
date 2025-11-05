@@ -961,14 +961,6 @@ const OfertaD = () => {
               
             </form>
 
-            <div className="mt-6 space-y-2 text-center">
-              <p className="text-sm md:text-base text-navy-900">
-                🎁 Zwrot 29 zł przy rozpoczęciu współpracy
-              </p>
-              <p className="text-xs md:text-sm text-warm-neutral-600">
-                💳 Bezpieczna płatność • ⚡ Natychmiastowy dostęp
-              </p>
-            </div>
           </div>
 
           {/* Bezpieczeństwo */}
