@@ -763,7 +763,7 @@ const OfertaD = () => {
           </div>
 
           {/* Client Testimonials Slider */}
-          <div className="mb-12 bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-6 md:p-10 border-2 border-success-green-300 shadow-xl">
+          <div className="mb-12 rounded-xl p-6 md:p-10">
             <h3 className="font-montserrat text-lg md:text-xl font-bold text-navy-900 mb-6 text-center">
               ⭐ Tym klientom pomogłem i chcę pomóc Tobie
             </h3>
