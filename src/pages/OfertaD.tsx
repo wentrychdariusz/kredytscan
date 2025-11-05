@@ -9,10 +9,11 @@ import { useToast } from '@/hooks/use-toast';
 import { useCountdown } from '@/hooks/useCountdown';
 import { supabase } from '@/integrations/supabase/client';
 import bookCover from '@/assets/book-cover.png';
-
 const OfertaD = () => {
   const navigate = useNavigate();
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -24,7 +25,10 @@ const OfertaD = () => {
   const [showSticky, setShowSticky] = useState(false);
 
   // Countdown timer (12 hours)
-  const { formattedTime, timeLeft } = useCountdown({
+  const {
+    formattedTime,
+    timeLeft
+  } = useCountdown({
     initialTime: 12 * 60 * 60,
     storageKey: 'oferta_d_timer'
   });
@@ -54,19 +58,22 @@ const OfertaD = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
   const scrollToForm = () => {
     const formElement = document.getElementById('formularz-zamowienia');
     if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      formElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const { error: saveError } = await supabase.from('leads').insert({
+      const {
+        error: saveError
+      } = await supabase.from('leads').insert({
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
@@ -94,17 +101,11 @@ const OfertaD = () => {
       setIsSubmitting(false);
     }
   };
-
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
+  return <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
       {/* Logo Header */}
       <header className="pt-4 pb-3 px-4 bg-gradient-to-b from-warm-neutral-50 via-warm-neutral-100 to-warm-neutral-50 border-b border-warm-neutral-200">
         <div className="max-w-6xl mx-auto flex items-center justify-between gap-3 md:gap-6">
-          <img 
-            src="/logos/skan-kredytowy-logo.png" 
-            alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" 
-            className="h-16 md:h-24 lg:h-28 flex-shrink-0" 
-          />
+          <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0" />
           <div className="text-right flex-1">
             <h2 className="font-montserrat text-xs md:text-lg lg:text-xl xl:text-2xl font-bold text-navy-900 leading-tight">
               Jak sprawić, by bank w końcu powiedział<br />
@@ -154,11 +155,7 @@ const OfertaD = () => {
                 {/* Row 1: Book + Description */}
                 <div className="flex items-center gap-3">
                   <div className="w-16 md:w-20 flex-shrink-0">
-                    <img 
-                      src={bookCover} 
-                      alt="Bestseller"
-                      className="w-full h-auto rounded shadow-md"
-                    />
+                    <img src={bookCover} alt="Bestseller" className="w-full h-auto rounded shadow-md" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex justify-center mb-2">
@@ -166,9 +163,7 @@ const OfertaD = () => {
                         BESTSELLER
                       </span>
                     </div>
-                    <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">
-                      Firma autora bestsellerowej książki &quot;Nowe życie bez długów&quot; oraz nowej książki &quot;Kredyt Zaufania. Jak odzyskać finansowania w banku.&quot; premiera 2026.
-                    </p>
+                    <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">Firma autora bestsellerowej książki "Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.</p>
                   </div>
                 </div>
                 
@@ -198,11 +193,7 @@ const OfertaD = () => {
 
             {/* CTA Above the Fold */}
             <div className="mb-4 px-2">
-              <Button 
-                size="lg" 
-                onClick={scrollToForm}
-                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full"
-              >
+              <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
                 <span className="text-sm md:text-lg lg:text-xl">
                   👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
@@ -238,11 +229,7 @@ const OfertaD = () => {
             
             <div className="flex flex-col items-center text-center mb-6">
               <Avatar className="w-28 h-28 md:w-32 md:h-32 border-4 border-prestige-gold-400 mb-4 shadow-xl">
-                <AvatarImage 
-                  src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" 
-                  alt="Dariusz Wentrych" 
-                  className="object-cover" 
-                />
+                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
                 <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
               </Avatar>
               <p className="text-sm md:text-base text-warm-neutral-600 font-semibold mb-4">
@@ -332,11 +319,7 @@ const OfertaD = () => {
 
             {/* CTA After Benefits */}
             <div className="text-center mt-8 mb-10 px-2">
-              <Button 
-                size="lg" 
-                onClick={scrollToForm}
-                className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-4 md:py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full"
-              >
+              <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-4 md:py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
                 <span className="text-sm md:text-base lg:text-lg">
                   💳 Zapłać BLIK – za 29 zł
                 </span>
@@ -471,20 +454,12 @@ const OfertaD = () => {
                   <tr>
                     <td className="p-3 border border-warm-neutral-300"></td>
                     <td className="p-4 text-center border border-warm-neutral-300 bg-success-green-50 shadow-xl">
-                      <Button 
-                        size="lg" 
-                        onClick={scrollToForm}
-                        className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base"
-                      >
+                      <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base">
                         👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
                       </Button>
                     </td>
                     <td className="p-4 text-center border border-warm-neutral-300 bg-warm-neutral-50">
-                      <Button 
-                        size="lg" 
-                        disabled
-                        className="w-full bg-warm-neutral-200 text-warm-neutral-500 font-bold px-4 py-3 rounded-xl cursor-not-allowed opacity-60"
-                      >
+                      <Button size="lg" disabled className="w-full bg-warm-neutral-200 text-warm-neutral-500 font-bold px-4 py-3 rounded-xl cursor-not-allowed opacity-60">
                         ✅ Sprzedano 500 pakietów
                       </Button>
                     </td>
@@ -529,11 +504,7 @@ const OfertaD = () => {
               </div>
 
               <div className="p-4">
-                <Button 
-                  size="lg" 
-                  onClick={scrollToForm}
-                  className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-3 md:py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-sm md:text-base"
-                >
+                <Button size="lg" onClick={scrollToForm} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-3 md:py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-sm md:text-base">
                   👉 WYBIERAM ANALIZĘ ZA 29 ZŁ
                 </Button>
               </div>
@@ -674,11 +645,7 @@ const OfertaD = () => {
 
           {/* Main CTA */}
           <div className="text-center mb-8 overflow-hidden">
-            <Button 
-              size="lg" 
-              onClick={scrollToForm}
-              className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-6 md:py-7 rounded-xl shadow-2xl md:hover:shadow-3xl transition-all duration-300 md:hover:scale-105 w-full"
-            >
+            <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-6 md:py-7 rounded-xl shadow-2xl md:hover:shadow-3xl transition-all duration-300 md:hover:scale-105 w-full">
               <span className="text-sm sm:text-base md:text-lg lg:text-xl break-words whitespace-normal leading-snug">
                 ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 29 ZŁ
               </span>
@@ -701,10 +668,9 @@ const OfertaD = () => {
                 <p className="text-sm font-bold text-prestige-gold-700">{filledFields}/3</p>
               </div>
               <div className="w-full bg-warm-neutral-200 rounded-full h-3">
-                <div 
-                  className="bg-gradient-to-r from-prestige-gold-500 to-success-green-500 h-3 rounded-full transition-all duration-300"
-                  style={{ width: `${(filledFields / 3) * 100}%` }}
-                />
+                <div className="bg-gradient-to-r from-prestige-gold-500 to-success-green-500 h-3 rounded-full transition-all duration-300" style={{
+                width: `${filledFields / 3 * 100}%`
+              }} />
               </div>
             </div>
 
@@ -713,58 +679,34 @@ const OfertaD = () => {
                 <Label htmlFor="name" className="text-navy-900 font-semibold">
                   Imię i nazwisko *
                 </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  required
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="mt-1 border-warm-neutral-300 focus:border-prestige-gold-500"
-                  placeholder="Jan Kowalski"
-                />
+                <Input id="name" type="text" required value={formData.name} onChange={e => setFormData({
+                ...formData,
+                name: e.target.value
+              })} className="mt-1 border-warm-neutral-300 focus:border-prestige-gold-500" placeholder="Jan Kowalski" />
               </div>
 
               <div>
                 <Label htmlFor="email" className="text-navy-900 font-semibold">
                   Adres e-mail *
                 </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  required
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="mt-1 border-warm-neutral-300 focus:border-prestige-gold-500"
-                  placeholder="jan.kowalski@example.com"
-                />
+                <Input id="email" type="email" required value={formData.email} onChange={e => setFormData({
+                ...formData,
+                email: e.target.value
+              })} className="mt-1 border-warm-neutral-300 focus:border-prestige-gold-500" placeholder="jan.kowalski@example.com" />
               </div>
 
               <div>
                 <Label htmlFor="phone" className="text-navy-900 font-semibold">
                   Numer telefonu *
                 </Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  required
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="mt-1 border-warm-neutral-300 focus:border-prestige-gold-500"
-                  placeholder="+48 123 456 789"
-                />
+                <Input id="phone" type="tel" required value={formData.phone} onChange={e => setFormData({
+                ...formData,
+                phone: e.target.value
+              })} className="mt-1 border-warm-neutral-300 focus:border-prestige-gold-500" placeholder="+48 123 456 789" />
               </div>
 
-              <Button
-                type="submit"
-                size="lg"
-                disabled={isSubmitting}
-                className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 py-5 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
-              >
-                {isSubmitting ? (
-                  "Przetwarzanie..."
-                ) : (
-                  <span className="text-base md:text-lg lg:text-xl">✅ Sprawdź swoją zdolność – za 29 zł</span>
-                )}
+              <Button type="submit" size="lg" disabled={isSubmitting} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 py-5 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300">
+                {isSubmitting ? "Przetwarzanie..." : <span className="text-base md:text-lg lg:text-xl">✅ Sprawdź swoją zdolność – za 29 zł</span>}
               </Button>
 
               {/* Micro Copy Pod Przyciskiem */}
@@ -808,12 +750,7 @@ const OfertaD = () => {
               <p className="text-base md:text-lg text-navy-900 font-semibold mb-4">
                 🔐 Bezpieczna płatność chroniona przez TPay i szyfrowanie SSL
               </p>
-              <img 
-                src="/logos/tpay-payment-methods.jpg" 
-                alt="TPay - Dostępne metody płatności" 
-                className="w-full max-w-[200px] md:max-w-[280px] mx-auto rounded-lg opacity-90" 
-                loading="lazy" 
-              />
+              <img src="/logos/tpay-payment-methods.jpg" alt="TPay - Dostępne metody płatności" className="w-full max-w-[200px] md:max-w-[280px] mx-auto rounded-lg opacity-90" loading="lazy" />
             </div>
           </div>
 
@@ -856,11 +793,7 @@ const OfertaD = () => {
 
           {/* Final CTA Button */}
           <div className="text-center mb-12 px-2">
-            <Button 
-              size="lg" 
-              onClick={scrollToForm}
-              className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-5 md:py-6 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full"
-            >
+            <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-5 md:py-6 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full">
               <span className="text-base md:text-lg lg:text-xl">
                 ✅ ZAMÓW ANALIZĘ – ZA 29 ZŁ
               </span>
@@ -870,19 +803,11 @@ const OfertaD = () => {
       </section>
 
       {/* Sticky Mobile CTA */}
-      {showSticky && (
-        <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t-2 border-prestige-gold-400 shadow-2xl p-3">
-          <Button
-            size="lg"
-            onClick={scrollToForm}
-            className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-4 rounded-xl shadow-xl"
-          >
+      {showSticky && <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t-2 border-prestige-gold-400 shadow-2xl p-3">
+          <Button size="lg" onClick={scrollToForm} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-4 rounded-xl shadow-xl">
             <span className="text-base">✅ ZAMÓW ZA 29 ZŁ</span>
           </Button>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 };
-
 export default OfertaD;
