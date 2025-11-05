@@ -709,18 +709,16 @@ const OfertaD = () => {
                 {/* Testimonial 1 */}
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                      <div className="flex-shrink-0">
-                        <img 
-                          src="/lovable-uploads/client-success-1.jpg" 
-                          alt="Anna K." 
-                          className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-xl shadow-lg border-4 border-success-green-400"
-                        />
-                      </div>
-                      <div className="flex-1 text-center md:text-left">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/client-success-1.jpg" 
+                        alt="Anna K." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
+                      />
+                      <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 leading-relaxed italic mb-4">
-                          "Po 3 odmowach w różnych bankach, dzięki analizie Dariusza w końcu dostałam kredyt na mieszkanie!"
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "W końcu dostałam kredyt na mieszkanie!"
                         </p>
                         <p className="text-lg font-semibold text-success-green-700">— Anna K.</p>
                       </div>
@@ -731,18 +729,16 @@ const OfertaD = () => {
                 {/* Testimonial 2 */}
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                      <div className="flex-shrink-0">
-                        <img 
-                          src="/lovable-uploads/client-success-2.jpg" 
-                          alt="Tomasz R." 
-                          className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-xl shadow-lg border-4 border-business-blue-400"
-                        />
-                      </div>
-                      <div className="flex-1 text-center md:text-left">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/client-success-2.jpg" 
+                        alt="Tomasz R." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
+                      />
+                      <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 leading-relaxed italic mb-4">
-                          "Najlepsza inwestycja jaką zrobiłem — za 29 zł dowiedziałem się więcej niż po godzinie w banku!"
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Za 29 zł dowiedziałem się więcej niż w banku!"
                         </p>
                         <p className="text-lg font-semibold text-business-blue-700">— Tomasz R.</p>
                       </div>
@@ -753,18 +749,16 @@ const OfertaD = () => {
                 {/* Testimonial 3 */}
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                      <div className="flex-shrink-0">
-                        <img 
-                          src="/lovable-uploads/client-success-3.jpg" 
-                          alt="Katarzyna S." 
-                          className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-xl shadow-lg border-4 border-success-green-400"
-                        />
-                      </div>
-                      <div className="flex-1 text-center md:text-left">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/client-success-3.jpg" 
+                        alt="Katarzyna S." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
+                      />
+                      <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 leading-relaxed italic mb-4">
-                          "Wreszcie zrozumiałam, dlaczego banki mi odmawiały — teraz wiem, co poprawić!"
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Teraz wiem, co poprawić!"
                         </p>
                         <p className="text-lg font-semibold text-success-green-700">— Katarzyna S.</p>
                       </div>
@@ -775,20 +769,98 @@ const OfertaD = () => {
                 {/* Testimonial 4 */}
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                      <div className="flex-shrink-0">
-                        <img 
-                          src="/lovable-uploads/client-success-4.jpg" 
-                          alt="Marek W." 
-                          className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-xl shadow-lg border-4 border-business-blue-400"
-                        />
-                      </div>
-                      <div className="flex-1 text-center md:text-left">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/client-success-4.jpg" 
+                        alt="Marek W." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
+                      />
+                      <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 leading-relaxed italic mb-4">
-                          "Szybko, konkretnie i profesjonalnie — dokładnie tego potrzebowałem przed składaniem wniosku!"
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Szybko i profesjonalnie!"
                         </p>
                         <p className="text-lg font-semibold text-business-blue-700">— Marek W.</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 5 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/85ea5843-0408-4e89-8f99-c694c9261fd3.png" 
+                        alt="Joanna M." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
+                      />
+                      <div className="text-center">
+                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Bank w końcu powiedział TAK!"
+                        </p>
+                        <p className="text-lg font-semibold text-success-green-700">— Joanna M.</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 6 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/669e599a-c272-4fec-81fe-5ca4c496d018.png" 
+                        alt="Piotr K." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
+                      />
+                      <div className="text-center">
+                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Najlepsza decyzja jaką podjąłem!"
+                        </p>
+                        <p className="text-lg font-semibold text-business-blue-700">— Piotr K.</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 7 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/7c2c43a8-7d25-42ea-90c0-66c86e978e81.png" 
+                        alt="Magdalena P." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
+                      />
+                      <div className="text-center">
+                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Wreszcie mogę spokojnie spać!"
+                        </p>
+                        <p className="text-lg font-semibold text-success-green-700">— Magdalena P.</p>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 8 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
+                    <div className="flex flex-col items-center gap-6">
+                      <img 
+                        src="/lovable-uploads/d4784a58-cbb3-4dfe-9f16-12f748e1bb90.png" 
+                        alt="Robert Z." 
+                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
+                      />
+                      <div className="text-center">
+                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
+                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic mb-3">
+                          "Polecam każdemu!"
+                        </p>
+                        <p className="text-lg font-semibold text-business-blue-700">— Robert Z.</p>
                       </div>
                     </div>
                   </div>
