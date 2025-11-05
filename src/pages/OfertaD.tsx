@@ -288,9 +288,9 @@ const OfertaD = () => {
 
               {/* Right: Photo with Client */}
               <div className="flex flex-col items-center justify-center">
-                <img src="/lovable-uploads/d8efef9d-ca92-4814-9618-8b5105db9432.png" alt="Dariusz Wentrych z klientem" className="rounded-lg shadow-lg border-2 border-prestige-gold-300 w-full max-w-sm mb-3" />
+                <img src="/lovable-uploads/dariusz-with-happy-client.png" alt="Dariusz Wentrych z zadowoloną klientką" className="rounded-lg shadow-lg border-2 border-prestige-gold-300 w-full max-w-sm mb-3" />
                 <p className="text-xs md:text-sm text-warm-neutral-600 italic text-center">
-                  Dariusz podczas konsultacji z klientem
+                  Dariusz Wentrych z zadowoloną klientką
                 </p>
               </div>
             </div>
