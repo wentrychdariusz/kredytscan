@@ -701,7 +701,7 @@ const OfertaD = () => {
           {/* Client Testimonials Slider */}
           <div className="mb-12 bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-6 md:p-10 border-2 border-success-green-300 shadow-xl">
             <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-8 text-center">
-              ⭐ Co mówią nasi klienci
+              ⭐ Tym klientom pomogłem i chcę pomóc Tobie
             </h3>
             
             <Carousel className="w-full max-w-5xl mx-auto">
