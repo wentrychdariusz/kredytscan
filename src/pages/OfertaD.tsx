@@ -180,11 +180,18 @@ const OfertaD = () => {
                   <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
                     📊 Wynik w 24h
                   </div>
-                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap flex items-center gap-1">
-                    <span className="text-yellow-500">★★★★★</span>
-                    <span className="font-bold text-navy-900">4.9</span>
-                    <span>Ocena</span>
+                </div>
+                
+                {/* Row 3: Rating - Full Width */}
+                <div className="bg-gradient-to-r from-prestige-gold-100 to-warm-neutral-100 px-3 py-2 rounded-lg shadow-sm border border-prestige-gold-300">
+                  <div className="flex items-center justify-center gap-2 mb-1">
+                    <span className="text-yellow-500 text-sm">★★★★★</span>
+                    <span className="font-bold text-navy-900 text-sm">4.9</span>
                   </div>
+                  <p className="text-xs text-center text-navy-900 leading-tight">
+                    na podstawie 383 zweryfikowanych opinii<br />
+                    <span className="font-semibold">GOOGLE i OFERTEO</span>
+                  </p>
                 </div>
               </div>
             </div>
