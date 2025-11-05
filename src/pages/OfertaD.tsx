@@ -397,13 +397,19 @@ const OfertaD = () => {
                     <th className="p-3 text-left text-sm md:text-base font-semibold text-navy-900 border border-warm-neutral-300">
                       Zawartość
                     </th>
-                    <th className="p-3 text-center text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300 relative shadow-lg" style={{ backgroundColor: '#ECFDF5' }}>
+                    <th className="p-3 text-center text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300 relative shadow-lg" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-success-green-600 text-white px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap shadow-lg z-10">
                         🟩 NAJCZĘŚCIEJ WYBIERANA
                       </div>
                       ANALIZA<br />KREDYTOWA
                     </th>
-                    <th className="p-3 text-center text-sm md:text-base font-bold border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB', color: '#6B7280', opacity: 0.8 }}>
+                    <th className="p-3 text-center text-sm md:text-base font-bold border border-warm-neutral-300" style={{
+                    backgroundColor: '#F9FAFB',
+                    color: '#6B7280',
+                    opacity: 0.8
+                  }}>
                       <div className="text-xs mb-1">💎 Limitowana edycja VIP — wyprzedana</div>
                       LIMITOWANA<br />EDYCJA VIP
                     </th>
@@ -414,10 +420,14 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🔍 Analiza Twojej sytuacji kredytowej
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       ✓
                     </td>
                   </tr>
@@ -425,10 +435,14 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🧾 Wskazanie błędów w rejestrach
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       ✓
                     </td>
                   </tr>
@@ -436,10 +450,14 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🎯 Plan poprawy scoringu
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       ✓
                     </td>
                   </tr>
@@ -447,10 +465,14 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       🤝 Dostęp do sieci inwestorów
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-success-green-700 font-bold text-lg" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       ✓
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-500 font-bold text-lg" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       🤝 Priorytetowa konsultacja VIP
                     </td>
                   </tr>
@@ -458,10 +480,14 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       📘 Książka „Nowe życie bez długów" z autografem
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-600 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-600 font-bold text-lg" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       ✓
                     </td>
                   </tr>
@@ -469,10 +495,14 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base text-navy-900 border border-warm-neutral-300">
                       📸 Pamiątkowe zdjęcie z Dariuszem
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-400" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       —
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-600 font-bold text-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300 text-warm-neutral-600 font-bold text-lg" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       ✓
                     </td>
                   </tr>
@@ -480,10 +510,15 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300">
                       💰 Łączna wartość
                     </td>
-                    <td className="p-3 text-center text-base md:text-lg font-bold text-navy-900 border border-warm-neutral-300" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center text-base md:text-lg font-bold text-navy-900 border border-warm-neutral-300" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       2 750 zł
                     </td>
-                    <td className="p-3 text-center text-base md:text-lg font-bold border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB', color: '#6B7280' }}>
+                    <td className="p-3 text-center text-base md:text-lg font-bold border border-warm-neutral-300" style={{
+                    backgroundColor: '#F9FAFB',
+                    color: '#6B7280'
+                  }}>
                       3 750 zł
                     </td>
                   </tr>
@@ -491,22 +526,26 @@ const OfertaD = () => {
                     <td className="p-3 text-sm md:text-base font-bold text-navy-900 border border-warm-neutral-300">
                       💳 Cena
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300" style={{ backgroundColor: '#ECFDF5' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300" style={{
+                    backgroundColor: '#ECFDF5'
+                  }}>
                       <p className="text-2xl md:text-3xl font-black text-success-green-700">29 zł</p>
                     </td>
-                    <td className="p-3 text-center border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-3 text-center border border-warm-neutral-300" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       <p className="text-2xl md:text-3xl font-black text-warm-neutral-700">199 zł</p>
                     </td>
                   </tr>
                   <tr>
                     <td className="p-3 border border-warm-neutral-300"></td>
-                    <td className="p-4 text-center border border-warm-neutral-300 shadow-xl" style={{ backgroundColor: '#ECFDF5', boxShadow: '0 2px 10px rgba(16,185,129,0.2)' }}>
-                      <Button 
-                        size="lg" 
-                        onClick={scrollToForm} 
-                        className="text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base"
-                        style={{ backgroundColor: '#10B981' }}
-                      >
+                    <td className="p-4 text-center border border-warm-neutral-300 shadow-xl" style={{
+                    backgroundColor: '#ECFDF5',
+                    boxShadow: '0 2px 10px rgba(16,185,129,0.2)'
+                  }}>
+                      <Button size="lg" onClick={scrollToForm} className="text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base" style={{
+                      backgroundColor: '#10B981'
+                    }}>
                         SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                       </Button>
                       
@@ -525,7 +564,9 @@ const OfertaD = () => {
                         </p>
                       </div>
                     </td>
-                    <td className="p-4 text-center border border-warm-neutral-300" style={{ backgroundColor: '#F9FAFB' }}>
+                    <td className="p-4 text-center border border-warm-neutral-300" style={{
+                    backgroundColor: '#F9FAFB'
+                  }}>
                       <div className="bg-warm-neutral-300 text-warm-neutral-600 font-bold px-4 py-3 rounded-xl cursor-not-allowed border border-warm-neutral-400">
                         🔒 Wyprzedane — powiadom mnie o nowej edycji
                       </div>
@@ -543,7 +584,9 @@ const OfertaD = () => {
             </h3>
 
             {/* ANALIZA KREDYTOWA Card */}
-            <div className="rounded-xl shadow-2xl border-4 border-success-green-400 overflow-visible relative mt-6" style={{ backgroundColor: '#ECFDF5' }}>
+            <div className="rounded-xl shadow-2xl border-4 border-success-green-400 overflow-visible relative mt-6" style={{
+            backgroundColor: '#ECFDF5'
+          }}>
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-success-green-600 text-white px-4 py-2 rounded-full text-xs font-extrabold tracking-wide uppercase whitespace-nowrap z-20 shadow-2xl">
                 🟩 NAJCZĘŚCIEJ WYBIERANA
               </div>
@@ -571,12 +614,9 @@ const OfertaD = () => {
               </div>
 
               <div className="p-4">
-                <Button 
-                  size="lg" 
-                  onClick={scrollToForm} 
-                  className="w-full text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-base"
-                  style={{ backgroundColor: '#10B981' }}
-                >
+                <Button size="lg" onClick={scrollToForm} className="w-full text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-base" style={{
+                backgroundColor: '#10B981'
+              }}>
                   SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                 </Button>
                 
@@ -598,7 +638,10 @@ const OfertaD = () => {
             </div>
 
             {/* LIMITOWANA EDYCJA VIP Card */}
-            <div className="rounded-xl shadow-lg border-2 border-warm-neutral-300 overflow-hidden" style={{ backgroundColor: '#F9FAFB', opacity: 0.8 }}>
+            <div className="rounded-xl shadow-lg border-2 border-warm-neutral-300 overflow-hidden" style={{
+            backgroundColor: '#F9FAFB',
+            opacity: 0.8
+          }}>
               <div className="text-center pt-3 pb-2">
                 <p className="text-xs text-warm-neutral-600 mb-1">💎 Limitowana edycja VIP — wyprzedana</p>
               </div>
@@ -710,11 +753,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/client-success-1.jpg" 
-                        alt="Anna K." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
-                      />
+                      <img src="/lovable-uploads/client-success-1.jpg" alt="Anna K." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -729,11 +768,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/client-success-2.jpg" 
-                        alt="Tomasz R." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
-                      />
+                      <img src="/lovable-uploads/client-success-2.jpg" alt="Tomasz R." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -748,11 +783,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/client-success-3.jpg" 
-                        alt="Katarzyna S." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
-                      />
+                      <img src="/lovable-uploads/client-success-3.jpg" alt="Katarzyna S." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -767,11 +798,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/client-success-4.jpg" 
-                        alt="Marek W." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
-                      />
+                      <img src="/lovable-uploads/client-success-4.jpg" alt="Marek W." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -786,11 +813,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/85ea5843-0408-4e89-8f99-c694c9261fd3.png" 
-                        alt="Joanna M." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
-                      />
+                      <img src="/lovable-uploads/85ea5843-0408-4e89-8f99-c694c9261fd3.png" alt="Joanna M." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -805,11 +828,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/669e599a-c272-4fec-81fe-5ca4c496d018.png" 
-                        alt="Piotr K." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
-                      />
+                      <img src="/lovable-uploads/669e599a-c272-4fec-81fe-5ca4c496d018.png" alt="Piotr K." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -824,11 +843,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/7c2c43a8-7d25-42ea-90c0-66c86e978e81.png" 
-                        alt="Magdalena P." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400"
-                      />
+                      <img src="/lovable-uploads/7c2c43a8-7d25-42ea-90c0-66c86e978e81.png" alt="Magdalena P." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -843,11 +858,7 @@ const OfertaD = () => {
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
                     <div className="flex flex-col items-center gap-6">
-                      <img 
-                        src="/lovable-uploads/d4784a58-cbb3-4dfe-9f16-12f748e1bb90.png" 
-                        alt="Robert Z." 
-                        className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400"
-                      />
+                      <img src="/lovable-uploads/d4784a58-cbb3-4dfe-9f16-12f748e1bb90.png" alt="Robert Z." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
                       <div className="text-center">
                         <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
                         <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
@@ -979,15 +990,7 @@ const OfertaD = () => {
           </div>
 
           {/* Motivational Quote Before Form */}
-          <div className="bg-gradient-to-br from-prestige-gold-100 to-business-blue-100 rounded-xl p-6 md:p-8 mb-8 border-2 border-prestige-gold-400 text-center">
-            <p className="text-lg md:text-xl lg:text-2xl font-bold text-navy-900 italic leading-relaxed">
-              „Nie ma sytuacji bez wyjścia.<br />
-              Jest tylko brak wiedzy, co zrobić jako pierwsze."
-            </p>
-            <p className="text-base md:text-lg text-warm-neutral-700 font-semibold mt-4">
-              — Dariusz Wentrych
-            </p>
-          </div>
+          
 
           {/* Final CTA Button */}
           <div className="text-center mb-12 px-2">
