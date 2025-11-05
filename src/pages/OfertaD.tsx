@@ -180,8 +180,10 @@ const OfertaD = () => {
                   <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
                     📊 Wynik w 24h
                   </div>
-                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap">
-                    💯 Gwarancja 14 dni
+                  <div className="bg-white px-2 py-1 rounded shadow-sm whitespace-nowrap flex items-center gap-1">
+                    <span className="text-yellow-500">★★★★★</span>
+                    <span className="font-bold text-navy-900">4.9</span>
+                    <span>Ocena</span>
                   </div>
                 </div>
               </div>
@@ -822,6 +824,16 @@ const OfertaD = () => {
                 <span className="font-semibold text-navy-900">GOOGLE i OFERTEO</span>
               </p>
             </div>
+          </div>
+
+          {/* Gwarancja */}
+          <div className="bg-success-green-50 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-success-green-300">
+            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-5 text-center">
+              💯 Gwarancja 14 dni
+            </h3>
+            <p className="text-base md:text-lg text-navy-900 text-center leading-relaxed">
+              Jeśli analiza nie spełni Twoich oczekiwań, zwrócimy Ci pełną kwotę w ciągu 14 dni – bez zadawania pytań.
+            </p>
           </div>
 
           {/* Motivational Quote Before Form */}
