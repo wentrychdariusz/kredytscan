@@ -209,8 +209,8 @@ const OfertaD = () => {
                 <span className="font-semibold text-navy-900">Wynik w 24h</span>
               </div>
               <div className="flex items-center gap-1">
-                <span>💯</span>
-                <span className="font-semibold text-navy-900">Zwrot 14 dni</span>
+                
+                
               </div>
             </div>
 
