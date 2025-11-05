@@ -320,8 +320,8 @@ const OfertaD = () => {
 
             {/* CTA After Benefits */}
             <div className="text-center mt-8 mb-10 px-2">
-              <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-4 md:py-5 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
-                <span className="text-sm md:text-base lg:text-lg">
+              <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 md:px-10 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
+                <span className="text-lg md:text-xl lg:text-2xl">
                   💳 Zapłać BLIK – za 29 zł
                 </span>
               </Button>
