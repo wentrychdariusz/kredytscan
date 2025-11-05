@@ -200,6 +200,43 @@ const OfertaD = () => {
               </Button>
             </div>
 
+            {/* Social Proof Row */}
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-4 text-xs md:text-sm">
+              <div className="flex items-center gap-1">
+                <span className="text-prestige-gold-500">⭐⭐⭐⭐⭐</span>
+                <span className="font-semibold text-navy-900">15 000+ klientów</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span>📊</span>
+                <span className="font-semibold text-navy-900">Wynik w 24h</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <span>💯</span>
+                <span className="font-semibold text-navy-900">Zwrot 14 dni</span>
+              </div>
+            </div>
+
+            {/* Mini Avatars with Names */}
+            <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="flex -space-x-2">
+                <Avatar className="w-8 h-8 border-2 border-white">
+                  <AvatarImage src="/lovable-uploads/client-success-1.jpg" alt="Joanna M." />
+                  <AvatarFallback className="text-xs bg-prestige-gold-200">JM</AvatarFallback>
+                </Avatar>
+                <Avatar className="w-8 h-8 border-2 border-white">
+                  <AvatarImage src="/lovable-uploads/client-success-2.jpg" alt="Tomasz R." />
+                  <AvatarFallback className="text-xs bg-business-blue-200">TR</AvatarFallback>
+                </Avatar>
+                <Avatar className="w-8 h-8 border-2 border-white">
+                  <AvatarImage src="/lovable-uploads/client-success-3.jpg" alt="Katarzyna S." />
+                  <AvatarFallback className="text-xs bg-success-green-200">KS</AvatarFallback>
+                </Avatar>
+              </div>
+              <p className="text-xs md:text-sm text-warm-neutral-600">
+                <span className="font-semibold text-navy-900">Joanna M.</span> | <span className="font-semibold text-navy-900">Tomasz R.</span> | <span className="font-semibold text-navy-900">Katarzyna S.</span>
+              </p>
+            </div>
+
 
             {/* Wyobraź sobie moment */}
             <div className="bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-4 md:p-8 mb-6 md:mb-8 border-2 border-success-green-300">
@@ -228,36 +265,58 @@ const OfertaD = () => {
               👤 Kim jest Dariusz Wentrych
             </h3>
             
-            <div className="flex flex-col items-center text-center mb-6">
-              <Avatar className="w-28 h-28 md:w-32 md:h-32 border-4 border-prestige-gold-400 mb-4 shadow-xl">
-                <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
-                <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
-              </Avatar>
-              <p className="text-sm md:text-base text-warm-neutral-600 font-semibold mb-4">
-                Dariusz Wentrych — ekspert finansowy i autor bestsellera
-              </p>
+            <div className="grid md:grid-cols-2 gap-6 items-start mb-6">
+              {/* Left: Avatar and Info */}
+              <div className="flex flex-col items-center text-center">
+                <Avatar className="w-28 h-28 md:w-32 md:h-32 border-4 border-prestige-gold-400 mb-4 shadow-xl">
+                  <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
+                  <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
+                </Avatar>
+                <p className="text-sm md:text-base text-warm-neutral-600 font-semibold mb-4">
+                  Dariusz Wentrych — ekspert finansowy i autor bestsellera
+                </p>
 
-              {/* Authority Banner */}
-              <div className="mb-5 bg-gradient-to-r from-prestige-gold-100 to-business-blue-100 px-6 py-3 rounded-lg border border-prestige-gold-300">
-                <p className="text-base md:text-lg font-bold text-navy-900">
-                  📘 Autor bestsellera „Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.
-                </p>
-                <p className="text-sm md:text-base text-warm-neutral-700 mt-1">
-                  Dzięki jego metodom ponad 15 000 Polaków uzyskało kredyt w banku
-                </p>
+                {/* Authority Badge */}
+                <div className="mb-4 bg-prestige-gold-100 px-4 py-2 rounded-lg border-2 border-prestige-gold-400 shadow-md">
+                  <p className="text-sm md:text-base font-bold text-navy-900">
+                    🏆 15 000+ przeanalizowanych przypadków
+                  </p>
+                </div>
+                
+                <div className="space-y-3">
+                  <p className="text-base md:text-lg text-warm-neutral-700">
+                    💼 20 lat doświadczenia w bankowości i finansach
+                  </p>
+                  <p className="text-base md:text-lg text-warm-neutral-700">
+                    💬 Ponad 15 000 klientów, którzy odzyskali dostęp do kredytów
+                  </p>
+                </div>
               </div>
-              
-              <div className="space-y-3">
-                <p className="text-base md:text-lg text-warm-neutral-700">
-                  💼 20 lat doświadczenia w bankowości i finansach
-                </p>
-                <p className="text-base md:text-lg text-warm-neutral-700">
-                  💬 Ponad 15 000 klientów, którzy odzyskali dostęp do kredytów
+
+              {/* Right: Photo with Client */}
+              <div className="flex flex-col items-center justify-center">
+                <img 
+                  src="/lovable-uploads/d8efef9d-ca92-4814-9618-8b5105db9432.png" 
+                  alt="Dariusz Wentrych z klientem" 
+                  className="rounded-lg shadow-lg border-2 border-prestige-gold-300 w-full max-w-sm mb-3"
+                />
+                <p className="text-xs md:text-sm text-warm-neutral-600 italic text-center">
+                  Dariusz podczas konsultacji z klientem
                 </p>
               </div>
             </div>
 
-            <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-5 rounded-r-lg">
+            {/* Authority Banner */}
+            <div className="mb-5 bg-gradient-to-r from-prestige-gold-100 to-business-blue-100 px-6 py-3 rounded-lg border border-prestige-gold-300">
+              <p className="text-base md:text-lg font-bold text-navy-900">
+                📘 Autor bestsellera „Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.
+              </p>
+              <p className="text-sm md:text-base text-warm-neutral-700 mt-1">
+                Dzięki jego metodom ponad 15 000 Polaków uzyskało kredyt w banku
+              </p>
+            </div>
+
+            <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-5 rounded-r-lg mb-4">
               <p className="text-warm-neutral-700 leading-relaxed italic text-base md:text-lg mb-3">
                 „Od ponad 20 lat pomagam ludziom odzyskać dostęp do finansowania.<br />
                 W moim zespole pracują byli analitycy bankowi i doradcy, którzy doskonale wiedzą, jak system ocenia klientów.
@@ -267,6 +326,13 @@ const OfertaD = () => {
               </p>
               <p className="text-right text-warm-neutral-600 font-semibold mt-3">
                 — Dariusz Wentrych
+              </p>
+            </div>
+
+            {/* Micro CTA */}
+            <div className="text-center bg-success-green-50 border border-success-green-300 rounded-lg p-4">
+              <p className="text-sm md:text-base text-navy-900 font-semibold">
+                💡 Sprawdź, jak widzi Cię bank – tak jak zrobiło to już <strong className="text-success-green-700">15 000 osób</strong>
               </p>
             </div>
           </div>
