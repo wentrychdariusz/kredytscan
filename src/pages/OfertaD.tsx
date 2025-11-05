@@ -247,7 +247,7 @@ const OfertaD = () => {
                 <span className="block mt-2">widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-sm md:text-base inline-block">Decyzja pozytywna</span>.</span>
               </p>
               
-              <div className="space-y-3 md:space-y-3 text-left mt-4 md:mt-6">
+              <div className="space-y-3 md:space-y-3 text-center md:text-left mt-4 md:mt-6">
                 <p className="text-base md:text-lg text-success-green-700 leading-relaxed font-semibold italic">
                   💭 <strong>Ulga. Spokój.</strong> W końcu możesz ruszyć z życiem.
                 </p>
