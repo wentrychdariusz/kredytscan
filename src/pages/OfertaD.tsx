@@ -124,7 +124,7 @@ const OfertaD = () => {
           <div className="text-center mb-6 md:mb-8">
             {/* Mini tagline */}
             <p className="text-sm md:text-base text-prestige-gold-700 font-semibold mb-3">
-              💳 Odkryj, co naprawdę widzą o Tobie banki
+              Zrób analizę zanim bank zamknie Ci drogę do kredytu.
             </p>
             
             <h1 className="font-montserrat leading-relaxed max-w-4xl mx-auto">
