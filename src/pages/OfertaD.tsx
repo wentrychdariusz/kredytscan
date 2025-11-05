@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { CheckCircle, Shield } from 'lucide-react';
+import { CheckCircle, Shield, AlertTriangle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useCountdown } from '@/hooks/useCountdown';
 import { supabase } from '@/integrations/supabase/client';
@@ -123,7 +123,8 @@ const OfertaD = () => {
           {/* Hook - Problem Statement */}
           <div className="text-center mb-6 md:mb-8">
             {/* Mini tagline */}
-            <p className="text-sm md:text-base text-prestige-gold-700 font-semibold mb-3">
+            <p className="text-xs md:text-sm text-prestige-gold-700 font-semibold mb-3 flex items-center justify-center gap-2">
+              <AlertTriangle className="w-4 h-4" />
               Zrób analizę zanim bank zamknie Ci drogę do kredytu.
             </p>
             
