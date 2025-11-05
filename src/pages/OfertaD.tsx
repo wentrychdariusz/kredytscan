@@ -199,8 +199,8 @@ const OfertaD = () => {
 
             {/* CTA Above the Fold */}
             <div className="mb-4 px-2">
-              <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
-                <span className="text-sm md:text-lg lg:text-xl">
+              <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 md:px-8 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
+                <span className="text-base md:text-xl lg:text-2xl whitespace-nowrap">
                   👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
               </Button>
