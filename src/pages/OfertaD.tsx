@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { CheckCircle, Shield } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { useCountdown } from '@/hooks/useCountdown';
@@ -695,6 +696,95 @@ const OfertaD = () => {
                 ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 29 ZŁ
               </span>
             </Button>
+          </div>
+
+          {/* Client Testimonials Slider */}
+          <div className="mb-12 bg-gradient-to-br from-prestige-gold-50 to-business-blue-50 rounded-xl p-6 md:p-10 border-2 border-prestige-gold-300 shadow-xl">
+            <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-8 text-center">
+              ⭐ Co mówią nasi klienci
+            </h3>
+            
+            <Carousel className="w-full max-w-4xl mx-auto">
+              <CarouselContent>
+                {/* Testimonial 1 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg border-2 border-prestige-gold-200">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Avatar className="w-16 h-16 border-2 border-prestige-gold-400">
+                        <AvatarImage src="/lovable-uploads/client-success-1.jpg" alt="Anna K." />
+                        <AvatarFallback className="bg-prestige-gold-200">AK</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-bold text-navy-900 text-lg">Anna K.</p>
+                        <div className="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                      </div>
+                    </div>
+                    <p className="text-lg md:text-xl italic text-navy-900 leading-relaxed">
+                      "Po 3 odmowach w różnych bankach, dzięki analizie Dariusza w końcu dostałam kredyt na mieszkanie!"
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 2 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg border-2 border-prestige-gold-200">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Avatar className="w-16 h-16 border-2 border-prestige-gold-400">
+                        <AvatarImage src="/lovable-uploads/client-success-2.jpg" alt="Tomasz R." />
+                        <AvatarFallback className="bg-business-blue-200">TR</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-bold text-navy-900 text-lg">Tomasz R.</p>
+                        <div className="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                      </div>
+                    </div>
+                    <p className="text-lg md:text-xl italic text-navy-900 leading-relaxed">
+                      "Najlepsza inwestycja jaką zrobiłem — za 29 zł dowiedziałem się więcej niż po godzinie w banku!"
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 3 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg border-2 border-prestige-gold-200">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Avatar className="w-16 h-16 border-2 border-prestige-gold-400">
+                        <AvatarImage src="/lovable-uploads/client-success-3.jpg" alt="Katarzyna S." />
+                        <AvatarFallback className="bg-success-green-200">KS</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-bold text-navy-900 text-lg">Katarzyna S.</p>
+                        <div className="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                      </div>
+                    </div>
+                    <p className="text-lg md:text-xl italic text-navy-900 leading-relaxed">
+                      "Wreszcie zrozumiałam, dlaczego banki mi odmawiały — teraz wiem, co poprawić!"
+                    </p>
+                  </div>
+                </CarouselItem>
+
+                {/* Testimonial 4 */}
+                <CarouselItem>
+                  <div className="bg-white rounded-xl p-6 md:p-8 shadow-lg border-2 border-prestige-gold-200">
+                    <div className="flex items-center gap-4 mb-4">
+                      <Avatar className="w-16 h-16 border-2 border-prestige-gold-400">
+                        <AvatarImage src="/lovable-uploads/client-success-4.jpg" alt="Marek W." />
+                        <AvatarFallback className="bg-prestige-gold-200">MW</AvatarFallback>
+                      </Avatar>
+                      <div>
+                        <p className="font-bold text-navy-900 text-lg">Marek W.</p>
+                        <div className="text-yellow-500 text-sm">⭐⭐⭐⭐⭐</div>
+                      </div>
+                    </div>
+                    <p className="text-lg md:text-xl italic text-navy-900 leading-relaxed">
+                      "Szybko, konkretnie i profesjonalnie — dokładnie tego potrzebowałem przed składaniem wniosku!"
+                    </p>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious className="left-0 md:-left-12" />
+              <CarouselNext className="right-0 md:-right-12" />
+            </Carousel>
           </div>
 
           {/* Order Form */}
