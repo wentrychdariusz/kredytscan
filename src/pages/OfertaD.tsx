@@ -958,11 +958,7 @@ const OfertaD = () => {
               </div>
 
               {/* Micro Copy Pod Przyciskiem */}
-              <div className="mt-3 bg-success-green-50 border border-success-green-300 rounded-lg p-3 text-center">
-                <p className="text-sm md:text-base font-semibold text-success-green-700">
-                  💯 Zwrot pieniędzy w 14 dni • 📊 Wynik w 24h
-                </p>
-              </div>
+              
             </form>
 
             <div className="mt-6 space-y-2 text-center">
