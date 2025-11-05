@@ -105,15 +105,15 @@ const OfertaD = () => {
   return <div className="min-h-screen bg-gradient-to-b from-white via-warm-neutral-50 to-business-blue-50">
       {/* Logo Header */}
       <header className="pt-4 pb-3 px-4 bg-gradient-to-b from-warm-neutral-50 via-warm-neutral-100 to-warm-neutral-50 border-b border-warm-neutral-200">
-        <div className="max-w-6xl mx-auto flex items-center justify-between gap-3 md:gap-6">
-          <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0" />
-          <div className="text-right flex-1">
-            <h2 className="font-montserrat text-xs md:text-lg lg:text-xl xl:text-2xl font-bold text-navy-900 leading-tight">
-              Jak sprawić, by bank w końcu powiedział<br />
-              <span className="text-prestige-gold-600">„TAK"</span>
-            </h2>
+          <div className="max-w-6xl mx-auto flex items-center justify-between gap-3 md:gap-6">
+            <img src="/logos/skan-kredytowy-logo.png" alt="Skan Kredytowy - Profesjonalna Analiza Kredytowa" className="h-16 md:h-24 lg:h-28 flex-shrink-0" />
+            <div className="text-right flex-1">
+              <h2 className="font-montserrat text-sm md:text-lg lg:text-xl xl:text-2xl font-bold text-navy-900 leading-tight">
+                Jak sprawić, by bank w końcu powiedział<br />
+                <span className="text-prestige-gold-600">„TAK"</span>
+              </h2>
+            </div>
           </div>
-        </div>
       </header>
 
       {/* Main Content */}
@@ -123,16 +123,16 @@ const OfertaD = () => {
           {/* Hook - Problem Statement */}
           <div className="text-center mb-6 md:mb-8">
             {/* Mini tagline */}
-            <p className="text-xs md:text-sm text-prestige-gold-700 font-semibold mb-3 flex items-center justify-center gap-2">
-              <AlertTriangle className="w-4 h-4" />
+            <p className="text-sm md:text-sm text-prestige-gold-700 font-semibold mb-3 flex items-center justify-center gap-2">
+              <AlertTriangle className="w-5 h-5 md:w-4 md:h-4" />
               Zrób analizę zanim bank zamknie Ci drogę do kredytu.
             </p>
             
             <h1 className="font-montserrat leading-relaxed max-w-4xl mx-auto">
-              <span className="block text-xl md:text-3xl lg:text-4xl font-bold text-navy-900 mb-3 md:mb-4 px-2">
+              <span className="block text-2xl md:text-3xl lg:text-4xl font-bold text-navy-900 mb-3 md:mb-4 px-2">
                 💥 Jak sprawić, by bank w końcu powiedział „TAK"
               </span>
-              <span className="block text-base md:text-xl lg:text-2xl text-warm-neutral-700 mb-4 md:mb-6 px-2">
+              <span className="block text-lg md:text-xl lg:text-2xl text-warm-neutral-700 mb-4 md:mb-6 px-2">
                 …nawet jeśli wcześniej słyszałeś same odmowy
               </span>
             </h1>
@@ -141,13 +141,13 @@ const OfertaD = () => {
             <div className="bg-gradient-to-br from-prestige-gold-50 to-warm-neutral-100 rounded-xl p-5 md:p-7 mb-4 md:mb-6 shadow-lg border border-prestige-gold-200">
               {/* Main Message - Prominent */}
               <div className="bg-white rounded-lg p-4 md:p-5 mb-4 shadow-md border-l-4 border-prestige-gold-500">
-                <p className="text-lg md:text-xl text-navy-900 leading-relaxed mb-3 font-semibold">
+                <p className="text-xl md:text-xl text-navy-900 leading-relaxed mb-3 font-semibold">
                   <strong>To nie Twoja zdolność jest problemem</strong> — to coś, czego bank Ci nigdy nie pokaże.
                 </p>
-                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed mb-2">
+                <p className="text-lg md:text-lg text-warm-neutral-700 leading-relaxed mb-2">
                   Na co dzień ludzie płacą nam <strong className="text-prestige-gold-700">500 zł za godzinę konsultacji</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
                 </p>
-                <p className="text-success-green-700 font-bold text-lg md:text-xl">
+                <p className="text-success-green-700 font-bold text-xl md:text-xl">
                   Ty możesz mieć to samo — za 29 zł.
                 </p>
               </div>
@@ -165,7 +165,7 @@ const OfertaD = () => {
                         BESTSELLER
                       </span>
                     </div>
-                    <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">Firma autora bestsellerowej książki "Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.</p>
+                    <p className="text-sm md:text-sm font-semibold text-navy-900 leading-tight">Firma autora bestsellerowej książki "Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.</p>
                   </div>
                 </div>
                 
@@ -175,10 +175,10 @@ const OfertaD = () => {
                 {/* Row 3: Rating - Full Width */}
                 <div className="bg-gradient-to-r from-prestige-gold-100 to-warm-neutral-100 px-3 py-2 rounded-lg shadow-sm border border-prestige-gold-300">
                   <div className="flex items-center justify-center gap-2 mb-1">
-                    <span className="text-yellow-500 text-sm">★★★★★</span>
-                    <span className="font-bold text-navy-900 text-sm">4.9</span>
+                    <span className="text-yellow-500 text-base">★★★★★</span>
+                    <span className="font-bold text-navy-900 text-base">4.9</span>
                   </div>
-                  <p className="text-xs text-center text-navy-900 leading-tight">
+                  <p className="text-sm text-center text-navy-900 leading-tight">
                     na podstawie 383 zweryfikowanych opinii<br />
                     <span className="font-semibold">GOOGLE i OFERTEO</span>
                   </p>
@@ -189,18 +189,18 @@ const OfertaD = () => {
             {/* CTA Above the Fold */}
             <div className="mb-4 px-2">
               <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-6 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
-                <span className="text-sm md:text-lg lg:text-xl">
+                <span className="text-base md:text-lg lg:text-xl">
                   👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
               </Button>
-              <div className="mt-3 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+              <div className="mt-3 text-center text-sm md:text-sm text-warm-neutral-700 leading-relaxed">
                 <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
                 <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
               </div>
             </div>
 
             {/* Social Proof Row */}
-            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-4 text-xs md:text-sm">
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-4 text-sm md:text-sm">
               <div className="flex items-center gap-1">
                 <span className="text-prestige-gold-500">⭐⭐⭐⭐⭐</span>
                 <span className="font-semibold text-navy-900">15 000+ klientów</span>
@@ -231,7 +231,7 @@ const OfertaD = () => {
                   <AvatarFallback className="text-xs bg-success-green-200">KS</AvatarFallback>
                 </Avatar>
               </div>
-              <p className="text-xs md:text-sm text-warm-neutral-600">
+              <p className="text-sm md:text-sm text-warm-neutral-600">
                 <span className="font-semibold text-navy-900">Joanna M.</span> | <span className="font-semibold text-navy-900">Tomasz R.</span> | <span className="font-semibold text-navy-900">Katarzyna S.</span>
               </p>
             </div>
@@ -239,19 +239,19 @@ const OfertaD = () => {
 
             {/* Wyobraź sobie moment */}
             <div className="bg-gradient-to-br from-success-green-50 to-business-blue-50 rounded-xl p-4 md:p-8 mb-6 md:mb-8 border-2 border-success-green-300">
-              <p className="text-lg md:text-xl font-semibold text-navy-900 mb-3 md:mb-4">
+              <p className="text-xl md:text-xl font-semibold text-navy-900 mb-3 md:mb-4">
                 Wyobraź sobie ten moment, gdy logujesz się do banku…
               </p>
-              <p className="text-base md:text-lg text-navy-900 mb-3 md:mb-4">
-                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-sm md:text-base inline-block">Odmowa</span>{' '}
-                <span className="block mt-2">widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-sm md:text-base inline-block">Decyzja pozytywna</span>.</span>
+              <p className="text-lg md:text-lg text-navy-900 mb-3 md:mb-4">
+                i zamiast kolejnego <span className="bg-destructive text-white px-2 py-1 rounded font-bold text-base md:text-base inline-block">Odmowa</span>{' '}
+                <span className="block mt-2">widzisz <span className="bg-success-green-500 text-white px-2 py-1 rounded font-bold text-base md:text-base inline-block">Decyzja pozytywna</span>.</span>
               </p>
               
               <div className="space-y-3 md:space-y-3 text-center md:text-left mt-4 md:mt-6">
-                <p className="text-base md:text-lg text-success-green-700 leading-relaxed font-semibold italic">
+                <p className="text-lg md:text-lg text-success-green-700 leading-relaxed font-semibold italic">
                   💭 <strong>Ulga. Spokój.</strong> W końcu możesz ruszyć z życiem.
                 </p>
-                <p className="text-base md:text-lg text-warm-neutral-700 leading-relaxed">
+                <p className="text-lg md:text-lg text-warm-neutral-700 leading-relaxed">
                   Raty są niższe, zobowiązania uporządkowane, a z Twojej pensji wreszcie coś zostaje — na rodzinę, podróże, marzenia.
                 </p>
               </div>
@@ -260,7 +260,7 @@ const OfertaD = () => {
 
           {/* Kim jest Dariusz Wentrych */}
           <div className="bg-slate-50 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-warm-neutral-300">
-            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-6 text-center">
+            <h3 className="font-montserrat text-2xl md:text-2xl font-bold text-navy-900 mb-6 text-center">
               👤 Kim jest Dariusz Wentrych
             </h3>
             
@@ -271,22 +271,22 @@ const OfertaD = () => {
                   <AvatarImage src="/lovable-uploads/01dcb25b-999a-4c0d-b7da-525c21306610.png" alt="Dariusz Wentrych" className="object-cover" />
                   <AvatarFallback className="text-2xl font-bold">DW</AvatarFallback>
                 </Avatar>
-                <p className="text-sm md:text-base text-warm-neutral-600 font-semibold mb-4">
+                <p className="text-base md:text-base text-warm-neutral-600 font-semibold mb-4">
                   Dariusz Wentrych — ekspert finansowy i autor bestsellera
                 </p>
 
                 {/* Authority Badge */}
                 <div className="mb-4 bg-prestige-gold-100 px-4 py-2 rounded-lg border-2 border-prestige-gold-400 shadow-md">
-                  <p className="text-sm md:text-base font-bold text-navy-900">
+                  <p className="text-base md:text-base font-bold text-navy-900">
                     🏆 15 000+ przeanalizowanych przypadków
                   </p>
                 </div>
                 
                 <div className="space-y-3">
-                  <p className="text-base md:text-lg text-warm-neutral-700">
+                  <p className="text-lg md:text-lg text-warm-neutral-700">
                     💼 20 lat doświadczenia w bankowości i finansach
                   </p>
-                  <p className="text-base md:text-lg text-warm-neutral-700">
+                  <p className="text-lg md:text-lg text-warm-neutral-700">
                     💬 Ponad 15 000 klientów, którzy odzyskali dostęp do kredytów
                   </p>
                 </div>
@@ -295,7 +295,7 @@ const OfertaD = () => {
               {/* Right: Photo with Client */}
               <div className="flex flex-col items-center justify-center">
                 <img src="/lovable-uploads/dariusz-with-happy-client.png" alt="Dariusz Wentrych z zadowoloną klientką" className="rounded-lg shadow-lg border-2 border-prestige-gold-300 w-full max-w-sm mb-3" />
-                <p className="text-xs md:text-sm text-warm-neutral-600 italic text-center">
+                <p className="text-sm md:text-sm text-warm-neutral-600 italic text-center">
                   Dariusz Wentrych z zadowoloną klientką
                 </p>
               </div>
@@ -303,20 +303,20 @@ const OfertaD = () => {
 
             {/* Authority Banner */}
             <div className="mb-5 bg-gradient-to-r from-prestige-gold-100 to-business-blue-100 px-6 py-3 rounded-lg border border-prestige-gold-300">
-              <p className="text-base md:text-lg font-bold text-navy-900">
+              <p className="text-lg md:text-lg font-bold text-navy-900">
                 📘 Autor bestsellera „Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.
               </p>
-              <p className="text-sm md:text-base text-warm-neutral-700 mt-1">
+              <p className="text-base md:text-base text-warm-neutral-700 mt-1">
                 Dzięki jego metodom ponad 15 000 Polaków uzyskało kredyt w banku
               </p>
             </div>
 
             <div className="bg-warm-neutral-50 border-l-4 border-prestige-gold-400 p-5 rounded-r-lg mb-4">
-              <p className="text-warm-neutral-700 leading-relaxed italic text-base md:text-lg mb-3">
+              <p className="text-warm-neutral-700 leading-relaxed italic text-lg md:text-lg mb-3">
                 „Od ponad 20 lat pomagam ludziom odzyskać dostęp do finansowania.<br />
                 W moim zespole pracują byli analitycy bankowi i doradcy, którzy doskonale wiedzą, jak system ocenia klientów.
               </p>
-              <p className="text-navy-900 font-semibold text-base md:text-lg">
+              <p className="text-navy-900 font-semibold text-lg md:text-lg">
                 Naszym celem jest jedno: żebyś znowu mógł usłyszeć od banku słowo „TAK"."
               </p>
               <p className="text-right text-warm-neutral-600 font-semibold mt-3">
@@ -326,7 +326,7 @@ const OfertaD = () => {
 
             {/* Micro CTA */}
             <div className="text-center bg-success-green-50 border border-success-green-300 rounded-lg p-4">
-              <p className="text-sm md:text-base text-navy-900 font-semibold">
+              <p className="text-base md:text-base text-navy-900 font-semibold">
                 💡 Sprawdź, jak widzi Cię bank – tak jak zrobiło to już <strong className="text-success-green-700">15 000 osób</strong>
               </p>
             </div>
@@ -334,46 +334,46 @@ const OfertaD = () => {
 
           {/* Co otrzymujesz */}
           <div className="bg-gradient-to-r from-prestige-gold-50 to-business-blue-50 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
-            <h3 className="font-montserrat text-2xl md:text-3xl font-bold text-navy-900 mb-2 text-center">
+            <h3 className="font-montserrat text-3xl md:text-3xl font-bold text-navy-900 mb-2 text-center">
               💼 Co otrzymujesz
             </h3>
-            <p className="text-center text-xl md:text-2xl font-black text-navy-900 mb-6">
+            <p className="text-center text-2xl md:text-2xl font-black text-navy-900 mb-6">
               Wartość pakietu: <span className="line-through text-warm-neutral-600">2 750 zł</span> <span className="text-success-green-700">→ dziś tylko 29 zł</span>
             </p>
             
             <div className="space-y-4">
               <div>
-                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                <p className="text-lg md:text-lg font-bold text-navy-900 mb-1">
                   🔍 1. Analizę Twojej sytuacji kredytowej <span className="text-prestige-gold-700">(wartość 500 zł)</span>
                 </p>
-                <p className="text-warm-neutral-700">
+                <p className="text-base text-warm-neutral-700">
                   Dowiesz się, jak widzą Cię banki i co naprawdę wpływa na Twoją zdolność.
                 </p>
               </div>
 
               <div>
-                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                <p className="text-lg md:text-lg font-bold text-navy-900 mb-1">
                   🧾 2. Wskazanie błędów w rejestrach (BIK, BIG, KRD, ERIF) <span className="text-prestige-gold-700">(wartość 300 zł)</span>
                 </p>
-                <p className="text-warm-neutral-700">
+                <p className="text-base text-warm-neutral-700">
                   Zobaczysz dokładnie, które wpisy Cię blokują.
                 </p>
               </div>
 
               <div>
-                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                <p className="text-lg md:text-lg font-bold text-navy-900 mb-1">
                   🎯 3. Plan krok po kroku, jak poprawić scoring <span className="text-prestige-gold-700">(wartość 1 500 zł)</span>
                 </p>
-                <p className="text-warm-neutral-700">
+                <p className="text-base text-warm-neutral-700">
                   Otrzymasz konkretny plan działań, żeby zwiększyć swoje szanse na kredyt.
                 </p>
               </div>
 
               <div className="bg-success-green-50 border-2 border-success-green-400 rounded-lg p-4">
-                <p className="text-base md:text-lg font-bold text-navy-900 mb-1">
+                <p className="text-lg md:text-lg font-bold text-navy-900 mb-1">
                   🤝 4. Bonus: Dostęp do sieci prywatnych inwestorów <span className="text-prestige-gold-700">(wartość 450 zł)</span>
                 </p>
-                <p className="text-warm-neutral-700">
+                <p className="text-base text-warm-neutral-700">
                   Finansowanie do 200 000 zł na korzystnych warunkach.
                 </p>
               </div>
@@ -382,7 +382,7 @@ const OfertaD = () => {
             {/* CTA After Benefits */}
             <div className="text-center mt-8 mb-10 px-2">
               <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 md:px-10 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
-                <span className="text-lg md:text-xl lg:text-2xl">
+                <span className="text-xl md:text-xl lg:text-2xl">
                   💳 Zapłać BLIK – za 29 zł
                 </span>
               </Button>
@@ -391,7 +391,7 @@ const OfertaD = () => {
 
           {/* Comparison Table - Desktop */}
           <div className="hidden md:block bg-white rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
-            <h3 className="font-montserrat text-xl md:text-2xl font-bold text-navy-900 mb-6 text-center">
+            <h3 className="font-montserrat text-2xl md:text-2xl font-bold text-navy-900 mb-6 text-center">
               💡 Wybierz swoją wersję i zobacz, jak widzi Cię bank
             </h3>
 
@@ -590,7 +590,7 @@ const OfertaD = () => {
 
           {/* Comparison Cards - Mobile */}
           <div className="md:hidden mb-8 space-y-4">
-            <h3 className="font-montserrat text-xl font-bold text-navy-900 mb-6 text-center">
+            <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-6 text-center">
               💡 Wybierz swoją wersję i zobacz, jak widzi Cię bank
             </h3>
 
@@ -602,53 +602,53 @@ const OfertaD = () => {
                 🟩 NAJCZĘŚCIEJ WYBIERANA
               </div>
               <div className="bg-gradient-to-r from-success-green-100 to-prestige-gold-100 p-4 text-center mt-3">
-                <h4 className="font-bold text-xl text-navy-900 mb-2">
+                <h4 className="font-bold text-2xl text-navy-900 mb-2">
                   ANALIZA KREDYTOWA
                 </h4>
-                <p className="text-sm text-warm-neutral-700 line-through">Wartość: 2 750 zł</p>
-                <p className="text-3xl font-black text-success-green-700 mt-2">29 zł</p>
+                <p className="text-base text-warm-neutral-700 line-through">Wartość: 2 750 zł</p>
+                <p className="text-4xl font-black text-success-green-700 mt-2">29 zł</p>
               </div>
               
               <div className="p-4 space-y-3">
-                <div className="text-sm text-navy-900">
+                <div className="text-base text-navy-900">
                   🔍 Analiza sytuacji kredytowej
                 </div>
-                <div className="text-sm text-navy-900">
+                <div className="text-base text-navy-900">
                   🧾 Wskazanie błędów w rejestrach
                 </div>
-                <div className="text-sm text-navy-900">
+                <div className="text-base text-navy-900">
                   🎯 Plan poprawy scoringu
                 </div>
-                <div className="text-sm text-navy-900">
+                <div className="text-base text-navy-900">
                   🤝 Dostęp do sieci inwestorów
                 </div>
               </div>
 
               <div className="p-4">
-                <Button size="lg" onClick={scrollToForm} className="w-full text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-base" style={{
+                <Button size="lg" onClick={scrollToForm} className="w-full text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-lg" style={{
                 backgroundColor: '#10B981'
               }}>
                   SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                 </Button>
                 
                 {/* Payment methods */}
-                <div className="mt-3 text-center text-xs text-warm-neutral-700 leading-relaxed">
+                <div className="mt-3 text-center text-sm text-warm-neutral-700 leading-relaxed">
                   <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
                   <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
                 </div>
                 
                 {/* Trust badges under payment info */}
-                <div className="mt-2 text-center text-xs text-warm-neutral-700">
+                <div className="mt-2 text-center text-sm text-warm-neutral-700">
                   💬 Wynik w 24h • 15 000+ zadowolonych klientów
                 </div>
               </div>
 
               {/* FOMO section */}
               <div className="mx-4 mb-4 bg-yellow-50 border-2 border-yellow-300 rounded-lg p-3">
-                <p className="text-xs text-center text-navy-900 font-semibold mb-1">
+                <p className="text-sm text-center text-navy-900 font-semibold mb-1">
                   ⏳ Dostępnych tylko 20 analiz w tej cenie.
                 </p>
-                <p className="text-xs text-center text-alert-red-700 font-bold">
+                <p className="text-sm text-center text-alert-red-700 font-bold">
                   🔥 Dziś zamówiono już 7.
                 </p>
               </div>
