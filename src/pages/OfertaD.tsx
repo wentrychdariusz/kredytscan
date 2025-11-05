@@ -829,51 +829,6 @@ const OfertaD = () => {
                   </div>
                 </CarouselItem>
 
-                {/* Testimonial 5 */}
-                <CarouselItem>
-                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col items-center gap-6">
-                      <img src="/lovable-uploads/85ea5843-0408-4e89-8f99-c694c9261fd3.png" alt="Joanna M." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
-                      <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
-                          "Bank w końcu powiedział TAK!"
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
-                {/* Testimonial 6 */}
-                <CarouselItem>
-                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col items-center gap-6">
-                      <img src="/lovable-uploads/669e599a-c272-4fec-81fe-5ca4c496d018.png" alt="Piotr K." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-business-blue-400" />
-                      <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
-                          "Najlepsza decyzja jaką podjąłem!"
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
-                {/* Testimonial 7 */}
-                <CarouselItem>
-                  <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
-                    <div className="flex flex-col items-center gap-6">
-                      <img src="/lovable-uploads/7c2c43a8-7d25-42ea-90c0-66c86e978e81.png" alt="Magdalena P." className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg border-4 border-success-green-400" />
-                      <div className="text-center">
-                        <div className="text-yellow-500 text-2xl mb-3">⭐⭐⭐⭐⭐</div>
-                        <p className="text-xl md:text-2xl font-bold text-navy-900 italic">
-                          "Wreszcie mogę spokojnie spać!"
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </CarouselItem>
-
                 {/* Testimonial 8 */}
                 <CarouselItem>
                   <div className="bg-white rounded-2xl p-6 md:p-8 shadow-2xl">
