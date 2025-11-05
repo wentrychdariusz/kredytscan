@@ -192,6 +192,10 @@ const OfertaD = () => {
                   👉 SPRAWDŹ ZA 29 ZŁ
                 </span>
               </Button>
+              <div className="mt-3 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
+                <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
+              </div>
             </div>
 
             {/* Social Proof Row */}
@@ -549,9 +553,15 @@ const OfertaD = () => {
                         SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                       </Button>
                       
-                      {/* Trust badges under button */}
-                      <div className="mt-3 text-xs text-warm-neutral-700">
-                        💬 Wynik w 24h • Zwrot pieniędzy w 14 dni • 15 000+ zadowolonych klientów
+                      {/* Payment methods */}
+                      <div className="mt-3 text-xs text-warm-neutral-700 text-center leading-relaxed">
+                        <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
+                        <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
+                      </div>
+                      
+                      {/* Trust badges under payment info */}
+                      <div className="mt-2 text-xs text-warm-neutral-700">
+                        💬 Wynik w 24h • 15 000+ zadowolonych klientów
                       </div>
                       
                       {/* FOMO section */}
@@ -620,9 +630,15 @@ const OfertaD = () => {
                   SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
                 </Button>
                 
-                {/* Trust badges under button */}
-                <div className="mt-3 text-center text-xs text-warm-neutral-700">
-                  💬 Wynik w 24h • Zwrot pieniędzy w 14 dni • 15 000+ zadowolonych klientów
+                {/* Payment methods */}
+                <div className="mt-3 text-center text-xs text-warm-neutral-700 leading-relaxed">
+                  <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
+                  <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
+                </div>
+                
+                {/* Trust badges under payment info */}
+                <div className="mt-2 text-center text-xs text-warm-neutral-700">
+                  💬 Wynik w 24h • 15 000+ zadowolonych klientów
                 </div>
               </div>
 
@@ -739,6 +755,10 @@ const OfertaD = () => {
                 ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 29 ZŁ
               </span>
             </Button>
+            <div className="mt-4 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+              <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
+              <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
+            </div>
           </div>
 
           {/* Client Testimonials Slider */}
@@ -931,8 +951,14 @@ const OfertaD = () => {
                 {isSubmitting ? "Przetwarzanie..." : <span className="text-base md:text-lg lg:text-xl">✅ Sprawdź swoją zdolność – za 29 zł</span>}
               </Button>
 
+              {/* Payment methods */}
+              <div className="mt-3 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+                <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
+                <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
+              </div>
+
               {/* Micro Copy Pod Przyciskiem */}
-              <div className="mt-4 bg-success-green-50 border border-success-green-300 rounded-lg p-3 text-center">
+              <div className="mt-3 bg-success-green-50 border border-success-green-300 rounded-lg p-3 text-center">
                 <p className="text-sm md:text-base font-semibold text-success-green-700">
                   💯 Zwrot pieniędzy w 14 dni • 📊 Wynik w 24h
                 </p>
@@ -999,6 +1025,10 @@ const OfertaD = () => {
                 ✅ ZAMÓW ANALIZĘ – ZA 29 ZŁ
               </span>
             </Button>
+            <div className="mt-4 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
+              <p className="font-semibold">💳 BLIK • Przelewy online • Karta płatnicza</p>
+              <p className="mt-1">🔒 Bezpieczna płatność przez TPay • Zwrot 14 dni</p>
+            </div>
           </div>
         </div>
       </section>
