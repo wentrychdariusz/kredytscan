@@ -151,7 +151,7 @@ const OfertaD = () => {
               
               {/* Authority - Mobile Optimized */}
               <div className="space-y-3">
-                {/* Row 1: Book + Bestseller + Rating */}
+                {/* Row 1: Book + Bestseller */}
                 <div className="flex items-center gap-3">
                   <div className="w-16 md:w-20 flex-shrink-0">
                     <img 
@@ -165,10 +165,6 @@ const OfertaD = () => {
                       <span className="inline-block bg-prestige-gold-500 text-white text-xs font-bold px-2 py-0.5 rounded whitespace-nowrap">
                         BESTSELLER
                       </span>
-                      <div className="flex items-center gap-1 bg-white px-2 py-0.5 rounded shadow-sm whitespace-nowrap">
-                        <span className="text-yellow-500 text-xs">★★★★★</span>
-                        <span className="text-sm font-bold text-navy-900">4.9</span>
-                      </div>
                     </div>
                     <p className="text-xs md:text-sm font-semibold text-navy-900 leading-tight">
                       Firma autora bestsellerowej książki "Nowe życie bez długów"
@@ -809,6 +805,22 @@ const OfertaD = () => {
                 className="w-full max-w-[200px] md:max-w-[280px] mx-auto rounded-lg opacity-90" 
                 loading="lazy" 
               />
+            </div>
+          </div>
+
+          {/* Ratings Section */}
+          <div className="bg-gradient-to-br from-prestige-gold-50 to-warm-neutral-100 rounded-xl shadow-lg p-6 md:p-8 mb-8 border-2 border-prestige-gold-300">
+            <div className="text-center">
+              <div className="flex items-center justify-center gap-2 mb-3">
+                <span className="text-yellow-500 text-2xl md:text-3xl">★★★★★</span>
+              </div>
+              <p className="text-xl md:text-2xl font-bold text-navy-900 mb-2">
+                Ocena 4.9
+              </p>
+              <p className="text-base md:text-lg text-warm-neutral-700">
+                na podstawie 383 zweryfikowanych opinii<br />
+                <span className="font-semibold text-navy-900">GOOGLE i OFERTEO</span>
+              </p>
             </div>
           </div>
 
