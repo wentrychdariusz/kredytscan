@@ -240,7 +240,7 @@ const OfertaD = () => {
               {/* Authority Banner */}
               <div className="mb-5 bg-gradient-to-r from-prestige-gold-100 to-business-blue-100 px-6 py-3 rounded-lg border border-prestige-gold-300">
                 <p className="text-base md:text-lg font-bold text-navy-900">
-                  📘 Autor bestsellera „Nowe życie bez długów"
+                  📘 Autor bestsellera „Nowe życie bez długów" oraz nowej książki "Kredyt Zaufania. Jak odzyskać finansowanie w banku." premiera 2026.
                 </p>
                 <p className="text-sm md:text-base text-warm-neutral-700 mt-1">
                   Dzięki jego metodom ponad 15 000 Polaków uzyskało kredyt w banku
