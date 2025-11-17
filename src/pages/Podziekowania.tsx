@@ -81,10 +81,10 @@ const Podziekowania = () => {
         window.fbq('track', 'Purchase', {
           content_name: 'VIP Analiza Kredytowa',
           content_category: 'VIP Service',
-          value: 29,
+          value: 39,
           currency: 'PLN'
         });
-        console.log('🎯 Facebook Pixel: Purchase conversion tracked - 29 PLN');
+        console.log('🎯 Facebook Pixel: Purchase conversion tracked - 39 PLN');
       }
     }
 

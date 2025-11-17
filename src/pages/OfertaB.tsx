@@ -41,7 +41,7 @@ const OfertaB = () => {
         email: formData.email,
         phone: formData.phone,
         payment_status: 'Nieopłacone',
-        amount: 29
+        amount: 39
       });
       
       if (saveError) {
@@ -52,7 +52,7 @@ const OfertaB = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        amount: '29',
+        amount: '39',
         service: 'Profesjonalna Analiza Kredytowa - Oferta B'
       });
       
@@ -287,7 +287,7 @@ const OfertaB = () => {
 
             <div className="bg-gradient-to-r from-navy-900 to-business-blue-900 text-white p-8 rounded-xl mt-8">
               <p className="text-2xl font-bold text-center mb-4">
-                Pytanie NIE brzmi „czy warto za 29 zł"
+                Pytanie NIE brzmi „czy warto za 39 zł"
               </p>
               <p className="text-xl text-center text-prestige-gold-300">
                 Pytanie brzmi: <strong>czy stać Cię na przepalenie dziesiątek tysięcy złotych, 
@@ -305,7 +305,7 @@ const OfertaB = () => {
             Oto dokładnie, co otrzymasz
           </h2>
           <p className="text-center text-xl text-warm-neutral-600 mb-12">
-            (i dlaczego to jest warte WIELOKROTNIE więcej niż 29 zł)
+            (i dlaczego to jest warte WIELOKROTNIE więcej niż 39 zł)
           </p>
 
           {/* Value Stack Items */}
@@ -415,7 +415,7 @@ const OfertaB = () => {
                 </p>
                 <p className="text-2xl mb-4">Twoja cena dzisiaj:</p>
                 <p className="text-6xl md:text-7xl font-black text-prestige-gold-400 mb-4">
-                  29 zł
+                  39 zł
                 </p>
                 <p className="text-xl">
                   To <strong className="text-prestige-gold-400">99,2% TANIEJ</strong> niż normalna cena!
@@ -431,7 +431,7 @@ const OfertaB = () => {
               size="lg"
               className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-12 py-8 text-2xl rounded-xl shadow-2xl hover:scale-105 transition-all w-full md:w-auto"
             >
-              TAK! Chcę tę analizę za 29 zł
+              TAK! Chcę tę analizę za 39 zł
             </Button>
             <p className="mt-4 text-warm-neutral-600">
               ⏰ Oferta ważna tylko przez: <span className="font-bold text-alert-red-600">{Math.floor(timeLeft / 3600)}h {Math.floor((timeLeft % 3600) / 60)}m</span>
@@ -609,7 +609,7 @@ const OfertaB = () => {
             {/* FAQ 4 */}
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="font-bold text-xl text-navy-900 mb-3">
-                ❓ Czy to naprawdę kosztuje tylko 29 zł?
+                ❓ Czy to naprawdę kosztuje tylko 39 zł?
               </h3>
               <p className="text-warm-neutral-700 leading-relaxed">
                 TAK. To cena promocyjna dostępna TYLKO przez ograniczony czas. Normalna cena tej analizy to 299 zł. 
@@ -742,7 +742,7 @@ const OfertaB = () => {
                 disabled={isSubmitting}
                 className="w-full bg-gradient-to-r from-prestige-gold-500 to-prestige-gold-600 hover:from-prestige-gold-600 hover:to-prestige-gold-700 text-white font-bold py-6 px-4 rounded-xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 min-h-[72px] text-xl"
               >
-                {isSubmitting ? '💳 Przekierowuję...' : 'ZAMAWIAM ANALIZĘ ZA 29 ZŁ'}
+                {isSubmitting ? '💳 Przekierowuję...' : 'ZAMAWIAM ANALIZĘ ZA 39 ZŁ'}
               </Button>
 
               {/* Trust Badges */}
@@ -785,7 +785,7 @@ const OfertaB = () => {
       <section className="py-12 px-4 bg-gradient-to-r from-alert-red-600 to-alert-red-700 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-montserrat text-2xl md:text-3xl font-bold mb-4">
-            Pamiętaj: Za każdy dzień zwłoki płacisz DUŻO więcej niż 29 zł
+            Pamiętaj: Za każdy dzień zwłoki płacisz DUŻO więcej niż 39 zł
           </h2>
           <p className="text-lg md:text-xl mb-6 leading-relaxed">
             Jeśli teraz płacisz RRSO 50% w parabankach zamiast 8% w banku,<br />

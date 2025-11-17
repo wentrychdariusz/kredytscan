@@ -26,7 +26,7 @@ const AnalizaKredytowa = () => {
   const [showSticky, setShowSticky] = useState(false);
 
   // Main CTA text
-  const ctaText = "Sprawdź swoją zdolność - 29 zł";
+  const ctaText = "Sprawdź swoją zdolność - 39 zł";
 
   // Countdown timer (12 hours)
   const {
@@ -83,7 +83,7 @@ const AnalizaKredytowa = () => {
         email: formData.email,
         phone: formData.phone,
         payment_status: 'Nieopłacone',
-        amount: 29
+        amount: 39
       });
       if (saveError) {
         console.error('Error saving to Supabase:', saveError);
@@ -92,7 +92,7 @@ const AnalizaKredytowa = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        amount: '29',
+        amount: '39',
         service: 'Profesjonalna Analiza Kredytowa'
       });
       navigate(`/payment-express?${params.toString()}`);
@@ -263,7 +263,7 @@ const AnalizaKredytowa = () => {
           <div className="text-center px-2">
             <Button size="lg" onClick={scrollToForm} className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold px-4 py-6 md:px-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full h-auto min-h-[64px] md:min-h-[72px] flex flex-col items-center gap-1">
               <span className="text-base sm:text-lg md:text-xl lg:text-2xl leading-tight">
-                💳 Zapłać BLIK - tylko 29 zł
+                💳 Zapłać BLIK - tylko 39 zł
               </span>
             </Button>
             <div className="mt-4 space-y-2">
@@ -271,7 +271,7 @@ const AnalizaKredytowa = () => {
                 💯 Gwarancja zwrotu w 14 dni
               </p>
               <p className="text-sm md:text-base text-navy-900">
-                🎁 Zwrot 29 zł przy rozpoczęciu współpracy
+                🎁 Zwrot 39 zł przy rozpoczęciu współpracy
               </p>
               <p className="text-xs md:text-sm text-warm-neutral-600">
                 💳 Bezpieczna płatność • ⚡ Natychmiastowy dostęp
@@ -361,7 +361,7 @@ const AnalizaKredytowa = () => {
                 <Button onClick={() => document.getElementById('formularz-zamowienia')?.scrollIntoView({
                 behavior: 'smooth'
               })} className="bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-semibold px-8 py-4 text-lg md:px-10 md:py-5 md:text-xl rounded-lg shadow-lg hover:shadow-xl transition-all w-full md:w-auto">
-                  Zamów swoją analizę za 29 zł
+                  Zamów swoją analizę za 39 zł
                 </Button>
               </div>
             </div>
@@ -447,7 +447,7 @@ const AnalizaKredytowa = () => {
               {/* Końcowe CTA */}
               <div className="bg-gradient-to-r from-navy-900 to-business-blue-900 p-6 rounded-2xl shadow-xl text-center">
                 <p className="text-xl md:text-2xl font-bold text-white mb-2">
-                  Pytanie nie brzmi "czy warto za 29 zł"
+                  Pytanie nie brzmi "czy warto za 39 zł"
                 </p>
                 <p className="text-lg md:text-xl text-prestige-gold-300 font-semibold">
                   Pytanie brzmi: czy stać Cię na kolejne lata w parabankach?
@@ -692,7 +692,7 @@ const AnalizaKredytowa = () => {
           {/* Premium Benefits - What You GET */}
           <div className="bg-gradient-to-br from-success-green-50 to-prestige-gold-50 rounded-2xl shadow-lg p-8 border-2 border-success-green-200 mb-8">
             <h3 className="font-montserrat text-2xl font-bold text-navy-900 mb-6 text-center">
-              ✅ Co otrzymujesz za 29 zł:
+              ✅ Co otrzymujesz za 39 zł:
             </h3>
             
             <div className="grid md:grid-cols-2 gap-4 mb-6">
@@ -867,11 +867,11 @@ const AnalizaKredytowa = () => {
                   Sprawdź bez ryzyka
                 </span>
                 <span className="text-sm sm:text-base md:text-lg font-normal opacity-90">
-                  analiza tylko <span className="text-success-green-400 font-extrabold">29 zł</span>
+                  analiza tylko <span className="text-success-green-400 font-extrabold">39 zł</span>
                 </span>
               </Button>
               <p className="mt-4 text-xs md:text-sm text-warm-neutral-600">
-                💬 To tylko 29 zł – bez ukrytych kosztów
+                💬 To tylko 39 zł – bez ukrytych kosztów
               </p>
             </div>
           </div>
@@ -999,7 +999,7 @@ const AnalizaKredytowa = () => {
                   💯 Gwarancja zwrotu w 14 dni
                 </p>
                 <p className="text-sm md:text-base text-navy-900">
-                  🎁 Zwrot 29 zł przy rozpoczęciu współpracy
+                  🎁 Zwrot 39 zł przy rozpoczęciu współpracy
                 </p>
               </div>
 
