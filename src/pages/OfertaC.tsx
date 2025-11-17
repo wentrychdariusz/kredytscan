@@ -70,7 +70,7 @@ const OfertaC = () => {
         email: formData.email,
         phone: formData.phone,
         payment_status: 'Nieopłacone',
-        amount: 29
+        amount: 39
       });
       if (saveError) {
         console.error('Error saving to Supabase:', saveError);
@@ -79,7 +79,7 @@ const OfertaC = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        amount: '29',
+        amount: '39',
         service: 'Profesjonalna Analiza Kredytowa'
       });
       navigate(`/payment-express?${params.toString()}`);
@@ -403,7 +403,7 @@ const OfertaC = () => {
                 Twoja cena dzisiaj
               </p>
               <p className="text-prestige-gold-400 font-black text-4xl md:text-6xl mb-3">
-                29 zł
+                39 zł
               </p>
               <p className="text-warm-neutral-400 text-xs md:text-sm leading-relaxed">
                 Dlaczego tak tanio? Bo chcemy zacząć współpracę z nowymi, fajnymi klientami. 
@@ -433,7 +433,7 @@ const OfertaC = () => {
               🔥 Dziś zamówiono już <span className="font-bold text-prestige-gold-700">{ordersToday} analiz</span>
             </p>
             <p className="text-xs md:text-sm text-navy-900 font-semibold">
-              Cena 29 zł jest <strong className="text-alert-red-600">TESTOWA</strong>. Wkrótce wróci do normalnej.
+              Cena 39 zł jest <strong className="text-alert-red-600">TESTOWA</strong>. Wkrótce wróci do normalnej.
             </p>
           </div>
         </section>
@@ -487,7 +487,7 @@ const OfertaC = () => {
                 "Po rozwodzie zostałam z długami męża. Myślałam że to koniec. 
                 <strong> Zespół pokazał mi krok po kroku co zrobić.</strong> 
                 <strong className="text-success-green-700"> Dzisiaj mam własne mieszkanie i spokojnie śpię.</strong> 
-                Najlepsza inwestycja tych 29 zł w moim życiu."
+                Najlepsza inwestycja tych 39 zł w moim życiu."
               </p>
               <div className="flex items-center gap-2">
                 <div className="w-10 h-10 rounded-full bg-success-green-500 flex items-center justify-center text-white font-bold">
@@ -517,7 +517,7 @@ const OfertaC = () => {
               <div className="flex items-start gap-3">
                 <CheckCircle className="w-6 h-6 text-success-green-600 flex-shrink-0 mt-1" />
                 <p className="text-warm-neutral-700 text-base md:text-lg">
-                  <strong>Zwrot 29 zł przy współpracy</strong> — jeśli zdecydujesz się na dalszą współpracę z nami, 
+                  <strong>Zwrot 39 zł przy współpracy</strong> — jeśli zdecydujesz się na dalszą współpracę z nami, 
                   zwrócimy Ci koszt analizy
                 </p>
               </div>
@@ -595,7 +595,7 @@ const OfertaC = () => {
 
               <div className="bg-prestige-gold-100 rounded-lg p-4 border-2 border-prestige-gold-400">
                 <p className="text-center text-navy-900 font-bold text-xl md:text-2xl mb-2">
-                  Tylko 29 zł
+                  Tylko 39 zł
                 </p>
                 <p className="text-center text-warm-neutral-700 text-sm">
                   Płatność BLIK • Bezpiecznie • Natychmiastowy dostęp
@@ -607,7 +607,7 @@ const OfertaC = () => {
                 disabled={isSubmitting}
                 className="w-full bg-prestige-gold-600 hover:bg-prestige-gold-700 text-white font-bold text-lg md:text-xl py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105"
               >
-                {isSubmitting ? 'Przekierowywanie...' : '💳 Zamawiam Analizę za 29 zł'}
+                {isSubmitting ? 'Przekierowywanie...' : '💳 Zamawiam Analizę za 39 zł'}
               </Button>
 
               <div className="text-center space-y-2 text-sm text-warm-neutral-600">
@@ -644,7 +644,7 @@ const OfertaC = () => {
               <div className="bg-success-green-900/30 border-2 border-success-green-500 rounded-lg p-5">
                 <p className="text-success-green-400 font-bold text-lg mb-3">✅ Opcja B</p>
                 <p className="text-warm-neutral-300 text-sm leading-relaxed">
-                  Za 29 zł dowiadujesz się dokładnie, co Cię blokuje i jak to naprawić. 
+                  Za 39 zł dowiadujesz się dokładnie, co Cię blokuje i jak to naprawić. 
                   Masz konkretny plan. <strong className="text-white">Zaczynasz działać mądrze.</strong> Za kilka miesięcy — kredyt w banku.
                 </p>
               </div>
@@ -701,7 +701,7 @@ const OfertaC = () => {
             onClick={scrollToForm}
             className="w-full bg-navy-900 hover:bg-navy-800 text-white font-bold py-4 rounded-lg"
           >
-            💳 Zamów za 29 zł
+            💳 Zamów za 39 zł
           </Button>
         </div>
       )}

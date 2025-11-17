@@ -79,7 +79,7 @@ const OfertaD = () => {
         email: formData.email,
         phone: formData.phone,
         payment_status: 'Nieopłacone',
-        amount: 29
+        amount: 39
       });
       if (saveError) {
         console.error('Error saving to Supabase:', saveError);
@@ -88,7 +88,7 @@ const OfertaD = () => {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
-        amount: '29',
+        amount: '39',
         service: 'Profesjonalna Analiza Kredytowa'
       });
       navigate(`/payment-express?${params.toString()}`);
@@ -159,7 +159,7 @@ const OfertaD = () => {
                   Na co dzień ludzie płacą nam <strong className="text-prestige-gold-700">500 zł za godzinę konsultacji</strong>, żeby dowiedzieć się, co naprawdę blokuje ich kredyt.
                 </p>
                 <p className="text-success-green-700 font-bold text-lg md:text-xl">
-                  Ty możesz mieć to samo — za 29 zł.
+                  Ty możesz mieć to samo — za 39 zł.
                 </p>
               </div>
               
@@ -201,7 +201,7 @@ const OfertaD = () => {
             <div className="mb-4 px-2">
               <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 md:px-8 py-6 md:py-7 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
                 <span className="text-base md:text-xl lg:text-2xl whitespace-nowrap">
-                  👉 SPRAWDŹ ZA 29 ZŁ
+                  👉 SPRAWDŹ ZA 39 ZŁ
                 </span>
               </Button>
               <div className="mt-3 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
@@ -349,7 +349,7 @@ const OfertaD = () => {
               💼 Co otrzymujesz
             </h3>
             <p className="text-center text-xl md:text-2xl font-black text-navy-900 mb-6">
-              Wartość pakietu: <span className="line-through text-warm-neutral-600">2 750 zł</span> <span className="text-success-green-700">→ dziś tylko 29 zł</span>
+              Wartość pakietu: <span className="line-through text-warm-neutral-600">2 750 zł</span> <span className="text-success-green-700">→ dziś tylko 39 zł</span>
             </p>
             
             <div className="space-y-4">
@@ -394,7 +394,7 @@ const OfertaD = () => {
             <div className="text-center mt-8 mb-10 px-2">
               <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-6 md:px-10 py-6 md:py-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 w-full">
                 <span className="text-lg md:text-xl lg:text-2xl">
-                  💳 Zapłać BLIK – za 29 zł
+                  💳 Zapłać BLIK – za 39 zł
                 </span>
               </Button>
             </div>
@@ -545,7 +545,7 @@ const OfertaD = () => {
                     <td className="p-3 text-center border border-warm-neutral-300" style={{
                     backgroundColor: '#ECFDF5'
                   }}>
-                      <p className="text-2xl md:text-3xl font-black text-success-green-700">29 zł</p>
+                      <p className="text-2xl md:text-3xl font-black text-success-green-700">39 zł</p>
                     </td>
                     <td className="p-3 text-center border border-warm-neutral-300" style={{
                     backgroundColor: '#F9FAFB'
@@ -562,7 +562,7 @@ const OfertaD = () => {
                       <Button size="lg" onClick={scrollToForm} className="text-white font-bold px-4 md:px-6 py-3 md:py-4 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 w-full hover:scale-105 text-sm md:text-base" style={{
                       backgroundColor: '#10B981'
                     }}>
-                        SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
+                        SPRAWDŹ SWOJĄ ANALIZĘ – 39 ZŁ
                       </Button>
                       
                       {/* Payment methods */}
@@ -617,7 +617,7 @@ const OfertaD = () => {
                   ANALIZA KREDYTOWA
                 </h4>
                 <p className="text-sm text-warm-neutral-700 line-through">Wartość: 2 750 zł</p>
-                <p className="text-3xl font-black text-success-green-700 mt-2">29 zł</p>
+                <p className="text-3xl font-black text-success-green-700 mt-2">39 zł</p>
               </div>
               
               <div className="p-4 space-y-3">
@@ -639,7 +639,7 @@ const OfertaD = () => {
                 <Button size="lg" onClick={scrollToForm} className="w-full text-white font-bold py-4 rounded-xl shadow-lg hover:scale-105 transition-all text-base" style={{
                 backgroundColor: '#10B981'
               }}>
-                  SPRAWDŹ SWOJĄ ANALIZĘ – 29 ZŁ
+                  SPRAWDŹ SWOJĄ ANALIZĘ – 39 ZŁ
                 </Button>
                 
                 {/* Payment methods */}
@@ -727,7 +727,7 @@ const OfertaD = () => {
                 </p>
                 <p className="leading-relaxed">
                   Dzięki tej analizie otrzymujesz naszą wiedzę i plan działania<br />
-                  za ułamek tej ceny — <strong className="text-success-green-700">tylko 29 zł</strong>.
+                  za ułamek tej ceny — <strong className="text-success-green-700">tylko 39 zł</strong>.
                 </p>
               </div>
 
@@ -764,7 +764,7 @@ const OfertaD = () => {
           <div className="text-center mb-8 overflow-hidden">
             <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-8 md:py-10 rounded-xl shadow-2xl md:hover:shadow-3xl transition-all duration-300 md:hover:scale-105 w-full">
               <span className="text-sm sm:text-base md:text-lg lg:text-xl break-words whitespace-normal leading-snug">
-                ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 29 ZŁ
+                ✅ SPRAWDŹ, CO BANK WIDZI O TOBIE — ZA 39 ZŁ
               </span>
             </Button>
             <div className="mt-4 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
@@ -804,7 +804,7 @@ const OfertaD = () => {
                       <div className="text-center">
                         <div className="text-yellow-500 text-lg mb-2">⭐⭐⭐⭐⭐</div>
                         <p className="text-base md:text-lg font-bold text-navy-900 italic">
-                          "Za 29 zł dowiedziałem się więcej niż w banku!"
+                          "Za 39 zł dowiedziałem się więcej niż w banku!"
                         </p>
                       </div>
                     </div>
@@ -915,7 +915,7 @@ const OfertaD = () => {
               </div>
 
               <Button type="submit" size="lg" disabled={isSubmitting} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 py-5 md:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300">
-                {isSubmitting ? "Przetwarzanie..." : <span className="text-base md:text-lg lg:text-xl">✅ Sprawdź swoją zdolność – za 29 zł</span>}
+                {isSubmitting ? "Przetwarzanie..." : <span className="text-base md:text-lg lg:text-xl">✅ Sprawdź swoją zdolność – za 39 zł</span>}
               </Button>
 
               {/* Payment methods */}
@@ -944,7 +944,7 @@ const OfertaD = () => {
                 ✅ Dane szyfrowane SSL
               </p>
               <p className="text-sm md:text-lg text-navy-900">
-                ✅ Zwrot 29 zł przy rozpoczęciu współpracy
+                ✅ Zwrot 39 zł przy rozpoczęciu współpracy
               </p>
             </div>
 
@@ -970,7 +970,7 @@ const OfertaD = () => {
           <div className="text-center mb-12 px-2">
             <Button size="lg" onClick={scrollToForm} className="bg-success-green-600 hover:bg-success-green-700 text-white font-bold px-4 md:px-8 py-5 md:py-6 rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-105 w-full">
               <span className="text-base md:text-lg lg:text-xl">
-                ✅ ZAMÓW ANALIZĘ – ZA 29 ZŁ
+                ✅ ZAMÓW ANALIZĘ – ZA 39 ZŁ
               </span>
             </Button>
             <div className="mt-4 text-center text-xs md:text-sm text-warm-neutral-700 leading-relaxed">
@@ -984,7 +984,7 @@ const OfertaD = () => {
       {/* Sticky Mobile CTA */}
       {showSticky && <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-navy-900 border-t-2 border-prestige-gold-400 shadow-2xl p-3">
           <Button size="lg" onClick={scrollToForm} className="w-full bg-success-green-600 hover:bg-success-green-700 text-white font-bold py-4 rounded-xl shadow-xl">
-            <span className="text-base">✅ ZAMÓW ZA 29 ZŁ</span>
+            <span className="text-base">✅ ZAMÓW ZA 39 ZŁ</span>
           </Button>
         </div>}
     </div>;

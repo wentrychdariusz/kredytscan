@@ -76,7 +76,7 @@ const PaymentTest = () => {
           lastName,
           email,
           phone: phoneInput,
-          amount: 9.90
+          amount: 39
         }
       });
       if (functionError) {
